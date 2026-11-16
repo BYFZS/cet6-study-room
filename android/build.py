@@ -110,7 +110,7 @@ def build(args):
         badge = subprocess.run([aapt, "dump", "badging", signed], check=True, capture_output=True,
                                encoding="utf-8").stdout
         for line in badge.splitlines():
-            if re.match(r"^(package:|sdkVersion:|targetSdkVersion:|launchable-activity:)", line):
+            if re.match(r"^(package:|(?:min|target)SdkVersion:|launchable-activity:)", line):
                 print(line)
         shutil.copy2(signed, output)
     print(output)
@@ -124,5 +124,5 @@ if __name__ == "__main__":
     cli.add_argument("--sdk", type=Path, default=os.environ.get("ANDROID_HOME"), required=not os.environ.get("ANDROID_HOME"))
     cli.add_argument("--java-home", type=Path, default=os.environ.get("JAVA_HOME"), required=not os.environ.get("JAVA_HOME"))
     cli.add_argument("--ecj", type=Path, help="Use an Eclipse Java compiler JAR in place of javac")
-    cli.add_argument("--output", type=Path, default=HERE / "CET6-Study-Room-1.0.0.apk")
+    cli.add_argument("--output", type=Path, default=HERE / "CET6-Study-Room.apk")
     build(cli.parse_args())

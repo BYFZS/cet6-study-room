@@ -1,0 +1,1 @@
+{"name":"cet6-sync-service","private":true,"type":"module","scripts":{"build":"node build.mjs"}}

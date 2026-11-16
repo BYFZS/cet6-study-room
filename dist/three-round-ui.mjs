@@ -4,7 +4,7 @@ import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=6';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);
 export const choiceOptions=harderOptions;
-export function initThreeUI({$,getDeck,getDB,view,save,message,esc}){
+export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()=>{}}){
  const wordData=word=>getDeck().find(w=>w.word===word);
  function rebase(){const db=getDB(),s=db.session;if(s&&s.day!==dayKey()){const plan=planTraining(getDeck(),db);s.day=dayKey();s.scope='auto';s.words=plan.words;s.queue=[...plan.words];s.checkWords=plan.checkWords;s.current=null;s.passed={};s.attempts=0;s.deferred=[];message('新的一天，已重新混排到期复习和新词。');save();}}
 
@@ -63,6 +63,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc}){
  });
  nextCard.onclick=()=>{
   getDB().session.current=null;
+  beforeNext();
   save();
   newQuestion();
   focusQuestion();

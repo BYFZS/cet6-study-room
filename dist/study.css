@@ -5,3 +5,12 @@
 .flash #options button:disabled{opacity:1;color:#274b3c;cursor:default}.flash #options .bilingual{display:flex;flex-direction:column;gap:5px}.flash #options .bilingual strong{font-size:18px;font-weight:600}.flash #options .bilingual small{font-size:13px;color:#547561}.wordRelations{border-top:1px solid #d5dfc8;margin-top:18px;padding-top:8px}.wordRelations h4{margin:18px 0 10px;font-size:14px;color:#425e39}.wordRelations p{font-size:14px}.wordRelations small{color:#6c7d61;line-height:1.8}
 
 .spellingHint{background:#fff0cc;border:1px dashed #d6be7d;padding:15px;border-radius:8px;font-size:22px!important;color:#66501e!important;letter-spacing:1px}#showSpelling{margin:6px 12px 12px 0}
+
+.syncBar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;margin-bottom:16px}
+.syncBar span{font-size:13px;color:var(--muted)}
+#syncDialog{width:calc(100% - 32px);box-sizing:border-box;margin:auto}
+#syncDialog #syncJoin,#syncDialog #syncCodePanel{display:block;margin-top:18px}
+#syncDialog label{display:block;margin-bottom:6px;font-size:13px;font-weight:600}
+#syncDialog .syncFields{display:flex;gap:8px;margin-top:0;justify-content:initial}
+.syncFields input{flex:1;min-width:0;padding:10px;border:1px solid var(--line);border-radius:7px;font-size:16px}
+#syncDialog #syncMessage{overflow-wrap:anywhere;margin-bottom:0}
