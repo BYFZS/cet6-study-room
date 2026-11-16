@@ -1,0 +1,443 @@
+[
+  {
+    "word": "requirement",
+    "meaning": "要求；必要条件",
+    "aliases": [
+      "要求",
+      "必要条件"
+    ],
+    "example": "Work experience is a common requirement.",
+    "translation": "工作经验是一项常见要求。",
+    "collocation": "meet a requirement = 满足要求",
+    "source": "写作·求职准备",
+    "evidenceForm": "requirements",
+    "priority": "core"
+  },
+  {
+    "word": "job application",
+    "meaning": "求职申请",
+    "aliases": [
+      "求职申请",
+      "工作申请"
+    ],
+    "example": "A job application should be clear and honest.",
+    "translation": "求职申请应清楚且诚实。",
+    "collocation": "submit a job application = 提交求职申请",
+    "source": "写作·求职准备",
+    "evidenceForm": "job applications",
+    "priority": "core"
+  },
+  {
+    "word": "increasingly",
+    "meaning": "越来越；日益",
+    "aliases": [
+      "越来越",
+      "日益"
+    ],
+    "example": "Employers increasingly value practical skills.",
+    "translation": "雇主越来越重视实践技能。",
+    "collocation": "increasingly important = 日益重要",
+    "source": "写作·求职准备",
+    "evidenceForm": "increasingly",
+    "priority": "core"
+  },
+  {
+    "word": "ought to",
+    "meaning": "应该",
+    "aliases": [
+      "应该",
+      "应当"
+    ],
+    "example": "Students ought to gain practical experience.",
+    "translation": "学生应该获得实践经验。",
+    "collocation": "ought to do = 应该做",
+    "source": "写作·求职准备",
+    "evidenceForm": "ought to",
+    "priority": "core"
+  },
+  {
+    "word": "prepare",
+    "meaning": "准备",
+    "aliases": [
+      "准备",
+      "预备"
+    ],
+    "example": "We prepare for interviews together.",
+    "translation": "我们一起准备面试。",
+    "collocation": "prepare for = 为……做准备",
+    "source": "写作·求职准备",
+    "evidenceForm": "prepared",
+    "priority": "core"
+  },
+  {
+    "word": "career",
+    "meaning": "职业；职业生涯",
+    "aliases": [
+      "职业",
+      "职业生涯",
+      "事业"
+    ],
+    "example": "Planning ahead can help your career.",
+    "translation": "提前规划有助于你的职业生涯。",
+    "collocation": "future career = 未来职业",
+    "source": "写作·求职准备",
+    "evidenceForm": "career",
+    "priority": "core"
+  },
+  {
+    "word": "cite",
+    "meaning": "引用；举出",
+    "aliases": [
+      "引用",
+      "举出",
+      "援引"
+    ],
+    "example": "You can cite an example to support your idea.",
+    "translation": "你可以举一个例子支持你的观点。",
+    "collocation": "cite an example = 举例",
+    "source": "写作·求职准备",
+    "evidenceForm": "cite",
+    "priority": "core"
+  },
+  {
+    "word": "personal experience",
+    "meaning": "个人经历",
+    "aliases": [
+      "个人经历",
+      "亲身经历",
+      "个人经验"
+    ],
+    "example": "This personal experience changed my view.",
+    "translation": "这段个人经历改变了我的看法。",
+    "collocation": "share personal experience = 分享个人经历",
+    "source": "写作·求职准备",
+    "evidenceForm": "personal experiences",
+    "priority": "core"
+  },
+  {
+    "word": "develop",
+    "meaning": "发展；展开；培养",
+    "aliases": [
+      "发展",
+      "展开",
+      "培养",
+      "开发"
+    ],
+    "example": "You need to develop your ideas clearly.",
+    "translation": "你需要清楚地展开你的观点。",
+    "collocation": "develop skills = 培养技能",
+    "source": "写作·求职准备",
+    "evidenceForm": "develop",
+    "priority": "core"
+  },
+  {
+    "word": "space station",
+    "meaning": "空间站",
+    "aliases": [
+      "空间站"
+    ],
+    "example": "A space station provides room for research.",
+    "translation": "空间站为研究提供空间。",
+    "collocation": "build a space station = 建造空间站",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "空间站",
+    "priority": "paper"
+  },
+  {
+    "word": "laboratory",
+    "meaning": "实验室",
+    "aliases": [
+      "实验室"
+    ],
+    "example": "Students work in the laboratory.",
+    "translation": "学生们在实验室工作。",
+    "collocation": "a research laboratory = 研究实验室",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "实验室",
+    "priority": "core"
+  },
+  {
+    "word": "cubic meter",
+    "meaning": "立方米",
+    "aliases": [
+      "立方米"
+    ],
+    "example": "This box holds one cubic meter of water.",
+    "translation": "这个箱子能装一立方米水。",
+    "collocation": "a cubic meter of space = 一立方米空间",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "立方米",
+    "priority": "paper"
+  },
+  {
+    "word": "usable",
+    "meaning": "可用的；可使用的",
+    "aliases": [
+      "可用",
+      "可使用",
+      "可用的",
+      "可使用的"
+    ],
+    "example": "The room has plenty of usable space.",
+    "translation": "这个房间有很多可用空间。",
+    "collocation": "usable space = 可用空间",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "使用空间",
+    "priority": "core"
+  },
+  {
+    "word": "accommodate",
+    "meaning": "容纳；为……提供住宿",
+    "aliases": [
+      "容纳",
+      "提供住宿",
+      "为提供住宿"
+    ],
+    "example": "The building can accommodate thirty people.",
+    "translation": "这栋楼能容纳三十人。",
+    "collocation": "accommodate people = 容纳人员",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "驻留",
+    "priority": "core"
+  },
+  {
+    "word": "astronaut",
+    "meaning": "宇航员",
+    "aliases": [
+      "宇航员",
+      "航天员"
+    ],
+    "example": "An astronaut works in space.",
+    "translation": "宇航员在太空工作。",
+    "collocation": "train an astronaut = 培训宇航员",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "宇航员",
+    "priority": "paper"
+  },
+  {
+    "word": "orbit",
+    "meaning": "轨道；绕轨道运行",
+    "aliases": [
+      "轨道",
+      "绕轨道运行",
+      "绕运行"
+    ],
+    "example": "The satellite moves in a fixed orbit.",
+    "translation": "卫星沿固定轨道运行。",
+    "collocation": "in orbit = 在轨道上",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "轨道",
+    "priority": "paper"
+  },
+  {
+    "word": "surface",
+    "meaning": "表面",
+    "aliases": [
+      "表面"
+    ],
+    "example": "Water covered the surface of the table.",
+    "translation": "水覆盖了桌子表面。",
+    "collocation": "the surface of the Earth = 地球表面",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "表面",
+    "priority": "core"
+  },
+  {
+    "word": "scientific research",
+    "meaning": "科学研究",
+    "aliases": [
+      "科学研究",
+      "科研"
+    ],
+    "example": "The university supports scientific research.",
+    "translation": "这所大学支持科学研究。",
+    "collocation": "conduct scientific research = 开展科学研究",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "科学研究",
+    "priority": "core"
+  },
+  {
+    "word": "carry out",
+    "meaning": "实施；开展；执行",
+    "aliases": [
+      "实施",
+      "开展",
+      "执行"
+    ],
+    "example": "We carry out research on plant growth.",
+    "translation": "我们开展植物生长方面的研究。",
+    "collocation": "carry out a project = 实施项目",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "实施",
+    "priority": "core"
+  },
+  {
+    "word": "application",
+    "meaning": "应用；申请",
+    "aliases": [
+      "应用",
+      "申请"
+    ],
+    "example": "This discovery has a useful application.",
+    "translation": "这一发现有一项有用的应用。",
+    "collocation": "practical application = 实际应用",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "应用",
+    "priority": "core"
+  },
+  {
+    "word": "space medicine",
+    "meaning": "太空医学",
+    "aliases": [
+      "太空医学",
+      "航天医学"
+    ],
+    "example": "The laboratory conducts research in space medicine.",
+    "translation": "这个实验室开展太空医学研究。",
+    "collocation": "research in space medicine = 太空医学研究",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "太空医学",
+    "priority": "paper"
+  },
+  {
+    "word": "materials science",
+    "meaning": "材料科学",
+    "aliases": [
+      "材料科学"
+    ],
+    "example": "My sister studies materials science.",
+    "translation": "我姐姐学习材料科学。",
+    "collocation": "space materials science = 空间材料科学",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "材料科学",
+    "priority": "paper"
+  },
+  {
+    "word": "research finding",
+    "meaning": "研究成果；研究发现",
+    "aliases": [
+      "研究成果",
+      "研究发现",
+      "科研成果"
+    ],
+    "example": "This research finding may improve medical care.",
+    "translation": "这项研究成果可能改善医疗。",
+    "collocation": "apply a research finding = 应用研究成果",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "研究成果",
+    "priority": "core"
+  },
+  {
+    "word": "widely",
+    "meaning": "广泛地",
+    "aliases": [
+      "广泛",
+      "广泛地",
+      "普遍地"
+    ],
+    "example": "The results are widely used in hospitals.",
+    "translation": "这些成果在医院得到广泛应用。",
+    "collocation": "be widely used = 得到广泛应用",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "广泛",
+    "priority": "core"
+  },
+  {
+    "word": "economic benefit",
+    "meaning": "经济效益；经济利益",
+    "aliases": [
+      "经济效益",
+      "经济利益"
+    ],
+    "example": "The project brings a clear economic benefit.",
+    "translation": "该项目带来明显的经济效益。",
+    "collocation": "generate an economic benefit = 产生经济效益",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "经济效益",
+    "priority": "core"
+  },
+  {
+    "word": "space breeding",
+    "meaning": "太空育种",
+    "aliases": [
+      "太空育种",
+      "航天育种"
+    ],
+    "example": "The team studies space breeding.",
+    "translation": "这个团队研究太空育种。",
+    "collocation": "space breeding technology = 太空育种技术",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "太空育种",
+    "priority": "paper"
+  },
+  {
+    "word": "billion",
+    "meaning": "十亿",
+    "aliases": [
+      "十亿"
+    ],
+    "example": "The project cost one billion yuan.",
+    "translation": "这个项目花费十亿元。",
+    "collocation": "hundreds of billions = 数千亿",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "数千亿",
+    "priority": "core"
+  },
+  {
+    "word": "technology",
+    "meaning": "技术；科技",
+    "aliases": [
+      "技术",
+      "科技"
+    ],
+    "example": "New technology can reduce costs.",
+    "translation": "新技术能降低成本。",
+    "collocation": "space technology = 航天技术",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "技术",
+    "priority": "core"
+  },
+  {
+    "word": "progress",
+    "meaning": "进步；进展",
+    "aliases": [
+      "进步",
+      "进展",
+      "进程"
+    ],
+    "example": "Small steps can lead to real progress.",
+    "translation": "小的行动可以带来真正的进步。",
+    "collocation": "make progress = 取得进步",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "进步",
+    "priority": "core"
+  },
+  {
+    "word": "contribution",
+    "meaning": "贡献",
+    "aliases": [
+      "贡献"
+    ],
+    "example": "Every contribution to the project matters.",
+    "translation": "对这个项目的每一份贡献都很重要。",
+    "collocation": "make a contribution = 作出贡献",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "贡献",
+    "priority": "core"
+  },
+  {
+    "word": "global",
+    "meaning": "全球的；全世界的",
+    "aliases": [
+      "全球的",
+      "全球",
+      "全世界的"
+    ],
+    "example": "Climate change is a global challenge.",
+    "translation": "气候变化是一项全球挑战。",
+    "collocation": "global research = 全球研究",
+    "source": "翻译·天宫空间站",
+    "evidenceForm": "全球",
+    "priority": "core"
+  }
+]

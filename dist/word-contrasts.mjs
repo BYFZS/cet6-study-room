@@ -1,0 +1,22 @@
+import {normalize} from './learning-core.mjs?v=6';
+const overrides={
+ likely:{synonyms:[{word:'probable',meaning:'很可能的'}],confusables:[{word:'like',meaning:'喜欢；像',note:'like表示喜欢或像，likely表示可能。'},{word:'unlikely',meaning:'不太可能的',note:'un-使意思转为否定。'},{word:'lively',meaning:'活泼的；生动的',note:'注意likely与lively的拼写。'}],note:'likely可作形容词或副词；probable通常作形容词。'},
+ resource:{synonyms:[{word:'asset',meaning:'可利用的资源；资产'}],confusables:[{word:'source',meaning:'来源；源头',note:'source强调来源，resource强调可利用的资源。'},{word:'recourse',meaning:'求助；依靠',note:'常见搭配have recourse to。'},{word:'course',meaning:'课程；过程',note:'注意resource、source、course的拼写。'}]},
+ source:{synonyms:[{word:'origin',meaning:'起源；来源'}],confusables:[{word:'resource',meaning:'资源',note:'source是来源，resource是资源。'},{word:'sauce',meaning:'酱汁',note:'注意source与sauce的拼写。'},{word:'course',meaning:'课程；过程',note:'首字母与含义不同。'}]},
+ maintain:{synonyms:[{word:'preserve',meaning:'保持；维护'}],confusables:[{word:'main',meaning:'主要的',note:'main是主要的，maintain是维持或保持。'},{word:'mountain',meaning:'山；山脉',note:'注意maintain与mountain的拼写。'},{word:'attain',meaning:'达到；获得',note:'attain是达到目标，maintain是保持状态。'}]},
+ significant:{synonyms:[{word:'important',meaning:'重要的'}],confusables:[{word:'sign',meaning:'标志；迹象',note:'sign是标志，significant是重要的或显著的。'},{word:'signature',meaning:'签名',note:'都有sign，但意思不同。'},{word:'signal',meaning:'信号',note:'signal表示信号。'}],note:'significant还常强调差异或影响达到显著程度。'},
+ wealthy:{synonyms:[{word:'rich',meaning:'富有的'},{word:'well-off',meaning:'富裕的'}],confusables:[{word:'healthy',meaning:'健康的',note:'wealthy是富有的，healthy是健康的。'},{word:'worthy',meaning:'值得的；有价值的',note:'注意wealthy与worthy的拼写。'},{word:'wealth',meaning:'财富',note:'wealth是名词，wealthy是形容词。'}]},
+ affect:{promptMeaning:'影响（动词）',promptWord:'affect（动词）',synonyms:[{word:'influence',meaning:'影响'}],confusables:[{word:'effect',meaning:'效果；结果（名词）',note:'affect通常作动词，effect通常作名词。'},{word:'infect',meaning:'感染',note:'infect表示感染。'},{word:'defect',meaning:'缺陷',note:'注意词形和词义的区别。'}]}
+};
+export function attachRelations(deck,...banks){const relations=Object.assign({},...banks,overrides);return deck.map(w=>({...w,relations:relations[w.word]||{synonyms:[],confusables:[]}}));}
+const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const meanings=w=>[...(w.aliases||[]),...String(w.meaning).split(/[；;、，,]/)].map(normalize).filter(Boolean);
+function distance(a,b){let row=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(a[i-1]===b[j-1]?0:1));row=next;}return row[b.length];}
+function similarity(a,b){const x=a.toLowerCase(),y=b.toLowerCase();let prefix=0,suffix=0;while(prefix<Math.min(x.length,y.length)&&x[prefix]===y[prefix])prefix++;while(suffix<Math.min(x.length,y.length)&&x[x.length-1-suffix]===y[y.length-1-suffix])suffix++;return 1-distance(x,y)/Math.max(x.length,y.length)+.15*Math.min(prefix,5)/5+.1*Math.min(suffix,4)/4;}
+const cache=new WeakMap();
+export function contrastCandidates(word,deck){let map=cache.get(deck);if(!map){map=new Map();cache.set(deck,map);}if(map.has(word.word))return map.get(word.word);const own=new Set(meanings(word)),synonyms=new Set((word.relations?.synonyms||[]).map(s=>s.word.toLowerCase()));const valid=w=>w.word.toLowerCase()!==word.word.toLowerCase()&&!synonyms.has(w.word.toLowerCase())&&!meanings(w).some(m=>own.has(m))&&!(w.relations?.synonyms||[]).some(s=>s.word.toLowerCase()===word.word.toLowerCase());const result=[],seen=new Set();
+ for(const item of word.relations?.confusables||[]){if(!valid(item)||seen.has(item.word))continue;result.push({...item,kind:'confusable'});seen.add(item.word);}
+ const ranked=deck.filter(w=>valid(w)&&!seen.has(w.word)).map(w=>({word:w.word,meaning:w.meaning,note:'注意词形与词义的区别。',kind:'similar',score:similarity(word.word,w.word)})).sort((a,b)=>b.score-a.score);
+ for(const item of ranked){if(seen.has(item.word))continue;result.push(item);seen.add(item.word);if(result.length>=8)break;}map.set(word.word,result);return result;
+}
+export function harderOptions(word,deck,round){const alternatives=contrastCandidates(word,deck);const curated=alternatives.filter(w=>w.kind==='confusable').slice(0,3);const other=alternatives.filter(w=>!curated.some(c=>c.word===w.word));const chosen=[...curated,...other.slice(0,3-curated.length)];return shuffle([{word:word.word,meaning:word.meaning,kind:'answer'},...chosen].map(w=>({...w,label:round===1?w.meaning:w.word})));}

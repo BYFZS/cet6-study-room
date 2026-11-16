@@ -1,0 +1,3089 @@
+[
+  {
+    "word": "official",
+    "meaning": "官员；官方的",
+    "aliases": [
+      "官员",
+      "官方的",
+      "公务人员",
+      "正式的"
+    ],
+    "example": "An official answered our questions.",
+    "translation": "一位官员回答了我们的问题。",
+    "collocation": "a government official = 政府官员",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "officials"
+  },
+  {
+    "word": "deplore",
+    "meaning": "强烈反对；谴责",
+    "aliases": [
+      "强烈反对",
+      "谴责",
+      "痛惜",
+      "对…深感遗憾"
+    ],
+    "example": "Many residents deplore the waste of public money.",
+    "translation": "许多居民强烈反对浪费公款。",
+    "collocation": "deplore violence = 谴责暴力",
+    "source": "仔细阅读·缺勤",
+    "priority": "paper",
+    "evidenceForm": "deplored"
+  },
+  {
+    "word": "absent",
+    "meaning": "缺席的；不在的",
+    "aliases": [
+      "缺席的",
+      "不在的",
+      "缺勤的",
+      "缺课的"
+    ],
+    "example": "Two students were absent yesterday.",
+    "translation": "昨天有两名学生缺课。",
+    "collocation": "be absent from class = 缺课",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "absent"
+  },
+  {
+    "word": "suffer",
+    "meaning": "遭受；受苦",
+    "aliases": [
+      "遭受",
+      "受苦",
+      "受损",
+      "患病"
+    ],
+    "example": "Small shops may suffer during the repairs.",
+    "translation": "维修期间小商店可能会蒙受损失。",
+    "collocation": "suffer from illness = 患病",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "suffer"
+  },
+  {
+    "word": "urge",
+    "meaning": "敦促；力劝",
+    "aliases": [
+      "敦促",
+      "力劝",
+      "催促",
+      "强烈要求"
+    ],
+    "example": "Doctors urge patients to exercise regularly.",
+    "translation": "医生力劝患者经常锻炼。",
+    "collocation": "urge someone to act = 敦促某人行动",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "urging"
+  },
+  {
+    "word": "attend",
+    "meaning": "出席；参加；上学",
+    "aliases": [
+      "出席",
+      "参加",
+      "上学",
+      "到场",
+      "就读"
+    ],
+    "example": "We can attend the lecture online.",
+    "translation": "我们可以在线参加讲座。",
+    "collocation": "attend school = 上学",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "attend"
+  },
+  {
+    "word": "primary",
+    "meaning": "主要的；首要的",
+    "aliases": [
+      "主要的",
+      "首要的",
+      "基本的",
+      "初级的"
+    ],
+    "example": "Safety is our primary concern.",
+    "translation": "安全是我们首要关心的事。",
+    "collocation": "a primary cause = 主要原因",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "primary"
+  },
+  {
+    "word": "make sense",
+    "meaning": "有道理；讲得通",
+    "aliases": [
+      "有道理",
+      "讲得通",
+      "合乎情理",
+      "说得通"
+    ],
+    "example": "These instructions do not make sense to me.",
+    "translation": "我看不懂这些说明。",
+    "collocation": "make sense to someone = 对某人而言讲得通",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "makes sense"
+  },
+  {
+    "word": "show up",
+    "meaning": "出现；到场",
+    "aliases": [
+      "出现",
+      "到场",
+      "露面",
+      "出席"
+    ],
+    "example": "Please show up before the doors close.",
+    "translation": "请在关门之前到场。",
+    "collocation": "show up on time = 准时到场",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "show up"
+  },
+  {
+    "word": "attendance",
+    "meaning": "出勤；出席",
+    "aliases": [
+      "出勤",
+      "出席",
+      "到场人数",
+      "上课情况"
+    ],
+    "example": "The teacher checks attendance every morning.",
+    "translation": "老师每天早上检查出勤情况。",
+    "collocation": "school attendance = 学校出勤情况",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "attendance"
+  },
+  {
+    "word": "reflection",
+    "meaning": "反映；映像；思考",
+    "aliases": [
+      "反映",
+      "映像",
+      "思考",
+      "体现",
+      "反思",
+      "倒影"
+    ],
+    "example": "Her careful work is a reflection of her training.",
+    "translation": "她细致的工作体现了她所受的训练。",
+    "collocation": "a reflection of society = 社会的反映",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "reflection"
+  },
+  {
+    "word": "eject",
+    "meaning": "驱逐；赶出；弹出",
+    "aliases": [
+      "驱逐",
+      "赶出",
+      "弹出",
+      "逐出",
+      "喷出"
+    ],
+    "example": "The machine can eject the card automatically.",
+    "translation": "这台机器可以自动弹出卡片。",
+    "collocation": "eject someone from a building = 将某人逐出建筑物",
+    "source": "仔细阅读·缺勤",
+    "priority": "paper",
+    "evidenceForm": "ejected"
+  },
+  {
+    "word": "investigate",
+    "meaning": "调查；研究",
+    "aliases": [
+      "调查",
+      "研究",
+      "查明",
+      "探究"
+    ],
+    "example": "We need to investigate the cause of the delay.",
+    "translation": "我们需要调查延误的原因。",
+    "collocation": "investigate a problem = 调查问题",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "investigated"
+  },
+  {
+    "word": "relate to",
+    "meaning": "与…有关；理解并认同",
+    "aliases": [
+      "与…有关",
+      "理解并认同",
+      "涉及",
+      "关联",
+      "产生共鸣"
+    ],
+    "example": "These questions relate to your recent experience.",
+    "translation": "这些问题与你最近的经历有关。",
+    "collocation": "relate to a topic = 与某个话题有关",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "relate to"
+  },
+  {
+    "word": "harm",
+    "meaning": "损害；伤害",
+    "aliases": [
+      "损害",
+      "伤害",
+      "危害",
+      "损伤"
+    ],
+    "example": "False information can harm a company's reputation.",
+    "translation": "虚假信息会损害公司的声誉。",
+    "collocation": "harm the environment = 损害环境",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "harm"
+  },
+  {
+    "word": "equal to",
+    "meaning": "与…相等；能够胜任",
+    "aliases": [
+      "与…相等",
+      "能够胜任",
+      "等于",
+      "相当于"
+    ],
+    "example": "The payment is equal to one month's rent.",
+    "translation": "这笔款项相当于一个月的租金。",
+    "collocation": "be equal to a task = 能够胜任任务",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "equal to"
+  },
+  {
+    "word": "meanwhile",
+    "meaning": "与此同时；在此期间",
+    "aliases": [
+      "与此同时",
+      "在此期间",
+      "同时",
+      "其间"
+    ],
+    "example": "The rice is cooking; meanwhile, we can prepare the vegetables.",
+    "translation": "米饭正在煮；与此同时，我们可以准备蔬菜。",
+    "collocation": "in the meanwhile = 在此期间",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "Meanwhile"
+  },
+  {
+    "word": "signal",
+    "meaning": "信号；迹象；发信号",
+    "aliases": [
+      "信号",
+      "迹象",
+      "发信号",
+      "征兆",
+      "标志",
+      "示意"
+    ],
+    "example": "A sudden silence can be a signal of trouble.",
+    "translation": "突然的安静可能是出问题的迹象。",
+    "collocation": "a warning signal = 警告信号",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "signal"
+  },
+  {
+    "word": "challenge",
+    "meaning": "挑战；难题；质疑",
+    "aliases": [
+      "挑战",
+      "难题",
+      "质疑",
+      "困难",
+      "考验",
+      "挑战性任务"
+    ],
+    "example": "Finding reliable information is a real challenge.",
+    "translation": "找到可靠的信息是一项真正的挑战。",
+    "collocation": "face a challenge = 面临挑战",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "challenges"
+  },
+  {
+    "word": "hardship",
+    "meaning": "艰难；困苦",
+    "aliases": [
+      "艰难",
+      "困苦",
+      "困难",
+      "苦难",
+      "困境"
+    ],
+    "example": "The family received support during a time of hardship.",
+    "translation": "这家人在困难时期得到了帮助。",
+    "collocation": "economic hardship = 经济困难",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "hardships"
+  },
+  {
+    "word": "progress",
+    "meaning": "进展；进步",
+    "aliases": [
+      "进展",
+      "进步",
+      "发展",
+      "前进"
+    ],
+    "example": "Her reading has shown clear progress.",
+    "translation": "她的阅读水平有了明显进步。",
+    "collocation": "make progress = 取得进步",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "progress"
+  },
+  {
+    "word": "problematic",
+    "meaning": "有问题的；难以处理的",
+    "aliases": [
+      "有问题的",
+      "难以处理的",
+      "成问题的",
+      "棘手的",
+      "有争议的"
+    ],
+    "example": "This assumption is problematic because the evidence is weak.",
+    "translation": "这一假设存在问题，因为证据不足。",
+    "collocation": "a problematic assumption = 有问题的假设",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "problematic"
+  },
+  {
+    "word": "due to",
+    "meaning": "由于；因为",
+    "aliases": [
+      "由于",
+      "因为",
+      "归因于",
+      "由…造成"
+    ],
+    "example": "The match was canceled due to heavy snow.",
+    "translation": "比赛因大雪取消了。",
+    "collocation": "due to bad weather = 由于恶劣天气",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "due to"
+  },
+  {
+    "word": "policy",
+    "meaning": "政策；方针；原则",
+    "aliases": [
+      "政策",
+      "方针",
+      "原则",
+      "规定",
+      "策略",
+      "制度"
+    ],
+    "example": "The new policy supports small businesses.",
+    "translation": "新政策支持小企业。",
+    "collocation": "educational policy = 教育政策",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "policy"
+  },
+  {
+    "word": "typically",
+    "meaning": "通常；一般地；典型地",
+    "aliases": [
+      "通常",
+      "一般地",
+      "典型地",
+      "往往",
+      "通常情况下"
+    ],
+    "example": "The shop typically opens at nine.",
+    "translation": "这家商店通常九点开门。",
+    "collocation": "typically occur = 通常发生",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "typically"
+  },
+  {
+    "word": "accountable",
+    "meaning": "负有责任的；须作解释的",
+    "aliases": [
+      "负有责任的",
+      "须作解释的",
+      "应负责的",
+      "有问责义务的"
+    ],
+    "example": "Managers are accountable for their decisions.",
+    "translation": "经理须对自己的决定负责。",
+    "collocation": "hold someone accountable = 要求某人负责",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "accountable"
+  },
+  {
+    "word": "regardless of",
+    "meaning": "不管；不顾",
+    "aliases": [
+      "不管",
+      "不顾",
+      "无论",
+      "不论"
+    ],
+    "example": "Everyone is welcome regardless of age.",
+    "translation": "无论年龄大小，每个人都受到欢迎。",
+    "collocation": "regardless of the cost = 不顾成本",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "regardless of"
+  },
+  {
+    "word": "effectively",
+    "meaning": "有效地；实际上",
+    "aliases": [
+      "有效地",
+      "实际上",
+      "有成效地",
+      "事实上"
+    ],
+    "example": "The two teams worked effectively together.",
+    "translation": "两个团队有效地开展了合作。",
+    "collocation": "communicate effectively = 有效沟通",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "effectively"
+  },
+  {
+    "word": "disproportionately",
+    "meaning": "不成比例地；过度地",
+    "aliases": [
+      "不成比例地",
+      "过度地",
+      "不相称地",
+      "不均衡地"
+    ],
+    "example": "Higher prices affect poor families disproportionately.",
+    "translation": "物价上涨对贫困家庭的影响尤其大。",
+    "collocation": "disproportionately affect = 对…产生不成比例的影响",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "disproportionately"
+  },
+  {
+    "word": "punish",
+    "meaning": "惩罚；处罚",
+    "aliases": [
+      "惩罚",
+      "处罚",
+      "责罚",
+      "惩处"
+    ],
+    "example": "The rules should not punish honest mistakes.",
+    "translation": "规则不应惩罚无心之失。",
+    "collocation": "punish someone for a mistake = 因错误惩罚某人",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "punishing"
+  },
+  {
+    "word": "pressure",
+    "meaning": "压力；施压",
+    "aliases": [
+      "压力",
+      "施压",
+      "压迫",
+      "逼迫",
+      "压强"
+    ],
+    "example": "She works well under pressure.",
+    "translation": "她在压力下仍能出色工作。",
+    "collocation": "put pressure on someone = 向某人施压",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "pressuring"
+  },
+  {
+    "word": "channel",
+    "meaning": "引导；输送；渠道",
+    "aliases": [
+      "引导",
+      "输送",
+      "渠道",
+      "通道",
+      "途径",
+      "将…导向"
+    ],
+    "example": "We should channel more funds into public health.",
+    "translation": "我们应把更多资金投入公共卫生。",
+    "collocation": "channel resources into a project = 将资源投入项目",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "channel"
+  },
+  {
+    "word": "underlying",
+    "meaning": "潜在的；根本的",
+    "aliases": [
+      "潜在的",
+      "根本的",
+      "深层的",
+      "内在的",
+      "基础的"
+    ],
+    "example": "We must identify the underlying cause.",
+    "translation": "我们必须找出根本原因。",
+    "collocation": "the underlying problem = 根本问题",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "underlying"
+  },
+  {
+    "word": "promptly",
+    "meaning": "迅速地；及时地",
+    "aliases": [
+      "迅速地",
+      "及时地",
+      "立即",
+      "马上",
+      "准时地"
+    ],
+    "example": "Please report any errors promptly.",
+    "translation": "请及时报告任何错误。",
+    "collocation": "respond promptly = 迅速回应",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "promptly"
+  },
+  {
+    "word": "assumption",
+    "meaning": "假设；假定",
+    "aliases": [
+      "假设",
+      "假定",
+      "设想",
+      "想当然的看法"
+    ],
+    "example": "Our plan rests on a false assumption.",
+    "translation": "我们的计划建立在错误的假设之上。",
+    "collocation": "make an assumption = 作出假设",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "assumption"
+  },
+  {
+    "word": "determine",
+    "meaning": "决定；确定",
+    "aliases": [
+      "决定",
+      "确定",
+      "查明",
+      "决心"
+    ],
+    "example": "The results will determine our next step.",
+    "translation": "结果将决定我们的下一步行动。",
+    "collocation": "determine the cause = 查明原因",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "determined"
+  },
+  {
+    "word": "graduate school",
+    "meaning": "研究生院；研究生教育阶段",
+    "aliases": [
+      "研究生院",
+      "研究生教育阶段",
+      "研究生学校",
+      "研究生阶段"
+    ],
+    "example": "She plans to enter graduate school next year.",
+    "translation": "她计划明年读研究生。",
+    "collocation": "apply to graduate school = 申请研究生院",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "graduate school"
+  },
+  {
+    "word": "fascinate",
+    "meaning": "使着迷；深深吸引",
+    "aliases": [
+      "使着迷",
+      "深深吸引",
+      "迷住",
+      "引起强烈兴趣"
+    ],
+    "example": "Stories about space fascinate many children.",
+    "translation": "关于太空的故事使许多孩子着迷。",
+    "collocation": "fascinate an audience = 深深吸引观众",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "fascinated"
+  },
+  {
+    "word": "decade",
+    "meaning": "十年",
+    "aliases": [
+      "十年",
+      "十年时间",
+      "十年期"
+    ],
+    "example": "The town has changed greatly over the past decade.",
+    "translation": "这个小镇在过去十年中变化很大。",
+    "collocation": "for a decade = 长达十年",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "decade"
+  },
+  {
+    "word": "encounter",
+    "meaning": "遇到；遭遇",
+    "aliases": [
+      "遇到",
+      "遭遇",
+      "碰到",
+      "相遇",
+      "面临"
+    ],
+    "example": "You may encounter unfamiliar words in this book.",
+    "translation": "你可能会在这本书中遇到生词。",
+    "collocation": "encounter a problem = 遇到问题",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "encountered"
+  },
+  {
+    "word": "figure out",
+    "meaning": "弄清楚；想出",
+    "aliases": [
+      "弄清楚",
+      "想出",
+      "理解",
+      "算出",
+      "解决"
+    ],
+    "example": "We need to figure out why the device stopped.",
+    "translation": "我们需要弄清楚设备为什么停止运行。",
+    "collocation": "figure out a solution = 想出解决办法",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "figure out"
+  },
+  {
+    "word": "employment",
+    "meaning": "就业；雇用",
+    "aliases": [
+      "就业",
+      "雇用",
+      "工作",
+      "受雇",
+      "使用"
+    ],
+    "example": "The project will create employment in the region.",
+    "translation": "这个项目将在当地创造就业机会。",
+    "collocation": "employment opportunities = 就业机会",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "employment"
+  },
+  {
+    "word": "career",
+    "meaning": "职业；职业生涯",
+    "aliases": [
+      "职业",
+      "职业生涯",
+      "事业",
+      "工作经历"
+    ],
+    "example": "She began her career as a teacher.",
+    "translation": "她的职业生涯从教师开始。",
+    "collocation": "career development = 职业发展",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "career"
+  },
+  {
+    "word": "sociologist",
+    "meaning": "社会学家",
+    "aliases": [
+      "社会学家",
+      "社会学研究者"
+    ],
+    "example": "A sociologist studies how people live together.",
+    "translation": "社会学家研究人们如何共同生活。",
+    "collocation": "a leading sociologist = 杰出的社会学家",
+    "source": "仔细阅读·职业热爱",
+    "priority": "paper",
+    "evidenceForm": "sociologist"
+  },
+  {
+    "word": "professional",
+    "meaning": "专业的；职业的；专业人士",
+    "aliases": [
+      "专业的",
+      "职业的",
+      "专业人士",
+      "专门的",
+      "职业人士",
+      "专业人员"
+    ],
+    "example": "You should seek professional advice before signing.",
+    "translation": "你应该在签字前寻求专业建议。",
+    "collocation": "professional training = 专业培训",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "professional"
+  },
+  {
+    "word": "refer to",
+    "meaning": "指的是；提到；查阅",
+    "aliases": [
+      "指的是",
+      "提到",
+      "查阅",
+      "涉及",
+      "参阅",
+      "指称"
+    ],
+    "example": "The term can refer to several different activities.",
+    "translation": "这个术语可以指几种不同的活动。",
+    "collocation": "refer to a report = 查阅报告",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "refer to"
+  },
+  {
+    "word": "principle",
+    "meaning": "原则；原理",
+    "aliases": [
+      "原则",
+      "原理",
+      "准则",
+      "基本规律",
+      "信条"
+    ],
+    "example": "Fairness is a central principle of the system.",
+    "translation": "公平是这套制度的核心原则。",
+    "collocation": "a basic principle = 基本原则",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "principle"
+  },
+  {
+    "word": "stun",
+    "meaning": "使震惊；使惊愕",
+    "aliases": [
+      "使震惊",
+      "使惊愕",
+      "使吃惊",
+      "使目瞪口呆"
+    ],
+    "example": "The discovery could stun even experienced scientists.",
+    "translation": "这一发现甚至可能使经验丰富的科学家震惊。",
+    "collocation": "stun the audience = 使观众震惊",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "stunned"
+  },
+  {
+    "word": "survey",
+    "meaning": "调查；调查结果；概述",
+    "aliases": [
+      "调查",
+      "调查结果",
+      "概述",
+      "问卷调查",
+      "考察",
+      "综述"
+    ],
+    "example": "The survey asked students about their reading habits.",
+    "translation": "这项调查询问了学生的阅读习惯。",
+    "collocation": "conduct a survey = 开展调查",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "Surveys"
+  },
+  {
+    "word": "regard",
+    "meaning": "尊重；看待；关注",
+    "aliases": [
+      "尊重",
+      "看待",
+      "关注",
+      "重视",
+      "认为",
+      "敬意"
+    ],
+    "example": "They regard honesty as essential.",
+    "translation": "他们认为诚实至关重要。",
+    "collocation": "hold someone in high regard = 非常尊重某人",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "regard"
+  },
+  {
+    "word": "priority",
+    "meaning": "优先事项；优先权",
+    "aliases": [
+      "优先事项",
+      "优先权",
+      "首要任务",
+      "重点",
+      "优先地位"
+    ],
+    "example": "Improving safety is our top priority.",
+    "translation": "提高安全性是我们的首要任务。",
+    "collocation": "give priority to something = 优先考虑某事",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "priority"
+  },
+  {
+    "word": "instability",
+    "meaning": "不稳定；动荡",
+    "aliases": [
+      "不稳定",
+      "动荡",
+      "不稳定性",
+      "不稳固"
+    ],
+    "example": "Political instability can discourage investment.",
+    "translation": "政治动荡可能抑制投资。",
+    "collocation": "job instability = 工作不稳定",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "instability"
+  },
+  {
+    "word": "advocate",
+    "meaning": "提倡者；拥护者；提倡",
+    "aliases": [
+      "提倡者",
+      "拥护者",
+      "提倡",
+      "支持者",
+      "主张",
+      "倡导"
+    ],
+    "example": "She is an advocate of equal access to education.",
+    "translation": "她提倡人人享有平等的受教育机会。",
+    "collocation": "an advocate of reform = 改革的拥护者",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "Advocates"
+  },
+  {
+    "word": "compelling",
+    "meaning": "令人信服的；引人入胜的",
+    "aliases": [
+      "令人信服的",
+      "引人入胜的",
+      "有说服力的",
+      "吸引人的",
+      "迫切的"
+    ],
+    "example": "The report offers compelling evidence for change.",
+    "translation": "报告提供了支持变革的有力证据。",
+    "collocation": "a compelling argument = 有说服力的论点",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "compelling"
+  },
+  {
+    "word": "motivation",
+    "meaning": "动力；动机",
+    "aliases": [
+      "动力",
+      "动机",
+      "积极性",
+      "激励",
+      "推动力"
+    ],
+    "example": "Clear goals can increase motivation.",
+    "translation": "明确的目标可以增强动力。",
+    "collocation": "motivation to learn = 学习动力",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "motivation"
+  },
+  {
+    "word": "overwork",
+    "meaning": "过度工作；工作过量",
+    "aliases": [
+      "过度工作",
+      "工作过量",
+      "过劳",
+      "过度劳累"
+    ],
+    "example": "Chronic overwork can damage your health.",
+    "translation": "长期过度工作会损害健康。",
+    "collocation": "suffer from overwork = 因过度工作而受苦",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "overwork"
+  },
+  {
+    "word": "promote",
+    "meaning": "促进；推广；晋升",
+    "aliases": [
+      "促进",
+      "推广",
+      "晋升",
+      "推动",
+      "宣传",
+      "提拔"
+    ],
+    "example": "The program aims to promote healthy eating.",
+    "translation": "该项目旨在促进健康饮食。",
+    "collocation": "promote development = 促进发展",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "promoting"
+  },
+  {
+    "word": "pursuit",
+    "meaning": "追求；追寻；从事的活动",
+    "aliases": [
+      "追求",
+      "追寻",
+      "从事的活动",
+      "寻求",
+      "追赶",
+      "事业"
+    ],
+    "example": "Her pursuit of knowledge never stops.",
+    "translation": "她对知识的追求从未停止。",
+    "collocation": "the pursuit of happiness = 对幸福的追求",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "pursuit"
+  },
+  {
+    "word": "with ease",
+    "meaning": "轻松地；毫不费力地",
+    "aliases": [
+      "轻松地",
+      "毫不费力地",
+      "容易地",
+      "不费劲地"
+    ],
+    "example": "He solved the puzzle with ease.",
+    "translation": "他轻松解开了这道谜题。",
+    "collocation": "complete a task with ease = 轻松完成任务",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "with ease"
+  },
+  {
+    "word": "stable",
+    "meaning": "稳定的；稳固的",
+    "aliases": [
+      "稳定的",
+      "稳固的",
+      "平稳的",
+      "牢固的",
+      "安定的"
+    ],
+    "example": "The device requires a stable power supply.",
+    "translation": "这台设备需要稳定的电源供应。",
+    "collocation": "a stable income = 稳定的收入",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "stable"
+  },
+  {
+    "word": "loan",
+    "meaning": "贷款；借款",
+    "aliases": [
+      "贷款",
+      "借款",
+      "借贷",
+      "借出"
+    ],
+    "example": "She applied for a loan to start her business.",
+    "translation": "她申请了一笔贷款来创业。",
+    "collocation": "a student loan = 学生贷款",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "loans"
+  },
+  {
+    "word": "in the meantime",
+    "meaning": "与此同时；在此期间",
+    "aliases": [
+      "与此同时",
+      "在此期间",
+      "其间",
+      "同时"
+    ],
+    "example": "The bus arrives soon; in the meantime, we can check the map.",
+    "translation": "公交车很快就到；在此期间，我们可以查看地图。",
+    "collocation": "wait in the meantime = 在此期间等待",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "in the meantime"
+  },
+  {
+    "word": "unpaid",
+    "meaning": "无报酬的；未支付的",
+    "aliases": [
+      "无报酬的",
+      "未支付的",
+      "无薪的",
+      "未付款的"
+    ],
+    "example": "The position includes two weeks of unpaid training.",
+    "translation": "这个岗位包含两周无薪培训。",
+    "collocation": "unpaid work = 无薪工作",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "unpaid"
+  },
+  {
+    "word": "get a foot in the door",
+    "meaning": "获得初步机会；迈出进入某行业的第一步",
+    "aliases": [
+      "获得初步机会",
+      "迈出进入某行业的第一步",
+      "获得入行机会",
+      "打开门路"
+    ],
+    "example": "A short placement can help you get a foot in the door.",
+    "translation": "短期实习可以帮助你获得入行机会。",
+    "collocation": "get a foot in the door = 获得初步机会",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "get their foot in the door"
+  },
+  {
+    "word": "rent",
+    "meaning": "租金；租用",
+    "aliases": [
+      "租金",
+      "租用",
+      "房租",
+      "租借",
+      "出租"
+    ],
+    "example": "They share a flat to save on rent.",
+    "translation": "他们合租公寓以节省房租。",
+    "collocation": "pay rent = 支付租金",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "rent"
+  },
+  {
+    "word": "have access to",
+    "meaning": "有机会使用；能够获得或进入",
+    "aliases": [
+      "有机会使用",
+      "能够获得或进入",
+      "可以使用",
+      "有权进入",
+      "可以接触"
+    ],
+    "example": "All students have access to the online library.",
+    "translation": "所有学生都可以使用在线图书馆。",
+    "collocation": "have access to education = 有机会接受教育",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "have access to"
+  },
+  {
+    "word": "unskilled",
+    "meaning": "不需技能的；缺乏技能的",
+    "aliases": [
+      "不需技能的",
+      "缺乏技能的",
+      "非技术性的",
+      "未受技能训练的"
+    ],
+    "example": "The factory offers training to unskilled workers.",
+    "translation": "工厂为缺乏技能的工人提供培训。",
+    "collocation": "unskilled labor = 非技术性劳动",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "unskilled"
+  },
+  {
+    "word": "level the playing field",
+    "meaning": "创造公平的竞争环境",
+    "aliases": [
+      "创造公平的竞争环境",
+      "使机会均等",
+      "提供平等竞争条件"
+    ],
+    "example": "Better public transport can level the playing field for job seekers.",
+    "translation": "改善公共交通可以为求职者创造公平的竞争环境。",
+    "collocation": "level the playing field = 创造公平竞争环境",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "leveling the playing field"
+  },
+  {
+    "word": "aspirant",
+    "meaning": "有志者；追求者",
+    "aliases": [
+      "有志者",
+      "追求者",
+      "抱负者",
+      "渴望成功的人"
+    ],
+    "example": "Every aspirant needs both preparation and opportunity.",
+    "translation": "每位有志者都需要准备和机会。",
+    "collocation": "a career aspirant = 追求职业发展的人",
+    "source": "仔细阅读·职业热爱",
+    "priority": "paper",
+    "evidenceForm": "aspirants"
+  },
+  {
+    "word": "well-off",
+    "meaning": "富裕的；生活宽裕的",
+    "aliases": [
+      "富裕的",
+      "生活宽裕的",
+      "有钱的",
+      "富足的"
+    ],
+    "example": "The program serves both poor and well-off families.",
+    "translation": "这个项目同时服务于贫困家庭和富裕家庭。",
+    "collocation": "a well-off family = 富裕家庭",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "well-off"
+  },
+  {
+    "word": "potential",
+    "meaning": "潜在的；潜力",
+    "aliases": [
+      "潜在的",
+      "潜力",
+      "可能的",
+      "潜能",
+      "可能性"
+    ],
+    "example": "The team discussed a potential solution.",
+    "translation": "团队讨论了一种可能的解决方案。",
+    "collocation": "potential benefits = 潜在益处",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "Potential"
+  },
+  {
+    "word": "applicant",
+    "meaning": "申请人；求职者",
+    "aliases": [
+      "申请人",
+      "求职者",
+      "应聘者",
+      "申请者"
+    ],
+    "example": "Each applicant must provide a short statement.",
+    "translation": "每位申请人必须提交一份简短陈述。",
+    "collocation": "a job applicant = 求职者",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "applicants"
+  },
+  {
+    "word": "sacrifice",
+    "meaning": "牺牲；舍弃",
+    "aliases": [
+      "牺牲",
+      "舍弃",
+      "付出",
+      "祭品",
+      "损失"
+    ],
+    "example": "You should not sacrifice sleep for extra study time.",
+    "translation": "你不应为了额外的学习时间而牺牲睡眠。",
+    "collocation": "make a sacrifice = 作出牺牲",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "sacrifice"
+  },
+  {
+    "word": "leisure",
+    "meaning": "闲暇；休闲",
+    "aliases": [
+      "闲暇",
+      "休闲",
+      "空闲时间",
+      "闲暇时间",
+      "业余时间"
+    ],
+    "example": "Reading is her favorite leisure activity.",
+    "translation": "阅读是她最喜欢的休闲活动。",
+    "collocation": "leisure time = 闲暇时间",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "leisure"
+  },
+  {
+    "word": "credibility",
+    "meaning": "可信度；可靠性",
+    "aliases": [
+      "可信度",
+      "可靠性",
+      "公信力",
+      "可信性",
+      "信誉"
+    ],
+    "example": "Accurate reporting builds credibility.",
+    "translation": "准确的报道可以树立公信力。",
+    "collocation": "lose credibility = 失去可信度",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "credibility"
+  },
+  {
+    "word": "librarian",
+    "meaning": "图书馆员",
+    "aliases": [
+      "图书馆员",
+      "图书管理员",
+      "图书管理人员"
+    ],
+    "example": "The librarian helped me find a history book.",
+    "translation": "图书馆员帮我找到了一本历史书。",
+    "collocation": "ask a librarian = 向图书馆员咨询",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "Librarians"
+  },
+  {
+    "word": "undervalue",
+    "meaning": "低估…的价值；轻视",
+    "aliases": [
+      "低估…的价值",
+      "轻视",
+      "低估",
+      "看轻",
+      "不重视"
+    ],
+    "example": "We sometimes undervalue quiet contributions.",
+    "translation": "我们有时会低估默默付出的价值。",
+    "collocation": "undervalue public services = 低估公共服务的价值",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "undervalued"
+  },
+  {
+    "word": "municipal",
+    "meaning": "市政的；市的",
+    "aliases": [
+      "市政的",
+      "市的",
+      "城市管理的",
+      "地方市政府的"
+    ],
+    "example": "The municipal government plans to repair the road.",
+    "translation": "市政府计划修复这条道路。",
+    "collocation": "municipal services = 市政服务",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "municipal"
+  },
+  {
+    "word": "budget",
+    "meaning": "预算；经费",
+    "aliases": [
+      "预算",
+      "经费",
+      "预算款",
+      "预算额",
+      "安排预算"
+    ],
+    "example": "The project has a limited budget.",
+    "translation": "这个项目的预算有限。",
+    "collocation": "a tight budget = 紧张的预算",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "budgets"
+  },
+  {
+    "word": "technological",
+    "meaning": "技术的；科技的",
+    "aliases": [
+      "技术的",
+      "科技的",
+      "工艺的",
+      "科学技术的"
+    ],
+    "example": "The industry is facing rapid technological change.",
+    "translation": "这个行业正面临快速的技术变革。",
+    "collocation": "technological progress = 技术进步",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "technological"
+  },
+  {
+    "word": "revolution",
+    "meaning": "革命；重大变革",
+    "aliases": [
+      "革命",
+      "重大变革",
+      "巨变",
+      "彻底变化"
+    ],
+    "example": "Online shopping brought a revolution in retail.",
+    "translation": "网上购物给零售业带来了一场重大变革。",
+    "collocation": "the digital revolution = 数字革命",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "revolution"
+  },
+  {
+    "word": "engage in",
+    "meaning": "参与；从事",
+    "aliases": [
+      "参与",
+      "从事",
+      "参加",
+      "投入",
+      "忙于"
+    ],
+    "example": "Children can engage in creative activities after school.",
+    "translation": "孩子们可以在放学后参与创意活动。",
+    "collocation": "engage in discussion = 参与讨论",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "engage in"
+  },
+  {
+    "word": "precisely",
+    "meaning": "正是；精确地",
+    "aliases": [
+      "正是",
+      "精确地",
+      "恰恰",
+      "准确地",
+      "确切地"
+    ],
+    "example": "That is precisely what we need.",
+    "translation": "那正是我们需要的。",
+    "collocation": "describe something precisely = 准确描述某事",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "precisely"
+  },
+  {
+    "word": "assault",
+    "meaning": "猛烈攻击；侵袭",
+    "aliases": [
+      "猛烈攻击",
+      "侵袭",
+      "袭击",
+      "冲击",
+      "侵犯"
+    ],
+    "example": "The old wall survived the assault of wind and rain.",
+    "translation": "这堵旧墙经受住了风雨的侵袭。",
+    "collocation": "an assault on freedom = 对自由的侵犯",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "assault"
+  },
+  {
+    "word": "mediate",
+    "meaning": "调解；影响…的形成或传递",
+    "aliases": [
+      "调解",
+      "影响…的形成或传递",
+      "调停",
+      "起中介作用",
+      "介导"
+    ],
+    "example": "A neutral person can mediate the dispute.",
+    "translation": "中立人士可以调解这场争端。",
+    "collocation": "mediate a conflict = 调解冲突",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "mediated"
+  },
+  {
+    "word": "offering",
+    "meaning": "提供的产品或服务；供给物",
+    "aliases": [
+      "提供的产品或服务",
+      "供给物",
+      "所提供之物",
+      "供品",
+      "奉献"
+    ],
+    "example": "The evening class is a new offering from the center.",
+    "translation": "晚间课程是这个中心新提供的一项服务。",
+    "collocation": "a cultural offering = 提供的文化活动",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "offerings"
+  },
+  {
+    "word": "individual",
+    "meaning": "个人；个体；个人的",
+    "aliases": [
+      "个人",
+      "个体",
+      "个人的",
+      "单独的",
+      "个别的",
+      "人"
+    ],
+    "example": "Each individual can make a difference.",
+    "translation": "每个人都能带来改变。",
+    "collocation": "individual needs = 个人需要",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "individuals"
+  },
+  {
+    "word": "interact",
+    "meaning": "互动；交流；相互作用",
+    "aliases": [
+      "互动",
+      "交流",
+      "相互作用",
+      "交往",
+      "相互影响",
+      "沟通"
+    ],
+    "example": "Visitors can interact with the digital display.",
+    "translation": "参观者可以与数字展品互动。",
+    "collocation": "interact with others = 与他人交流",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "interact"
+  },
+  {
+    "word": "capacity",
+    "meaning": "能力；容量；身份或职能",
+    "aliases": [
+      "能力",
+      "容量",
+      "身份或职能",
+      "容纳能力",
+      "职责",
+      "生产能力"
+    ],
+    "example": "The hall has a seating capacity of two hundred.",
+    "translation": "这个大厅可容纳两百人就座。",
+    "collocation": "serve in a capacity = 以某种身份任职",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "capacities"
+  },
+  {
+    "word": "incredible",
+    "meaning": "令人难以置信的；极好的",
+    "aliases": [
+      "令人难以置信的",
+      "极好的",
+      "惊人的",
+      "不可思议的",
+      "极大的"
+    ],
+    "example": "The team showed incredible patience.",
+    "translation": "团队表现出了惊人的耐心。",
+    "collocation": "incredible progress = 惊人的进步",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "incredible"
+  },
+  {
+    "word": "institution",
+    "meaning": "机构；制度",
+    "aliases": [
+      "机构",
+      "制度",
+      "组织",
+      "公共机构",
+      "习俗"
+    ],
+    "example": "The institution supports research and public education.",
+    "translation": "该机构支持研究和公共教育。",
+    "collocation": "an educational institution = 教育机构",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "institutions"
+  },
+  {
+    "word": "branch",
+    "meaning": "分支；分店；树枝",
+    "aliases": [
+      "分支",
+      "分店",
+      "树枝",
+      "分部",
+      "分行",
+      "支流"
+    ],
+    "example": "The bank opened a branch near the station.",
+    "translation": "银行在车站附近开设了一家分行。",
+    "collocation": "a local branch = 当地分支机构",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "branches"
+  },
+  {
+    "word": "outreach",
+    "meaning": "外展服务；主动联系与帮助",
+    "aliases": [
+      "外展服务",
+      "主动联系与帮助",
+      "拓展服务",
+      "社区推广",
+      "对外联络"
+    ],
+    "example": "The clinic runs an outreach program for older residents.",
+    "translation": "诊所为老年居民开展外展服务。",
+    "collocation": "community outreach = 社区外展服务",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "outreach"
+  },
+  {
+    "word": "partnership",
+    "meaning": "合作关系；伙伴关系",
+    "aliases": [
+      "合作关系",
+      "伙伴关系",
+      "合伙",
+      "协作",
+      "合作伙伴关系"
+    ],
+    "example": "The school formed a partnership with a local museum.",
+    "translation": "学校与当地博物馆建立了合作关系。",
+    "collocation": "build a partnership = 建立合作关系",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "partnerships"
+  },
+  {
+    "word": "strengthen",
+    "meaning": "加强；增强；巩固",
+    "aliases": [
+      "加强",
+      "增强",
+      "巩固",
+      "强化",
+      "使更坚固",
+      "壮大"
+    ],
+    "example": "Regular practice can strengthen your memory.",
+    "translation": "经常练习可以增强记忆力。",
+    "collocation": "strengthen connections = 加强联系",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "Strengthening"
+  },
+  {
+    "word": "responsibility",
+    "meaning": "责任；职责",
+    "aliases": [
+      "责任",
+      "职责",
+      "义务",
+      "负责",
+      "责任感"
+    ],
+    "example": "Protecting the equipment is everyone's responsibility.",
+    "translation": "保护设备是每个人的责任。",
+    "collocation": "take responsibility = 承担责任",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "responsibilities"
+  },
+  {
+    "word": "functional",
+    "meaning": "实用的；有功能的；运转正常的",
+    "aliases": [
+      "实用的",
+      "有功能的",
+      "运转正常的",
+      "功能性的",
+      "能起作用的",
+      "实用性强的"
+    ],
+    "example": "The room is small but functional.",
+    "translation": "这个房间虽小但很实用。",
+    "collocation": "a functional design = 实用的设计",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "functional"
+  },
+  {
+    "word": "depressed",
+    "meaning": "萧条的；沮丧的",
+    "aliases": [
+      "萧条的",
+      "沮丧的",
+      "不景气的",
+      "低迷的",
+      "抑郁的"
+    ],
+    "example": "New investment may help the depressed local economy.",
+    "translation": "新投资可能有助于萧条的当地经济。",
+    "collocation": "a depressed area = 经济萧条地区",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "depressed"
+  },
+  {
+    "word": "numerous",
+    "meaning": "许多的；众多的",
+    "aliases": [
+      "许多的",
+      "众多的",
+      "大量的",
+      "很多的",
+      "不计其数的"
+    ],
+    "example": "The plan offers numerous benefits.",
+    "translation": "这个计划带来诸多益处。",
+    "collocation": "numerous opportunities = 众多机会",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "numerous"
+  },
+  {
+    "word": "surrounding",
+    "meaning": "周围的；附近的",
+    "aliases": [
+      "周围的",
+      "附近的",
+      "四周的",
+      "邻近的"
+    ],
+    "example": "The building overlooks the surrounding countryside.",
+    "translation": "从这栋楼可以俯瞰周围的乡村。",
+    "collocation": "the surrounding area = 周边地区",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "surrounding"
+  },
+  {
+    "word": "transform",
+    "meaning": "改变；使转变",
+    "aliases": [
+      "改变",
+      "使转变",
+      "改造",
+      "转化",
+      "使改观"
+    ],
+    "example": "Better lighting can transform a room.",
+    "translation": "更好的照明可以使房间焕然一新。",
+    "collocation": "transform something into something = 将某物转变为另一事物",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "transformed"
+  },
+  {
+    "word": "hub",
+    "meaning": "中心；枢纽",
+    "aliases": [
+      "中心",
+      "枢纽",
+      "核心",
+      "活动中心",
+      "交通枢纽"
+    ],
+    "example": "The station is a major transport hub.",
+    "translation": "这个车站是重要的交通枢纽。",
+    "collocation": "a cultural hub = 文化中心",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "hubs"
+  },
+  {
+    "word": "vibrant",
+    "meaning": "充满活力的；鲜明的",
+    "aliases": [
+      "充满活力的",
+      "鲜明的",
+      "生机勃勃的",
+      "活跃的",
+      "鲜艳的"
+    ],
+    "example": "The market is a vibrant meeting place.",
+    "translation": "这个市场是一个充满活力的聚会场所。",
+    "collocation": "a vibrant community = 充满活力的社区",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "vibrant"
+  },
+  {
+    "word": "agency",
+    "meaning": "机构；代办处",
+    "aliases": [
+      "机构",
+      "代办处",
+      "机关",
+      "代理机构",
+      "办事处"
+    ],
+    "example": "The agency provides housing advice.",
+    "translation": "这家机构提供住房方面的建议。",
+    "collocation": "a government agency = 政府机构",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "agencies"
+  },
+  {
+    "word": "focal point",
+    "meaning": "焦点；中心点",
+    "aliases": [
+      "焦点",
+      "中心点",
+      "关注中心",
+      "集中点",
+      "核心"
+    ],
+    "example": "The square is a focal point for local celebrations.",
+    "translation": "这个广场是当地庆祝活动的中心。",
+    "collocation": "a focal point for discussion = 讨论的焦点",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "focal points"
+  },
+  {
+    "word": "livable",
+    "meaning": "适宜居住的",
+    "aliases": [
+      "适宜居住的",
+      "宜居的",
+      "可居住的",
+      "适合生活的"
+    ],
+    "example": "More green spaces can make a city livable.",
+    "translation": "更多绿地可以让城市适宜居住。",
+    "collocation": "a livable city = 宜居城市",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "livable"
+  },
+  {
+    "word": "sustainability",
+    "meaning": "可持续性；可持续发展",
+    "aliases": [
+      "可持续性",
+      "可持续发展",
+      "持续发展能力",
+      "可持续发展性"
+    ],
+    "example": "The company reviews the sustainability of its operations.",
+    "translation": "公司评估其经营的可持续性。",
+    "collocation": "environmental sustainability = 环境可持续性",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "sustainability"
+  },
+  {
+    "word": "craftsman",
+    "meaning": "工匠；手艺人",
+    "aliases": [
+      "工匠",
+      "手艺人",
+      "技工",
+      "匠人",
+      "工艺师"
+    ],
+    "example": "A skilled craftsman repaired the wooden chair.",
+    "translation": "一位熟练的工匠修好了木椅。",
+    "collocation": "a skilled craftsman = 熟练的工匠",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "craftsmen"
+  },
+  {
+    "word": "pioneer",
+    "meaning": "开创；率先开展；先驱",
+    "aliases": [
+      "开创",
+      "率先开展",
+      "先驱",
+      "开拓",
+      "倡导者",
+      "开拓者"
+    ],
+    "example": "Small teams can pioneer new ways of working.",
+    "translation": "小团队可以开创新的工作方式。",
+    "collocation": "pioneer a method = 开创一种方法",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "pioneer"
+  },
+  {
+    "word": "nurture",
+    "meaning": "培养；培育；养育",
+    "aliases": [
+      "培养",
+      "培育",
+      "养育",
+      "滋养",
+      "扶持",
+      "促进成长"
+    ],
+    "example": "Teachers can nurture a child's curiosity.",
+    "translation": "教师可以培养孩子的好奇心。",
+    "collocation": "nurture talent = 培养人才",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "nurtures"
+  },
+  {
+    "word": "foster",
+    "meaning": "促进；培养；鼓励",
+    "aliases": [
+      "促进",
+      "培养",
+      "鼓励",
+      "推动",
+      "培育",
+      "助长"
+    ],
+    "example": "Shared projects can foster trust.",
+    "translation": "共同开展项目可以增进信任。",
+    "collocation": "foster cooperation = 促进合作",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "fosters"
+  },
+  {
+    "word": "resilience",
+    "meaning": "适应力；恢复力；韧性",
+    "aliases": [
+      "适应力",
+      "恢复力",
+      "韧性",
+      "抗逆力",
+      "复原力",
+      "应变能力"
+    ],
+    "example": "Strong relationships can build resilience.",
+    "translation": "牢固的人际关系可以增强抗逆力。",
+    "collocation": "community resilience = 社区恢复力",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "resilience"
+  },
+  {
+    "word": "self-reliance",
+    "meaning": "自立；自力更生",
+    "aliases": [
+      "自立",
+      "自力更生",
+      "独立自主",
+      "自主能力",
+      "自立能力"
+    ],
+    "example": "Living alone taught him self-reliance.",
+    "translation": "独自生活使他学会了自立。",
+    "collocation": "encourage self-reliance = 鼓励自力更生",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "self-reliance"
+  },
+  {
+    "word": "artifact",
+    "meaning": "文物；人工制品",
+    "aliases": [
+      "文物",
+      "人工制品",
+      "器物",
+      "手工艺品",
+      "历史遗物"
+    ],
+    "example": "The museum displayed a rare artifact.",
+    "translation": "博物馆展出了一件稀有文物。",
+    "collocation": "a historic artifact = 历史文物",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "artifacts"
+  },
+  {
+    "word": "scholarly",
+    "meaning": "学术的；学者的",
+    "aliases": [
+      "学术的",
+      "学者的",
+      "学问精深的",
+      "学术研究的",
+      "有学识的"
+    ],
+    "example": "The library subscribes to several scholarly journals.",
+    "translation": "图书馆订阅了几种学术期刊。",
+    "collocation": "scholarly research = 学术研究",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "scholarly"
+  },
+  {
+    "word": "relevant to",
+    "meaning": "与…相关；对…有意义",
+    "aliases": [
+      "与…相关",
+      "对…有意义",
+      "有关联",
+      "切合",
+      "适用于"
+    ],
+    "example": "Please share only information relevant to this question.",
+    "translation": "请只分享与这个问题相关的信息。",
+    "collocation": "be relevant to a topic = 与话题相关",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "relevant to"
+  },
+  {
+    "word": "minority",
+    "meaning": "少数；少数群体",
+    "aliases": [
+      "少数",
+      "少数群体",
+      "少数人",
+      "少数民族",
+      "少数派"
+    ],
+    "example": "Only a minority supported the proposal.",
+    "translation": "只有少数人支持这项提议。",
+    "collocation": "a minority group = 少数群体",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "minority"
+  },
+  {
+    "word": "restoration",
+    "meaning": "修复；恢复；复原",
+    "aliases": [
+      "修复",
+      "恢复",
+      "复原",
+      "修缮",
+      "重建",
+      "归还"
+    ],
+    "example": "The painting needs careful restoration.",
+    "translation": "这幅画需要仔细修复。",
+    "collocation": "the restoration of old buildings = 旧建筑修复",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "restoration"
+  },
+  {
+    "word": "digitization",
+    "meaning": "数字化",
+    "aliases": [
+      "数字化",
+      "数码化",
+      "转为数字形式",
+      "数字转换"
+    ],
+    "example": "The digitization of records saves storage space.",
+    "translation": "档案数字化可以节省存储空间。",
+    "collocation": "the digitization of documents = 文档数字化",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "digitization"
+  },
+  {
+    "word": "vital",
+    "meaning": "至关重要的；必不可少的",
+    "aliases": [
+      "至关重要的",
+      "必不可少的",
+      "关键的",
+      "重要的",
+      "生命的"
+    ],
+    "example": "Clean water is vital to public health.",
+    "translation": "清洁的水对公共健康至关重要。",
+    "collocation": "play a vital role = 发挥关键作用",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "vital"
+  },
+  {
+    "word": "transition",
+    "meaning": "转变；过渡",
+    "aliases": [
+      "转变",
+      "过渡",
+      "转型",
+      "转换",
+      "变迁"
+    ],
+    "example": "The transition to a new school can be difficult.",
+    "translation": "转到一所新学校的过程可能很困难。",
+    "collocation": "a smooth transition = 平稳过渡",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "transitions"
+  },
+  {
+    "word": "periodical",
+    "meaning": "期刊；定期出版物",
+    "aliases": [
+      "期刊",
+      "定期出版物",
+      "杂志",
+      "刊物",
+      "定期的"
+    ],
+    "example": "She found the article in a science periodical.",
+    "translation": "她在一本科学期刊中找到了这篇文章。",
+    "collocation": "a monthly periodical = 月刊",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "periodicals"
+  },
+  {
+    "word": "free of charge",
+    "meaning": "免费；不收费",
+    "aliases": [
+      "免费",
+      "不收费",
+      "无偿",
+      "免收费用"
+    ],
+    "example": "The museum admits children free of charge.",
+    "translation": "这座博物馆允许儿童免费入场。",
+    "collocation": "provide something free of charge = 免费提供某物",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "free of charge"
+  },
+  {
+    "word": "inquiry",
+    "meaning": "探究；询问；调查",
+    "aliases": [
+      "探究",
+      "询问",
+      "调查",
+      "查询",
+      "研究",
+      "问询"
+    ],
+    "example": "The course encourages independent inquiry.",
+    "translation": "这门课程鼓励独立探究。",
+    "collocation": "scientific inquiry = 科学探究",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "paper",
+    "evidenceForm": "inquiry"
+  },
+  {
+    "word": "innovative",
+    "meaning": "创新的；新颖的",
+    "aliases": [
+      "创新的",
+      "新颖的",
+      "革新的",
+      "有创意的",
+      "富于创新的"
+    ],
+    "example": "The team proposed an innovative solution.",
+    "translation": "团队提出了一个创新的解决方案。",
+    "collocation": "innovative services = 创新服务",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "innovative"
+  },
+  {
+    "word": "afford",
+    "meaning": "负担得起；抽得出时间",
+    "aliases": [
+      "负担得起",
+      "抽得出时间",
+      "买得起",
+      "支付得起"
+    ],
+    "example": "We cannot afford a larger apartment.",
+    "translation": "我们负担不起更大的公寓。",
+    "collocation": "afford to buy something = 买得起某物",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "afford"
+  },
+  {
+    "word": "tutor",
+    "meaning": "家庭教师；辅导老师；辅导",
+    "aliases": [
+      "家庭教师",
+      "辅导老师",
+      "辅导",
+      "家教",
+      "指导教师"
+    ],
+    "example": "A tutor helped him prepare for the exam.",
+    "translation": "一位辅导老师帮助他备考。",
+    "collocation": "a private tutor = 私人家教",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "tutor"
+  },
+  {
+    "word": "bridge",
+    "meaning": "弥合；架桥；桥梁",
+    "aliases": [
+      "弥合",
+      "架桥",
+      "桥梁",
+      "缩小",
+      "跨越",
+      "沟通"
+    ],
+    "example": "Shared activities can bridge the gap between generations.",
+    "translation": "共同的活动可以缩小代际差距。",
+    "collocation": "bridge a divide = 弥合分歧",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "bridge"
+  },
+  {
+    "word": "divide",
+    "meaning": "差距；分歧；分开",
+    "aliases": [
+      "差距",
+      "分歧",
+      "分开",
+      "鸿沟",
+      "分割",
+      "划分"
+    ],
+    "example": "The project aims to close the digital divide.",
+    "translation": "这个项目旨在缩小数字鸿沟。",
+    "collocation": "the economic divide = 经济差距",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "divide"
+  },
+  {
+    "word": "annual",
+    "meaning": "每年的；年度的",
+    "aliases": [
+      "每年的",
+      "年度的",
+      "一年一次的",
+      "全年性的"
+    ],
+    "example": "The annual festival attracts many visitors.",
+    "translation": "一年一度的节日吸引了许多游客。",
+    "collocation": "an annual report = 年度报告",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "Annual"
+  },
+  {
+    "word": "conduct",
+    "meaning": "开展；实施；行为",
+    "aliases": [
+      "开展",
+      "实施",
+      "行为",
+      "进行",
+      "组织",
+      "举止"
+    ],
+    "example": "The team will conduct a safety check.",
+    "translation": "团队将开展安全检查。",
+    "collocation": "conduct research = 开展研究",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "conducted"
+  },
+  {
+    "word": "boost",
+    "meaning": "提高；促进；增长",
+    "aliases": [
+      "提高",
+      "促进",
+      "增长",
+      "增强",
+      "推动",
+      "激励"
+    ],
+    "example": "A short walk can boost your energy.",
+    "translation": "短暂散步可以让你更有精神。",
+    "collocation": "boost confidence = 增强信心",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "boost"
+  },
+  {
+    "word": "nationwide",
+    "meaning": "全国性的；在全国范围内",
+    "aliases": [
+      "全国性的",
+      "在全国范围内",
+      "遍及全国",
+      "全国范围的"
+    ],
+    "example": "The service will be available nationwide next month.",
+    "translation": "这项服务下个月将在全国推出。",
+    "collocation": "a nationwide survey = 全国性调查",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "nationwide"
+  },
+  {
+    "word": "participate in",
+    "meaning": "参加；参与",
+    "aliases": [
+      "参加",
+      "参与",
+      "加入",
+      "参预"
+    ],
+    "example": "Everyone can participate in the discussion.",
+    "translation": "每个人都可以参加讨论。",
+    "collocation": "participate in an activity = 参加活动",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "participate in"
+  },
+  {
+    "word": "immediate",
+    "meaning": "眼前的；紧邻的；立即的",
+    "aliases": [
+      "眼前的",
+      "紧邻的",
+      "立即的",
+      "直接的",
+      "即刻的",
+      "当前的"
+    ],
+    "example": "Food and shelter are their immediate needs.",
+    "translation": "食物和住所是他们眼前的需要。",
+    "collocation": "the immediate world = 身边的世界",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "immediate"
+  },
+  {
+    "word": "convince",
+    "meaning": "使相信；说服",
+    "aliases": [
+      "使相信",
+      "说服",
+      "使信服",
+      "劝服"
+    ],
+    "example": "The evidence may convince them to change the plan.",
+    "translation": "这些证据可能说服他们改变计划。",
+    "collocation": "convince someone of something = 使某人相信某事",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "convince"
+  },
+  {
+    "word": "equalizer",
+    "meaning": "使人平等的因素；平衡器",
+    "aliases": [
+      "使人平等的因素",
+      "平衡器",
+      "促进平等的事物",
+      "均衡器"
+    ],
+    "example": "Affordable education can be a powerful equalizer.",
+    "translation": "负担得起的教育可以有力地促进平等。",
+    "collocation": "a great equalizer = 有力促进平等的因素",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "equalizer"
+  },
+  {
+    "word": "enable",
+    "meaning": "使能够；使成为可能",
+    "aliases": [
+      "使能够",
+      "使成为可能",
+      "让…可以",
+      "使有条件",
+      "赋能"
+    ],
+    "example": "The grant will enable her to finish her research.",
+    "translation": "这笔资助将使她能够完成研究。",
+    "collocation": "enable someone to do something = 使某人能够做某事",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "enabling"
+  },
+  {
+    "word": "income",
+    "meaning": "收入；收益",
+    "aliases": [
+      "收入",
+      "收益",
+      "所得",
+      "进项"
+    ],
+    "example": "The family depends on one income.",
+    "translation": "这个家庭依靠一份收入生活。",
+    "collocation": "income level = 收入水平",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "income"
+  },
+  {
+    "word": "literary",
+    "meaning": "文学的；文学作品的",
+    "aliases": [
+      "文学的",
+      "文学作品的",
+      "文艺的",
+      "书面的"
+    ],
+    "example": "The club discusses literary works from different countries.",
+    "translation": "这个俱乐部讨论不同国家的文学作品。",
+    "collocation": "the literary arts = 文学艺术",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "literary"
+  },
+  {
+    "word": "at-risk",
+    "meaning": "处于危险中的；易受伤害的",
+    "aliases": [
+      "处于危险中的",
+      "易受伤害的",
+      "面临风险的",
+      "处境不利的"
+    ],
+    "example": "The program provides support for at-risk children.",
+    "translation": "这个项目为处于困境中的儿童提供支持。",
+    "collocation": "at-risk youth = 面临风险的青少年",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "at-risk"
+  },
+  {
+    "word": "socio-economic",
+    "meaning": "社会经济的",
+    "aliases": [
+      "社会经济的",
+      "社会和经济方面的",
+      "社会经济地位的"
+    ],
+    "example": "The study considers the socio-economic background of each family.",
+    "translation": "这项研究考虑了每个家庭的社会经济背景。",
+    "collocation": "socio-economic status = 社会经济地位",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "socio-economic"
+  },
+  {
+    "word": "status",
+    "meaning": "地位；状况；身份",
+    "aliases": [
+      "地位",
+      "状况",
+      "身份",
+      "情形",
+      "状态",
+      "社会地位"
+    ],
+    "example": "Education can influence a person's social status.",
+    "translation": "教育可以影响一个人的社会地位。",
+    "collocation": "social status = 社会地位",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "status"
+  },
+  {
+    "word": "consumer",
+    "meaning": "消费者；使用者",
+    "aliases": [
+      "消费者",
+      "使用者",
+      "顾客",
+      "消费用户"
+    ],
+    "example": "Every consumer has a right to clear information.",
+    "translation": "每位消费者都有权获得清楚的信息。",
+    "collocation": "consumer rights = 消费者权利",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "consumers"
+  },
+  {
+    "word": "producer",
+    "meaning": "生产者；制造商；制片人",
+    "aliases": [
+      "生产者",
+      "制造商",
+      "制片人",
+      "制造者",
+      "出品人"
+    ],
+    "example": "The producer sells directly to local shops.",
+    "translation": "生产商直接向当地商店供货。",
+    "collocation": "a food producer = 食品生产商",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "producers"
+  },
+  {
+    "word": "gain",
+    "meaning": "获得；增加；收益",
+    "aliases": [
+      "获得",
+      "增加",
+      "收益",
+      "得到",
+      "取得",
+      "增益"
+    ],
+    "example": "Students gain confidence through practice.",
+    "translation": "学生通过练习获得信心。",
+    "collocation": "gain knowledge = 获得知识",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "gain"
+  },
+  {
+    "word": "independent",
+    "meaning": "独立的；自主的",
+    "aliases": [
+      "独立的",
+      "自主的",
+      "自立的",
+      "不依赖的"
+    ],
+    "example": "The study was conducted by an independent group.",
+    "translation": "这项研究由独立团队开展。",
+    "collocation": "independent research = 独立研究",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "independent"
+  },
+  {
+    "word": "set up",
+    "meaning": "建立；设立；安装",
+    "aliases": [
+      "建立",
+      "设立",
+      "安装",
+      "创办",
+      "组建",
+      "设置"
+    ],
+    "example": "They plan to set up a reading club.",
+    "translation": "他们计划成立一个读书俱乐部。",
+    "collocation": "set up a business = 创业",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "set up"
+  },
+  {
+    "word": "workshop",
+    "meaning": "研讨班；实践培训班；车间",
+    "aliases": [
+      "研讨班",
+      "实践培训班",
+      "车间",
+      "工作坊",
+      "研习班",
+      "工场"
+    ],
+    "example": "The workshop teaches basic repair skills.",
+    "translation": "这个培训班教授基本维修技能。",
+    "collocation": "a writing workshop = 写作培训班",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "workshops"
+  },
+  {
+    "word": "creativity",
+    "meaning": "创造力；创意",
+    "aliases": [
+      "创造力",
+      "创意",
+      "创新能力",
+      "创造性"
+    ],
+    "example": "Drawing can encourage creativity.",
+    "translation": "绘画可以激发创造力。",
+    "collocation": "develop creativity = 培养创造力",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "creativity"
+  },
+  {
+    "word": "virtual",
+    "meaning": "虚拟的；实际上的",
+    "aliases": [
+      "虚拟的",
+      "实际上的",
+      "网络上的",
+      "事实上的"
+    ],
+    "example": "Visitors can take a virtual tour of the museum.",
+    "translation": "参观者可以在线虚拟游览博物馆。",
+    "collocation": "the virtual world = 虚拟世界",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "virtual"
+  },
+  {
+    "word": "ideology",
+    "meaning": "意识形态；思想体系",
+    "aliases": [
+      "意识形态",
+      "思想体系",
+      "观念体系",
+      "思想观念"
+    ],
+    "example": "Political ideology can shape public debate.",
+    "translation": "政治意识形态可以影响公共讨论。",
+    "collocation": "different ideologies = 不同的意识形态",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "ideologies"
+  },
+  {
+    "word": "dialogue",
+    "meaning": "对话；交流",
+    "aliases": [
+      "对话",
+      "交流",
+      "交谈",
+      "沟通"
+    ],
+    "example": "Honest dialogue can help resolve disagreements.",
+    "translation": "坦诚对话有助于解决分歧。",
+    "collocation": "engage in dialogue = 开展对话",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "dialogue"
+  },
+  {
+    "word": "uphold",
+    "meaning": "维护；坚持；支持",
+    "aliases": [
+      "维护",
+      "坚持",
+      "支持",
+      "捍卫",
+      "遵守",
+      "维持"
+    ],
+    "example": "Courts must uphold the law.",
+    "translation": "法院必须维护法律。",
+    "collocation": "uphold a principle = 坚持原则",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "upholding"
+  },
+  {
+    "word": "expression",
+    "meaning": "表达；表情；措辞",
+    "aliases": [
+      "表达",
+      "表情",
+      "措辞",
+      "表示",
+      "表现",
+      "说法"
+    ],
+    "example": "Music gives people a form of expression.",
+    "translation": "音乐为人们提供了一种表达方式。",
+    "collocation": "freedom of expression = 表达自由",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "expression"
+  },
+  {
+    "word": "preserve",
+    "meaning": "保存；保护；保留",
+    "aliases": [
+      "保存",
+      "保护",
+      "保留",
+      "维护",
+      "留存",
+      "保持"
+    ],
+    "example": "The town wants to preserve its old buildings.",
+    "translation": "小镇希望保护旧建筑。",
+    "collocation": "preserve cultural heritage = 保护文化遗产",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "preserve"
+  },
+  {
+    "word": "oral",
+    "meaning": "口头的；口述的；口腔的",
+    "aliases": [
+      "口头的",
+      "口述的",
+      "口腔的",
+      "非书面的",
+      "口语的"
+    ],
+    "example": "The exam includes an oral presentation.",
+    "translation": "考试包括一次口头报告。",
+    "collocation": "oral history = 口述历史",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "oral"
+  },
+  {
+    "word": "archivist",
+    "meaning": "档案管理员；档案工作者",
+    "aliases": [
+      "档案管理员",
+      "档案工作者",
+      "档案馆员",
+      "档案管理人员"
+    ],
+    "example": "An archivist carefully organized the old letters.",
+    "translation": "一位档案管理员仔细整理了旧信件。",
+    "collocation": "a professional archivist = 专业档案工作者",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "archivist"
+  },
+  {
+    "word": "coordinate",
+    "meaning": "协调；使配合",
+    "aliases": [
+      "协调",
+      "使配合",
+      "统筹",
+      "协同",
+      "安排"
+    ],
+    "example": "We need to coordinate the work of several teams.",
+    "translation": "我们需要协调几个团队的工作。",
+    "collocation": "coordinate activities = 协调活动",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "coordinates"
+  },
+  {
+    "word": "preservation",
+    "meaning": "保护；保存；维护",
+    "aliases": [
+      "保护",
+      "保存",
+      "维护",
+      "保全",
+      "留存",
+      "保养"
+    ],
+    "example": "The project supports the preservation of local history.",
+    "translation": "这个项目支持保存地方历史。",
+    "collocation": "historic preservation = 历史遗产保护",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "preservation"
+  },
+  {
+    "word": "creation",
+    "meaning": "创造；创作；创作物",
+    "aliases": [
+      "创造",
+      "创作",
+      "创作物",
+      "建立",
+      "作品",
+      "产生"
+    ],
+    "example": "The course explores the creation of digital art.",
+    "translation": "这门课程探讨数字艺术的创作。",
+    "collocation": "the creation of jobs = 就业岗位的创造",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "creation"
+  },
+  {
+    "word": "current events",
+    "meaning": "时事；当前发生的事件",
+    "aliases": [
+      "时事",
+      "当前发生的事件",
+      "新闻时事",
+      "近期事件"
+    ],
+    "example": "The class discusses current events every Friday.",
+    "translation": "这个班每周五讨论时事。",
+    "collocation": "discuss current events = 讨论时事",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "current events"
+  },
+  {
+    "word": "in person",
+    "meaning": "亲自；当面",
+    "aliases": [
+      "亲自",
+      "当面",
+      "本人到场",
+      "面对面"
+    ],
+    "example": "You can collect the documents in person.",
+    "translation": "你可以亲自领取文件。",
+    "collocation": "meet in person = 当面见面",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "in person"
+  },
+  {
+    "word": "at large",
+    "meaning": "整个；总体上；在逃的",
+    "aliases": [
+      "整个",
+      "总体上",
+      "在逃的",
+      "广泛地",
+      "全体",
+      "逍遥法外的"
+    ],
+    "example": "The decision will affect society at large.",
+    "translation": "这个决定将影响整个社会。",
+    "collocation": "the world at large = 整个世界",
+    "source": "长篇匹配·公共图书馆",
+    "priority": "core",
+    "evidenceForm": "at large"
+  },
+  {
+    "word": "counsel",
+    "meaning": "劝告；建议；忠告",
+    "aliases": [
+      "劝告",
+      "建议",
+      "忠告",
+      "指导",
+      "咨询意见"
+    ],
+    "example": "A good mentor can counsel students on career choices.",
+    "translation": "好的导师可以就职业选择向学生提供建议。",
+    "collocation": "career counsel = 职业建议",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "counseled"
+  },
+  {
+    "word": "passionate",
+    "meaning": "充满热情的；热爱的",
+    "aliases": [
+      "充满热情的",
+      "热爱的",
+      "热情的",
+      "热衷的"
+    ],
+    "example": "She is passionate about public health.",
+    "translation": "她热衷于公共卫生事业。",
+    "collocation": "be passionate about something = 热爱某事",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "passionate"
+  },
+  {
+    "word": "situated",
+    "meaning": "处于某种境况的；位于…的",
+    "aliases": [
+      "处于某种境况的",
+      "位于…的",
+      "坐落于",
+      "处境…的"
+    ],
+    "example": "The hotel is situated near the river.",
+    "translation": "这家酒店坐落在河边。",
+    "collocation": "be well situated to do something = 有良好条件做某事",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "situated"
+  },
+  {
+    "word": "come along",
+    "meaning": "出现；到来；一起去",
+    "aliases": [
+      "出现",
+      "到来",
+      "一起去",
+      "发生",
+      "进展",
+      "跟着来"
+    ],
+    "example": "Another opportunity may come along soon.",
+    "translation": "另一个机会可能很快就会出现。",
+    "collocation": "come along unexpectedly = 意外出现",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "comes along"
+  },
+  {
+    "word": "consequence",
+    "meaning": "结果；后果",
+    "aliases": [
+      "结果",
+      "后果",
+      "影响",
+      "结局",
+      "重要性"
+    ],
+    "example": "Every decision has a consequence.",
+    "translation": "每个决定都会产生后果。",
+    "collocation": "a serious consequence = 严重后果",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "consequences"
+  },
+  {
+    "word": "soundness",
+    "meaning": "合理性；可靠性；稳健性",
+    "aliases": [
+      "合理性",
+      "可靠性",
+      "稳健性",
+      "正确性",
+      "健全性",
+      "牢固程度"
+    ],
+    "example": "The data support the soundness of the method.",
+    "translation": "这些数据支持了这一方法的可靠性。",
+    "collocation": "the soundness of an argument = 论证的合理性",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "soundness"
+  },
+  {
+    "word": "financial backing",
+    "meaning": "资金支持；财力支持",
+    "aliases": [
+      "资金支持",
+      "财力支持",
+      "经济支持",
+      "财政支持",
+      "财务支持"
+    ],
+    "example": "The project needs financial backing to continue.",
+    "translation": "这个项目需要资金支持才能继续。",
+    "collocation": "secure financial backing = 获得资金支持",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "Financial backing"
+  },
+  {
+    "word": "socioeconomic",
+    "meaning": "社会经济的",
+    "aliases": [
+      "社会经济的",
+      "社会与经济的",
+      "涉及社会经济地位的"
+    ],
+    "example": "The policy may widen socioeconomic differences.",
+    "translation": "这项政策可能扩大社会经济差异。",
+    "collocation": "socioeconomic inequality = 社会经济不平等",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "socioeconomic"
+  },
+  {
+    "word": "in part",
+    "meaning": "部分地；在某种程度上",
+    "aliases": [
+      "部分地",
+      "在某种程度上",
+      "一定程度上",
+      "部分原因是"
+    ],
+    "example": "The delay was caused in part by bad weather.",
+    "translation": "延误部分是由恶劣天气造成的。",
+    "collocation": "at least in part = 至少部分地",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "in part"
+  },
+  {
+    "word": "job stability",
+    "meaning": "工作稳定性",
+    "aliases": [
+      "工作稳定性",
+      "职业稳定",
+      "就业稳定性"
+    ],
+    "example": "The new contract offers greater job stability.",
+    "translation": "新合同提供了更高的工作稳定性。",
+    "collocation": "value job stability = 重视工作稳定性",
+    "source": "仔细阅读·职业热爱",
+    "priority": "core",
+    "evidenceForm": "job stability"
+  },
+  {
+    "word": "medical",
+    "meaning": "医疗的；医学的",
+    "aliases": [
+      "医疗的",
+      "医学的",
+      "医务的",
+      "医药的"
+    ],
+    "example": "The village needs better medical services.",
+    "translation": "这个村庄需要更好的医疗服务。",
+    "collocation": "medical care = 医疗护理",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "medical"
+  },
+  {
+    "word": "identify",
+    "meaning": "识别；找出；确认",
+    "aliases": [
+      "识别",
+      "找出",
+      "确认",
+      "确定",
+      "辨认",
+      "认出"
+    ],
+    "example": "Tests can help identify the problem.",
+    "translation": "测试可以帮助找出问题。",
+    "collocation": "identify a cause = 找出原因",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "Identifying"
+  },
+  {
+    "word": "reframe",
+    "meaning": "重新表述；换个角度看待",
+    "aliases": [
+      "重新表述",
+      "换个角度看待",
+      "重新界定",
+      "重新构建",
+      "重新审视"
+    ],
+    "example": "We can reframe the problem as an opportunity.",
+    "translation": "我们可以换个角度，把这个问题看作机会。",
+    "collocation": "reframe a question = 重新表述问题",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "Reframing"
+  },
+  {
+    "word": "needy",
+    "meaning": "贫困的；需要帮助的",
+    "aliases": [
+      "贫困的",
+      "需要帮助的",
+      "贫穷的",
+      "缺乏生活必需品的"
+    ],
+    "example": "The charity delivers food to needy families.",
+    "translation": "这家慈善机构向贫困家庭送食品。",
+    "collocation": "needy children = 贫困儿童",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "needy"
+  },
+  {
+    "word": "confront",
+    "meaning": "面对；遭遇；对抗",
+    "aliases": [
+      "面对",
+      "遭遇",
+      "对抗",
+      "面临",
+      "正视",
+      "与…对峙"
+    ],
+    "example": "We must confront the problem honestly.",
+    "translation": "我们必须诚实地面对这个问题。",
+    "collocation": "confront a challenge = 面对挑战",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "confronting"
+  },
+  {
+    "word": "formulate",
+    "meaning": "制定；构想；明确表达",
+    "aliases": [
+      "制定",
+      "构想",
+      "明确表达",
+      "拟定",
+      "形成",
+      "阐述"
+    ],
+    "example": "The team will formulate a new strategy.",
+    "translation": "团队将制定一项新策略。",
+    "collocation": "formulate a policy = 制定政策",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "formulating"
+  },
+  {
+    "word": "comparatively",
+    "meaning": "相对地；比较而言",
+    "aliases": [
+      "相对地",
+      "比较而言",
+      "比较地",
+      "较为",
+      "相较之下"
+    ],
+    "example": "This route is comparatively safe.",
+    "translation": "这条路线相对安全。",
+    "collocation": "comparatively better = 相对更好",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "comparatively"
+  },
+  {
+    "word": "worrisome",
+    "meaning": "令人担忧的",
+    "aliases": [
+      "令人担忧的",
+      "令人不安的",
+      "让人忧虑的"
+    ],
+    "example": "The latest figures show a worrisome trend.",
+    "translation": "最新数据表明了一种令人担忧的趋势。",
+    "collocation": "a worrisome development = 令人担忧的变化",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "worrisome"
+  },
+  {
+    "word": "as a result",
+    "meaning": "结果；因此",
+    "aliases": [
+      "结果",
+      "因此",
+      "因而",
+      "由此",
+      "所以"
+    ],
+    "example": "He practiced daily; as a result, his skills improved.",
+    "translation": "他每天练习，因此技能提高了。",
+    "collocation": "as a result of something = 由于某事",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "As a result"
+  },
+  {
+    "word": "end up",
+    "meaning": "最终处于；最终成为",
+    "aliases": [
+      "最终处于",
+      "最终成为",
+      "结果是",
+      "到头来",
+      "最终落得"
+    ],
+    "example": "Careless plans can end up costing more.",
+    "translation": "草率的计划最终可能花费更多。",
+    "collocation": "end up in trouble = 最终陷入困境",
+    "source": "仔细阅读·缺勤",
+    "priority": "core",
+    "evidenceForm": "end up"
+  }
+]

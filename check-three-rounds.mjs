@@ -1,0 +1,27 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {emptyDB,DAY,dayKey,nextDayTime,migrateThree,recordStage,passedToday,selectThreeWords,mergeWordDecks,grade,validateBackup} from './dist/learning-core.mjs';
+import {choiceOptions} from './dist/three-round-ui.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const lists=['base-words','paper-words','paper-extra-reading','paper-extra-mixed','paper-writing-translation'].map(p=>read('dist/'+p+'.json'));
+const deck=mergeWordDecks(lists),ids=deck.map(w=>w.word);
+assert.ok(deck.length>300);assert.equal(new Set(ids).size,ids.length);
+for(const w of deck){assert.ok(w.aliases.length&&w.example&&w.translation&&w.collocation&&w.source,w.word);const escaped=w.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');assert.equal((w.example.match(new RegExp('\\b'+escaped+'\\b','gi'))||[]).length,1,w.word);for(const r of [1,2]){const opts=choiceOptions(w,deck,r);assert.equal(opts.length,4);assert.equal(new Set(opts.map(o=>o.word)).size,4);assert.equal(opts.filter(o=>o.word===w.word).length,1);}}
+const now=new Date('2026-11-13T23:50:00+08:00').getTime(),db=emptyDB();
+recordStage(db,'avoid',1,true,false,now);assert.equal(passedToday(db.memories.avoid,now),false);
+recordStage(db,'avoid',2,true,false,now);assert.equal(passedToday(db.memories.avoid,now),false);
+recordStage(db,'avoid',3,false,false,now);assert.equal(db.memories.avoid.stage,0);assert.equal(passedToday(db.memories.avoid,now),false);
+assert.throws(()=>recordStage(db,'avoid',3,true,false,now));
+for(const round of [1,2,3])recordStage(db,'avoid',round,true,false,now);
+assert.equal(passedToday(db.memories.avoid,now),true);assert.equal(db.memories.avoid.due,new Date('2026-11-14T00:00:00+08:00').getTime());
+assert.equal(selectThreeWords(deck,db,'due',100,now).includes('avoid'),false);
+assert.equal(selectThreeWords(deck,db,'due',100,nextDayTime(now)).includes('avoid'),true);
+recordStage(db,'avoid',1,false,false,nextDayTime(now));assert.equal(db.memories.avoid.stage,0);
+assert.equal(dayKey(now),'2026-11-13');assert.equal(dayKey(nextDayTime(now)),'2026-11-14');
+const legacy={version:2,type:'cet6-learning',memories:{avoid:{attempts:7,correct:5,failures:2,box:1,correctDays:['2026-11-12'],due:now+7*DAY}},logs:[],overrides:{},session:{mode:'meaning'}};
+migrateThree(legacy,now);assert.equal(legacy.version,3);assert.equal(legacy.memories.avoid.attempts,7);assert.equal(legacy.memories.avoid.stage,0);assert.equal(legacy.session,null);
+validateBackup({type:'cet6-learning-backup',version:3,learning:db},ids);
+assert.equal(grade({meaning:'避开',confidence:'known'},deck.find(w=>w.word==='avoid')),'correct');
+assert.equal(grade({meaning:'这个释义需要人工确认',confidence:'known'},deck.find(w=>w.word==='avoid')),'pending');
+assert.equal(selectThreeWords(deck,emptyDB(),'all',deck.length,now).length,deck.length);
+console.log(`PASS: ${deck.length} unique words/phrases, original examples, distinct choices, three-stage gating, reset on error, next-calendar-day retest, v2 migration, aliases, backup and unlimited group selection.`);

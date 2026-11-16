@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {emptyDB,DAY,recordStage,recordSpellingAid,needsSpellingAid,spellingMatches,passedToday,recordSpotCheck} from './dist/learning-core.mjs';
+import {planTraining,attachAnswerTiming} from './dist/adaptive-training.mjs';
+const now=new Date('2026-11-13T12:00:00+08:00').getTime(),db=emptyDB();
+recordStage(db,'require',1,false,false,now);assert.equal(needsSpellingAid(db.memories.require),false);
+recordStage(db,'require',1,false,false,now);assert.equal(needsSpellingAid(db.memories.require),true);
+recordSpellingAid(db,'require',false,true,now);assert.equal(needsSpellingAid(db.memories.require),true);
+recordSpellingAid(db,'require',true,true,now);assert.equal(needsSpellingAid(db.memories.require),false);assert.equal(db.memories.require.stage,0);assert.equal(passedToday(db.memories.require,now),false);
+assert.equal(db.logs.at(-1).assist,true);assert.equal(db.logs.at(-1).hintSeen,true);
+assert.equal(spellingMatches(' REQUIRE ','require'),true);assert.equal(spellingMatches('space   station','space station'),true);
+for(const r of [1,2,3])recordStage(db,'require',r,true,false,now);
+const due=db.memories.require.due;recordSpotCheck(db,'require',true,false,now+DAY);
+const longDue=db.memories.require.due;attachAnswerTiming(db,'require',{activeMs:80000,reliable:true,interrupted:false,hintUsed:false,audioUsed:false},3,now+DAY);assert.ok(db.memories.require.due<longDue);assert.equal(db.memories.require.slowRecall,true);
+const savedDue=db.memories.require.due;recordSpotCheck(db,'require',true,false,now+DAY+60000);attachAnswerTiming(db,'require',{activeMs:80000,reliable:true,interrupted:false,hintUsed:false,audioUsed:false},3,now+DAY+60000);assert.equal(db.memories.require.due,savedDue);
+recordSpotCheck(db,'require',true,false,now+4*DAY);const protectedDue=db.memories.require.due;attachAnswerTiming(db,'require',{activeMs:90000,reliable:true,interrupted:true,hintUsed:false,audioUsed:false},3,now+4*DAY);assert.equal(db.memories.require.due,protectedDue);
+const deck=Array.from({length:30},(_,i)=>({word:'word'+i,priority:i<20?'core':'paper',source:'test'}));const mixed=emptyDB();for(let i=0;i<12;i++)mixed.memories['word'+i]={initialized:true,attempts:2,due:now-10000,needsRelearn:true,stage:0};const plan=planTraining(deck,mixed,10,now,()=>.5);assert.equal(plan.words.length,10);assert.equal(new Set(plan.words).size,10);assert.equal(plan.newCount,3);assert.ok(plan.words.slice(0,4).some(w=>Number(w.slice(4))>=12));assert.ok(plan.words.every(w=>Number(w.slice(4))<20));
+const randomDB=emptyDB();for(const r of [1,2,3])recordStage(randomDB,'word0',r,true,false,now-3600000);const withCheck=planTraining(deck,randomDB,10,now,()=>0);assert.ok(withCheck.checkWords.includes('word0'));assert.equal(withCheck.words.length,10);
+console.log('PASS: automatic mixed queue, core-word priority, passed-word sampling, timing-aware due adjustment, interruption protection, early-check schedule protection, spelling-aid threshold and no automatic pass.');

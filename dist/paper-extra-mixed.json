@@ -1,0 +1,1769 @@
+[
+  {
+    "word": "technician",
+    "meaning": "技术员",
+    "aliases": [
+      "技术员"
+    ],
+    "example": "A technician repaired my laptop.",
+    "translation": "一名技术员修好了我的笔记本电脑。",
+    "collocation": "computer technician = 计算机技术员",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "technician"
+  },
+  {
+    "word": "maintenance",
+    "meaning": "维护；维修",
+    "aliases": [
+      "维护",
+      "维修"
+    ],
+    "example": "Regular maintenance keeps the machine safe.",
+    "translation": "定期维护能保证机器安全。",
+    "collocation": "regular maintenance = 定期维护",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "maintenance"
+  },
+  {
+    "word": "consult",
+    "meaning": "咨询；请教",
+    "aliases": [
+      "咨询",
+      "请教"
+    ],
+    "example": "You can consult a teacher about the problem.",
+    "translation": "你可以就这个问题请教老师。",
+    "collocation": "consult an expert = 咨询专家",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "Consulted"
+  },
+  {
+    "word": "in charge",
+    "meaning": "负责；主管",
+    "aliases": [
+      "负责",
+      "主管"
+    ],
+    "example": "Who is in charge of this project?",
+    "translation": "谁负责这个项目？",
+    "collocation": "be in charge of = 负责……",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "in charge"
+  },
+  {
+    "word": "designate",
+    "meaning": "指定；指派",
+    "aliases": [
+      "指定",
+      "指派"
+    ],
+    "example": "The team will designate a new leader.",
+    "translation": "团队将指定一位新负责人。",
+    "collocation": "designate a leader = 指定负责人",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "Designated"
+  },
+  {
+    "word": "engineer",
+    "meaning": "工程师",
+    "aliases": [
+      "工程师"
+    ],
+    "example": "An engineer checked the bridge carefully.",
+    "translation": "一位工程师仔细检查了这座桥。",
+    "collocation": "civil engineer = 土木工程师",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "engineer"
+  },
+  {
+    "word": "frustration",
+    "meaning": "沮丧；挫败感",
+    "aliases": [
+      "沮丧",
+      "挫败感"
+    ],
+    "example": "She felt frustration when the plan failed.",
+    "translation": "计划失败时她感到沮丧。",
+    "collocation": "a sense of frustration = 挫败感",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "frustration"
+  },
+  {
+    "word": "intimidation",
+    "meaning": "恐吓；威胁",
+    "aliases": [
+      "恐吓",
+      "威胁"
+    ],
+    "example": "The school does not accept intimidation of students.",
+    "translation": "学校不容许对学生进行恐吓。",
+    "collocation": "threats and intimidation = 威胁与恐吓",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "intimidation"
+  },
+  {
+    "word": "desperation",
+    "meaning": "绝望；走投无路",
+    "aliases": [
+      "绝望",
+      "走投无路"
+    ],
+    "example": "In desperation, he asked his neighbors for help.",
+    "translation": "走投无路时，他向邻居求助。",
+    "collocation": "in desperation = 绝望之下",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "desperation"
+  },
+  {
+    "word": "indignation",
+    "meaning": "愤怒；愤慨",
+    "aliases": [
+      "愤怒",
+      "愤慨"
+    ],
+    "example": "The unfair decision caused public indignation.",
+    "translation": "这个不公正的决定引起了公众愤慨。",
+    "collocation": "public indignation = 公愤",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "indignation"
+  },
+  {
+    "word": "content",
+    "meaning": "内容",
+    "aliases": [
+      "内容"
+    ],
+    "example": "Please check the content of the report.",
+    "translation": "请检查报告的内容。",
+    "collocation": "course content = 课程内容",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "contents"
+  },
+  {
+    "word": "back up",
+    "meaning": "备份；支持",
+    "aliases": [
+      "备份",
+      "支持"
+    ],
+    "example": "You should back up important files.",
+    "translation": "你应该备份重要文件。",
+    "collocation": "back up data = 备份数据",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "backed up"
+  },
+  {
+    "word": "store",
+    "meaning": "储存；存放",
+    "aliases": [
+      "储存",
+      "存放"
+    ],
+    "example": "We can store these files online.",
+    "translation": "我们可以在网上储存这些文件。",
+    "collocation": "store information = 储存信息",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "stored"
+  },
+  {
+    "word": "hard drive",
+    "meaning": "硬盘",
+    "aliases": [
+      "硬盘"
+    ],
+    "example": "My hard drive is almost full.",
+    "translation": "我的硬盘快满了。",
+    "collocation": "external hard drive = 外置硬盘",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "hard drive"
+  },
+  {
+    "word": "wipe",
+    "meaning": "擦除；擦拭",
+    "aliases": [
+      "擦除",
+      "擦拭"
+    ],
+    "example": "Please wipe the screen with a soft cloth.",
+    "translation": "请用软布擦拭屏幕。",
+    "collocation": "wipe data = 清除数据",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "wipe"
+  },
+  {
+    "word": "directory",
+    "meaning": "目录；文件夹",
+    "aliases": [
+      "目录",
+      "文件夹"
+    ],
+    "example": "Save the document in this directory.",
+    "translation": "把文件保存在这个目录中。",
+    "collocation": "system directory = 系统目录",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "directories"
+  },
+  {
+    "word": "challenging",
+    "meaning": "有挑战性的；困难的",
+    "aliases": [
+      "有挑战性的",
+      "困难的"
+    ],
+    "example": "Learning a new language can be challenging.",
+    "translation": "学习一门新语言可能很有挑战性。",
+    "collocation": "a challenging task = 有挑战性的任务",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "challenging"
+  },
+  {
+    "word": "arbitrate",
+    "meaning": "仲裁；公断",
+    "aliases": [
+      "仲裁",
+      "公断"
+    ],
+    "example": "A neutral person will arbitrate the dispute.",
+    "translation": "一位中立人士将仲裁这场争议。",
+    "collocation": "arbitrate a dispute = 仲裁争议",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "Arbitrating"
+  },
+  {
+    "word": "solicitor",
+    "meaning": "律师",
+    "aliases": [
+      "律师"
+    ],
+    "example": "She asked a solicitor to explain the contract.",
+    "translation": "她请律师解释这份合同。",
+    "collocation": "consult a solicitor = 咨询律师",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "solicitors"
+  },
+  {
+    "word": "prevent",
+    "meaning": "阻止；预防",
+    "aliases": [
+      "阻止",
+      "预防"
+    ],
+    "example": "Simple checks can prevent serious accidents.",
+    "translation": "简单的检查能够预防严重事故。",
+    "collocation": "prevent an accident = 预防事故",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "Preventing"
+  },
+  {
+    "word": "dispute",
+    "meaning": "争议；纠纷",
+    "aliases": [
+      "争议",
+      "纠纷"
+    ],
+    "example": "They settled the dispute through discussion.",
+    "translation": "他们通过讨论解决了纠纷。",
+    "collocation": "a legal dispute = 法律纠纷",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "disputes"
+  },
+  {
+    "word": "escalate",
+    "meaning": "升级；加剧",
+    "aliases": [
+      "升级",
+      "加剧"
+    ],
+    "example": "Small problems can escalate without attention.",
+    "translation": "小问题不受重视就可能升级。",
+    "collocation": "escalate a conflict = 加剧冲突",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "escalating"
+  },
+  {
+    "word": "property",
+    "meaning": "财产；房地产",
+    "aliases": [
+      "财产",
+      "房地产"
+    ],
+    "example": "The storm damaged private property.",
+    "translation": "暴风雨损坏了私人财产。",
+    "collocation": "private property = 私人财产",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "property"
+  },
+  {
+    "word": "mediate",
+    "meaning": "调解；斡旋",
+    "aliases": [
+      "调解",
+      "斡旋"
+    ],
+    "example": "A teacher helped mediate the disagreement.",
+    "translation": "一位老师帮助调解了分歧。",
+    "collocation": "mediate a dispute = 调解争议",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "Mediating"
+  },
+  {
+    "word": "court",
+    "meaning": "法院；法庭",
+    "aliases": [
+      "法院",
+      "法庭"
+    ],
+    "example": "The case will go to court next month.",
+    "translation": "这个案件下个月将提交法庭审理。",
+    "collocation": "go to court = 提起诉讼",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "Courts"
+  },
+  {
+    "word": "intend",
+    "meaning": "打算；意图",
+    "aliases": [
+      "打算",
+      "意图"
+    ],
+    "example": "I intend to apply for the course.",
+    "translation": "我打算申请这门课程。",
+    "collocation": "intend to do = 打算做某事",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "intended"
+  },
+  {
+    "word": "legal",
+    "meaning": "法律的；合法的",
+    "aliases": [
+      "法律的",
+      "合法的"
+    ],
+    "example": "Everyone should understand their legal rights.",
+    "translation": "每个人都应了解自己的法律权利。",
+    "collocation": "legal advice = 法律建议",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "legal"
+  },
+  {
+    "word": "bureaucratic",
+    "meaning": "官僚的；繁文缛节的",
+    "aliases": [
+      "官僚的",
+      "繁文缛节的"
+    ],
+    "example": "The application involves a bureaucratic process.",
+    "translation": "这项申请涉及繁琐的行政程序。",
+    "collocation": "bureaucratic procedure = 繁琐的行政程序",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "bureaucratic"
+  },
+  {
+    "word": "function",
+    "meaning": "起作用；功能",
+    "aliases": [
+      "起作用",
+      "功能"
+    ],
+    "example": "The old machine can still function well.",
+    "translation": "这台旧机器仍能正常运转。",
+    "collocation": "function properly = 正常运转",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "function"
+  },
+  {
+    "word": "frightening",
+    "meaning": "令人害怕的；可怕的",
+    "aliases": [
+      "令人害怕的",
+      "可怕的"
+    ],
+    "example": "The sudden noise was frightening.",
+    "translation": "突如其来的噪声令人害怕。",
+    "collocation": "a frightening experience = 可怕的经历",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "frightening"
+  },
+  {
+    "word": "arbitrary",
+    "meaning": "武断的；任意的",
+    "aliases": [
+      "武断的",
+      "任意的"
+    ],
+    "example": "Rules should be clear rather than arbitrary.",
+    "translation": "规则应当明确，而不是随意制定。",
+    "collocation": "an arbitrary decision = 武断的决定",
+    "source": "听力选项·长对话",
+    "priority": "paper",
+    "evidenceForm": "arbitrary"
+  },
+  {
+    "word": "argument",
+    "meaning": "论点；争论",
+    "aliases": [
+      "论点",
+      "争论"
+    ],
+    "example": "Her argument is supported by clear facts.",
+    "translation": "她的论点有明确事实支持。",
+    "collocation": "support an argument = 支持论点",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "arguments"
+  },
+  {
+    "word": "unique",
+    "meaning": "独特的；独一无二的",
+    "aliases": [
+      "独特的",
+      "独一无二的"
+    ],
+    "example": "Each student brings a unique experience.",
+    "translation": "每个学生都有独特的经历。",
+    "collocation": "a unique opportunity = 独特的机会",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "unique"
+  },
+  {
+    "word": "conflict",
+    "meaning": "冲突；矛盾",
+    "aliases": [
+      "冲突",
+      "矛盾"
+    ],
+    "example": "Honest discussion can solve a conflict.",
+    "translation": "坦诚讨论可以解决冲突。",
+    "collocation": "resolve a conflict = 解决冲突",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "conflicts"
+  },
+  {
+    "word": "foresee",
+    "meaning": "预见；预料",
+    "aliases": [
+      "预见",
+      "预料"
+    ],
+    "example": "Nobody could foresee the sudden change.",
+    "translation": "没有人能预见这个突然的变化。",
+    "collocation": "foresee a problem = 预见问题",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "foreseeing"
+  },
+  {
+    "word": "potential",
+    "meaning": "潜在的；可能的",
+    "aliases": [
+      "潜在的",
+      "可能的"
+    ],
+    "example": "The project may create potential risks.",
+    "translation": "这个项目可能带来潜在风险。",
+    "collocation": "potential benefits = 潜在益处",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "potential"
+  },
+  {
+    "word": "stake",
+    "meaning": "利害关系；风险",
+    "aliases": [
+      "利害关系",
+      "风险"
+    ],
+    "example": "A great deal is at stake in this decision.",
+    "translation": "这个决定关系重大。",
+    "collocation": "at stake = 处于风险中；关系到",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "stakes"
+  },
+  {
+    "word": "express",
+    "meaning": "表达；表示",
+    "aliases": [
+      "表达",
+      "表示"
+    ],
+    "example": "Please express your ideas clearly.",
+    "translation": "请清楚地表达你的想法。",
+    "collocation": "express an opinion = 表达观点",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "express"
+  },
+  {
+    "word": "forcefully",
+    "meaning": "有力地；强烈地",
+    "aliases": [
+      "有力地",
+      "强烈地"
+    ],
+    "example": "She spoke forcefully about the need for change.",
+    "translation": "她有力地阐述了改变的必要性。",
+    "collocation": "argue forcefully = 有力地论证",
+    "source": "听力选项·长对话",
+    "priority": "core",
+    "evidenceForm": "forcefully"
+  },
+  {
+    "word": "prior",
+    "meaning": "先前的；事先的",
+    "aliases": [
+      "先前的",
+      "事先的"
+    ],
+    "example": "No prior experience is required.",
+    "translation": "不要求有先前经验。",
+    "collocation": "prior knowledge = 已有知识",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "prior"
+  },
+  {
+    "word": "creativity",
+    "meaning": "创造力",
+    "aliases": [
+      "创造力"
+    ],
+    "example": "Art classes can encourage creativity.",
+    "translation": "美术课可以激发创造力。",
+    "collocation": "develop creativity = 培养创造力",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "creativity"
+  },
+  {
+    "word": "novel",
+    "meaning": "新颖的；新奇的",
+    "aliases": [
+      "新颖的",
+      "新奇的"
+    ],
+    "example": "They proposed a novel solution.",
+    "translation": "他们提出了一个新颖的解决办法。",
+    "collocation": "a novel approach = 新方法",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "novel"
+  },
+  {
+    "word": "propose",
+    "meaning": "提出；建议",
+    "aliases": [
+      "提出",
+      "建议"
+    ],
+    "example": "I propose a short break before the meeting.",
+    "translation": "我建议开会前短暂休息。",
+    "collocation": "propose a solution = 提出解决方案",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "proposed"
+  },
+  {
+    "word": "explanation",
+    "meaning": "解释；说明",
+    "aliases": [
+      "解释",
+      "说明"
+    ],
+    "example": "His explanation made the rule clear.",
+    "translation": "他的解释使这条规则清楚了。",
+    "collocation": "give an explanation = 作出解释",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "explanation"
+  },
+  {
+    "word": "retrieve",
+    "meaning": "检索；取回",
+    "aliases": [
+      "检索",
+      "取回"
+    ],
+    "example": "The app can retrieve your saved notes.",
+    "translation": "这个应用能检索你保存的笔记。",
+    "collocation": "retrieve information = 检索信息",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "retrieving"
+  },
+  {
+    "word": "storage",
+    "meaning": "储存；存储空间",
+    "aliases": [
+      "储存",
+      "存储空间"
+    ],
+    "example": "This phone has enough storage for my photos.",
+    "translation": "这部手机有足够空间存放我的照片。",
+    "collocation": "data storage = 数据存储",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "storage"
+  },
+  {
+    "word": "retrieval",
+    "meaning": "检索；提取",
+    "aliases": [
+      "检索",
+      "提取"
+    ],
+    "example": "Good organization makes retrieval easier.",
+    "translation": "良好的组织方式使检索更容易。",
+    "collocation": "memory retrieval = 记忆提取",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "retrieval"
+  },
+  {
+    "word": "rely on",
+    "meaning": "依靠；依赖",
+    "aliases": [
+      "依靠",
+      "依赖"
+    ],
+    "example": "Students can rely on their notes during review.",
+    "translation": "复习时学生可以依靠笔记。",
+    "collocation": "rely on evidence = 依据证据",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "rely on"
+  },
+  {
+    "word": "reminder",
+    "meaning": "提醒；提示物",
+    "aliases": [
+      "提醒",
+      "提示物"
+    ],
+    "example": "The message was a useful reminder.",
+    "translation": "这条消息是一个有用的提醒。",
+    "collocation": "set a reminder = 设置提醒",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "reminder"
+  },
+  {
+    "word": "irrelevant",
+    "meaning": "无关的；不相关的",
+    "aliases": [
+      "无关的",
+      "不相关的"
+    ],
+    "example": "Please leave out irrelevant details.",
+    "translation": "请删去无关细节。",
+    "collocation": "irrelevant information = 无关信息",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "irrelevant"
+  },
+  {
+    "word": "accumulate",
+    "meaning": "积累；累积",
+    "aliases": [
+      "积累",
+      "累积"
+    ],
+    "example": "Small savings can accumulate over time.",
+    "translation": "少量储蓄会随着时间积累。",
+    "collocation": "accumulate knowledge = 积累知识",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "accumulate"
+  },
+  {
+    "word": "cognitive",
+    "meaning": "认知的",
+    "aliases": [
+      "认知的"
+    ],
+    "example": "Sleep is important for cognitive ability.",
+    "translation": "睡眠对认知能力很重要。",
+    "collocation": "cognitive development = 认知发展",
+    "source": "听力选项·篇章",
+    "priority": "paper",
+    "evidenceForm": "cognitive"
+  },
+  {
+    "word": "preserve",
+    "meaning": "保护；保存",
+    "aliases": [
+      "保护",
+      "保存"
+    ],
+    "example": "We should preserve important historical records.",
+    "translation": "我们应该保存重要的历史记录。",
+    "collocation": "preserve memories = 保存记忆",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "preserved"
+  },
+  {
+    "word": "enhance",
+    "meaning": "增强；提高",
+    "aliases": [
+      "增强",
+      "提高"
+    ],
+    "example": "Examples can enhance your understanding.",
+    "translation": "例子可以加深你的理解。",
+    "collocation": "enhance learning = 促进学习",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "enhanced"
+  },
+  {
+    "word": "suffer from",
+    "meaning": "遭受；患有",
+    "aliases": [
+      "遭受",
+      "患有"
+    ],
+    "example": "Many people suffer from poor sleep.",
+    "translation": "许多人受到睡眠不佳的困扰。",
+    "collocation": "suffer from stress = 承受压力",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "suffer from"
+  },
+  {
+    "word": "disorderly",
+    "meaning": "杂乱的；无秩序的",
+    "aliases": [
+      "杂乱的",
+      "无秩序的"
+    ],
+    "example": "The papers were in a disorderly pile.",
+    "translation": "文件杂乱地堆在一起。",
+    "collocation": "disorderly behavior = 扰乱秩序的行为",
+    "source": "听力选项·篇章",
+    "priority": "paper",
+    "evidenceForm": "disorderly"
+  },
+  {
+    "word": "wisdom",
+    "meaning": "智慧；明智",
+    "aliases": [
+      "智慧",
+      "明智"
+    ],
+    "example": "Experience can bring practical wisdom.",
+    "translation": "经验可以带来实用智慧。",
+    "collocation": "practical wisdom = 实践智慧",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "wisdom"
+  },
+  {
+    "word": "emergency",
+    "meaning": "紧急情况；突发事件",
+    "aliases": [
+      "紧急情况",
+      "突发事件"
+    ],
+    "example": "Keep these numbers ready for an emergency.",
+    "translation": "准备好这些号码，以应对紧急情况。",
+    "collocation": "in an emergency = 在紧急情况下",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "emergency"
+  },
+  {
+    "word": "alienate",
+    "meaning": "使疏远；使孤立",
+    "aliases": [
+      "使疏远",
+      "使孤立"
+    ],
+    "example": "Poor communication can alienate customers.",
+    "translation": "沟通不畅会使顾客疏远。",
+    "collocation": "alienate people = 使人疏远",
+    "source": "听力选项·篇章",
+    "priority": "paper",
+    "evidenceForm": "alienated"
+  },
+  {
+    "word": "in control",
+    "meaning": "掌控；控制之中",
+    "aliases": [
+      "掌控",
+      "控制之中"
+    ],
+    "example": "A clear plan helps you feel in control.",
+    "translation": "清晰的计划让你感到能够掌控局面。",
+    "collocation": "be in control of = 掌控……",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "in control"
+  },
+  {
+    "word": "profit",
+    "meaning": "利润；获利",
+    "aliases": [
+      "利润",
+      "获利"
+    ],
+    "example": "The business made a small profit.",
+    "translation": "这家企业赚取了少量利润。",
+    "collocation": "make a profit = 获利",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "profits"
+  },
+  {
+    "word": "steady",
+    "meaning": "稳定的；持续的",
+    "aliases": [
+      "稳定的",
+      "持续的"
+    ],
+    "example": "She has made steady progress this month.",
+    "translation": "这个月她取得了持续进步。",
+    "collocation": "steady growth = 稳定增长",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "steady"
+  },
+  {
+    "word": "productivity",
+    "meaning": "生产率；生产效率",
+    "aliases": [
+      "生产率",
+      "生产效率"
+    ],
+    "example": "Better tools can increase productivity.",
+    "translation": "更好的工具能提高生产率。",
+    "collocation": "improve productivity = 提高生产率",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "productivity"
+  },
+  {
+    "word": "adverse",
+    "meaning": "不利的；有害的",
+    "aliases": [
+      "不利的",
+      "有害的"
+    ],
+    "example": "Bad weather had an adverse effect on travel.",
+    "translation": "恶劣天气对出行产生了不利影响。",
+    "collocation": "an adverse effect = 不利影响",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "adverse"
+  },
+  {
+    "word": "physical",
+    "meaning": "身体的；物质的",
+    "aliases": [
+      "身体的",
+      "物质的"
+    ],
+    "example": "Regular exercise supports physical health.",
+    "translation": "经常锻炼有益身体健康。",
+    "collocation": "physical activity = 身体活动",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "physical"
+  },
+  {
+    "word": "wage",
+    "meaning": "工资；薪金",
+    "aliases": [
+      "工资",
+      "薪金"
+    ],
+    "example": "Workers asked for a higher wage.",
+    "translation": "工人要求提高工资。",
+    "collocation": "minimum wage = 最低工资",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "wages"
+  },
+  {
+    "word": "at risk",
+    "meaning": "处于危险中；面临风险",
+    "aliases": [
+      "处于危险中",
+      "面临风险"
+    ],
+    "example": "The damaged building puts visitors at risk.",
+    "translation": "受损建筑使游客面临危险。",
+    "collocation": "put at risk = 使面临风险",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "at risk"
+  },
+  {
+    "word": "liberate",
+    "meaning": "解放；使摆脱束缚",
+    "aliases": [
+      "解放",
+      "使摆脱束缚"
+    ],
+    "example": "New tools can liberate people from repetitive tasks.",
+    "translation": "新工具可以使人摆脱重复性任务。",
+    "collocation": "liberate somebody from = 使某人摆脱……",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "liberates"
+  },
+  {
+    "word": "tedious",
+    "meaning": "乏味的；冗长的",
+    "aliases": [
+      "乏味的",
+      "冗长的"
+    ],
+    "example": "Copying the same data is tedious work.",
+    "translation": "重复抄写相同数据是乏味的工作。",
+    "collocation": "a tedious task = 乏味的任务",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "tedious"
+  },
+  {
+    "word": "laborious",
+    "meaning": "费力的；艰苦的",
+    "aliases": [
+      "费力的",
+      "艰苦的"
+    ],
+    "example": "The repair was a laborious process.",
+    "translation": "这项修理是一个费力的过程。",
+    "collocation": "laborious work = 艰苦的工作",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "laborious"
+  },
+  {
+    "word": "opportunity",
+    "meaning": "机会；机遇",
+    "aliases": [
+      "机会",
+      "机遇"
+    ],
+    "example": "The course offers an opportunity to practise.",
+    "translation": "这门课提供了练习的机会。",
+    "collocation": "a job opportunity = 工作机会",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "opportunities"
+  },
+  {
+    "word": "prioritize",
+    "meaning": "优先处理；优先考虑",
+    "aliases": [
+      "优先处理",
+      "优先考虑"
+    ],
+    "example": "You need to prioritize the most urgent tasks.",
+    "translation": "你需要优先处理最紧急的任务。",
+    "collocation": "prioritize tasks = 确定任务优先顺序",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "Prioritizing"
+  },
+  {
+    "word": "workplace",
+    "meaning": "工作场所；职场",
+    "aliases": [
+      "工作场所",
+      "职场"
+    ],
+    "example": "Good communication matters in the workplace.",
+    "translation": "良好沟通在职场中很重要。",
+    "collocation": "workplace safety = 工作场所安全",
+    "source": "听力选项·篇章",
+    "priority": "core",
+    "evidenceForm": "workplace"
+  },
+  {
+    "word": "attitude",
+    "meaning": "态度；看法",
+    "aliases": [
+      "态度",
+      "看法"
+    ],
+    "example": "A positive attitude can support learning.",
+    "translation": "积极的态度有助于学习。",
+    "collocation": "an attitude toward = 对……的态度",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "attitude"
+  },
+  {
+    "word": "distinguish",
+    "meaning": "区分；辨别",
+    "aliases": [
+      "区分",
+      "辨别"
+    ],
+    "example": "We must distinguish facts from opinions.",
+    "translation": "我们必须区分事实与观点。",
+    "collocation": "distinguish A from B = 区分A和B",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "distinguish"
+  },
+  {
+    "word": "outweigh",
+    "meaning": "超过；比……更重要",
+    "aliases": [
+      "超过",
+      "比……更重要"
+    ],
+    "example": "The benefits may outweigh the costs.",
+    "translation": "益处可能超过成本。",
+    "collocation": "outweigh the risks = 超过风险",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "outweigh"
+  },
+  {
+    "word": "observe",
+    "meaning": "观察；遵守",
+    "aliases": [
+      "观察",
+      "遵守"
+    ],
+    "example": "We can observe how the machine works.",
+    "translation": "我们可以观察机器如何工作。",
+    "collocation": "observe a change = 观察变化",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "observing"
+  },
+  {
+    "word": "inference",
+    "meaning": "推断；推论",
+    "aliases": [
+      "推断",
+      "推论"
+    ],
+    "example": "This inference is based on limited evidence.",
+    "translation": "这个推断基于有限证据。",
+    "collocation": "make an inference = 作出推断",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "inferences"
+  },
+  {
+    "word": "persistence",
+    "meaning": "坚持；毅力",
+    "aliases": [
+      "坚持",
+      "毅力"
+    ],
+    "example": "Progress often requires patience and persistence.",
+    "translation": "进步通常需要耐心和毅力。",
+    "collocation": "show persistence = 表现出毅力",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "persistence"
+  },
+  {
+    "word": "adapt",
+    "meaning": "适应；改编",
+    "aliases": [
+      "适应",
+      "改编"
+    ],
+    "example": "Students need time to adapt to college life.",
+    "translation": "学生需要时间适应大学生活。",
+    "collocation": "adapt to change = 适应变化",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "adapt"
+  },
+  {
+    "word": "interact",
+    "meaning": "互动；交流",
+    "aliases": [
+      "互动",
+      "交流"
+    ],
+    "example": "Group tasks help students interact with others.",
+    "translation": "小组任务帮助学生与他人互动。",
+    "collocation": "interact with = 与……互动",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "interact"
+  },
+  {
+    "word": "overcome",
+    "meaning": "克服；战胜",
+    "aliases": [
+      "克服",
+      "战胜"
+    ],
+    "example": "Practice can help you overcome fear.",
+    "translation": "练习可以帮助你克服恐惧。",
+    "collocation": "overcome a difficulty = 克服困难",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "overcoming"
+  },
+  {
+    "word": "habitual",
+    "meaning": "习惯性的；惯常的",
+    "aliases": [
+      "习惯性的",
+      "惯常的"
+    ],
+    "example": "Habitual lateness can damage trust.",
+    "translation": "习惯性迟到会损害信任。",
+    "collocation": "habitual behavior = 惯常行为",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "habitual"
+  },
+  {
+    "word": "recreational",
+    "meaning": "娱乐的；消遣的",
+    "aliases": [
+      "娱乐的",
+      "消遣的"
+    ],
+    "example": "The park offers many recreational activities.",
+    "translation": "这个公园提供许多娱乐活动。",
+    "collocation": "recreational facilities = 娱乐设施",
+    "source": "听力选项·讲座",
+    "priority": "paper",
+    "evidenceForm": "recreational"
+  },
+  {
+    "word": "scrutinize",
+    "meaning": "仔细检查；审视",
+    "aliases": [
+      "仔细检查",
+      "审视"
+    ],
+    "example": "Please scrutinize the contract before signing.",
+    "translation": "签字前请仔细审查合同。",
+    "collocation": "scrutinize evidence = 审视证据",
+    "source": "听力选项·讲座",
+    "priority": "paper",
+    "evidenceForm": "Scrutinizing"
+  },
+  {
+    "word": "trait",
+    "meaning": "特征；特点",
+    "aliases": [
+      "特征",
+      "特点"
+    ],
+    "example": "Patience is a useful trait for a teacher.",
+    "translation": "耐心是教师的一项有用品质。",
+    "collocation": "a personality trait = 性格特征",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "traits"
+  },
+  {
+    "word": "priority",
+    "meaning": "优先事项；优先权",
+    "aliases": [
+      "优先事项",
+      "优先权"
+    ],
+    "example": "Safety should be our first priority.",
+    "translation": "安全应是我们的首要任务。",
+    "collocation": "give priority to = 优先考虑……",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "priorities"
+  },
+  {
+    "word": "dawn",
+    "meaning": "黎明；拂晓",
+    "aliases": [
+      "黎明",
+      "拂晓"
+    ],
+    "example": "The workers started their journey at dawn.",
+    "translation": "工人们在黎明时出发。",
+    "collocation": "at dawn = 在黎明时",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "dawn"
+  },
+  {
+    "word": "vary",
+    "meaning": "变化；各不相同",
+    "aliases": [
+      "变化",
+      "各不相同"
+    ],
+    "example": "Learning needs vary from person to person.",
+    "translation": "学习需求因人而异。",
+    "collocation": "vary from = 因……而不同",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "vary"
+  },
+  {
+    "word": "custom",
+    "meaning": "习俗；惯例",
+    "aliases": [
+      "习俗",
+      "惯例"
+    ],
+    "example": "It is useful to learn about local custom.",
+    "translation": "了解当地习俗很有用。",
+    "collocation": "local custom = 当地习俗",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "customs"
+  },
+  {
+    "word": "willing",
+    "meaning": "愿意的；乐意的",
+    "aliases": [
+      "愿意的",
+      "乐意的"
+    ],
+    "example": "She is willing to help new students.",
+    "translation": "她愿意帮助新同学。",
+    "collocation": "be willing to do = 愿意做某事",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "willing"
+  },
+  {
+    "word": "violate",
+    "meaning": "违反；违背",
+    "aliases": [
+      "违反",
+      "违背"
+    ],
+    "example": "Drivers must not violate traffic rules.",
+    "translation": "司机不得违反交通规则。",
+    "collocation": "violate a rule = 违反规则",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "violate"
+  },
+  {
+    "word": "irritate",
+    "meaning": "使恼怒；刺激",
+    "aliases": [
+      "使恼怒",
+      "刺激"
+    ],
+    "example": "Constant noise can irritate the neighbors.",
+    "translation": "持续的噪声会使邻居恼怒。",
+    "collocation": "irritate somebody = 惹恼某人",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "irritated"
+  },
+  {
+    "word": "exotic",
+    "meaning": "异国情调的；外来的",
+    "aliases": [
+      "异国情调的",
+      "外来的"
+    ],
+    "example": "The market sells exotic fruit.",
+    "translation": "这个市场出售异国水果。",
+    "collocation": "exotic plants = 外来植物",
+    "source": "听力选项·讲座",
+    "priority": "paper",
+    "evidenceForm": "exotic"
+  },
+  {
+    "word": "adopt",
+    "meaning": "采用；采纳；收养",
+    "aliases": [
+      "采用",
+      "采纳",
+      "收养"
+    ],
+    "example": "The school will adopt a new teaching method.",
+    "translation": "学校将采用一种新的教学方法。",
+    "collocation": "adopt a policy = 采用政策",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "adopted"
+  },
+  {
+    "word": "courtesy",
+    "meaning": "礼貌；客气",
+    "aliases": [
+      "礼貌",
+      "客气"
+    ],
+    "example": "A short thank-you note shows courtesy.",
+    "translation": "一封简短的感谢信体现礼貌。",
+    "collocation": "show courtesy = 表现礼貌",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "courtesy"
+  },
+  {
+    "word": "adhere to",
+    "meaning": "坚持；遵守",
+    "aliases": [
+      "坚持",
+      "遵守"
+    ],
+    "example": "We should adhere to the agreed rules.",
+    "translation": "我们应该遵守约定的规则。",
+    "collocation": "adhere to a principle = 坚持原则",
+    "source": "听力选项·讲座",
+    "priority": "core",
+    "evidenceForm": "adhere to"
+  },
+  {
+    "word": "poisonous",
+    "meaning": "有毒的",
+    "aliases": [
+      "有毒的"
+    ],
+    "example": "Some wild plants are poisonous.",
+    "translation": "一些野生植物有毒。",
+    "collocation": "poisonous chemicals = 有毒化学品",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "poisonous"
+  },
+  {
+    "word": "pesticide",
+    "meaning": "农药；杀虫剂",
+    "aliases": [
+      "农药",
+      "杀虫剂"
+    ],
+    "example": "Farmers should use pesticide carefully.",
+    "translation": "农民应该谨慎使用农药。",
+    "collocation": "pesticide use = 农药使用",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "pesticides"
+  },
+  {
+    "word": "campus",
+    "meaning": "校园",
+    "aliases": [
+      "校园"
+    ],
+    "example": "The campus is quiet in the morning.",
+    "translation": "早晨的校园很安静。",
+    "collocation": "on campus = 在校园里",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "campus"
+  },
+  {
+    "word": "movement",
+    "meaning": "运动；活动；移动",
+    "aliases": [
+      "运动",
+      "活动",
+      "移动"
+    ],
+    "example": "The local movement attracted many volunteers.",
+    "translation": "这场地方运动吸引了许多志愿者。",
+    "collocation": "a social movement = 社会运动",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "movement"
+  },
+  {
+    "word": "artificial",
+    "meaning": "人造的；人工的",
+    "aliases": [
+      "人造的",
+      "人工的"
+    ],
+    "example": "This room needs artificial light at night.",
+    "translation": "这个房间晚上需要人工照明。",
+    "collocation": "artificial materials = 人造材料",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "artificial"
+  },
+  {
+    "word": "herbicide",
+    "meaning": "除草剂",
+    "aliases": [
+      "除草剂"
+    ],
+    "example": "The garden uses no chemical herbicide.",
+    "translation": "这个花园不用化学除草剂。",
+    "collocation": "herbicide use = 除草剂使用",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "herbicides"
+  },
+  {
+    "word": "anxiety",
+    "meaning": "焦虑；担忧",
+    "aliases": [
+      "焦虑",
+      "担忧"
+    ],
+    "example": "A clear plan can reduce anxiety.",
+    "translation": "清晰的计划可以减轻焦虑。",
+    "collocation": "exam anxiety = 考试焦虑",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "anxiety"
+  },
+  {
+    "word": "catastrophe",
+    "meaning": "灾难；大祸",
+    "aliases": [
+      "灾难",
+      "大祸"
+    ],
+    "example": "Early action may prevent a catastrophe.",
+    "translation": "及早行动可能避免一场灾难。",
+    "collocation": "a natural catastrophe = 自然灾难",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "catastrophe"
+  },
+  {
+    "word": "specific",
+    "meaning": "具体的；特定的",
+    "aliases": [
+      "具体的",
+      "特定的"
+    ],
+    "example": "Please give a specific example.",
+    "translation": "请给出一个具体的例子。",
+    "collocation": "a specific goal = 具体目标",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "specific"
+  },
+  {
+    "word": "focus on",
+    "meaning": "专注于；关注",
+    "aliases": [
+      "专注于",
+      "关注"
+    ],
+    "example": "Today we will focus on reading skills.",
+    "translation": "今天我们将专注于阅读技能。",
+    "collocation": "focus on a problem = 关注问题",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "focus on"
+  },
+  {
+    "word": "toxic",
+    "meaning": "有毒的；有害的",
+    "aliases": [
+      "有毒的",
+      "有害的"
+    ],
+    "example": "The factory must control toxic waste.",
+    "translation": "这家工厂必须控制有毒废物。",
+    "collocation": "toxic chemicals = 有毒化学品",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "toxic"
+  },
+  {
+    "word": "institution",
+    "meaning": "机构；制度",
+    "aliases": [
+      "机构",
+      "制度"
+    ],
+    "example": "The institution offers free public courses.",
+    "translation": "这家机构提供免费的公共课程。",
+    "collocation": "an educational institution = 教育机构",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "institutions"
+  },
+  {
+    "word": "fertilizer",
+    "meaning": "肥料；化肥",
+    "aliases": [
+      "肥料",
+      "化肥"
+    ],
+    "example": "Too much fertilizer can harm the soil.",
+    "translation": "过多肥料会损害土壤。",
+    "collocation": "chemical fertilizer = 化肥",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "fertilizers"
+  },
+  {
+    "word": "lawn",
+    "meaning": "草坪；草地",
+    "aliases": [
+      "草坪",
+      "草地"
+    ],
+    "example": "Children played on the lawn.",
+    "translation": "孩子们在草坪上玩耍。",
+    "collocation": "a green lawn = 绿色草坪",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "lawns"
+  },
+  {
+    "word": "sidewalk",
+    "meaning": "人行道",
+    "aliases": [
+      "人行道"
+    ],
+    "example": "Please keep bicycles off the sidewalk.",
+    "translation": "请不要把自行车骑上人行道。",
+    "collocation": "walk on the sidewalk = 走人行道",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "sidewalks"
+  },
+  {
+    "word": "waterway",
+    "meaning": "水道；航道",
+    "aliases": [
+      "水道",
+      "航道"
+    ],
+    "example": "The project will clean the local waterway.",
+    "translation": "这个项目将清理当地水道。",
+    "collocation": "a polluted waterway = 受污染的水道",
+    "source": "选词填空·校园除草剂",
+    "priority": "paper",
+    "evidenceForm": "waterways"
+  },
+  {
+    "word": "wildlife",
+    "meaning": "野生动植物",
+    "aliases": [
+      "野生动植物"
+    ],
+    "example": "Protecting forests also protects wildlife.",
+    "translation": "保护森林也保护野生动植物。",
+    "collocation": "protect wildlife = 保护野生动植物",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "wildlife"
+  },
+  {
+    "word": "lifeless",
+    "meaning": "无生命的；无生气的",
+    "aliases": [
+      "无生命的",
+      "无生气的"
+    ],
+    "example": "The polluted lake looked lifeless.",
+    "translation": "受污染的湖泊显得毫无生气。",
+    "collocation": "lifeless soil = 没有生命力的土壤",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "lifeless"
+  },
+  {
+    "word": "soil",
+    "meaning": "土壤；土地",
+    "aliases": [
+      "土壤",
+      "土地"
+    ],
+    "example": "Healthy soil helps plants grow.",
+    "translation": "健康的土壤有助于植物生长。",
+    "collocation": "soil quality = 土壤质量",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "soil"
+  },
+  {
+    "word": "get rid of",
+    "meaning": "去除；摆脱",
+    "aliases": [
+      "去除",
+      "摆脱"
+    ],
+    "example": "We need to get rid of these old files.",
+    "translation": "我们需要清除这些旧文件。",
+    "collocation": "get rid of waste = 清除废物",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "get rid of"
+  },
+  {
+    "word": "indirect",
+    "meaning": "间接的",
+    "aliases": [
+      "间接的"
+    ],
+    "example": "The change may have an indirect effect.",
+    "translation": "这个变化可能产生间接影响。",
+    "collocation": "an indirect effect = 间接影响",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "indirect"
+  },
+  {
+    "word": "ingredient",
+    "meaning": "成分；原料",
+    "aliases": [
+      "成分",
+      "原料"
+    ],
+    "example": "Read the label to check each ingredient.",
+    "translation": "阅读标签以核对每种成分。",
+    "collocation": "a key ingredient = 关键成分",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "ingredients"
+  },
+  {
+    "word": "absorb",
+    "meaning": "吸收；理解",
+    "aliases": [
+      "吸收",
+      "理解"
+    ],
+    "example": "Plants absorb water through their roots.",
+    "translation": "植物通过根部吸收水分。",
+    "collocation": "absorb information = 吸收信息",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "absorb"
+  },
+  {
+    "word": "retain",
+    "meaning": "保留；保持",
+    "aliases": [
+      "保留",
+      "保持"
+    ],
+    "example": "Regular review helps you retain new words.",
+    "translation": "经常复习帮助你记住新词。",
+    "collocation": "retain information = 保留信息",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "retain"
+  },
+  {
+    "word": "recover",
+    "meaning": "恢复；康复；找回",
+    "aliases": [
+      "恢复",
+      "康复",
+      "找回"
+    ],
+    "example": "The town needs time to recover after the storm.",
+    "translation": "暴风雨后这个城镇需要时间恢复。",
+    "collocation": "recover from = 从……中恢复",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "recover"
+  },
+  {
+    "word": "extreme",
+    "meaning": "极端的；极度的",
+    "aliases": [
+      "极端的",
+      "极度的"
+    ],
+    "example": "The region experienced extreme heat.",
+    "translation": "这个地区经历了极端高温。",
+    "collocation": "extreme weather = 极端天气",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "extreme"
+  },
+  {
+    "word": "drought",
+    "meaning": "干旱",
+    "aliases": [
+      "干旱"
+    ],
+    "example": "The long drought damaged many crops.",
+    "translation": "长期干旱损害了许多作物。",
+    "collocation": "a severe drought = 严重干旱",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "droughts"
+  },
+  {
+    "word": "flood",
+    "meaning": "洪水；淹没",
+    "aliases": [
+      "洪水",
+      "淹没"
+    ],
+    "example": "Heavy rain caused a flood in the village.",
+    "translation": "大雨使村庄发生了洪水。",
+    "collocation": "flood damage = 洪灾损失",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "floods"
+  },
+  {
+    "word": "instead of",
+    "meaning": "代替；而不是",
+    "aliases": [
+      "代替",
+      "而不是"
+    ],
+    "example": "We walked instead of taking a taxi.",
+    "translation": "我们步行而不是乘出租车。",
+    "collocation": "instead of doing = 而不是做某事",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "instead of"
+  },
+  {
+    "word": "weed",
+    "meaning": "除草；杂草",
+    "aliases": [
+      "除草",
+      "杂草"
+    ],
+    "example": "We need to weed the garden this weekend.",
+    "translation": "这周末我们需要给花园除草。",
+    "collocation": "weed the garden = 给花园除草",
+    "source": "选词填空·校园除草剂",
+    "priority": "core",
+    "evidenceForm": "weeding"
+  }
+]

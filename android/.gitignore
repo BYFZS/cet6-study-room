@@ -1,0 +1,5 @@
+/.tools/
+/.signing/
+/__pycache__/
+*.apk
+*.idsig
