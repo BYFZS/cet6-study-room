@@ -14,3 +14,9 @@
 #syncDialog .syncFields{display:flex;gap:8px;margin-top:0;justify-content:initial}
 .syncFields input{flex:1;min-width:0;padding:10px;border:1px solid var(--line);border-radius:7px;font-size:16px}
 #syncDialog #syncMessage{overflow-wrap:anywhere;margin-bottom:0}
+
+.synonymSense{padding:10px 12px;margin:8px 0;border:1px solid #d9e4cd;border-radius:8px}
+.synonymSense h5{margin:0 0 4px;font-size:14px;color:#425e39}
+.synonymSense ul{margin:0;padding-left:18px}
+.synonymSense li{padding:2px 0;font-size:14px}
+.wordRelations small{display:block}

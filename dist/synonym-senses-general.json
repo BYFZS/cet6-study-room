@@ -1,0 +1,1473 @@
+{
+  "determine": [
+    {
+      "label": "决定，选定",
+      "items": [
+        {
+          "word": "decide",
+          "meaning": "决定"
+        },
+        {
+          "word": "settle on",
+          "meaning": "选定",
+          "note": "常接选中的方案或日期"
+        }
+      ]
+    },
+    {
+      "label": "查明，确定",
+      "items": [
+        {
+          "word": "establish",
+          "meaning": "查明，证实"
+        },
+        {
+          "word": "ascertain",
+          "meaning": "查明",
+          "note": "较正式"
+        }
+      ]
+    }
+  ],
+  "encounter": [
+    {
+      "label": "偶遇某人",
+      "items": [
+        {
+          "word": "run into",
+          "meaning": "偶遇"
+        },
+        {
+          "word": "come across",
+          "meaning": "偶然碰到",
+          "note": "也可接发现的东西"
+        }
+      ]
+    },
+    {
+      "label": "遇到事情或困难",
+      "items": [
+        {
+          "word": "face",
+          "meaning": "面对"
+        },
+        {
+          "word": "come up against",
+          "meaning": "遇到阻碍",
+          "note": "常接难题或反对"
+        }
+      ]
+    }
+  ],
+  "figure out": [
+    {
+      "label": "弄懂，找出答案",
+      "items": [
+        {
+          "word": "work out",
+          "meaning": "想出，求出"
+        },
+        {
+          "word": "make sense of",
+          "meaning": "弄懂",
+          "note": "接令人困惑的事情"
+        },
+        {
+          "word": "solve",
+          "meaning": "解决",
+          "note": "常接难题"
+        }
+      ]
+    }
+  ],
+  "refer to": [
+    {
+      "label": "提到，指的是",
+      "items": [
+        {
+          "word": "mention",
+          "meaning": "提到"
+        },
+        {
+          "word": "mean",
+          "meaning": "指的是",
+          "note": "解释所指内容时使用"
+        }
+      ]
+    },
+    {
+      "label": "查阅资料",
+      "items": [
+        {
+          "word": "consult",
+          "meaning": "查阅"
+        },
+        {
+          "word": "look up",
+          "meaning": "查找",
+          "note": "常说 look up the word 或 look it up"
+        }
+      ]
+    }
+  ],
+  "principle": [
+    {
+      "label": "原理，一般规律",
+      "items": [
+        {
+          "word": "underlying rule",
+          "meaning": "基本规律"
+        },
+        {
+          "word": "general law",
+          "meaning": "普遍规律",
+          "note": "用于科学原理"
+        }
+      ]
+    },
+    {
+      "label": "行为准则",
+      "items": [
+        {
+          "word": "rule",
+          "meaning": "准则"
+        },
+        {
+          "word": "guiding belief",
+          "meaning": "指导信念"
+        }
+      ]
+    }
+  ],
+  "survey": [
+    {
+      "label": "调查，问卷",
+      "items": [
+        {
+          "word": "poll",
+          "meaning": "民意调查",
+          "note": "常问意见"
+        },
+        {
+          "word": "questionnaire",
+          "meaning": "问卷",
+          "note": "指调查用的表格"
+        }
+      ]
+    },
+    {
+      "label": "审视，概览",
+      "items": [
+        {
+          "word": "examine",
+          "meaning": "审视"
+        },
+        {
+          "word": "look over",
+          "meaning": "快速查看"
+        }
+      ]
+    }
+  ],
+  "regard": [
+    {
+      "label": "看作，认为",
+      "items": [
+        {
+          "word": "consider",
+          "meaning": "认为"
+        },
+        {
+          "word": "view as",
+          "meaning": "将……看作",
+          "note": "原词也常用 regard A as B"
+        }
+      ]
+    },
+    {
+      "label": "敬重，重视",
+      "items": [
+        {
+          "word": "respect",
+          "meaning": "尊重"
+        },
+        {
+          "word": "esteem",
+          "meaning": "敬重",
+          "note": "较正式"
+        }
+      ]
+    }
+  ],
+  "priority": [
+    {
+      "label": "优先事项",
+      "items": [
+        {
+          "word": "top concern",
+          "meaning": "首要关切"
+        },
+        {
+          "word": "first order of business",
+          "meaning": "首先要处理的事情"
+        }
+      ]
+    },
+    {
+      "label": "优先权，优先地位",
+      "items": [
+        {
+          "word": "precedence",
+          "meaning": "优先地位"
+        },
+        {
+          "word": "first claim",
+          "meaning": "优先取得的权利"
+        }
+      ]
+    }
+  ],
+  "advocate": [
+    {
+      "label": "提倡，公开支持",
+      "items": [
+        {
+          "word": "support",
+          "meaning": "支持"
+        },
+        {
+          "word": "call for",
+          "meaning": "呼吁采取",
+          "note": "常接措施或改变"
+        }
+      ]
+    },
+    {
+      "label": "支持者，倡导者",
+      "items": [
+        {
+          "word": "proponent",
+          "meaning": "支持者"
+        },
+        {
+          "word": "champion",
+          "meaning": "积极倡导者"
+        }
+      ]
+    }
+  ],
+  "compelling": [
+    {
+      "label": "令人信服的",
+      "items": [
+        {
+          "word": "convincing",
+          "meaning": "有说服力的"
+        },
+        {
+          "word": "persuasive",
+          "meaning": "能说服人的"
+        }
+      ]
+    },
+    {
+      "label": "引人入胜的",
+      "items": [
+        {
+          "word": "engrossing",
+          "meaning": "引人入胜的"
+        },
+        {
+          "word": "gripping",
+          "meaning": "扣人心弦的",
+          "note": "常修饰故事或叙述"
+        }
+      ]
+    }
+  ],
+  "motivation": [
+    {
+      "label": "做事的动力",
+      "items": [
+        {
+          "word": "drive",
+          "meaning": "内在动力"
+        },
+        {
+          "word": "incentive",
+          "meaning": "激励因素",
+          "note": "可指外部奖励"
+        }
+      ]
+    },
+    {
+      "label": "动机，原因",
+      "items": [
+        {
+          "word": "motive",
+          "meaning": "动机"
+        },
+        {
+          "word": "reason",
+          "meaning": "原因"
+        }
+      ]
+    }
+  ],
+  "promote": [
+    {
+      "label": "促进，推广",
+      "items": [
+        {
+          "word": "foster",
+          "meaning": "促进发展"
+        },
+        {
+          "word": "encourage",
+          "meaning": "鼓励，促进"
+        },
+        {
+          "word": "publicize",
+          "meaning": "宣传",
+          "note": "只对应推广宣传义"
+        }
+      ]
+    },
+    {
+      "label": "晋升，提拔",
+      "items": [
+        {
+          "word": "advance",
+          "meaning": "提升",
+          "note": "可指职业发展"
+        },
+        {
+          "word": "move someone up",
+          "meaning": "提拔某人",
+          "note": "口语表达，强调提高职位或级别"
+        }
+      ]
+    }
+  ],
+  "stable": [
+    {
+      "label": "稳定的，变化不大的",
+      "items": [
+        {
+          "word": "steady",
+          "meaning": "平稳的"
+        },
+        {
+          "word": "consistent",
+          "meaning": "一贯的",
+          "note": "强调波动小"
+        }
+      ]
+    },
+    {
+      "label": "牢固的，可靠的",
+      "items": [
+        {
+          "word": "secure",
+          "meaning": "稳固可靠的"
+        },
+        {
+          "word": "firm",
+          "meaning": "牢固的",
+          "note": "适用于物体或支撑"
+        }
+      ]
+    }
+  ],
+  "potential": [
+    {
+      "label": "潜在的，可能的",
+      "items": [
+        {
+          "word": "possible",
+          "meaning": "可能的"
+        },
+        {
+          "word": "prospective",
+          "meaning": "预期的，未来可能的",
+          "note": "常修饰人员或机会"
+        }
+      ]
+    },
+    {
+      "label": "潜力，发展可能性",
+      "items": [
+        {
+          "word": "promise",
+          "meaning": "发展前景"
+        },
+        {
+          "word": "room for growth",
+          "meaning": "成长空间"
+        }
+      ]
+    }
+  ],
+  "sacrifice": [
+    {
+      "label": "牺牲，放弃",
+      "items": [
+        {
+          "word": "give up",
+          "meaning": "放弃"
+        },
+        {
+          "word": "forgo",
+          "meaning": "主动放弃",
+          "note": "常接利益或机会"
+        }
+      ]
+    },
+    {
+      "label": "所作的牺牲",
+      "items": [
+        {
+          "word": "loss",
+          "meaning": "损失",
+          "note": "不一定出于主动"
+        },
+        {
+          "word": "self-denial",
+          "meaning": "克己，牺牲自身享受"
+        }
+      ]
+    }
+  ],
+  "budget": [
+    {
+      "label": "预算，经费额度",
+      "items": [
+        {
+          "word": "spending plan",
+          "meaning": "支出计划"
+        },
+        {
+          "word": "allocation",
+          "meaning": "分配的经费",
+          "note": "指预算中的具体额度"
+        }
+      ]
+    },
+    {
+      "label": "编制预算，预留经费",
+      "items": [
+        {
+          "word": "plan spending",
+          "meaning": "规划支出"
+        },
+        {
+          "word": "set aside money",
+          "meaning": "预留资金"
+        }
+      ]
+    }
+  ],
+  "engage in": [
+    {
+      "label": "参与，从事",
+      "items": [
+        {
+          "word": "take part in",
+          "meaning": "参加活动"
+        },
+        {
+          "word": "participate in",
+          "meaning": "参与"
+        },
+        {
+          "word": "be involved in",
+          "meaning": "参与，从事"
+        }
+      ]
+    }
+  ],
+  "individual": [
+    {
+      "label": "个人，单个的人",
+      "items": [
+        {
+          "word": "person",
+          "meaning": "人"
+        },
+        {
+          "word": "single person",
+          "meaning": "一个人"
+        }
+      ]
+    },
+    {
+      "label": "个人的，单独的",
+      "items": [
+        {
+          "word": "personal",
+          "meaning": "个人的"
+        },
+        {
+          "word": "separate",
+          "meaning": "各自单独的"
+        }
+      ]
+    }
+  ],
+  "interact": [
+    {
+      "label": "互动，相互交流",
+      "items": [
+        {
+          "word": "communicate with",
+          "meaning": "与……交流"
+        },
+        {
+          "word": "engage with",
+          "meaning": "与……接触互动"
+        }
+      ]
+    },
+    {
+      "label": "相互作用",
+      "items": [
+        {
+          "word": "affect each other",
+          "meaning": "相互影响"
+        },
+        {
+          "word": "act on each other",
+          "meaning": "彼此作用"
+        }
+      ]
+    }
+  ],
+  "capacity": [
+    {
+      "label": "能力",
+      "items": [
+        {
+          "word": "ability",
+          "meaning": "能力"
+        },
+        {
+          "word": "capability",
+          "meaning": "具备的能力",
+          "note": "常指可以完成某事的能力"
+        }
+      ]
+    },
+    {
+      "label": "容量，容纳量",
+      "items": [
+        {
+          "word": "volume",
+          "meaning": "容积"
+        },
+        {
+          "word": "maximum occupancy",
+          "meaning": "最大容纳人数",
+          "note": "用于场所"
+        }
+      ]
+    }
+  ],
+  "institution": [
+    {
+      "label": "机构，组织",
+      "items": [
+        {
+          "word": "organization",
+          "meaning": "组织"
+        },
+        {
+          "word": "establishment",
+          "meaning": "机构",
+          "note": "常见于教育或医疗等正式机构"
+        }
+      ]
+    },
+    {
+      "label": "制度，长期惯例",
+      "items": [
+        {
+          "word": "system",
+          "meaning": "制度体系"
+        },
+        {
+          "word": "established practice",
+          "meaning": "历来惯例"
+        }
+      ]
+    }
+  ],
+  "branch": [
+    {
+      "label": "分支，分部",
+      "items": [
+        {
+          "word": "division",
+          "meaning": "分部",
+          "note": "常指组织中的业务单位"
+        },
+        {
+          "word": "outlet",
+          "meaning": "分店",
+          "note": "适合零售情境"
+        }
+      ]
+    },
+    {
+      "label": "树枝",
+      "items": [
+        {
+          "word": "limb",
+          "meaning": "大树枝"
+        },
+        {
+          "word": "bough",
+          "meaning": "粗大的树枝"
+        }
+      ]
+    }
+  ],
+  "strengthen": [
+    {
+      "label": "加强，巩固",
+      "items": [
+        {
+          "word": "reinforce",
+          "meaning": "加强，强化"
+        },
+        {
+          "word": "bolster",
+          "meaning": "增强，支持"
+        },
+        {
+          "word": "make stronger",
+          "meaning": "使更强"
+        }
+      ]
+    }
+  ],
+  "responsibility": [
+    {
+      "label": "职责，义务",
+      "items": [
+        {
+          "word": "duty",
+          "meaning": "职责"
+        },
+        {
+          "word": "obligation",
+          "meaning": "义务",
+          "note": "强调应承担或约定的义务"
+        }
+      ]
+    },
+    {
+      "label": "对结果的责任",
+      "items": [
+        {
+          "word": "accountability",
+          "meaning": "对结果负责"
+        },
+        {
+          "word": "liability",
+          "meaning": "法律责任",
+          "note": "偏法律语境"
+        }
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "label": "彻底改变",
+      "items": [
+        {
+          "word": "convert",
+          "meaning": "使转变为",
+          "note": "常接 into"
+        },
+        {
+          "word": "reshape",
+          "meaning": "重塑"
+        },
+        {
+          "word": "turn into",
+          "meaning": "变成，使变成"
+        }
+      ]
+    }
+  ],
+  "relevant to": [
+    {
+      "label": "与……有关",
+      "items": [
+        {
+          "word": "related to",
+          "meaning": "与……相关"
+        },
+        {
+          "word": "connected with",
+          "meaning": "与……有联系"
+        },
+        {
+          "word": "pertinent to",
+          "meaning": "与当前问题切题的",
+          "note": "较正式"
+        }
+      ]
+    }
+  ],
+  "vital": [
+    {
+      "label": "极重要，必不可少",
+      "items": [
+        {
+          "word": "essential",
+          "meaning": "必不可少的"
+        },
+        {
+          "word": "crucial",
+          "meaning": "至关重要的"
+        },
+        {
+          "word": "indispensable",
+          "meaning": "不可或缺的"
+        }
+      ]
+    }
+  ],
+  "transition": [
+    {
+      "label": "过渡，转变",
+      "items": [
+        {
+          "word": "shift",
+          "meaning": "转变"
+        },
+        {
+          "word": "changeover",
+          "meaning": "转换",
+          "note": "常指改用另一套系统或方式"
+        },
+        {
+          "word": "move from A to B",
+          "meaning": "从A转向B"
+        }
+      ]
+    }
+  ],
+  "innovative": [
+    {
+      "label": "创新的，有新意的",
+      "items": [
+        {
+          "word": "original",
+          "meaning": "新颖的，原创的"
+        },
+        {
+          "word": "inventive",
+          "meaning": "有创造力的"
+        },
+        {
+          "word": "novel",
+          "meaning": "新颖的",
+          "note": "可指方法或方案"
+        }
+      ]
+    }
+  ],
+  "afford": [
+    {
+      "label": "负担得起，有条件做",
+      "items": [
+        {
+          "word": "be able to pay for",
+          "meaning": "买得起"
+        },
+        {
+          "word": "have the means to",
+          "meaning": "有条件做……"
+        }
+      ]
+    },
+    {
+      "label": "抽得出时间，承担得起后果",
+      "items": [
+        {
+          "word": "spare the time",
+          "meaning": "抽得出时间"
+        },
+        {
+          "word": "be in a position to risk",
+          "meaning": "有条件承担风险",
+          "note": "用于可能带来不利后果的场合"
+        }
+      ]
+    }
+  ],
+  "divide": [
+    {
+      "label": "分开，分成",
+      "items": [
+        {
+          "word": "split",
+          "meaning": "分开"
+        },
+        {
+          "word": "separate",
+          "meaning": "分隔"
+        }
+      ]
+    },
+    {
+      "label": "分歧，鸿沟",
+      "items": [
+        {
+          "word": "division",
+          "meaning": "分歧"
+        },
+        {
+          "word": "gap",
+          "meaning": "差距",
+          "note": "常修饰可见的群体差距"
+        }
+      ]
+    }
+  ],
+  "annual": [
+    {
+      "label": "每年一次的，按年计算的",
+      "items": [
+        {
+          "word": "yearly",
+          "meaning": "每年的"
+        },
+        {
+          "word": "once a year",
+          "meaning": "一年一次",
+          "note": "副词表达"
+        }
+      ]
+    }
+  ],
+  "conduct": [
+    {
+      "label": "进行，实施",
+      "items": [
+        {
+          "word": "carry out",
+          "meaning": "开展，执行"
+        },
+        {
+          "word": "perform",
+          "meaning": "实施",
+          "note": "常接实验和测试"
+        }
+      ]
+    },
+    {
+      "label": "举止，行为",
+      "items": [
+        {
+          "word": "behavior",
+          "meaning": "行为"
+        },
+        {
+          "word": "demeanor",
+          "meaning": "外在举止",
+          "note": "侧重表现出来的态度"
+        }
+      ]
+    }
+  ],
+  "boost": [
+    {
+      "label": "提高，推动",
+      "items": [
+        {
+          "word": "increase",
+          "meaning": "增加，提高"
+        },
+        {
+          "word": "raise",
+          "meaning": "提高"
+        },
+        {
+          "word": "stimulate",
+          "meaning": "促进，刺激",
+          "note": "常接增长或需求"
+        }
+      ]
+    }
+  ],
+  "participate in": [
+    {
+      "label": "参加，参与",
+      "items": [
+        {
+          "word": "take part in",
+          "meaning": "参加"
+        },
+        {
+          "word": "join in",
+          "meaning": "加入活动"
+        },
+        {
+          "word": "be involved in",
+          "meaning": "参与"
+        }
+      ]
+    }
+  ],
+  "immediate": [
+    {
+      "label": "立刻的",
+      "items": [
+        {
+          "word": "instant",
+          "meaning": "即时的"
+        },
+        {
+          "word": "prompt",
+          "meaning": "迅速的",
+          "note": "不一定严格表示零等待"
+        }
+      ]
+    },
+    {
+      "label": "紧邻的，直接的",
+      "items": [
+        {
+          "word": "nearest",
+          "meaning": "最近的"
+        },
+        {
+          "word": "direct",
+          "meaning": "直接的",
+          "note": "与中间环节无关"
+        }
+      ]
+    }
+  ],
+  "convince": [
+    {
+      "label": "使相信",
+      "items": [
+        {
+          "word": "persuade",
+          "meaning": "使信服",
+          "note": "也能说 persuade someone to do"
+        },
+        {
+          "word": "make someone believe",
+          "meaning": "使某人相信"
+        }
+      ]
+    }
+  ],
+  "enable": [
+    {
+      "label": "使能够，使可能",
+      "items": [
+        {
+          "word": "allow",
+          "meaning": "使得以"
+        },
+        {
+          "word": "make it possible for",
+          "meaning": "让……成为可能"
+        },
+        {
+          "word": "empower",
+          "meaning": "赋予能力或权限",
+          "note": "强调授权或能力"
+        }
+      ]
+    }
+  ],
+  "income": [
+    {
+      "label": "收入",
+      "items": [
+        {
+          "word": "earnings",
+          "meaning": "劳动或投资所得"
+        },
+        {
+          "word": "revenue",
+          "meaning": "收入",
+          "note": "常用于公司或政府"
+        },
+        {
+          "word": "pay",
+          "meaning": "工资报酬",
+          "note": "范围更窄"
+        }
+      ]
+    }
+  ],
+  "status": [
+    {
+      "label": "地位，身份",
+      "items": [
+        {
+          "word": "standing",
+          "meaning": "地位，声望"
+        },
+        {
+          "word": "rank",
+          "meaning": "级别"
+        }
+      ]
+    },
+    {
+      "label": "当前状况",
+      "items": [
+        {
+          "word": "state",
+          "meaning": "状态"
+        },
+        {
+          "word": "condition",
+          "meaning": "状况"
+        }
+      ]
+    }
+  ],
+  "gain": [
+    {
+      "label": "取得，获得",
+      "items": [
+        {
+          "word": "obtain",
+          "meaning": "获得"
+        },
+        {
+          "word": "acquire",
+          "meaning": "取得",
+          "note": "常接技能或资产"
+        }
+      ]
+    },
+    {
+      "label": "增加，收益",
+      "items": [
+        {
+          "word": "increase",
+          "meaning": "增加"
+        },
+        {
+          "word": "profit",
+          "meaning": "收益",
+          "note": "偏财务"
+        }
+      ]
+    }
+  ],
+  "independent": [
+    {
+      "label": "自主的，不依赖的",
+      "items": [
+        {
+          "word": "self-reliant",
+          "meaning": "自力更生的"
+        },
+        {
+          "word": "autonomous",
+          "meaning": "自治的，自主的"
+        }
+      ]
+    },
+    {
+      "label": "单独的，互不相关的",
+      "items": [
+        {
+          "word": "separate",
+          "meaning": "分开的"
+        },
+        {
+          "word": "unconnected",
+          "meaning": "无关联的"
+        }
+      ]
+    }
+  ],
+  "set up": [
+    {
+      "label": "建立，创立",
+      "items": [
+        {
+          "word": "establish",
+          "meaning": "建立"
+        },
+        {
+          "word": "found",
+          "meaning": "创立",
+          "note": "常接公司或机构"
+        }
+      ]
+    },
+    {
+      "label": "安装，布置",
+      "items": [
+        {
+          "word": "install",
+          "meaning": "安装"
+        },
+        {
+          "word": "arrange",
+          "meaning": "布置，安排"
+        }
+      ]
+    }
+  ],
+  "preserve": [
+    {
+      "label": "保存，维持原状",
+      "items": [
+        {
+          "word": "keep",
+          "meaning": "保留"
+        },
+        {
+          "word": "maintain",
+          "meaning": "维持"
+        }
+      ]
+    },
+    {
+      "label": "保护，使免遭破坏",
+      "items": [
+        {
+          "word": "protect",
+          "meaning": "保护"
+        },
+        {
+          "word": "safeguard",
+          "meaning": "保护免受危害"
+        },
+        {
+          "word": "conserve",
+          "meaning": "保护，节约",
+          "note": "常接自然资源"
+        }
+      ]
+    }
+  ],
+  "coordinate": [
+    {
+      "label": "组织协调",
+      "items": [
+        {
+          "word": "organize",
+          "meaning": "组织"
+        },
+        {
+          "word": "manage",
+          "meaning": "统筹管理"
+        }
+      ]
+    },
+    {
+      "label": "使配合，保持一致",
+      "items": [
+        {
+          "word": "align",
+          "meaning": "使一致"
+        },
+        {
+          "word": "synchronize",
+          "meaning": "同步",
+          "note": "强调时间配合"
+        }
+      ]
+    }
+  ],
+  "identify": [
+    {
+      "label": "识别，认出",
+      "items": [
+        {
+          "word": "recognize",
+          "meaning": "认出"
+        },
+        {
+          "word": "distinguish",
+          "meaning": "辨认，区分"
+        }
+      ]
+    },
+    {
+      "label": "找出，确认",
+      "items": [
+        {
+          "word": "pinpoint",
+          "meaning": "准确找出"
+        },
+        {
+          "word": "determine",
+          "meaning": "确定"
+        }
+      ]
+    }
+  ],
+  "confront": [
+    {
+      "label": "面对问题",
+      "items": [
+        {
+          "word": "face",
+          "meaning": "面对"
+        },
+        {
+          "word": "deal with",
+          "meaning": "应对",
+          "note": "强调处理"
+        }
+      ]
+    },
+    {
+      "label": "当面与人对质",
+      "items": [
+        {
+          "word": "challenge",
+          "meaning": "当面质问",
+          "note": "强调对对方的说法或行为提出质疑"
+        },
+        {
+          "word": "call someone to account",
+          "meaning": "要求某人解释其行为",
+          "note": "用于追问责任的语境"
+        }
+      ]
+    }
+  ],
+  "formulate": [
+    {
+      "label": "制定，构想",
+      "items": [
+        {
+          "word": "devise",
+          "meaning": "构想，制定"
+        },
+        {
+          "word": "draw up",
+          "meaning": "拟订",
+          "note": "常接计划或文件"
+        }
+      ]
+    },
+    {
+      "label": "清楚表达",
+      "items": [
+        {
+          "word": "express",
+          "meaning": "表达"
+        },
+        {
+          "word": "frame",
+          "meaning": "措辞表达",
+          "note": "强调选择表达方式"
+        }
+      ]
+    }
+  ],
+  "consult": [
+    {
+      "label": "向人咨询",
+      "items": [
+        {
+          "word": "seek advice from",
+          "meaning": "向……征求意见"
+        },
+        {
+          "word": "ask",
+          "meaning": "询问",
+          "note": "范围较广"
+        }
+      ]
+    },
+    {
+      "label": "查阅资料",
+      "items": [
+        {
+          "word": "refer to",
+          "meaning": "查阅"
+        },
+        {
+          "word": "check",
+          "meaning": "查看核对"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "label": "内容，所含信息",
+      "items": [
+        {
+          "word": "material",
+          "meaning": "材料，内容"
+        },
+        {
+          "word": "substance",
+          "meaning": "实质，主要内容"
+        }
+      ]
+    },
+    {
+      "label": "满足的，满意的",
+      "items": [
+        {
+          "word": "satisfied",
+          "meaning": "满意的"
+        },
+        {
+          "word": "pleased",
+          "meaning": "感到满意的",
+          "note": "content 作形容词时重音在后一音节"
+        }
+      ]
+    }
+  ],
+  "prevent": [
+    {
+      "label": "阻止、防止",
+      "items": [
+        {
+          "word": "stop",
+          "meaning": "阻止"
+        },
+        {
+          "word": "keep from",
+          "meaning": "阻止……做某事",
+          "note": "常用 keep A from doing"
+        },
+        {
+          "word": "avert",
+          "meaning": "防止发生",
+          "note": "常接危机等坏事"
+        }
+      ]
+    }
+  ],
+  "dispute": [
+    {
+      "label": "争议，纠纷",
+      "items": [
+        {
+          "word": "disagreement",
+          "meaning": "分歧"
+        },
+        {
+          "word": "conflict",
+          "meaning": "冲突"
+        }
+      ]
+    },
+    {
+      "label": "对说法提出异议",
+      "items": [
+        {
+          "word": "challenge",
+          "meaning": "质疑"
+        },
+        {
+          "word": "contest",
+          "meaning": "提出异议",
+          "note": "常接裁决或主张"
+        }
+      ]
+    }
+  ],
+  "intend": [
+    {
+      "label": "打算，有意做",
+      "items": [
+        {
+          "word": "plan",
+          "meaning": "打算"
+        },
+        {
+          "word": "mean",
+          "meaning": "有意",
+          "note": "常接不定式"
+        }
+      ]
+    },
+    {
+      "label": "预定给……用，意在",
+      "items": [
+        {
+          "word": "be meant for",
+          "meaning": "供……使用"
+        },
+        {
+          "word": "be designed to",
+          "meaning": "旨在……",
+          "note": "主语常为产品或措施"
+        }
+      ]
+    }
+  ],
+  "function": [
+    {
+      "label": "功能，作用",
+      "items": [
+        {
+          "word": "role",
+          "meaning": "作用"
+        },
+        {
+          "word": "purpose",
+          "meaning": "用途"
+        }
+      ]
+    },
+    {
+      "label": "工作，运转",
+      "items": [
+        {
+          "word": "operate",
+          "meaning": "运转"
+        },
+        {
+          "word": "work",
+          "meaning": "起作用"
+        }
+      ]
+    }
+  ],
+  "argument": [
+    {
+      "label": "论点或说理",
+      "items": [
+        {
+          "word": "case",
+          "meaning": "论据充分的主张"
+        },
+        {
+          "word": "reasoning",
+          "meaning": "推理过程",
+          "note": "强调如何论证"
+        }
+      ]
+    },
+    {
+      "label": "争吵，争执",
+      "items": [
+        {
+          "word": "quarrel",
+          "meaning": "争吵"
+        },
+        {
+          "word": "dispute",
+          "meaning": "争执"
+        }
+      ]
+    }
+  ]
+}

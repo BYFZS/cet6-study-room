@@ -9,6 +9,18 @@ const overrides={
  affect:{promptMeaning:'影响（动词）',promptWord:'affect（动词）',synonyms:[{word:'influence',meaning:'影响'}],confusables:[{word:'effect',meaning:'效果；结果（名词）',note:'affect通常作动词，effect通常作名词。'},{word:'infect',meaning:'感染',note:'infect表示感染。'},{word:'defect',meaning:'缺陷',note:'注意词形和词义的区别。'}]}
 };
 export function attachRelations(deck,...banks){const relations=Object.assign({},...banks,overrides);return deck.map(w=>({...w,relations:relations[w.word]||{synonyms:[],confusables:[]}}));}
+export function attachSynonymSenses(deck, ...banks) {
+ const byWord = Object.assign({}, ...banks);
+ return deck.map(word => {
+  const senses = byWord[word.word];
+  if (!senses?.length) return word;
+  const synonyms = new Map();
+  for (const item of [...word.relations.synonyms, ...senses.flatMap(sense => sense.items)]) {
+   synonyms.set(item.word.toLowerCase(), item);
+  }
+  return {...word, relations: {...word.relations, senses, synonyms: [...synonyms.values()]}};
+ });
+}
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const meanings=w=>[...(w.aliases||[]),...String(w.meaning).split(/[；;、，,]/)].map(normalize).filter(Boolean);
 function distance(a,b){let row=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(a[i-1]===b[j-1]?0:1));row=next;}return row[b.length];}

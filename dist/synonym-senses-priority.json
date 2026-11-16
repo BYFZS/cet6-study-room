@@ -1,0 +1,1211 @@
+{
+  "require": [
+    {
+      "label": "需要",
+      "items": [
+        {
+          "word": "need",
+          "meaning": "需要"
+        },
+        {
+          "word": "warrant",
+          "meaning": "使有必要",
+          "note": "强调某种情况足以使行动有必要"
+        }
+      ]
+    },
+    {
+      "label": "规定或要求",
+      "items": [
+        {
+          "word": "demand",
+          "meaning": "强烈要求"
+        },
+        {
+          "word": "stipulate",
+          "meaning": "明文规定",
+          "note": "多用于合同或规则"
+        }
+      ]
+    }
+  ],
+  "provide": [
+    {
+      "label": "提供物品或服务",
+      "items": [
+        {
+          "word": "supply",
+          "meaning": "供应"
+        },
+        {
+          "word": "furnish",
+          "meaning": "提供",
+          "note": "较正式，常搭配资料或设备"
+        },
+        {
+          "word": "make available",
+          "meaning": "让人可以获得或使用"
+        }
+      ]
+    }
+  ],
+  "improve": [
+    {
+      "label": "改善质量或表现",
+      "items": [
+        {
+          "word": "enhance",
+          "meaning": "提升质量或效果"
+        },
+        {
+          "word": "make better",
+          "meaning": "使变得更好"
+        }
+      ]
+    },
+    {
+      "label": "状态好转",
+      "items": [
+        {
+          "word": "get better",
+          "meaning": "好转"
+        },
+        {
+          "word": "pick up",
+          "meaning": "有所起色",
+          "note": "常说生意或状况开始改善"
+        }
+      ]
+    }
+  ],
+  "avoid": [
+    {
+      "label": "避开人或事",
+      "items": [
+        {
+          "word": "stay away from",
+          "meaning": "远离"
+        },
+        {
+          "word": "steer clear of",
+          "meaning": "避开",
+          "note": "较口语"
+        }
+      ]
+    },
+    {
+      "label": "避免发生",
+      "items": [
+        {
+          "word": "prevent",
+          "meaning": "防止",
+          "note": "prevent后接被阻止的事件或人加from doing"
+        },
+        {
+          "word": "keep from happening",
+          "meaning": "阻止事情发生"
+        }
+      ]
+    }
+  ],
+  "remain": [
+    {
+      "label": "维持状态",
+      "items": [
+        {
+          "word": "stay",
+          "meaning": "保持"
+        },
+        {
+          "word": "continue to be",
+          "meaning": "仍然是"
+        }
+      ]
+    },
+    {
+      "label": "留下或还剩",
+      "items": [
+        {
+          "word": "stay behind",
+          "meaning": "留在原地",
+          "note": "通常指人"
+        },
+        {
+          "word": "be left",
+          "meaning": "剩下",
+          "note": "常指时间或物品"
+        }
+      ]
+    }
+  ],
+  "likely": [
+    {
+      "label": "有可能的",
+      "items": [
+        {
+          "word": "probable",
+          "meaning": "很可能的"
+        },
+        {
+          "word": "expected",
+          "meaning": "预期会发生的",
+          "note": "可暗含有预测依据"
+        }
+      ]
+    },
+    {
+      "label": "很可能",
+      "items": [
+        {
+          "word": "probably",
+          "meaning": "很可能"
+        },
+        {
+          "word": "there is a good chance that",
+          "meaning": "很有可能…",
+          "note": "后接从句"
+        }
+      ]
+    }
+  ],
+  "concern": [
+    {
+      "label": "担忧或忧虑",
+      "items": [
+        {
+          "word": "worry",
+          "meaning": "担忧"
+        },
+        {
+          "word": "anxiety",
+          "meaning": "焦虑",
+          "note": "通常更强烈"
+        }
+      ]
+    },
+    {
+      "label": "涉及某事",
+      "items": [
+        {
+          "word": "relate to",
+          "meaning": "与…有关"
+        },
+        {
+          "word": "have to do with",
+          "meaning": "与…有关系",
+          "note": "较口语"
+        }
+      ]
+    }
+  ],
+  "benefit": [
+    {
+      "label": "好处",
+      "items": [
+        {
+          "word": "advantage",
+          "meaning": "有利之处"
+        },
+        {
+          "word": "gain",
+          "meaning": "获得的好处",
+          "note": "常用于收益或提升"
+        }
+      ]
+    },
+    {
+      "label": "从中获益",
+      "items": [
+        {
+          "word": "gain from",
+          "meaning": "从…得到好处"
+        },
+        {
+          "word": "profit from",
+          "meaning": "从…受益",
+          "note": "也可特指获得经济收益"
+        }
+      ]
+    }
+  ],
+  "reduce": [
+    {
+      "label": "使数量或程度下降",
+      "items": [
+        {
+          "word": "decrease",
+          "meaning": "使减少"
+        },
+        {
+          "word": "cut",
+          "meaning": "削减",
+          "note": "常指成本或用量"
+        },
+        {
+          "word": "lower",
+          "meaning": "降低",
+          "note": "常指价格、风险或水平"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "label": "支持结论的证据",
+      "items": [
+        {
+          "word": "supporting information",
+          "meaning": "佐证信息"
+        },
+        {
+          "word": "proof",
+          "meaning": "确证",
+          "note": "语气更强，指足以证明的证据"
+        },
+        {
+          "word": "indication",
+          "meaning": "迹象",
+          "note": "只提示某种可能"
+        }
+      ]
+    }
+  ],
+  "despite": [
+    {
+      "label": "尽管有某种情况",
+      "items": [
+        {
+          "word": "in spite of",
+          "meaning": "尽管",
+          "note": "两者后接名词或动名词"
+        },
+        {
+          "word": "although",
+          "meaning": "尽管",
+          "note": "although后接从句"
+        }
+      ]
+    }
+  ],
+  "affect": [
+    {
+      "label": "产生影响",
+      "items": [
+        {
+          "word": "influence",
+          "meaning": "影响"
+        },
+        {
+          "word": "have an effect on",
+          "meaning": "对…产生影响"
+        }
+      ]
+    },
+    {
+      "label": "触动情绪",
+      "items": [
+        {
+          "word": "move",
+          "meaning": "打动"
+        },
+        {
+          "word": "touch",
+          "meaning": "触动",
+          "note": "常用于正面的情绪触动"
+        }
+      ]
+    }
+  ],
+  "lack": [
+    {
+      "label": "缺少或不足",
+      "items": [
+        {
+          "word": "be short of",
+          "meaning": "缺少"
+        },
+        {
+          "word": "be without",
+          "meaning": "没有",
+          "note": "常指完全没有"
+        }
+      ]
+    },
+    {
+      "label": "短缺或不足",
+      "items": [
+        {
+          "word": "shortage",
+          "meaning": "短缺",
+          "note": "通常指所需物品或人员不足"
+        },
+        {
+          "word": "absence",
+          "meaning": "缺乏",
+          "note": "往往指完全没有"
+        }
+      ]
+    }
+  ],
+  "assume": [
+    {
+      "label": "未经证实地认为",
+      "items": [
+        {
+          "word": "suppose",
+          "meaning": "假定"
+        },
+        {
+          "word": "presume",
+          "meaning": "推定",
+          "note": "可能基于已有迹象"
+        }
+      ]
+    },
+    {
+      "label": "承担某种职责",
+      "items": [
+        {
+          "word": "take on",
+          "meaning": "承担"
+        },
+        {
+          "word": "undertake",
+          "meaning": "承担",
+          "note": "常搭配任务或责任"
+        }
+      ]
+    }
+  ],
+  "maintain": [
+    {
+      "label": "维持状态",
+      "items": [
+        {
+          "word": "keep",
+          "meaning": "保持"
+        },
+        {
+          "word": "preserve",
+          "meaning": "保护并使其延续"
+        },
+        {
+          "word": "sustain",
+          "meaning": "使持续",
+          "note": "常指活动、增长或努力"
+        }
+      ]
+    },
+    {
+      "label": "坚持声称",
+      "items": [
+        {
+          "word": "assert",
+          "meaning": "断言"
+        },
+        {
+          "word": "insist",
+          "meaning": "坚持认为",
+          "note": "通常含坚持己见的语气"
+        }
+      ]
+    }
+  ],
+  "contribute": [
+    {
+      "label": "付出金钱或资源",
+      "items": [
+        {
+          "word": "give",
+          "meaning": "给予"
+        },
+        {
+          "word": "donate",
+          "meaning": "捐赠",
+          "note": "通常指无偿给出"
+        }
+      ]
+    },
+    {
+      "label": "促成结果",
+      "items": [
+        {
+          "word": "help bring about",
+          "meaning": "有助于促成"
+        },
+        {
+          "word": "play a part in",
+          "meaning": "在…中起一定作用"
+        }
+      ]
+    }
+  ],
+  "approach": [
+    {
+      "label": "方法或思路",
+      "items": [
+        {
+          "word": "method",
+          "meaning": "方法"
+        },
+        {
+          "word": "way of dealing with something",
+          "meaning": "处理某事的方式"
+        }
+      ]
+    },
+    {
+      "label": "靠近",
+      "items": [
+        {
+          "word": "draw near",
+          "meaning": "逐渐临近"
+        },
+        {
+          "word": "come closer",
+          "meaning": "靠近"
+        }
+      ]
+    }
+  ],
+  "significant": [
+    {
+      "label": "重要或影响大",
+      "items": [
+        {
+          "word": "important",
+          "meaning": "重要的"
+        },
+        {
+          "word": "consequential",
+          "meaning": "后果重大的"
+        }
+      ]
+    },
+    {
+      "label": "幅度或数量明显",
+      "items": [
+        {
+          "word": "considerable",
+          "meaning": "相当大的"
+        },
+        {
+          "word": "substantial",
+          "meaning": "可观的",
+          "note": "也可描述规模；统计义应用statistically significant"
+        }
+      ]
+    }
+  ],
+  "account": [
+    {
+      "label": "账户",
+      "items": [
+        {
+          "word": "bank account",
+          "meaning": "银行账户",
+          "note": "特指银行账户"
+        },
+        {
+          "word": "user account",
+          "meaning": "用户账户",
+          "note": "用于网站或软件登录"
+        }
+      ]
+    },
+    {
+      "label": "叙述；描述",
+      "items": [
+        {
+          "word": "description",
+          "meaning": "描述"
+        },
+        {
+          "word": "report",
+          "meaning": "报道；叙述",
+          "note": "常指事实经过"
+        }
+      ]
+    },
+    {
+      "label": "account for · 解释原因",
+      "items": [
+        {
+          "word": "explain",
+          "meaning": "解释……的原因"
+        },
+        {
+          "word": "be the reason for",
+          "meaning": "是……的原因"
+        }
+      ]
+    },
+    {
+      "label": "account for · 占比",
+      "items": [
+        {
+          "word": "make up",
+          "meaning": "构成；占……的比例"
+        },
+        {
+          "word": "constitute",
+          "meaning": "构成；占",
+          "note": "偏正式"
+        }
+      ]
+    }
+  ],
+  "decline": [
+    {
+      "label": "减少或变差",
+      "items": [
+        {
+          "word": "decrease",
+          "meaning": "下降"
+        },
+        {
+          "word": "drop",
+          "meaning": "下跌",
+          "note": "可指较明显的下降"
+        }
+      ]
+    },
+    {
+      "label": "礼貌拒绝",
+      "items": [
+        {
+          "word": "turn down",
+          "meaning": "拒绝邀请或提议"
+        },
+        {
+          "word": "refuse",
+          "meaning": "拒绝",
+          "note": "语气未必礼貌"
+        }
+      ]
+    }
+  ],
+  "absence": [
+    {
+      "label": "未出席或不在场",
+      "items": [
+        {
+          "word": "nonattendance",
+          "meaning": "未出席"
+        },
+        {
+          "word": "being away",
+          "meaning": "不在场"
+        }
+      ]
+    },
+    {
+      "label": "某事物不存在",
+      "items": [
+        {
+          "word": "lack",
+          "meaning": "缺乏",
+          "note": "程度可以只是短缺"
+        },
+        {
+          "word": "nonexistence",
+          "meaning": "不存在",
+          "note": "强调完全没有"
+        }
+      ]
+    }
+  ],
+  "excused": [
+    {
+      "label": "获准缺席的",
+      "items": [
+        {
+          "word": "authorized",
+          "meaning": "经批准的"
+        },
+        {
+          "word": "approved",
+          "meaning": "经同意的",
+          "note": "常搭配缺勤或请假"
+        }
+      ]
+    },
+    {
+      "label": "被原谅或获豁免",
+      "items": [
+        {
+          "word": "forgiven",
+          "meaning": "被原谅的"
+        },
+        {
+          "word": "exempted",
+          "meaning": "被免除的",
+          "note": "常指职责或要求"
+        }
+      ]
+    }
+  ],
+  "peer": [
+    {
+      "label": "同辈或同等地位者",
+      "items": [
+        {
+          "word": "equal",
+          "meaning": "地位相当的人"
+        },
+        {
+          "word": "person of the same age or rank",
+          "meaning": "同龄或同级的人"
+        }
+      ]
+    }
+  ],
+  "academic": [
+    {
+      "label": "学术研究的",
+      "items": [
+        {
+          "word": "scholarly",
+          "meaning": "学术的"
+        },
+        {
+          "word": "research-related",
+          "meaning": "与研究有关的"
+        }
+      ]
+    },
+    {
+      "label": "学业或学校教育的",
+      "items": [
+        {
+          "word": "educational",
+          "meaning": "教育方面的"
+        },
+        {
+          "word": "school-related",
+          "meaning": "与学校有关的"
+        }
+      ]
+    }
+  ],
+  "achievement": [
+    {
+      "label": "完成的成就",
+      "items": [
+        {
+          "word": "accomplishment",
+          "meaning": "做到的成就"
+        },
+        {
+          "word": "success",
+          "meaning": "成功",
+          "note": "可泛指获得好结果"
+        },
+        {
+          "word": "attainment",
+          "meaning": "达到的成绩或水平",
+          "note": "较正式"
+        }
+      ]
+    }
+  ],
+  "instruction": [
+    {
+      "label": "教学或指导",
+      "items": [
+        {
+          "word": "teaching",
+          "meaning": "教学"
+        },
+        {
+          "word": "training",
+          "meaning": "训练",
+          "note": "偏重技能培养"
+        }
+      ]
+    },
+    {
+      "label": "说明或指令",
+      "items": [
+        {
+          "word": "directions",
+          "meaning": "操作说明"
+        },
+        {
+          "word": "order",
+          "meaning": "命令",
+          "note": "用于必须执行的指示"
+        }
+      ]
+    }
+  ],
+  "crisis": [
+    {
+      "label": "局势危急的时刻",
+      "items": [
+        {
+          "word": "emergency",
+          "meaning": "紧急情况",
+          "note": "常需立即采取行动"
+        },
+        {
+          "word": "critical situation",
+          "meaning": "危急局势"
+        }
+      ]
+    }
+  ],
+  "intervene": [
+    {
+      "label": "介入局面",
+      "items": [
+        {
+          "word": "step in",
+          "meaning": "出面介入"
+        },
+        {
+          "word": "intercede",
+          "meaning": "出面调解或说情",
+          "note": "常为了帮助某一方"
+        }
+      ]
+    }
+  ],
+  "resource": [
+    {
+      "label": "可利用的资财或信息",
+      "items": [
+        {
+          "word": "asset",
+          "meaning": "有用的资产"
+        },
+        {
+          "word": "source of support",
+          "meaning": "支持来源"
+        }
+      ]
+    }
+  ],
+  "passion": [
+    {
+      "label": "强烈的热爱或兴趣",
+      "items": [
+        {
+          "word": "enthusiasm",
+          "meaning": "热情",
+          "note": "强度未必相同"
+        },
+        {
+          "word": "deep interest",
+          "meaning": "浓厚兴趣"
+        },
+        {
+          "word": "devotion",
+          "meaning": "投入与热爱",
+          "note": "侧重长期投入"
+        }
+      ]
+    }
+  ],
+  "pursue": [
+    {
+      "label": "努力追求目标",
+      "items": [
+        {
+          "word": "seek",
+          "meaning": "寻求"
+        },
+        {
+          "word": "strive for",
+          "meaning": "努力争取"
+        }
+      ]
+    },
+    {
+      "label": "从事或持续某项活动",
+      "items": [
+        {
+          "word": "engage in",
+          "meaning": "从事"
+        },
+        {
+          "word": "follow",
+          "meaning": "从事或遵循",
+          "note": "可用于职业道路"
+        }
+      ]
+    }
+  ],
+  "wealthy": [
+    {
+      "label": "富有的",
+      "items": [
+        {
+          "word": "rich",
+          "meaning": "有钱的"
+        },
+        {
+          "word": "affluent",
+          "meaning": "富裕的",
+          "note": "可形容地区或群体"
+        },
+        {
+          "word": "well-off",
+          "meaning": "经济宽裕的"
+        }
+      ]
+    }
+  ],
+  "employer": [
+    {
+      "label": "雇用他人的人或组织",
+      "items": [
+        {
+          "word": "hiring organization",
+          "meaning": "用人单位"
+        },
+        {
+          "word": "person or company that employs staff",
+          "meaning": "雇用员工的人或公司"
+        }
+      ]
+    }
+  ],
+  "exploit": [
+    {
+      "label": "不公平地利用他人",
+      "items": [
+        {
+          "word": "take unfair advantage of",
+          "meaning": "不公平地占…的便宜"
+        },
+        {
+          "word": "mistreat for profit",
+          "meaning": "为牟利而不公平地对待"
+        }
+      ]
+    },
+    {
+      "label": "利用资源或机会",
+      "items": [
+        {
+          "word": "make use of",
+          "meaning": "利用"
+        },
+        {
+          "word": "tap into",
+          "meaning": "开发利用",
+          "note": "常指发掘潜在的资源"
+        }
+      ]
+    }
+  ],
+  "community": [
+    {
+      "label": "社区或居民",
+      "items": [
+        {
+          "word": "neighborhood",
+          "meaning": "街区或邻里",
+          "note": "偏重居住地"
+        },
+        {
+          "word": "local population",
+          "meaning": "当地居民"
+        }
+      ]
+    },
+    {
+      "label": "因共同点形成的群体",
+      "items": [
+        {
+          "word": "group",
+          "meaning": "群体"
+        },
+        {
+          "word": "network of people with shared interests",
+          "meaning": "有共同兴趣的人群"
+        }
+      ]
+    }
+  ],
+  "official": [
+    {
+      "label": "官员或公职人员",
+      "items": [
+        {
+          "word": "public officer",
+          "meaning": "公职人员"
+        },
+        {
+          "word": "officeholder",
+          "meaning": "在任职务者"
+        }
+      ]
+    },
+    {
+      "label": "正式发布或认可的",
+      "items": [
+        {
+          "word": "authorized",
+          "meaning": "经认可的"
+        },
+        {
+          "word": "formal",
+          "meaning": "正式的",
+          "note": "侧重合乎正式程序"
+        }
+      ]
+    }
+  ],
+  "absent": [
+    {
+      "label": "缺席或不在",
+      "items": [
+        {
+          "word": "away",
+          "meaning": "不在"
+        },
+        {
+          "word": "not present",
+          "meaning": "不在场"
+        }
+      ]
+    },
+    {
+      "label": "缺乏某个因素",
+      "items": [
+        {
+          "word": "missing",
+          "meaning": "缺少的"
+        },
+        {
+          "word": "lacking",
+          "meaning": "缺乏的",
+          "note": "常用be lacking in表达缺少某物"
+        }
+      ]
+    }
+  ],
+  "suffer": [
+    {
+      "label": "忍受痛苦或患病",
+      "items": [
+        {
+          "word": "endure",
+          "meaning": "忍受"
+        },
+        {
+          "word": "be afflicted with",
+          "meaning": "患有",
+          "note": "较正式，多接疾病"
+        }
+      ]
+    },
+    {
+      "label": "遭受损失或挫折",
+      "items": [
+        {
+          "word": "sustain",
+          "meaning": "蒙受",
+          "note": "常搭配损害或损失"
+        },
+        {
+          "word": "experience",
+          "meaning": "经历",
+          "note": "语气本身并不表示痛苦"
+        }
+      ]
+    }
+  ],
+  "urge": [
+    {
+      "label": "力劝或敦促",
+      "items": [
+        {
+          "word": "press",
+          "meaning": "催促",
+          "note": "含施压意味"
+        },
+        {
+          "word": "strongly encourage",
+          "meaning": "大力劝说"
+        },
+        {
+          "word": "exhort",
+          "meaning": "郑重敦促",
+          "note": "较正式"
+        }
+      ]
+    }
+  ],
+  "attend": [
+    {
+      "label": "出席活动或上课",
+      "items": [
+        {
+          "word": "be present at",
+          "meaning": "出席"
+        },
+        {
+          "word": "go to",
+          "meaning": "去参加或就读"
+        }
+      ]
+    },
+    {
+      "label": "处理或照料（attend to）",
+      "items": [
+        {
+          "word": "take care of",
+          "meaning": "照料或处理"
+        },
+        {
+          "word": "deal with",
+          "meaning": "处理"
+        }
+      ]
+    }
+  ],
+  "primary": [
+    {
+      "label": "首要或主要的",
+      "items": [
+        {
+          "word": "main",
+          "meaning": "主要的"
+        },
+        {
+          "word": "chief",
+          "meaning": "首要的"
+        },
+        {
+          "word": "principal",
+          "meaning": "主要的"
+        }
+      ]
+    },
+    {
+      "label": "教育阶段初级的",
+      "items": [
+        {
+          "word": "elementary",
+          "meaning": "初级的",
+          "note": "elementary school多见于美式英语"
+        },
+        {
+          "word": "first-level",
+          "meaning": "第一级的"
+        }
+      ]
+    }
+  ],
+  "harm": [
+    {
+      "label": "伤害或造成不良影响",
+      "items": [
+        {
+          "word": "damage",
+          "meaning": "损害",
+          "note": "常指物品、声誉或环境"
+        },
+        {
+          "word": "injure",
+          "meaning": "使受伤",
+          "note": "通常指身体伤害"
+        },
+        {
+          "word": "do harm to",
+          "meaning": "对…造成伤害"
+        }
+      ]
+    }
+  ],
+  "challenge": [
+    {
+      "label": "难题或考验",
+      "items": [
+        {
+          "word": "difficulty",
+          "meaning": "困难"
+        },
+        {
+          "word": "test",
+          "meaning": "考验",
+          "note": "强调检验能力"
+        }
+      ]
+    },
+    {
+      "label": "质疑或提出异议",
+      "items": [
+        {
+          "word": "question",
+          "meaning": "质疑"
+        },
+        {
+          "word": "dispute",
+          "meaning": "对…提出争议"
+        }
+      ]
+    }
+  ],
+  "progress": [
+    {
+      "label": "进步或进展",
+      "items": [
+        {
+          "word": "advance",
+          "meaning": "进展"
+        },
+        {
+          "word": "headway",
+          "meaning": "进展",
+          "note": "常搭配make headway"
+        }
+      ]
+    },
+    {
+      "label": "逐步发展",
+      "items": [
+        {
+          "word": "move forward",
+          "meaning": "向前推进"
+        },
+        {
+          "word": "develop",
+          "meaning": "发展"
+        }
+      ]
+    }
+  ],
+  "policy": [
+    {
+      "label": "规则或方针",
+      "items": [
+        {
+          "word": "guideline",
+          "meaning": "指导准则",
+          "note": "约束力可能较弱"
+        },
+        {
+          "word": "course of action",
+          "meaning": "行动方针"
+        }
+      ]
+    },
+    {
+      "label": "保险单",
+      "items": [
+        {
+          "word": "insurance contract",
+          "meaning": "保险合同"
+        },
+        {
+          "word": "insurance agreement",
+          "meaning": "保险协议"
+        }
+      ]
+    }
+  ]
+}
