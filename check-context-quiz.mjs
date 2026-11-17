@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {mergeWordDecks} from './dist/learning-core.mjs';
-import {makeQuizQuestions, reviewQuizPlan, singleQuestion, splitEnglish, splitChinese} from './dist/context-quiz.mjs';
+import {makeQuizQuestions, restrictQuizQuestion, reviewQuizPlan, singleQuestion, splitEnglish, splitChinese} from './dist/context-quiz.mjs';
 const load=file=>JSON.parse(readFileSync('dist/'+file+'.json','utf8'));
 const deck=mergeWordDecks(['base-words','paper-words','paper-extra-reading','paper-extra-mixed','paper-writing-translation'].map(load));
 const ids=new Set(deck.map(w=>w.word));
@@ -27,6 +27,14 @@ const first=Date.parse('2026-11-16T08:00:00+08:00'),last=Date.parse('2026-11-17T
 const sourceLogs=batch.flatMap((word,i)=>[{word,at:first+i,correct:true},{word,at:last+i,correct:false},{word,at:last+1000+i,correct:true}]);
 const plan=reviewQuizPlan(sourceLogs,[],100,last+2000);
 assert.equal(plan.ready,true);assert.deepEqual(plan.words,batch);
+assert.deepEqual(plan.targets,batch);
+const mixed=sourceLogs.map(row=>row.word!=='avoid'?{...row,correct:true}:row);
+assert.deepEqual(reviewQuizPlan(mixed,[],100,last+2000).targets,['avoid']);
+assert.equal(reviewQuizPlan(sourceLogs.map(row=>({...row,correct:true})),[],100,last+2000).ready,false);
+const firstPair=pairs[0],trimmed=restrictQuizQuestion(firstPair,new Set(['require']));
+validate(trimmed);
+assert.equal(Object.keys(trimmed.answers).length,1);
+assert.match(trimmed.chinese,/提供/);
 assert.equal(reviewQuizPlan(sourceLogs,[{mode:'context-quiz',reviews:plan.reviews}],100,last+2000).words.length,0);
 assert.equal(reviewQuizPlan(sourceLogs.filter(x=>x.word!=='require'),[],100,last+2000).words.length,99);
 console.log('PASS:',deck.length,'single contexts,',pairs.length,'authored multi-target contexts,',questions.length,'questions for 100 sampled words,',questions.filter(q=>Object.keys(q.answers).length>1).length,'multi-target questions.');

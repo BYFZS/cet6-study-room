@@ -1,6 +1,6 @@
 import {dayKey} from './learning-core.mjs?v=6';
 import {QUIZ_ATTEMPT, QUIZ_MARK, QUIZ_SIZE, makeQuizQuestions, quizAttempts, quizKey, quizResults,
-  reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish} from './context-quiz.mjs?v=12';
+  reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish, mistakeTimes, restrictQuizQuestion} from './context-quiz.mjs?v=13';
 import {partOfSpeechHTML} from './feedback-notes.mjs?v=12';
 
 const DRAFT_KEY = 'cet6-context-quiz-draft-v1';
@@ -21,12 +21,38 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
   try { draft = JSON.parse(localStorage.getItem(DRAFT_KEY)); } catch {}
   if (!Array.isArray(draft?.questions) || !draft?.responses || typeof draft.page !== 'number') draft = null;
   let report = null;
+  let focusedQuestion = null;
+
+  panel.addEventListener('focusin', event => {
+    if (!event.target.matches('[data-quiz-word]')) return;
+    const question = event.target.closest('.quizQuestion');
+    if (!question || question === focusedQuestion) return;
+    focusedQuestion = question;
+    requestAnimationFrame(() => {
+      if (!question.contains(document.activeElement)) return;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      question.scrollIntoView({block:'center', inline:'nearest', behavior:reduceMotion?'auto':'smooth'});
+    });
+  });
 
   function storeDraft() {
     try {
       if (draft) localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
       else localStorage.removeItem(DRAFT_KEY);
     } catch { message('浏览器无法保存小测草稿，请完成后交卷。'); }
+  }
+
+  if (draft && draft.rule !== 'mistakes') {
+    const db = getDB();
+    const missed = new Set(mistakeTimes(db.logs, db.rounds).keys());
+    draft.questions = draft.questions.map(card => restrictQuizQuestion(card, missed))
+      .filter(card => Object.keys(card.answers).length > 0);
+    const retained = new Set(draft.questions.flatMap(card => Object.keys(card.answers)));
+    draft.responses = Object.fromEntries(Object.entries(draft.responses).filter(([word]) => retained.has(word)));
+    draft.page = Math.max(0, Math.min(draft.page, Math.ceil(draft.questions.length / PAGE_SIZE) - 1));
+    draft.rule = 'mistakes';
+    if (!retained.size) draft = null;
+    storeDraft();
   }
 
   function progress() {
@@ -38,7 +64,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
     const plan = progress();
     $('quizHomeProgress').value = draft ? QUIZ_SIZE : plan.words.length;
     $('quizHomeStatus').textContent = draft ? '有一份未交卷的小测' : plan.ready ?
-      '已复习 100 个不同词，可以开始小测。' : `已复习 ${plan.words.length} / ${QUIZ_SIZE} 个不同词`;
+      '已复习 100 个不同词，本卷考 '+plan.targets.length+' 个错词。' : `已复习 ${plan.words.length} / ${QUIZ_SIZE} 个不同词`;
     $('quizHomeOpen').textContent = draft ? '继续小测 →' : plan.ready ? '开始小测 →' : '查看进度 →';
   }
 
@@ -46,7 +72,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
     if (!draft && !progress().ready) return;
     const button = document.createElement('button');
     button.className = 'quizGroupLink';
-    button.textContent = draft ? '继续句中填义小测 →' : '已复习 100 词，开始句中填义小测 →';
+    button.textContent = draft ? '继续句中填义小测 →' : '错词小测已就绪 →';
     button.onclick = () => openView('contextQuiz');
     container.append(button);
   }
@@ -58,6 +84,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
 
   function renderPage() {
     const pages = Math.ceil(draft.questions.length / PAGE_SIZE);
+    const total = draft.questions.reduce((count, card) => count + Object.keys(card.answers).length, 0);
     const offset = draft.page * PAGE_SIZE;
     const slice = draft.questions.slice(offset, offset + PAGE_SIZE);
     panel.innerHTML = `<h2>句中填义小测</h2><p>看英文句和中文提示，填写高亮词在这句话里的意思。</p>
@@ -74,7 +101,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
       <button id="quizSubmit" class="primary">交卷</button></div>`;
     const updateCount = () => {
       const count = Object.values(draft.responses).filter(text => text.trim()).length;
-      $('quizAnswerProgress').textContent = `第 ${draft.page + 1} / ${pages} 页 · 已答 ${count} / ${QUIZ_SIZE} 词`;
+      $('quizAnswerProgress').textContent = `第 ${draft.page + 1} / ${pages} 页 · 已答 ${count} / ${total} 词`;
     };
     updateCount();
     panel.querySelectorAll('[data-quiz-word]').forEach(input => input.oninput = () => {
@@ -151,15 +178,15 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
     if (selected) { renderReport(selected); return; }
     const plan = progress();
     panel.innerHTML = `<h2>句中填义小测</h2>
-      <p>累计复习 ${QUIZ_SIZE} 个不同词后出卷，考这些词在句中的意思。</p>
+      <p>累计复习 ${QUIZ_SIZE} 个不同词后，从中选有错题记录的词，考它们在句中的意思。</p>
       <progress max="${QUIZ_SIZE}" value="${plan.words.length}" aria-label="复习词数"></progress>
-      <p>已复习 ${plan.words.length} / ${QUIZ_SIZE} 个不同词</p>
+      <p>已复习 ${plan.words.length} / ${QUIZ_SIZE} 个不同词${plan.ready?' · 本卷 '+plan.targets.length+' 个错词':''}</p>
       <button id="quizBegin" class="primary"${plan.ready ? '' : ' disabled'}>开始小测 →</button>
       ${attempts.length ? '<h3>已完成的小测</h3>' + attempts.map(item =>
         '<button class="quizHistory" data-quiz-attempt="'+esc(item.id)+'">'+dayKey(item.at)+' · 查看结果 →</button>').join('') : ''}`;
     $('quizBegin').onclick = () => {
-      draft = {reviews: plan.reviews, questions: makeQuizQuestions(plan.words, getDeck(), hints, combinations),
-        responses: {}, page: 0};
+      draft = {reviews: plan.reviews, questions: makeQuizQuestions(plan.targets, getDeck(), hints, combinations),
+        responses: {}, page: 0, rule: 'mistakes'};
       storeDraft();
       renderPage();
     };

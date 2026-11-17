@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>词汇量专测 · CET6</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="study.css?v=13">
+  <link rel="stylesheet" href="vocab-size.css?v=13">
+</head>
+<body>
+  <header><a class="brand" href="study.html">CET<span>6</span><small>词汇训练室</small></a></header>
+  <main class="study sizeStudy">
+    <div class="heading"><h1>词汇量专测</h1><a href="study.html">返回词汇训练 →</a></div>
+    <div id="sizeStatus" role="status"></div>
+    <section id="sizeMain" aria-label="词汇量专测" class="panel sizePanel">
+      <p>正在加载题库…</p>
+    </section>
+    <footer class="sizeFooter">
+      <a href="study.html?view=scores">查看旧 20 词摸底</a>
+      <details><summary>题库与估算方法</summary>
+        <p>按美国开放国家语料库的书面词频分层。合并同形词跨词性的频数，前 8,000 个词条每 1,000 个划为一档；每档考 20 个词。结果按每档答对比例外推，并给出考虑抽样波动和待核对答案的参考区间。结果反映这份词表中能写出常见义的词汇，未经过正式量表校准。</p>
+        <p>词表数据来自 <a href="https://lingevo.com/resources/" target="_blank" rel="noopener">Lingevo</a> 和 <a href="https://anc.org/data/oanc/" target="_blank" rel="noopener">Open American National Corpus</a>。分层抽题思路参考 <a href="https://www.wgtn.ac.nz/lals/resources/paul-nations-resources/vocabulary-tests" target="_blank" rel="noopener">Paul Nation 的词汇测试资源</a>。</p>
+      </details>
+    </footer>
+  </main>
+  <script type="module" src="vocab-size-ui.mjs?v=13"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.sizeStudy{max-width:860px}
+.sizePanel{margin:18px 0;padding:clamp(15px,4vw,30px)}
+.sizePanel h2{margin:0 0 12px}
+.sizePanel p{line-height:1.65}
+.sizeStudy footer.sizeFooter{display:block}
+.sizeFooter details{margin-top:12px}
+.sizeFooter summary{cursor:pointer}
+.sizeFooter details p{line-height:1.6}
+.sizeMeta{display:flex;flex-wrap:wrap;gap:10px;color:#496557;font-size:14px;margin:16px 0 20px}
+.sizeMeta span{padding:4px 8px;background:#eff4ea;border-radius:5px}
+.sizeProgress{display:flex;gap:12px;align-items:center;margin:12px 0;padding:8px 0;color:#3d5d4f;font-size:14px}
+.sizeProgress progress{flex:1;min-width:44px;accent-color:var(--green)}
+.sizeRow{display:grid;grid-template-columns:32px minmax(112px,.8fr) minmax(105px,1.5fr) auto;gap:9px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.sizeRow strong{overflow-wrap:anywhere}
+.sizeRow input{box-sizing:border-box;width:100%;min-width:0;border:1px solid #a6bba3;border-radius:6px;padding:8px;font-size:16px;color:#183c35}
+.sizeRow input:focus-visible{outline:2px solid #4e765a;outline-offset:1px}
+.sizeRow input:disabled{background:#f3f5ef}
+.sizeRow button[aria-pressed=true]{background:#e5ecd9;color:#264738}
+.sizeRow button:disabled{opacity:.6}
+.sizeActions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;margin-top:16px}
+.sizeEstimate{font-size:clamp(30px,7vw,46px);letter-spacing:-.025em;font-weight:700;color:#174738;margin:6px 0}
+.sizeBands{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 18px}
+.sizeBands th,.sizeBands td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}
+.sizeReview{margin:12px 0;padding:10px 0;border-top:1px solid var(--line)}
+.sizeReview summary{cursor:pointer;font-weight:600}
+.sizeResultRow{padding:9px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.sizeResultRow small{display:block;color:#506b5d;margin-top:3px}
+.sizeResultRow button{margin:4px 5px 0 0}
+@media(max-width:520px){
+  .sizeRow{grid-template-columns:26px 1fr auto}
+  .sizeRow input{grid-column:2/-1;grid-row:2}
+  .sizeRow button{grid-column:3;grid-row:1}
+  .sizeRow small{align-self:center}
+  .sizeBands{font-size:12px}
+}

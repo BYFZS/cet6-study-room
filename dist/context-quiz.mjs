@@ -11,10 +11,11 @@ const clean = value => normalize(String(value).normalize('NFKC')).replace(/[\sâ€
 
 export function reviewQuizPlan(logs, rounds = [], size = QUIZ_SIZE, now = Date.now()) {
   const taken = new Set(rounds.filter(r => r.mode === QUIZ_ATTEMPT).flatMap(r => r.reviews || []));
+  const missedAt = mistakeTimes(logs, rounds);
   const first = new Map();
   const dailyReviews = new Set();
   const words = new Set();
-  const reviews = [];
+  let reviews = [];
   for (const log of logs.filter(x => x?.word && Number.isFinite(x.at) && x.at > 0 && x.at <= now)
     .sort((a, b) => a.at - b.at || a.word.localeCompare(b.word))) {
     const date = localStudyDay(log.at);
@@ -26,9 +27,40 @@ export function reviewQuizPlan(logs, rounds = [], size = QUIZ_SIZE, now = Date.n
     if (taken.has(key) || words.has(log.word)) continue;
     words.add(log.word);
     reviews.push(key);
-    if (words.size === size) break;
+    if (words.size === size) {
+      const targets = [...words].filter(word => (missedAt.get(word) ?? Infinity) <= log.at);
+      if (targets.length) return {reviews, words: [...words], targets, ready: true};
+      // A cohort without errors needs no quiz. Continue counting the subsequent practice.
+      words.clear();
+      reviews = [];
+    }
   }
-  return {reviews, words: [...words], ready: words.size === size};
+  return {reviews, words: [...words], targets: [], ready: false};
+}
+
+export function mistakeTimes(logs, rounds = []) {
+  const result = new Map();
+  const count = (word, at) => {
+    if (word && Number.isFinite(at)) result.set(word, Math.min(at, result.get(word) ?? Infinity));
+  };
+  for (const log of logs) if (log?.correct === false) count(log.word, log.at);
+  for (const attempt of quizAttempts(rounds)) {
+    for (const item of quizResults(attempt, rounds)) {
+      if (item.status === 'wrong') count(item.word, attempt.at);
+    }
+  }
+  return result;
+}
+
+export function restrictQuizQuestion(card, target) {
+  const answers = Object.fromEntries(Object.entries(card.answers).filter(([word]) => target.has(word)));
+  return {
+    answers,
+    chinese: card.chinese.replace(chinesePattern, (marker, word) =>
+      target.has(word) ? marker : card.answers[word][0]),
+    english: card.english.replace(englishPattern, (marker, word, phrase) =>
+      target.has(word.toLowerCase()) ? marker : phrase || word)
+  };
 }
 
 export function singleQuestion(word, hints) {
@@ -63,15 +95,11 @@ export function makeQuizQuestions(words, deck, hints, combinations) {
   for (const card of [...combinations].sort((a, b) => Object.keys(b.answers).length - Object.keys(a.answers).length)) {
     const selected = Object.keys(card.answers).filter(word => remaining.has(word));
     if (selected.length < 2) continue;
-    const target = new Set(selected);
-    const chinese = card.chinese.replace(chinesePattern, (marker, word) =>
-      target.has(word) ? marker : card.answers[word][0]);
-    const visible = chinese.replace(chinesePattern, '');
+    const question = restrictQuizQuestion(card, new Set(selected));
+    const visible = question.chinese.replace(chinesePattern, '');
     if (selected.some(word => card.answers[word].some(meaning =>
       meaning.length >= 2 && visible.includes(meaning)))) continue;
-    const english = card.english.replace(englishPattern, (marker, word, phrase) =>
-      target.has(word.toLowerCase()) ? marker : phrase || word);
-    questions.push({english, chinese, answers: Object.fromEntries(selected.map(word => [word, card.answers[word]]))});
+    questions.push(question);
     for (const word of selected) remaining.delete(word);
   }
   for (const word of remaining) questions.push(singleQuestion(deckByWord.get(word), hints));
@@ -105,7 +133,7 @@ export function quizResults(attempt, rounds) {
     const current = marks.get(item.word);
     if (!current || current.at <= item.at) marks.set(item.word, item);
   }
-  return attempt.results.map(item => ({
+  return (attempt.results || []).map(item => ({
     ...item, status: marks.has(item.word) ? (marks.get(item.word).correct ? 'correct' : 'wrong') : item.status
   }));
 }
