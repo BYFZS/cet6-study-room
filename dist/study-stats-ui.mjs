@@ -1,5 +1,5 @@
 import {dayKey} from './learning-core.mjs?v=6';
-import {calendarDays, formatStudyTime, heatLevel, shiftMonth, summarizeStudy} from './study-analytics.mjs?v=11';
+import {calendarDays, formatStudyTime, heatLevel, shiftMonth, summarizeStudy} from './study-analytics.mjs?v=12';
 
 const dateTitle = key => {
   const [year, month, day] = key.split('-').map(Number);

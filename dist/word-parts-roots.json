@@ -1,0 +1,586 @@
+{
+  "achievement": {
+    "parts": [
+      {
+        "form": "achieve",
+        "meaning": "取得、实现"
+      },
+      {
+        "form": "-ment",
+        "meaning": "表示行为或结果的名词后缀"
+      }
+    ],
+    "note": "拼写保留 achieve 的词尾 e。实现后的成果就是成就。"
+  },
+  "fulfillment": {
+    "parts": [
+      {
+        "form": "fulfill",
+        "meaning": "实现、满足"
+      },
+      {
+        "form": "-ment",
+        "meaning": "表示行为或结果的名词后缀"
+      }
+    ],
+    "note": "fulfillment 是美式拼写，英式常写 fulfilment。"
+  },
+  "wealthy": {
+    "parts": [
+      {
+        "form": "wealth",
+        "meaning": "财富"
+      },
+      {
+        "form": "-y",
+        "meaning": "有某种特征的"
+      }
+    ],
+    "note": "wealth 加 -y 表示拥有许多财富。"
+  },
+  "internship": {
+    "parts": [
+      {
+        "form": "intern",
+        "meaning": "实习生"
+      },
+      {
+        "form": "-ship",
+        "meaning": "表示身份或状态的名词后缀"
+      }
+    ],
+    "note": "合起来表示实习经历或实习岗位。"
+  },
+  "employer": {
+    "parts": [
+      {
+        "form": "employ",
+        "meaning": "雇用"
+      },
+      {
+        "form": "-er",
+        "meaning": "做某事的人或单位"
+      }
+    ],
+    "note": "雇用他人的一方。employee 表示受雇的一方。"
+  },
+  "attendance": {
+    "parts": [
+      {
+        "form": "attend",
+        "meaning": "出席、参加"
+      },
+      {
+        "form": "-ance",
+        "meaning": "表示行为或状态的名词后缀"
+      }
+    ],
+    "note": "合起来表示出席或出勤，也可表示出席人数。"
+  },
+  "hardship": {
+    "parts": [
+      {
+        "form": "hard",
+        "meaning": "艰难的"
+      },
+      {
+        "form": "-ship",
+        "meaning": "表示状态的名词后缀"
+      }
+    ],
+    "note": "在一起表示困苦，不按 ship 的“船”来理解。"
+  },
+  "problematic": {
+    "parts": [
+      {
+        "form": "problemat-",
+        "meaning": "问题，与 problem 同源的词干"
+      },
+      {
+        "form": "-ic",
+        "meaning": "表示与……有关的形容词后缀"
+      }
+    ],
+    "note": "表示存在问题或难以处理的。可和 problem 一起记忆。"
+  },
+  "typically": {
+    "parts": [
+      {
+        "form": "typical",
+        "meaning": "典型的、通常的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "合起来表示通常或典型地。"
+  },
+  "accountable": {
+    "parts": [
+      {
+        "form": "account",
+        "meaning": "说明、交代（见 account for）"
+      },
+      {
+        "form": "-able",
+        "meaning": "表示能或可以……的形容词后缀"
+      }
+    ],
+    "note": "常与 for 连用，表示需要对某事负责并作出解释。"
+  },
+  "effectively": {
+    "parts": [
+      {
+        "form": "effective",
+        "meaning": "有效的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "本卷阅读中取“有效地”，强调达到预期效果。"
+  },
+  "employment": {
+    "parts": [
+      {
+        "form": "employ",
+        "meaning": "雇用"
+      },
+      {
+        "form": "-ment",
+        "meaning": "表示行为或状态的名词后缀"
+      }
+    ],
+    "note": "合起来表示就业或雇用。"
+  },
+  "sociologist": {
+    "parts": [
+      {
+        "form": "socio-",
+        "meaning": "与社会有关"
+      },
+      {
+        "form": "-logist",
+        "meaning": "研究某领域的人"
+      }
+    ],
+    "note": "合起来表示研究社会的人，即社会学家。"
+  },
+  "professional": {
+    "parts": [
+      {
+        "form": "profession",
+        "meaning": "职业、专业"
+      },
+      {
+        "form": "-al",
+        "meaning": "与……有关的形容词后缀"
+      }
+    ],
+    "note": "常作形容词表示专业的，也可以作名词表示专业人士。"
+  },
+  "overwork": {
+    "parts": [
+      {
+        "form": "over-",
+        "meaning": "过度"
+      },
+      {
+        "form": "work",
+        "meaning": "工作"
+      }
+    ],
+    "note": "合起来表示工作过量，也可指过量的工作。"
+  },
+  "unpaid": {
+    "parts": [
+      {
+        "form": "un-",
+        "meaning": "不、未"
+      },
+      {
+        "form": "paid",
+        "meaning": "已付费的"
+      }
+    ],
+    "note": "合起来表示未付报酬的。paid 是 pay 的过去分词。"
+  },
+  "unskilled": {
+    "parts": [
+      {
+        "form": "un-",
+        "meaning": "不、没有"
+      },
+      {
+        "form": "skilled",
+        "meaning": "熟练的、有技能的"
+      }
+    ],
+    "note": "用来描述缺少训练的人或无需专门技能的工作。"
+  },
+  "librarian": {
+    "parts": [
+      {
+        "form": "library",
+        "meaning": "图书馆"
+      },
+      {
+        "form": "-an",
+        "meaning": "表示与某机构或活动有关的人"
+      }
+    ],
+    "note": "library 的词尾 y 在 -an 前改成 i。"
+  },
+  "undervalue": {
+    "parts": [
+      {
+        "form": "under-",
+        "meaning": "不足、低于应有水平"
+      },
+      {
+        "form": "value",
+        "meaning": "给……估价、重视"
+      }
+    ],
+    "note": "表示估得过低或重视不够。"
+  },
+  "partnership": {
+    "parts": [
+      {
+        "form": "partner",
+        "meaning": "伙伴"
+      },
+      {
+        "form": "-ship",
+        "meaning": "表示关系的名词后缀"
+      }
+    ],
+    "note": "合起来表示伙伴关系或合作。"
+  },
+  "strengthen": {
+    "parts": [
+      {
+        "form": "strength",
+        "meaning": "力量、强度"
+      },
+      {
+        "form": "-en",
+        "meaning": "使变得……的动词后缀"
+      }
+    ],
+    "note": "这里 -en 在词尾。表示使更有力量或使更牢固。"
+  },
+  "functional": {
+    "parts": [
+      {
+        "form": "function",
+        "meaning": "功能、作用"
+      },
+      {
+        "form": "-al",
+        "meaning": "与……有关的形容词后缀"
+      }
+    ],
+    "note": "表示功能上的，也常描述能够正常发挥作用的事物。"
+  },
+  "numerous": {
+    "parts": [
+      {
+        "form": "numer-",
+        "meaning": "数、数量"
+      },
+      {
+        "form": "-ous",
+        "meaning": "具有……的形容词后缀"
+      }
+    ],
+    "note": "表示数量多的。"
+  },
+  "livable": {
+    "parts": [
+      {
+        "form": "live",
+        "meaning": "居住"
+      },
+      {
+        "form": "-able",
+        "meaning": "适合……的"
+      }
+    ],
+    "note": "live 词尾 e 去掉再加 -able。用于城市等地方时表示适宜居住。"
+  },
+  "sustainability": {
+    "parts": [
+      {
+        "form": "sustain",
+        "meaning": "维持、支撑"
+      },
+      {
+        "form": "-ability",
+        "meaning": "表示能够做某事的名词后缀"
+      }
+    ],
+    "note": "可沿 sustain → sustainable → sustainability 记忆，指能够长期维持的性质。"
+  },
+  "craftsman": {
+    "parts": [
+      {
+        "form": "crafts",
+        "meaning": "手工技艺"
+      },
+      {
+        "form": "man",
+        "meaning": "人"
+      }
+    ],
+    "note": "合起来表示掌握手工技艺的工匠。"
+  },
+  "digitization": {
+    "parts": [
+      {
+        "form": "digitize",
+        "meaning": "将……数字化"
+      },
+      {
+        "form": "-ation",
+        "meaning": "表示过程的名词后缀"
+      }
+    ],
+    "note": "digitize 的词尾 e 去掉再加 -ation。"
+  },
+  "nationwide": {
+    "parts": [
+      {
+        "form": "nation",
+        "meaning": "国家"
+      },
+      {
+        "form": "-wide",
+        "meaning": "范围遍及……的"
+      }
+    ],
+    "note": "合起来表示遍及全国。"
+  },
+  "equalizer": {
+    "parts": [
+      {
+        "form": "equal",
+        "meaning": "相等的"
+      },
+      {
+        "form": "-ize",
+        "meaning": "使变成……"
+      },
+      {
+        "form": "-er",
+        "meaning": "执行动作的人或事物"
+      }
+    ],
+    "note": "先有 equalize（使相等），加 -er 时去掉原词词尾的 e。可指缩小差距的事物。"
+  },
+  "creativity": {
+    "parts": [
+      {
+        "form": "creative",
+        "meaning": "有创造力的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "表示性质的名词后缀"
+      }
+    ],
+    "note": "creative 的词尾 e 去掉再加 -ity，表示创造力。"
+  },
+  "preservation": {
+    "parts": [
+      {
+        "form": "preserve",
+        "meaning": "保存、保护"
+      },
+      {
+        "form": "-ation",
+        "meaning": "表示行为或过程的名词后缀"
+      }
+    ],
+    "note": "preserve 的词尾 e 去掉再加 -ation。"
+  },
+  "archivist": {
+    "parts": [
+      {
+        "form": "archive",
+        "meaning": "档案"
+      },
+      {
+        "form": "-ist",
+        "meaning": "从事某活动的人"
+      }
+    ],
+    "note": "archive 的词尾 e 去掉再加 -ist。合起来表示档案工作者。"
+  },
+  "passionate": {
+    "parts": [
+      {
+        "form": "passion",
+        "meaning": "热情"
+      },
+      {
+        "form": "-ate",
+        "meaning": "具有某种特点的形容词后缀"
+      }
+    ],
+    "note": "passionate about 表示对某事充满热情。"
+  },
+  "soundness": {
+    "parts": [
+      {
+        "form": "sound",
+        "meaning": "合理的、可靠的"
+      },
+      {
+        "form": "-ness",
+        "meaning": "表示状态或性质的名词后缀"
+      }
+    ],
+    "note": "此处 sound 对应可靠或合理的义项。"
+  },
+  "foresee": {
+    "parts": [
+      {
+        "form": "fore-",
+        "meaning": "事先"
+      },
+      {
+        "form": "see",
+        "meaning": "看见"
+      }
+    ],
+    "note": "把“事先看见”理解为预见。"
+  },
+  "forcefully": {
+    "parts": [
+      {
+        "form": "force",
+        "meaning": "力量"
+      },
+      {
+        "form": "-ful",
+        "meaning": "具有……的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "先有 forceful，表示有力的，再加 -ly 表示有力地。"
+  },
+  "disorderly": {
+    "parts": [
+      {
+        "form": "dis-",
+        "meaning": "缺少或破坏"
+      },
+      {
+        "form": "order",
+        "meaning": "秩序"
+      },
+      {
+        "form": "-ly",
+        "meaning": "这里构成形容词"
+      }
+    ],
+    "note": "disorder 是无秩序状态，disorderly 形容杂乱或不守秩序。"
+  },
+  "productivity": {
+    "parts": [
+      {
+        "form": "productive",
+        "meaning": "有生产力的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "表示性质的名词后缀"
+      }
+    ],
+    "note": "productive 的词尾 e 去掉再加 -ity，表示生产率或生产效率。"
+  },
+  "outweigh": {
+    "parts": [
+      {
+        "form": "out-",
+        "meaning": "胜过、超过"
+      },
+      {
+        "form": "weigh",
+        "meaning": "有重量"
+      }
+    ],
+    "note": "可指分量或重要性超过某事物。"
+  },
+  "poisonous": {
+    "parts": [
+      {
+        "form": "poison",
+        "meaning": "毒物"
+      },
+      {
+        "form": "-ous",
+        "meaning": "具有……的形容词后缀"
+      }
+    ],
+    "note": "表示含有毒素或能造成中毒的。"
+  },
+  "lifeless": {
+    "parts": [
+      {
+        "form": "life",
+        "meaning": "生命、生气"
+      },
+      {
+        "form": "-less",
+        "meaning": "没有、缺乏"
+      }
+    ],
+    "note": "表示无生命的，也可指缺少活力。"
+  },
+  "requirement": {
+    "parts": [
+      {
+        "form": "require",
+        "meaning": "需要、要求"
+      },
+      {
+        "form": "-ment",
+        "meaning": "表示事物或结果的名词后缀"
+      }
+    ],
+    "note": "拼写保留 require 的词尾 e。合起来表示要求或必要条件。"
+  },
+  "usable": {
+    "parts": [
+      {
+        "form": "use",
+        "meaning": "使用"
+      },
+      {
+        "form": "-able",
+        "meaning": "可以……的"
+      }
+    ],
+    "note": "use 去掉词尾 e 再加 -able，表示可用的。"
+  },
+  "astronaut": {
+    "parts": [
+      {
+        "form": "astro-",
+        "meaning": "星辰、外太空"
+      },
+      {
+        "form": "-naut",
+        "meaning": "航行者"
+      }
+    ],
+    "note": "两个构词成分合起来表示太空航行者。"
+  }
+}

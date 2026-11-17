@@ -46,3 +46,34 @@
 #repeatInfo{margin-bottom:12px}
 .repeatCount{font-weight:600;color:#8b492f}
 @media(max-width:520px){.analyticsMetrics{gap:6px}.analyticsMetrics div{padding:8px 7px}.heatGrid{gap:4px}.heatCell,.heatFuture{min-height:42px}}
+
+.homeTraining,.quizHome{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.homeTraining h2,.quizHome h2{margin:0 0 5px}
+.homeTraining p,.quizHome p{margin:0;font-size:14px}
+.quizHome progress,#quizPanel progress{width:min(300px,100%);margin:8px 0;accent-color:var(--green)}
+.quizHome button,.homeTraining button{flex:none}
+.quizProgress{font-weight:600;color:#38614f}
+.quizQuestion{padding:15px 0;border-top:1px solid var(--line)}
+.quizQuestion h3{font-size:18px;line-height:1.55;margin:0 0 6px;font-family:"Source Sans 3",Arial,sans-serif}
+.quizQuestion mark{background:#e1edcc;color:#183c35;padding:0 3px;border-radius:4px}
+.quizHint{line-height:2.8;margin:0}
+.quizHint input{width:clamp(86px,20vw,160px);max-width:100%;box-sizing:border-box;border:1px solid #a2b79e;border-radius:6px;padding:6px 8px;margin:2px 3px;font-size:16px;color:#183c35}
+.quizQuestion li{margin:8px 0}
+.quizQuestion li .actions{margin:4px 0;justify-content:flex-start}
+.quizHistory,.quizGroupLink{margin:4px 8px 4px 0}
+@media(max-width:520px){.homeTraining,.quizHome{align-items:stretch;flex-direction:column;gap:10px}.quizHome progress{width:100%}}
+
+.studyNav{display:flex;flex-wrap:wrap}
+.posLabel{display:inline-block;background:#dcebd5;color:#274b3c;border-radius:5px;padding:1px 6px;font-size:12px;font-weight:600;margin-left:7px}
+.morphNotes{padding:10px 0 0;border-top:1px solid #d5dfc8;margin-top:14px}
+.morphNotes h4{font-size:14px;margin:0 0 5px}
+.morphNotes p{margin:6px 0;font-size:14px}
+.morphNotes ul{margin:6px 0;padding-left:20px;font-size:14px}
+.morphNotes summary,.confusionPrompt summary{cursor:pointer;font-weight:600;font-size:14px}
+.prefixGuide{margin:8px 0}
+.confusionPrompt{background:#fff9f2;border:1px solid #e8caae;border-radius:8px;padding:10px 12px;margin:10px 0 14px;color:#673a25}
+.confusionPrompt summary span{font-size:12px;font-weight:400;text-decoration:underline;margin-left:8px}
+.confusionGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+.confusionGrid div{background:#fff;border-radius:6px;padding:8px 10px}
+.confusionGrid p{margin:2px 0 5px}
+@media(max-width:480px){.confusionGrid{grid-template-columns:1fr}}

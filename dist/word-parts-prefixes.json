@@ -1,0 +1,492 @@
+{
+  "resilience": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "向后（拉丁语前缀）"
+      },
+      {
+        "form": "salīre",
+        "meaning": "跳跃（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 resilīre 指弹回。现代英语用 resilience 表示遇到挫折后的恢复力、适应力，也可指材料受力后的回弹能力。",
+    "source": "https://accademiadellacrusca.it/it/consulenza/lelasticita-di-resilienza/928"
+  },
+  "recover": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "回或重新（拉丁语前缀）"
+      },
+      {
+        "form": "capere",
+        "meaning": "取得（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。recover 经古法语来自拉丁语 recuperāre，源头有重新取得之意。recover from an illness 是从疾病中康复，recover lost files 是找回丢失的文件。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=recuperate"
+  },
+  "retain": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "在后或向回（拉丁语前缀）"
+      },
+      {
+        "form": "tenēre",
+        "meaning": "握住或持有（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 retinēre 表示留住。现代英语 retain information 是保留信息或把信息记住。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=retain"
+  },
+  "retrieve": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "重新（古法语前缀）"
+      },
+      {
+        "form": "trover",
+        "meaning": "找到（古法语动词）"
+      }
+    ],
+    "note": "历史词源。古法语 retrover 有再度找到之意。retrieve notes 是取回笔记，retrieve data 是检索或提取数据。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=retrieve"
+  },
+  "retrieval": {
+    "parts": [
+      {
+        "form": "retrieve",
+        "meaning": "检索或取回"
+      },
+      {
+        "form": "-al",
+        "meaning": "表示行为的名词后缀"
+      }
+    ],
+    "note": "现代构词。retrieval 是 retrieve 的名词，词干末尾的 e 在加 -al 时去掉。information retrieval 是信息检索。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=retrieve"
+  },
+  "reframe": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "重新"
+      },
+      {
+        "form": "frame",
+        "meaning": "用某种方式表达或说明"
+      }
+    ],
+    "note": "现代构词。reframe a question 可以指换一种说法，reframe a problem as an opportunity 可以指换个角度看问题。",
+    "source": "https://www.merriam-webster.com/dictionary/reframe"
+  },
+  "reminder": {
+    "parts": [
+      {
+        "form": "remind",
+        "meaning": "提醒"
+      },
+      {
+        "form": "-er",
+        "meaning": "表示执行提醒的人或事物"
+      }
+    ],
+    "note": "现代构词。reminder 可以指便条、通知或其他起提醒作用的事物。remind someone to do something 用于提醒某人去做某事。",
+    "source": "https://www.merriam-webster.com/dictionary/reminder"
+  },
+  "require": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "拉丁语前缀"
+      },
+      {
+        "form": "quaerere",
+        "meaning": "寻找或询问（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。require 来自拉丁语 requīrere，涉及寻求或请求。现代英语 require careful planning 是需要周密的计划，require someone to do something 是要求某人做某事。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=require"
+  },
+  "requirement": {
+    "parts": [
+      {
+        "form": "require",
+        "meaning": "要求或需要"
+      },
+      {
+        "form": "-ment",
+        "meaning": "表示行为、结果或条件的名词后缀"
+      }
+    ],
+    "note": "现代构词。a job requirement 是任职要求，meet the requirements 是符合要求。require 的历史来源可参看其单独词条。",
+    "source": "https://www.merriam-webster.com/dictionary/requirement"
+  },
+  "remain": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "在后（拉丁语前缀）"
+      },
+      {
+        "form": "manēre",
+        "meaning": "停留（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 remanēre 含留下的意思。现代英语中 remain unanswered 是仍未得到回答，remain in the room 是留在房间里。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=remain"
+  },
+  "reduce": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "向回（拉丁语前缀）"
+      },
+      {
+        "form": "dūcere",
+        "meaning": "引领（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 redūcere 含带回的意思。现代英语中常用 reduce stress 表示减轻压力，reduce costs 表示降低成本。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=reduce"
+  },
+  "relevant to": {
+    "parts": [
+      {
+        "form": "relevāre",
+        "meaning": "举起或减轻负担（拉丁语动词）"
+      },
+      {
+        "form": "relevāns",
+        "meaning": "该动词的分词形式（拉丁语）"
+      }
+    ],
+    "note": "历史词源。词形经中世纪拉丁语发展出切题、相关的现代义。relevant to the question 指与这个问题相关。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=relevant"
+  },
+  "relate to": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "向回（拉丁语前缀）"
+      },
+      {
+        "form": "lātus",
+        "meaning": "带来的（拉丁语分词）"
+      }
+    ],
+    "note": "历史词源。relate 来自 relātus。现代英语中 relate to a topic 是与话题有关，relate to someone 也可指理解某人的感受或产生共鸣。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=relate"
+  },
+  "refer to": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "向回（拉丁语前缀）"
+      },
+      {
+        "form": "ferre",
+        "meaning": "携带（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 referre 原有带回、报告等义。现代英语可用 refer to a term 表示提到一个术语，也可用 refer to a manual 表示查阅手册。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=refer"
+  },
+  "reflection": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "向回（拉丁语前缀）"
+      },
+      {
+        "form": "flectere",
+        "meaning": "弯曲（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。reflect 可追溯到含折返之意的 reflectere。现代英语 reflection 可指光线反射、镜中倒影、现象的反映或认真思考。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=reflect"
+  },
+  "resource": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "再次（拉丁语前缀）"
+      },
+      {
+        "form": "surgere",
+        "meaning": "升起（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。resource 经古法语可追溯到意为再次升起的 resurgere。现代常用义是可利用的资源，例如 learning resources 学习资源。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=resource"
+  },
+  "revolution": {
+    "parts": [
+      {
+        "form": "re-",
+        "meaning": "回转（拉丁语前缀）"
+      },
+      {
+        "form": "volvere",
+        "meaning": "滚动或转动（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。相关拉丁语 revolvere 指翻转或滚回。现代英语 revolution 可指绕行一周，也可指革命或重大变革。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=revolve"
+  },
+  "recreational": {
+    "parts": [
+      {
+        "form": "recreation",
+        "meaning": "休闲娱乐"
+      },
+      {
+        "form": "-al",
+        "meaning": "与……有关的"
+      }
+    ],
+    "note": "现代构词。recreation 的历史来源可追溯到拉丁语 recreāre，含恢复精神之意。recreational activities 指休闲娱乐活动。",
+    "source": "https://www.merriam-webster.com/dictionary/recreation"
+  },
+  "inequality": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不"
+      },
+      {
+        "form": "equality",
+        "meaning": "平等"
+      }
+    ],
+    "note": "现代构词。income inequality 是收入不平等，social inequality 是社会不平等。",
+    "source": "https://www.merriam-webster.com/dictionary/inequality"
+  },
+  "instability": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不"
+      },
+      {
+        "form": "stability",
+        "meaning": "稳定性"
+      }
+    ],
+    "note": "现代构词。形容词是 unstable 或 instable，现代常见表达如 political instability 政治动荡。",
+    "source": "https://www.merriam-webster.com/dictionary/instability"
+  },
+  "independent": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不"
+      },
+      {
+        "form": "dependent",
+        "meaning": "依赖的或从属的"
+      }
+    ],
+    "note": "现代构词。independent research 可指独立开展的研究。be independent of something 表示不受某事物影响或不依赖它。",
+    "source": "https://www.merriam-webster.com/dictionary/independent"
+  },
+  "incredible": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不"
+      },
+      {
+        "form": "credible",
+        "meaning": "可信的"
+      }
+    ],
+    "note": "现代构词。可按字面理解为难以置信的，在日常语境中也常用来称赞某事物极其出色。",
+    "source": "https://www.merriam-webster.com/dictionary/incredible"
+  },
+  "irrelevant": {
+    "parts": [
+      {
+        "form": "ir-",
+        "meaning": "不（in- 在 r 前的变体）"
+      },
+      {
+        "form": "relevant",
+        "meaning": "相关的"
+      }
+    ],
+    "note": "现代构词。irrelevant details 是无关细节。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=irrelevant"
+  },
+  "indirect": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不"
+      },
+      {
+        "form": "direct",
+        "meaning": "直接的"
+      }
+    ],
+    "note": "现代构词。indirect effect 是间接影响。",
+    "source": "https://www.merriam-webster.com/dictionary/indirect"
+  },
+  "immediate": {
+    "parts": [
+      {
+        "form": "im-",
+        "meaning": "不（in- 在 m 前的变体）"
+      },
+      {
+        "form": "mediātus",
+        "meaning": "居间的（拉丁语分词）"
+      }
+    ],
+    "note": "历史词源。由没有中间环节的意思可联想到直接的含义。现代常见的 immediate response 指立即回应。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=immediate"
+  },
+  "individual": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不（拉丁语否定前缀）"
+      },
+      {
+        "form": "dīviduus",
+        "meaning": "可分割的（拉丁语形容词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 indīviduus 原有不可分割的意思。现代英语常用 individual 指个人，或作形容词表示个别的。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=individual"
+  },
+  "instruction": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "在……之上（拉丁语前缀）"
+      },
+      {
+        "form": "struere",
+        "meaning": "建造（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。instruct 来自拉丁语 īnstruere，含准备、教授之意。现代英语 classroom instruction 指课堂教学，follow the instructions 指按说明操作。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=instruct"
+  },
+  "investigate": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "向或沿（拉丁语前缀）"
+      },
+      {
+        "form": "vestigium",
+        "meaning": "足迹（拉丁语名词）"
+      }
+    ],
+    "note": "历史词源。拉丁语 investigāre 与追踪足迹有关。现代英语 investigate a complaint 指调查投诉。",
+    "source": "https://www.merriam-webster.com/dictionary/investigate"
+  },
+  "inquiry": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "向内或朝向（拉丁语前缀）"
+      },
+      {
+        "form": "quaerere",
+        "meaning": "询问或寻找（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。相关动词 inquire 可追溯到拉丁语 inquīrere。现代英语 inquiry 可指询问，也可指调查或探究。",
+    "source": "https://www.merriam-webster.com/dictionary/inquire"
+  },
+  "intend": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "朝向（拉丁语前缀）"
+      },
+      {
+        "form": "tendere",
+        "meaning": "伸展（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。现代英语 intend to do something 指打算做某事。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=intend"
+  },
+  "immigration": {
+    "parts": [
+      {
+        "form": "im-",
+        "meaning": "进入（in- 在 m 前的变体）"
+      },
+      {
+        "form": "migrāre",
+        "meaning": "迁移（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。相关动词 immigrate 来自拉丁语 immigrāre。immigration 强调迁入某国或地区，emigration 强调从原居地迁出。",
+    "source": "https://www.merriam-webster.com/dictionary/immigrate"
+  },
+  "innovative": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "加强语气（拉丁语前缀）"
+      },
+      {
+        "form": "novāre",
+        "meaning": "使变新（拉丁语动词）"
+      }
+    ],
+    "note": "历史词源。innovate 源自拉丁语 innovāre。现代英语 innovative approach 表示有创新性的方法。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=innovate"
+  },
+  "enable": {
+    "parts": [
+      {
+        "form": "en-",
+        "meaning": "使成为或使具有"
+      },
+      {
+        "form": "able",
+        "meaning": "有能力的"
+      }
+    ],
+    "note": "现代构词。enable someone to do something 指使某人能够做某事。",
+    "source": "https://www.merriam-webster.com/dictionary/enable"
+  },
+  "enhance": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "使（拉丁语前缀，后经法语演为 en-）"
+      },
+      {
+        "form": "altus",
+        "meaning": "高的（拉丁语形容词）"
+      }
+    ],
+    "note": "历史词源。早期有抬高之意，现代英语中 enhance the flavor 是增添风味，enhance understanding 是增进理解。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=enhance"
+  },
+  "encounter": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "向或进入（拉丁语前缀，经法语演为 en-）"
+      },
+      {
+        "form": "contrā",
+        "meaning": "对着（拉丁语介词）"
+      }
+    ],
+    "note": "历史词源。经古法语进入英语。现代英语 encounter 可指偶然遇到人，也可指遭遇困难。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=encounter"
+  }
+}

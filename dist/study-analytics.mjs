@@ -5,10 +5,10 @@ const MIN_REPEATED_ERRORS = 2;
 const UTC_OFFSET = 8 * 60 * 60 * 1000;
 const midnight = key => Date.parse(key + 'T00:00:00+08:00');
 const utcDay = key => new Date(key + 'T00:00:00Z');
-const localDay = time => new Date(time + UTC_OFFSET).toISOString().slice(0, 10);
+export const localStudyDay = time => new Date(time + UTC_OFFSET).toISOString().slice(0, 10);
 
 export function shiftDay(key, days) {
-  return localDay(midnight(key) + days * DAY);
+  return localStudyDay(midnight(key) + days * DAY);
 }
 
 export function shiftMonth(month, count) {
@@ -61,7 +61,7 @@ export function summarizeStudy(logs, now = Date.now()) {
   for (const log of logs) {
     if (!log || typeof log.word !== 'string' || !Number.isFinite(log.at) || log.at <= 0 ||
         log.at > now || typeof log.correct !== 'boolean') continue;
-    const key = localDay(log.at);
+    const key = localStudyDay(log.at);
     const seen = firstDay.get(log.word);
     if (!seen || key < seen) firstDay.set(log.word, key);
     const entry = day(key);
@@ -72,7 +72,7 @@ export function summarizeStudy(logs, now = Date.now()) {
     if (interval) {
       let [start, end] = interval;
       while (start < end) {
-        const timeDay = localDay(start);
+        const timeDay = localStudyDay(start);
         const segmentEnd = Math.min(end, midnight(timeDay) + DAY);
         day(timeDay).ranges.push([start, segmentEnd]);
         start = segmentEnd;

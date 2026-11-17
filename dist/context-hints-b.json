@@ -1,0 +1,534 @@
+{
+  "independent": {
+    "chinese": "这项研究由一个{independent}团队开展。",
+    "answers": [
+      "独立的",
+      "不受外界控制的",
+      "独立"
+    ]
+  },
+  "set up": {
+    "chinese": "他们计划{set up}一个读书俱乐部。",
+    "answers": [
+      "成立",
+      "建立",
+      "设立",
+      "创办",
+      "组建"
+    ]
+  },
+  "workshop": {
+    "chinese": "这个{workshop}教授基本的维修技能。",
+    "answers": [
+      "实践培训班",
+      "培训班",
+      "工作坊",
+      "研习班"
+    ]
+  },
+  "virtual": {
+    "chinese": "参观者可以参加一次{virtual}的博物馆游览。",
+    "answers": [
+      "虚拟的",
+      "虚拟",
+      "线上",
+      "在线的",
+      "通过网络的",
+      "网络上的"
+    ]
+  },
+  "oral": {
+    "chinese": "考试包括一次{oral}报告。",
+    "answers": [
+      "口头的",
+      "口述的",
+      "口头",
+      "口语的"
+    ]
+  },
+  "passionate": {
+    "chinese": "她{passionate}公共卫生事业。",
+    "answers": [
+      "热衷于",
+      "热爱",
+      "对……充满热情",
+      "对…充满热情",
+      "对公共卫生事业充满热情"
+    ],
+    "phrase": "passionate about"
+  },
+  "situated": {
+    "chinese": "这家酒店{situated}河边。",
+    "answers": [
+      "坐落在",
+      "坐落于",
+      "位于",
+      "地处"
+    ],
+    "phrase": "is situated"
+  },
+  "socioeconomic": {
+    "chinese": "这项政策可能扩大{socioeconomic}差异。",
+    "answers": [
+      "社会经济的",
+      "社会经济",
+      "社会与经济的"
+    ]
+  },
+  "in part": {
+    "chinese": "延误{in part}是由恶劣天气造成的。",
+    "answers": [
+      "部分",
+      "部分地",
+      "一定程度上",
+      "在一定程度上",
+      "在某种程度上"
+    ]
+  },
+  "medical": {
+    "chinese": "这个村庄需要更好的{medical}服务。",
+    "answers": [
+      "医疗的",
+      "医疗",
+      "医务的"
+    ]
+  },
+  "reframe": {
+    "chinese": "我们可以把这个问题{reframe}为一次机会。",
+    "answers": [
+      "重新理解",
+      "重新看待",
+      "从新角度看待",
+      "重新界定",
+      "换个角度看待"
+    ]
+  },
+  "needy": {
+    "chinese": "这家慈善机构向{needy}家庭送食品。",
+    "answers": [
+      "贫困的",
+      "贫困",
+      "贫穷的",
+      "需要帮助的",
+      "贫穷",
+      "有困难的"
+    ]
+  },
+  "comparatively": {
+    "chinese": "这条路线{comparatively}安全。",
+    "answers": [
+      "相对",
+      "比较",
+      "较为",
+      "相对地",
+      "相较而言"
+    ]
+  },
+  "end up": {
+    "chinese": "草率的计划{end up}可能花费更多。",
+    "answers": [
+      "最终",
+      "到头来",
+      "最后",
+      "结果"
+    ]
+  },
+  "challenging": {
+    "chinese": "学习一门新语言可能{challenging}。",
+    "answers": [
+      "很有挑战性",
+      "有挑战性",
+      "困难",
+      "有难度",
+      "很难",
+      "有挑战性的"
+    ]
+  },
+  "legal": {
+    "chinese": "每个人都应了解自己的{legal}权利。",
+    "answers": [
+      "法律赋予的",
+      "法律的",
+      "法律",
+      "法定的",
+      "合法的",
+      "法定"
+    ]
+  },
+  "bureaucratic": {
+    "chinese": "这项申请涉及{bureaucratic}行政程序。",
+    "answers": [
+      "繁琐的",
+      "官僚的",
+      "手续繁琐的",
+      "官僚主义的",
+      "官僚式的"
+    ]
+  },
+  "function": {
+    "chinese": "这台旧机器仍能正常{function}。",
+    "answers": [
+      "运转",
+      "运行",
+      "工作",
+      "运作",
+      "起作用"
+    ]
+  },
+  "frightening": {
+    "chinese": "突如其来的噪声{frightening}。",
+    "answers": [
+      "令人害怕",
+      "令人害怕的",
+      "可怕",
+      "吓人",
+      "让人害怕",
+      "令人恐惧"
+    ]
+  },
+  "arbitrary": {
+    "chinese": "规则应当明确，而不是{arbitrary}。",
+    "answers": [
+      "随意制定",
+      "任意制定",
+      "武断的",
+      "随意的",
+      "任意的",
+      "武断",
+      "随意"
+    ]
+  },
+  "stake": {
+    "chinese": "这个决定会使不少重要事项{stake}。",
+    "answers": [
+      "面临风险",
+      "处于危险中",
+      "处于风险中",
+      "受到威胁",
+      "处于危险之中",
+      "处于利害关头"
+    ],
+    "phrase": "at stake"
+  },
+  "prior": {
+    "chinese": "无需具备{prior}经验。",
+    "answers": [
+      "先前的",
+      "以往的",
+      "已有的",
+      "先前",
+      "以往",
+      "之前的",
+      "事先的"
+    ]
+  },
+  "storage": {
+    "chinese": "这部手机有足够的{storage}来存放我的照片。",
+    "answers": [
+      "存储空间",
+      "储存空间",
+      "内存",
+      "存放空间",
+      "存储容量"
+    ]
+  },
+  "irrelevant": {
+    "chinese": "请删去{irrelevant}细节。",
+    "answers": [
+      "无关的",
+      "不相关的",
+      "不相干的",
+      "无关",
+      "不相关",
+      "不相干"
+    ]
+  },
+  "cognitive": {
+    "chinese": "睡眠对{cognitive}能力很重要。",
+    "answers": [
+      "认知的",
+      "认知",
+      "与认知相关的",
+      "思考与理解的"
+    ]
+  },
+  "enhance": {
+    "chinese": "例子可以{enhance}你的理解。",
+    "answers": [
+      "加深",
+      "加强",
+      "增进",
+      "提高",
+      "增强"
+    ]
+  },
+  "suffer from": {
+    "chinese": "许多人{suffer from}睡眠不佳。",
+    "answers": [
+      "受到……的困扰",
+      "受到困扰",
+      "受……困扰",
+      "受…困扰",
+      "为……所困",
+      "遭受",
+      "饱受",
+      "受到",
+      "苦于"
+    ]
+  },
+  "disorderly": {
+    "chinese": "文件{disorderly}堆在一起。",
+    "answers": [
+      "杂乱地",
+      "乱七八糟地",
+      "无序地",
+      "凌乱地",
+      "杂乱的",
+      "杂乱"
+    ]
+  },
+  "alienate": {
+    "chinese": "沟通不畅会{alienate}顾客。",
+    "answers": [
+      "疏远",
+      "使疏远",
+      "使顾客疏远",
+      "让顾客不愿再接触",
+      "使人疏远"
+    ]
+  },
+  "steady": {
+    "chinese": "这个月她取得了{steady}进步。",
+    "answers": [
+      "持续的",
+      "稳定的",
+      "稳步的",
+      "持续",
+      "稳定",
+      "稳步"
+    ]
+  },
+  "adverse": {
+    "chinese": "恶劣天气对出行产生了{adverse}影响。",
+    "answers": [
+      "不利的",
+      "负面的",
+      "有害的",
+      "不利",
+      "负面",
+      "有害"
+    ]
+  },
+  "physical": {
+    "chinese": "经常锻炼有益{physical}健康。",
+    "answers": [
+      "身体的",
+      "身体",
+      "生理的",
+      "生理",
+      "体格的"
+    ]
+  },
+  "at risk": {
+    "chinese": "受损建筑使游客{at risk}。",
+    "answers": [
+      "面临危险",
+      "面临风险",
+      "处于危险中",
+      "处于危险之中",
+      "处于风险中",
+      "有危险",
+      "有风险"
+    ]
+  },
+  "liberate": {
+    "chinese": "新工具可以{liberate}重复性任务。",
+    "answers": [
+      "使人们摆脱",
+      "让人们摆脱",
+      "使人摆脱",
+      "让人摆脱",
+      "解放人们使其不再做",
+      "使摆脱",
+      "解放"
+    ],
+    "phrase": "liberate people from"
+  },
+  "habitual": {
+    "chinese": "{habitual}迟到会损害信任。",
+    "answers": [
+      "习惯性的",
+      "习惯性",
+      "惯常的",
+      "经常性的",
+      "一贯的",
+      "老是"
+    ]
+  },
+  "recreational": {
+    "chinese": "这个公园提供许多{recreational}活动。",
+    "answers": [
+      "娱乐的",
+      "娱乐",
+      "休闲的",
+      "休闲",
+      "消遣的",
+      "消遣"
+    ]
+  },
+  "scrutinize": {
+    "chinese": "签字前请{scrutinize}合同。",
+    "answers": [
+      "仔细审查",
+      "仔细检查",
+      "认真审阅",
+      "审视",
+      "详细检查",
+      "认真检查"
+    ]
+  },
+  "trait": {
+    "chinese": "耐心是教师的一项有用{trait}。",
+    "answers": [
+      "品质",
+      "特质",
+      "特点",
+      "特征",
+      "性格特征",
+      "性格特点"
+    ]
+  },
+  "vary": {
+    "chinese": "学习需求{vary}。",
+    "answers": [
+      "因人而异",
+      "各不相同",
+      "因人不同",
+      "每个人都不同"
+    ],
+    "phrase": "vary from person to person"
+  },
+  "willing": {
+    "chinese": "她{willing}帮助新同学。",
+    "answers": [
+      "愿意",
+      "乐意",
+      "愿意的",
+      "乐意的",
+      "甘愿"
+    ]
+  },
+  "irritate": {
+    "chinese": "持续的噪声会{irritate}邻居。",
+    "answers": [
+      "惹恼",
+      "惹怒",
+      "使恼怒",
+      "使……恼火",
+      "让……烦躁",
+      "使……烦躁",
+      "使人烦躁"
+    ]
+  },
+  "exotic": {
+    "chinese": "这个市场出售{exotic}水果。",
+    "answers": [
+      "外来的",
+      "异国的",
+      "外国的",
+      "具有异国情调的",
+      "异国风味的",
+      "来自异国的"
+    ]
+  },
+  "poisonous": {
+    "chinese": "一些野生植物{poisonous}。",
+    "answers": [
+      "有毒",
+      "有毒的",
+      "带毒"
+    ]
+  },
+  "artificial": {
+    "chinese": "这个房间晚上需要{artificial}光照。",
+    "answers": [
+      "人工的",
+      "人造的",
+      "人工",
+      "人造",
+      "非自然的"
+    ]
+  },
+  "toxic": {
+    "chinese": "这家工厂必须控制{toxic}废物。",
+    "answers": [
+      "有毒的",
+      "有毒",
+      "毒性的",
+      "有害的",
+      "有害"
+    ]
+  },
+  "lifeless": {
+    "chinese": "受污染的湖泊显得{lifeless}。",
+    "answers": [
+      "毫无生气",
+      "没有生气",
+      "无生机",
+      "没有生机",
+      "死气沉沉",
+      "无生命的",
+      "无生气的"
+    ]
+  },
+  "get rid of": {
+    "chinese": "我们需要{get rid of}这些旧文件。",
+    "answers": [
+      "清除",
+      "去除",
+      "处理掉",
+      "丢掉",
+      "删除",
+      "扔掉"
+    ]
+  },
+  "indirect": {
+    "chinese": "这个变化可能产生{indirect}影响。",
+    "answers": [
+      "间接的",
+      "间接",
+      "非直接的"
+    ]
+  },
+  "retain": {
+    "chinese": "经常复习可以帮助你{retain}新词。",
+    "answers": [
+      "记住",
+      "牢记",
+      "保持对……的记忆",
+      "保留记忆",
+      "记牢"
+    ]
+  },
+  "extreme": {
+    "chinese": "这个地区经历了{extreme}高温。",
+    "answers": [
+      "极端的",
+      "极端",
+      "异常的",
+      "异常",
+      "极度的",
+      "极度"
+    ]
+  },
+  "cite": {
+    "chinese": "你可以{cite}一个例子来支持自己的观点。",
+    "answers": [
+      "举出",
+      "举",
+      "引用",
+      "援引",
+      "列举"
+    ]
+  }
+}

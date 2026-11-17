@@ -1,11 +1,12 @@
 import {dayKey,grade,passedToday,prepareThree,recordStage,selectThreeWords,normalize,selectPassedWords,canSpotCheck,recordSpotCheck,needsSpellingAid,spellingMatches,recordSpellingAid} from './learning-core.mjs?v=6';
 import {planTraining,attachAnswerTiming} from './adaptive-training.mjs?v=6';
 import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=10';
+import {partOfSpeechHTML,morphologyHTML,confusionHTML} from './feedback-notes.mjs?v=12';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);
 export const choiceOptions=harderOptions;
 const CHOICE_VERSION=3;
-export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()=>{}}){
+export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()=>{},onGroupFinished=()=>{}}){
  const wordData=word=>getDeck().find(w=>w.word===word);
  function rebase(){const db=getDB(),s=db.session;if(s&&s.day!==dayKey()){const plan=planTraining(getDeck(),db);s.day=dayKey();s.scope='auto';s.words=plan.words;s.queue=[...plan.words];s.checkWords=plan.checkWords;s.current=null;s.passed={};s.attempts=0;s.deferred=[];message('新的一天，已重新混排到期复习和新词。');save();}}
 
@@ -43,7 +44,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
    +(confusables.length?'<h4>易混淆词辨析</h4>'+confusables.map(item=>'<p>'+meaningLine(item)+'</p>').join(''):'')
    +(note?'<p class="fine">'+esc(note)+'</p>':'')+'</div>';
  }
- function feedback(){const c=getDB().session.current,w=wordData(c.word);$('feedback').hidden=false;const pending=c.status==='pending',m=getDB().memories[c.word],title=c.assist?(c.correct?'拼写完成 · 接下来重新三轮':'先看正确拼写，再试一次'):pending?'这个表达待核对':c.checkPassed?'抽查通过 · 保留掌握记录':c.threePassed?'三轮通过 · 明天复测':c.correct?'本轮通过':'本轮未通过 · 回到第一轮';$('feedback').innerHTML=`<h3>${title}</h3><p><b>${esc(w.word)} · ${esc(w.meaning)}</b></p>${pending?`<p>你的原答：${esc(c.userAnswer)}</p><p class="fine">规则未识别这一表述，暂不计对错。对照释义核对；若含义一致，可纠正判分并记住这个同义表达。</p><div class="actions"><button id="acceptMeaning">含义一致，纠正为通过</button><button id="rejectMeaning">含义不对，重新三轮</button></div>`:''}<p>${esc(w.example)}<br>${esc(w.translation)}</p><p>${esc(w.collocation)}</p>${relationHTML(w)}${c.timing?'<p class="fine">本题有效用时 '+(c.timing.activeMs/1000).toFixed(1)+' 秒（不影响对错判定）</p>':''}<p class="fine">${esc(w.source)}${c.assist?' · 这轮用于辅助记忆，不直接计为三轮通过。':pending?'':c.checkPassed?' · 下次到期复习：'+new Date(m.due).toLocaleDateString('zh-CN',{timeZone:'Asia/Singapore'})+'。提前抽查答对不会推迟原计划。':c.threePassed?' · 首次或重学通过，下一自然日安排复测。':c.correct?' · 稍后继续下一轮。':' · 稍后从第一轮重新出现；没有每日次数上限。'}</p>`;if(pending){$('acceptMeaning').onclick=()=>answer(c.userAnswer,true);$('rejectMeaning').onclick=()=>answer(c.userAnswer,false);}else $('nextCard').hidden=false;$('options').querySelectorAll('button').forEach(b=>{const opt=c.options.find(o=>o.word===b.dataset.word);const meaning=opt?.meaning||wordData(b.dataset.word)?.meaning||opt?.label||'';b.innerHTML='<strong>'+esc(b.dataset.word)+'</strong><small>'+esc(meaning)+'</small>';b.classList.add('bilingual');b.classList.toggle('right',b.dataset.word===c.word);b.classList.toggle('wrong',!c.correct&&b.dataset.word===c.userAnswer);});}
+ function feedback(){const c=getDB().session.current,w=wordData(c.word);$('feedback').hidden=false;const pending=c.status==='pending',m=getDB().memories[c.word],title=c.assist?(c.correct?'拼写完成 · 接下来重新三轮':'先看正确拼写，再试一次'):pending?'这个表达待核对':c.checkPassed?'抽查通过 · 保留掌握记录':c.threePassed?'三轮通过 · 明天复测':c.correct?'本轮通过':'本轮未通过 · 回到第一轮';$('feedback').innerHTML=`<h3>${title}</h3><p><b>${esc(w.word)} · ${esc(w.meaning)}</b>${partOfSpeechHTML(w,esc)}</p>${confusionHTML(c,w,getDeck(),esc)}${pending?`<p>你的原答：${esc(c.userAnswer)}</p><p class="fine">规则未识别这一表述，暂不计对错。对照释义核对；若含义一致，可纠正判分并记住这个同义表达。</p><div class="actions"><button id="acceptMeaning">含义一致，纠正为通过</button><button id="rejectMeaning">含义不对，重新三轮</button></div>`:''}<p>${esc(w.example)}<br>${esc(w.translation)}</p><p>${esc(w.collocation)}</p>${morphologyHTML(w,esc)}${relationHTML(w)}${c.timing?'<p class="fine">本题有效用时 '+(c.timing.activeMs/1000).toFixed(1)+' 秒（不影响对错判定）</p>':''}<p class="fine">${esc(w.source)}${c.assist?' · 这轮用于辅助记忆，不直接计为三轮通过。':pending?'':c.checkPassed?' · 下次到期复习：'+new Date(m.due).toLocaleDateString('zh-CN',{timeZone:'Asia/Singapore'})+'。提前抽查答对不会推迟原计划。':c.threePassed?' · 首次或重学通过，下一自然日安排复测。':c.correct?' · 稍后继续下一轮。':' · 稍后从第一轮重新出现；没有每日次数上限。'}</p>`;if(pending){$('acceptMeaning').onclick=()=>answer(c.userAnswer,true);$('rejectMeaning').onclick=()=>answer(c.userAnswer,false);}else $('nextCard').hidden=false;$('options').querySelectorAll('button').forEach(b=>{const opt=c.options.find(o=>o.word===b.dataset.word);const meaning=opt?.meaning||wordData(b.dataset.word)?.meaning||opt?.label||'';b.innerHTML='<strong>'+esc(b.dataset.word)+'</strong><small>'+esc(meaning)+'</small>';b.classList.add('bilingual');b.classList.toggle('right',b.dataset.word===c.word);b.classList.toggle('wrong',!c.correct&&b.dataset.word===c.userAnswer);});}
  function finish(){
   const db=getDB(),s=db.session,count=Object.keys(s.passed).length;
   db.rounds??=[];
@@ -59,6 +60,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
    nextGroup.onclick=()=>{start();focusQuestion();};
    nextGroup.focus();
   }else $('returnHome').focus();
+  onGroupFinished($('roundEnd'));
  }
  $('startRound').onclick=start;$('showSpelling').onclick=()=>{const c=getDB().session?.current;if(c?.assist&&!c.answered){c.hintSeen=true;save();render();}};$('checkSpell').onclick=()=>answer($('spelling').value);$('spelling').oninput=()=>{const c=getDB().session?.current;if(c&&!c.answered){c.userAnswer=$('spelling').value;save();}};
 
@@ -76,7 +78,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
   if(event.target===$('spelling')){
    event.preventDefault();
    if(!event.repeat)answer($('spelling').value);
-  }else if(!nextCard.hidden&&(event.target===nextCard||!event.target?.closest?.('button, a, input, select, textarea, [contenteditable]'))){
+  }else if(!nextCard.hidden&&(event.target===nextCard||!event.target?.closest?.('button, a, summary, input, select, textarea, [contenteditable]'))){
    event.preventDefault();
    if(!event.repeat)nextCard.click();
   }
