@@ -27,11 +27,14 @@ export function morphologyHTML(word, esc) {
     data.parts.map(item => '<li><b>'+esc(item.form)+'</b> · '+esc(item.meaning)+'</li>').join('') + '</ul>' +
     (data.note ? '<p>'+esc(data.note)+'</p>' : '') + (data.source && /^https:\/\/[^\s]+$/.test(data.source)
       ? '<a class="fine" href="'+esc(data.source)+'" target="_blank" rel="noopener">查词源 ↗</a>' : '') : '';
-  const guide = '<details class="prefixGuide"><summary>常见前缀 re-、in-、en-</summary><ul>' +
-    references.map(([form, description, url]) => '<li><b>'+esc(form)+'</b> · '+esc(description)+
+  const relevant = references.filter(([form]) =>
+    word.word.startsWith(form.slice(0,-1)) && data?.parts?.some(item => item.form === form));
+  const guide = relevant.length ? '<details class="prefixGuide"><summary>常见前缀 '+
+    relevant.map(([form]) => esc(form)).join('、')+'</summary><ul>' +
+    relevant.map(([form, description, url]) => '<li><b>'+esc(form)+'</b> · '+esc(description)+
       ' <a href="'+esc(url)+'" target="_blank" rel="noopener">词典 ↗</a></li>').join('') +
-    '</ul><p class="fine">遇到具体单词时，结合它的构词和句中含义判断。</p></details>';
-  return '<div class="morphNotes">'+parts+guide+'</div>';
+    '</ul></details>' : '';
+  return parts || guide ? '<div class="morphNotes">'+parts+guide+'</div>' : '';
 }
 
 export function findMistakenWord(card, word, deck) {
