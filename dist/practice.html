@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>专项练习 · CET6 复习室</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="study.css?v=21">
+</head>
+<body>
+  <header><a class="brand" href="study.html">CET<span>6</span><small>复习室</small></a></header>
+  <main class="study practice">
+    <div class="heading"><h1>CET6 复习室</h1></div>
+    <nav class="studyNav moduleNav" aria-label="训练模块">
+      <a href="study.html">词汇</a>
+      <a href="practice.html?skill=listening" data-skill="listening">听力</a>
+      <a href="practice.html?skill=reading" data-skill="reading">阅读</a>
+      <a href="practice.html?skill=writing" data-skill="writing">写作</a>
+      <a href="practice.html?skill=translation" data-skill="translation">翻译</a>
+      <a href="index.html?exam=1">模拟考试</a>
+    </nav>
+    <section class="panel practicePanel" aria-labelledby="practiceTitle">
+      <h2 id="practiceTitle"></h2>
+      <p id="practiceHint"></p>
+      <div id="practiceExercise"></div>
+    </section>
+  </main>
+  <script type="module" src="practice.mjs"></script>
+</body>
+</html>

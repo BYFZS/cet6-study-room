@@ -108,3 +108,18 @@
 #wordQuestionForm .actions,#wordQuestionDialog form[method=dialog]{margin:10px 0 0;justify-content:flex-end}
 #wordQuestionStatus{margin:0;font-size:13px}
 #wordQuestionStatus:not(:empty){margin-top:8px}
+
+.moduleNav{margin:20px 0 14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.moduleNav a[aria-current="page"]{background:#20594b;border-color:#20594b;color:#fff}
+.moduleNav+.studyNav{margin-top:0}
+.practicePanel{max-width:760px}
+.practicePanel h2{margin:0 0 8px}
+.practicePanel [role="status"]:not(:empty){margin:12px 0;font-weight:600}
+.practicePanel button+[role="status"]{display:block}
+.practicePassage{max-width:68ch;margin:18px 0;padding:13px 15px;background:#f0f4e9;border-radius:7px}
+.practicePanel fieldset{margin:18px 0 12px;padding:0;border:0}
+.practicePanel legend{font-weight:600;margin-bottom:8px}
+.practicePanel fieldset label{display:flex;align-items:baseline;gap:7px;padding:4px 0}
+.practicePanel textarea{display:block;width:100%;min-height:160px;margin-top:6px;padding:10px;border:1px solid #bacbb8;border-radius:7px;resize:vertical}
+.practicePanel details{margin-top:18px}
+.practicePanel summary{cursor:pointer;font-weight:600}
