@@ -5,16 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>词汇手册 · CET6</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="study.css?v=17">
-  <link rel="stylesheet" href="word-handbook.css">
+  <link rel="stylesheet" href="study.css?v=25">
+  <link rel="stylesheet" href="word-handbook.css?v=25">
 </head>
 <body>
-  <header><a class="brand" href="study.html">CET<span>6</span><small>词汇训练室</small></a></header>
-  <main class="study handbook">
-    <nav class="handbookNav" aria-label="手册导航">
-      <a href="study.html">← 返回训练室</a>
-      <a id="otherHandbook" href="word-handbook.html?view=sentences">语句手册 →</a>
-    </nav>
+  <main class="study handbook subpage">
+    <a id="handbookBack" class="parentBack" href="study.html"><span aria-hidden="true">‹</span> <span id="handbookParent">返回词汇</span></a>
     <h1 id="handbookTitle">词汇手册</h1>
     <form class="handbookSearch" role="search">
       <label for="handbookQuery">搜索手册</label>
@@ -32,6 +28,6 @@
       <a href="https://dictionary.cambridge.org/uk/grammar/british-grammar/prepositions-and-particles" target="_blank" rel="noopener">剑桥词典 · 介词</a>
     </footer>
   </main>
-  <script type="module" src="word-handbook.js"></script>
+  <script type="module" src="word-handbook.js?v=25"></script>
 </body>
 </html>

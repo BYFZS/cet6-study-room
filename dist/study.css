@@ -2,7 +2,7 @@
 
 .cycleSteps{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}.cycleSteps span{font-size:12px;border:1px solid #d8dfce;padding:7px 12px;border-radius:24px;color:#7c896f}.cycleSteps .current{background:#20594b;color:white;border-color:#20594b}.cycleSteps .complete{background:#e1edcc;color:#486b31}.flash #spelling{font-size:20px}#roundEnd .actions{justify-content:flex-start}
 
-.flash #options button:disabled{opacity:1;color:#274b3c;cursor:default}.flash #options .bilingual{display:flex;flex-direction:column;gap:5px}.flash #options .bilingual strong{font-size:18px;font-weight:600}.flash #options .bilingual small{font-size:13px;color:#547561}.wordRelations{border-top:1px solid #d5dfc8;margin-top:18px;padding-top:8px}.wordRelations h4{margin:18px 0 10px;font-size:14px;color:#425e39}.wordRelations p{font-size:14px}.wordRelations small{color:#6c7d61;line-height:1.8}
+.flash #options button:disabled{opacity:1;color:#274b3c;cursor:default}.flash #options .bilingual .choiceText{display:grid;gap:3px}.flash #options .bilingual strong{font-size:18px;font-weight:600}.flash #options .bilingual small{font-size:13px;color:#547561}.wordRelations{border-top:1px solid #d5dfc8;margin-top:18px;padding-top:8px}.wordRelations h4{margin:18px 0 10px;font-size:14px;color:#425e39}.wordRelations p{font-size:14px}.wordRelations small{color:#6c7d61;line-height:1.8}
 
 .spellingHint{background:#fff0cc;border:1px dashed #d6be7d;padding:15px;border-radius:8px;font-size:22px!important;color:#66501e!important;letter-spacing:1px}#showSpelling{margin:6px 12px 12px 0}
 
@@ -93,7 +93,6 @@
 #previousWordDialog form{margin:12px 0 0;justify-content:flex-end}
 
 .wordQuestionButton{margin-top:4px;border-color:#a9bda8}
-#markGuess:not([hidden]){display:block;margin:-10px 0 16px;border-color:#a9bda8}
 #wordQuestionDialog{box-sizing:border-box;width:calc(100% - 24px);max-width:660px;max-height:90dvh;margin:auto;padding:clamp(14px,4vw,24px);overflow:auto}
 #wordQuestionDialog h2{margin:0 0 8px}
 #wordQuestionWord{font-size:15px;font-weight:600}
@@ -136,11 +135,33 @@
 #syncLegacy{margin:10px 0}
 #syncLegacy summary{cursor:pointer;color:var(--green)}
 
+.subpage{margin-top:22px}
+.parentBack{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 12px;border-radius:8px;background:#e7eee3;color:#245347;text-decoration:none;font-size:14px;font-weight:600}
+.parentBack span[aria-hidden]{font-size:23px;line-height:1}
+.parentBack:hover{background:#dce8d9}
+
+body.trainingMode > header,
+.trainingMode .study > .heading,
+.trainingMode .study > footer,
+body.vocabularySubpage > header,
+.vocabularySubpage .study > .heading{display:none}
+.vocabularySubpage .study{margin-top:22px}
+#training #question{overflow-wrap:anywhere}
+.flash #options{grid-template-columns:repeat(2,minmax(0,1fr))}
+.flash #options:empty{display:none}
+.flash #options button{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:10px;min-height:54px;padding:9px 12px;background:#f5f8f3;border-color:#d6e1d4;color:#25493e;font-weight:550;line-height:1.34}
+.flash #options button:not(:disabled):hover{background:#eaf1e7;border-color:#8aab8e}
+.choiceIndex{display:grid;place-items:center;width:23px;height:23px;border-radius:6px;background:#e3ede2;color:#365b49;font-size:12px;font-weight:650}
+.choiceText{min-width:0;overflow-wrap:anywhere}
+.flash #options .right .choiceIndex{background:#c5e0af;color:#2f5628}
+.flash #options .wrong .choiceIndex{background:#f1cdb5;color:#743e23}
+#training #trainingActions{justify-content:flex-start;gap:2px 12px;margin:10px 0 0;padding-top:5px;border-top:1px solid var(--line)}
+#training #trainingActions button,#training #markGuess{min-height:44px;padding:6px 4px;border:0;background:transparent;color:#47665b;font-size:13px;line-height:1.3}
+#training #trainingActions button:hover,#training #markGuess:hover{color:#174538;text-decoration:underline;text-underline-offset:3px}
+#training #markGuess{margin:-7px 0 0}
+
 @media(max-width:600px){
-  body.trainingMode > header,
-  .trainingMode .study > .heading,
-  .trainingMode .study > .studyNav,
-  .trainingMode .study > footer{display:none}
+  .subpage,.vocabularySubpage .study{margin-top:12px}
   .trainingMode .study{margin:10px auto 20px;padding:0 12px}
   #training .trainHead{margin:0 0 8px;gap:6px;justify-content:flex-start}
   #training .trainHead button{min-height:44px;padding:6px 9px;font-size:12px}
@@ -149,20 +170,17 @@
   #training .cycleSteps{gap:5px;margin-bottom:10px}
   #training .cycleSteps span{padding:4px 8px}
   #training #questionKind{margin:0 0 4px;font-size:11px;letter-spacing:.07em}
-  #training #question{margin:0 0 5px;line-height:1.2;overflow-wrap:anywhere}
+  #training #question{margin:0 0 5px;font-family:system-ui,sans-serif;font-size:clamp(22px,6.7vw,26px);font-weight:650;line-height:1.16}
   #training #questionHint,#training #spellingContext{margin:5px 0;line-height:1.5;font-size:13px}
-  #training #speak,#training #showSpelling{min-height:44px}
-  .flash #options{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
-  .flash #options:empty{margin:0}
-  .flash #options button{min-height:58px;min-width:0;padding:9px 10px;line-height:1.4;font-size:14px;overflow-wrap:anywhere}
-  .flash #options .bilingual{justify-content:center;gap:3px}
+  #training #speak,#training #showSpelling{min-height:44px;padding:6px 9px;font-size:12px}
+  .flash #options{gap:7px;margin:8px 0}
+  .flash #options button{min-height:46px;gap:6px;padding:6px 7px;font-size:13px}
+  .choiceIndex{width:19px;height:19px;font-size:10px}
   .flash #options .bilingual strong{font-size:15px}
   .flash #options .bilingual small{font-size:12px;line-height:1.4}
-  #training #markGuess:not([hidden]){min-height:44px;margin:0}
   #training #spellArea{gap:6px;margin:10px 0}
   #training #spelling{min-width:0;font-size:16px}
-  #training .flash > .actions{gap:6px;margin:8px 0 0}
-  #training .flash > .actions button,#training #nextCard{min-height:44px}
+  #training #nextCard{min-height:44px}
   #training #feedback{padding:13px;margin:10px 0;overflow-wrap:anywhere}
   #training #feedback h3{font-size:16px;margin:0 0 8px}
   #training #feedback p{margin:7px 0;line-height:1.55}

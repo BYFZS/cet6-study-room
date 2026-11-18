@@ -30,7 +30,7 @@ const writingTasks = {
     sample:'Universities can meet both needs by separating quiet areas from rooms for discussion. For example, students preparing for exams could use a silent floor, while project teams could book a room for short meetings. Clear signs and a simple booking system would help each group find a suitable space.',
     label:'参考段落与自查',
     note:'检查开头有没有明确提出分区方案，例子是否同时照顾两类学生，结尾是否提出具体的管理办法。',
-    resource:['语句手册与范文','word-handbook.html?view=sentences']
+    resource:['语句手册与范文','word-handbook.html?view=sentences&from=writing']
   },
   translation: {
     title:'翻译 · 社区图书馆',

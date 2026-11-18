@@ -4,7 +4,8 @@ const words = [
   ['phrases','常用搭配'], ['prepositions','介词用法']
 ];
 const sentences = [['patterns','高级句型'], ['essays','范文拆解']];
-const writing = new URLSearchParams(location.search).get('view') === 'sentences';
+const params = new URLSearchParams(location.search);
+const writing = params.get('view') === 'sentences';
 const categories = writing ? sentences : words;
 const title = writing ? '语句手册' : '词汇手册';
 const query = byId('handbookQuery');
@@ -17,8 +18,10 @@ let category = 'all';
 document.title = title + ' · CET6';
 byId('handbookTitle').textContent = title;
 if (writing) {
-  byId('otherHandbook').textContent = '词汇手册 →';
-  byId('otherHandbook').href = 'word-handbook.html';
+  if (params.get('from') === 'writing') {
+    byId('handbookBack').href = 'practice.html?skill=writing';
+    byId('handbookParent').textContent = '返回写作';
+  }
   query.placeholder = '如 让步、倒装、人工智能';
 }
 
