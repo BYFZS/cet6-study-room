@@ -124,6 +124,12 @@
 .practicePanel details{margin-top:18px}
 .practicePanel summary{cursor:pointer;font-weight:600}
 
+.answerSoundPanel{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;padding:8px 16px}
+.answerSoundPanel h2{font-size:14px;margin:3px 0}
+.answerSoundPanel div{display:flex;gap:6px 18px;flex-wrap:wrap}
+.answerSoundPanel label{display:inline-flex;align-items:center;gap:6px;min-height:42px;font-size:13px;cursor:pointer}
+.answerSoundPanel input{width:16px;height:16px;accent-color:#20594b}
+
 @media(max-width:600px){
   body.trainingMode > header,
   .trainingMode .study > .heading,

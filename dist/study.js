@@ -1,13 +1,15 @@
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
 import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=6';
 import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS} from './learning-core.mjs?v=6';
-import {initThreeUI} from './three-round-ui.mjs?v=22';
+import {initThreeUI} from './three-round-ui.mjs?v=23';
+import {initAnswerSoundSettings} from './answer-sounds.mjs';
 import {setupSyncUI} from './sync-ui.mjs?v=9';
 import {summarizeStudy} from './study-analytics.mjs?v=19';
 import {setupStudyStats} from './study-stats-ui.mjs?v=19';
 import {setupContextQuiz} from './context-quiz-ui.mjs?v=19';
 import {studyLogWithQuizzes} from './context-quiz.mjs?v=19';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+initAnswerSoundSettings($('answerSoundSettings'));
 let deck=[],baseline=null,db=emptyDB(),sync=null,quiz=null;
 try{baseline=JSON.parse(localStorage.getItem(BASE_KEY));const saved=JSON.parse(localStorage.getItem(LEARN_KEY));if([2,3].includes(saved?.version)&&saved.type==='cet6-learning')db=saved;}catch{}
 function message(s=''){$('message').textContent=s;}

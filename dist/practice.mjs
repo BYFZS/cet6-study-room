@@ -1,3 +1,5 @@
+import {playAnswerSound} from './answer-sounds.mjs';
+
 const listening = 'When the university library first extended its evening hours, staff expected most visitors to borrow books. In fact, many students came to use the quiet study rooms. Some shared crowded flats, while others had long gaps between work and evening classes. After reviewing the feedback, the library kept more study rooms open and moved the closing time of the borrowing desk back to its original hour.';
 const reading = 'A team compared two groups of learners who studied the same set of unfamiliar words. One group studied for thirty minutes in a single session. The other split the same amount of time across three days. Both groups did equally well on a test immediately after their final session. A week later, however, the group that had spaced out its practice remembered more words. The result suggests that the timing of practice matters when the goal is to remember information over time.';
 const shortTasks = {
@@ -106,6 +108,7 @@ if (Object.hasOwn(shortTasks,selected)) {
   form.onsubmit = event => {
     event.preventDefault();
     const correct = Number(new FormData(form).get('choice')) === task.answer;
+    playAnswerSound(correct);
     feedback.textContent = (correct ? '答对了。' : '参考答案为 '+String.fromCharCode(65+task.answer)+'。')+task.note;
     if (script) script.open = true;
   };
