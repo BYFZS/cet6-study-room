@@ -43,7 +43,7 @@ export function mistakeTimes(logs, rounds = []) {
   const count = (word, at) => {
     if (word && Number.isFinite(at)) result.set(word, Math.min(at, result.get(word) ?? Infinity));
   };
-  for (const log of logs) if (log?.correct === false) count(log.word, log.at);
+  for (const log of logs) if (log?.correct === false && !log.relatedAnswer) count(log.word, log.at);
   for (const attempt of quizAttempts(rounds)) {
     for (const item of quizResults(attempt, rounds)) {
       if (item.status === 'wrong') count(item.word, attempt.at);

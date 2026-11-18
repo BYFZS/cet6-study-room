@@ -79,7 +79,7 @@ export function summarizeStudy(logs, now = Date.now()) {
       }
     }
 
-    if (log.correct) continue;
+    if (log.correct || log.relatedAnswer) continue;
     if (!wrong.has(log.word)) wrong.set(log.word, {word: log.word, count: 0, spelling: 0, days: new Set(), latest: 0});
     const miss = wrong.get(log.word);
     miss.count++;

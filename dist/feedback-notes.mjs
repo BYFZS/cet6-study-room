@@ -1,4 +1,4 @@
-import {normalize} from './learning-core.mjs?v=6';
+import {normalize,spellingMatches} from './learning-core.mjs?v=6';
 import {contrastCandidates} from './word-contrasts.mjs?v=10';
 
 const references = [
@@ -23,6 +23,11 @@ export function partOfSpeechHTML(word, esc) {
   if (!word?.pos) return '';
   return '<span class="posLabel">'+word.pos.split('/').map(code =>
     esc(POS[code] + ' ' + code + '.')).join(' / ')+'</span>';
+}
+
+export function spellingAlternative(answer, word) {
+  const {spellingAlternatives = [], synonyms = []} = word.relations || {};
+  return [...spellingAlternatives, ...synonyms].find(item => spellingMatches(answer, item.word));
 }
 
 export function wordFamilyHTML(word, esc) {

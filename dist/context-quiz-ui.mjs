@@ -1,6 +1,6 @@
 import {dayKey} from './learning-core.mjs?v=6';
 import {QUIZ_ATTEMPT, QUIZ_MARK, QUIZ_SIZE, makeQuizQuestions, quizAttempts, quizKey, quizResults,
-  reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish, mistakeTimes, restrictQuizQuestion} from './context-quiz.mjs?v=13';
+  reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish, mistakeTimes, restrictQuizQuestion} from './context-quiz.mjs?v=19';
 import {partOfSpeechHTML} from './feedback-notes.mjs?v=12';
 
 const DRAFT_KEY = 'cet6-context-quiz-draft-v1';

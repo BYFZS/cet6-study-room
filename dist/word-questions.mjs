@@ -14,7 +14,8 @@ export function wordQuestionContext(card, word) {
     翻译: word.translation,
     搭配: word.collocation,
     我的答案: answer,
-    判定: card.status === 'pending' ? '待核对' : card.correct ? '正确' : '错误'
+    判定: card.status === 'pending' ? '待核对' : card.correct ? '正确' :
+      card.relatedAnswer ? '答案符合中文提示，继续练习目标词拼写' : '错误'
   };
 }
 
