@@ -627,5 +627,721 @@
       }
     ],
     "note": "两个构词成分合起来表示太空航行者。"
+  },
+  "capacity": {
+    "parts": [
+      {
+        "form": "capac-",
+        "meaning": "来自拉丁语 capāx、capāc-，能容纳的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "名词后缀，表示状态或性质"
+      }
+    ],
+    "note": "先记「能容纳的量」，再区分 capacity to do（做某事的能力）和 in the capacity of（以某种身份）。",
+    "source": "https://ahdictionary.com/word/search.html?q=capacity"
+  },
+  "coordinate": {
+    "parts": [
+      {
+        "form": "co-",
+        "meaning": "一起、共同"
+      },
+      {
+        "form": "ordin-",
+        "meaning": "源自拉丁语 ordō、ordin-，次序、排列"
+      }
+    ],
+    "note": "coordinate several teams 意为协调多支团队，让各方配合。",
+    "source": "https://ahdictionary.com/word/search.html?q=coordinate"
+  },
+  "transition": {
+    "parts": [
+      {
+        "form": "trans-",
+        "meaning": "从一边到另一边、跨越"
+      },
+      {
+        "form": "īre",
+        "meaning": "拉丁语，走、去"
+      }
+    ],
+    "note": "拉丁语 transīre 表示跨过。transition to 指过渡到新的状态。",
+    "source": "https://ahdictionary.com/word/search.html?q=transition"
+  },
+  "intervene": {
+    "parts": [
+      {
+        "form": "inter-",
+        "meaning": "在……之间"
+      },
+      {
+        "form": "venīre",
+        "meaning": "拉丁语，来"
+      }
+    ],
+    "note": "源义可联想为「来到两者之间」，常用义为介入、干预。",
+    "source": "https://ahdictionary.com/word/search.html?q=intervene"
+  },
+  "interact": {
+    "parts": [
+      {
+        "form": "inter-",
+        "meaning": "在……之间、相互"
+      },
+      {
+        "form": "act",
+        "meaning": "行动"
+      }
+    ],
+    "note": "interact with 表示与……互动。"
+  },
+  "confront": {
+    "parts": [
+      {
+        "form": "con-",
+        "meaning": "一起、相对"
+      },
+      {
+        "form": "front",
+        "meaning": "前面、正面"
+      }
+    ],
+    "note": "词义可联想到面对面，现代常指正视问题或对峙。",
+    "source": "https://ahdictionary.com/word/search.html?q=confront"
+  },
+  "conduct": {
+    "parts": [
+      {
+        "form": "con-",
+        "meaning": "一起"
+      },
+      {
+        "form": "dūcere",
+        "meaning": "拉丁语，引导、带领"
+      }
+    ],
+    "note": "历史词源可联想到带领，conduct a survey 指开展调查。",
+    "source": "https://ahdictionary.com/word/search.html?q=conduct"
+  },
+  "conflict": {
+    "parts": [
+      {
+        "form": "con-",
+        "meaning": "相互"
+      },
+      {
+        "form": "flīgere",
+        "meaning": "拉丁语，打击、撞击"
+      }
+    ],
+    "note": "可联想到两方发生碰撞，现代常指冲突。",
+    "source": "https://ahdictionary.com/word/search.html?q=conflict"
+  },
+  "emission": {
+    "parts": [
+      {
+        "form": "e-",
+        "meaning": "向外，来自拉丁语 ex-"
+      },
+      {
+        "form": "miss-",
+        "meaning": "来自拉丁语 mittere，送出、放出"
+      }
+    ],
+    "note": "可与 emit（排放）一起记，carbon emissions 常指碳排放。",
+    "source": "https://ahdictionary.com/word/search.html?q=emission"
+  },
+  "eject": {
+    "parts": [
+      {
+        "form": "e-",
+        "meaning": "向外"
+      },
+      {
+        "form": "ject-",
+        "meaning": "来自拉丁语 iacere，投、扔"
+      }
+    ],
+    "note": "eject a disk 指弹出光盘。",
+    "source": "https://ahdictionary.com/word/search.html?q=eject"
+  },
+  "oral": {
+    "parts": [
+      {
+        "form": "or-",
+        "meaning": "来自拉丁语 ōs、ōris，嘴、口"
+      },
+      {
+        "form": "-al",
+        "meaning": "形容词后缀，表示与……有关"
+      }
+    ],
+    "note": "oral presentation 是口头报告，oral health 是口腔健康。",
+    "source": "https://ahdictionary.com/word/search.html?q=oral"
+  },
+  "prevent": {
+    "parts": [
+      {
+        "form": "pre-",
+        "meaning": "在……之前"
+      },
+      {
+        "form": "venīre",
+        "meaning": "拉丁语，来"
+      }
+    ],
+    "note": "历史源义是先到。现代用法记 prevent something 或 prevent someone from doing。",
+    "source": "https://ahdictionary.com/word/search.html?q=prevent"
+  },
+  "transform": {
+    "parts": [
+      {
+        "form": "trans-",
+        "meaning": "跨越、转变"
+      },
+      {
+        "form": "form",
+        "meaning": "形态、样式"
+      }
+    ],
+    "note": "transform A into B 表示把 A 转变成 B。"
+  },
+  "progress": {
+    "parts": [
+      {
+        "form": "pro-",
+        "meaning": "向前"
+      },
+      {
+        "form": "gress-",
+        "meaning": "来自拉丁语 gradī，迈步、走"
+      }
+    ],
+    "note": "pro- 在这里表示向前。make progress 指取得进展。",
+    "source": "https://ahdictionary.com/word/search.html?q=progress"
+  },
+  "underlying": {
+    "parts": [
+      {
+        "form": "under-",
+        "meaning": "在下面"
+      },
+      {
+        "form": "lie",
+        "meaning": "位于；lying 是 -ing 形式"
+      }
+    ],
+    "note": "underlying cause 表示表象背后的根本原因。"
+  },
+  "overcome": {
+    "parts": [
+      {
+        "form": "over-",
+        "meaning": "越过、超过"
+      },
+      {
+        "form": "come",
+        "meaning": "来、来到"
+      }
+    ],
+    "note": "现代常用义为克服困难。"
+  },
+  "uphold": {
+    "parts": [
+      {
+        "form": "up",
+        "meaning": "向上"
+      },
+      {
+        "form": "hold",
+        "meaning": "握住、维持"
+      }
+    ],
+    "note": "uphold a decision 指维持某项决定。"
+  },
+  "disproportionately": {
+    "parts": [
+      {
+        "form": "dis-",
+        "meaning": "不、偏离"
+      },
+      {
+        "form": "proportion",
+        "meaning": "比例"
+      },
+      {
+        "form": "-ate / -ly",
+        "meaning": "形容词和副词形式"
+      }
+    ],
+    "note": "指某一比例高得或低得不相称。"
+  },
+  "regardless of": {
+    "parts": [
+      {
+        "form": "regard",
+        "meaning": "注意、顾及"
+      },
+      {
+        "form": "-less",
+        "meaning": "没有、不顾"
+      }
+    ],
+    "note": "regardless of 后接不影响行动的因素。"
+  },
+  "self-reliance": {
+    "parts": [
+      {
+        "form": "self-",
+        "meaning": "自身"
+      },
+      {
+        "form": "reliance",
+        "meaning": "依赖"
+      }
+    ],
+    "note": "指依靠自己，可与 rely on oneself 对照。"
+  },
+  "responsibility": {
+    "parts": [
+      {
+        "form": "responsible",
+        "meaning": "负责的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "名词形式，表示性质或状态"
+      }
+    ],
+    "note": "responsible 的词尾变成 -ibility。take responsibility for 表示对……负责。"
+  },
+  "credibility": {
+    "parts": [
+      {
+        "form": "credible",
+        "meaning": "可信的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "名词形式，表示性质或状态"
+      }
+    ],
+    "note": "credible 的词尾变成 -ibility。credibility 强调可信度。"
+  },
+  "technological": {
+    "parts": [
+      {
+        "form": "technology",
+        "meaning": "技术"
+      },
+      {
+        "form": "-ical",
+        "meaning": "形容词形式，表示与……有关"
+      }
+    ],
+    "note": "technological change 指技术变革。"
+  },
+  "socioeconomic": {
+    "parts": [
+      {
+        "form": "socio-",
+        "meaning": "与社会有关"
+      },
+      {
+        "form": "economic",
+        "meaning": "经济的"
+      }
+    ],
+    "note": "常用于 socioeconomic status（社会经济地位）。"
+  },
+  "socio-economic": {
+    "parts": [
+      {
+        "form": "socio-",
+        "meaning": "与社会有关"
+      },
+      {
+        "form": "economic",
+        "meaning": "经济的"
+      }
+    ],
+    "note": "是 socioeconomic 的连字符写法，语义相同。"
+  },
+  "bureaucratic": {
+    "parts": [
+      {
+        "form": "bureaucracy",
+        "meaning": "官僚组织、官僚体制"
+      },
+      {
+        "form": "-ic",
+        "meaning": "形容词后缀"
+      }
+    ],
+    "note": "bureaucratic procedures 指繁复的官僚程序。"
+  },
+  "financial backing": {
+    "parts": [
+      {
+        "form": "finance",
+        "meaning": "资金、财务"
+      },
+      {
+        "form": "-ial",
+        "meaning": "常构成与……有关的形容词"
+      },
+      {
+        "form": "backing",
+        "meaning": "支持"
+      }
+    ],
+    "note": "整个短语表示资金支持。"
+  },
+  "frustration": {
+    "parts": [
+      {
+        "form": "frustrate",
+        "meaning": "使沮丧；阻挠"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词后缀，表示行为或结果"
+      }
+    ],
+    "note": "常指做事受阻产生的挫败感。"
+  },
+  "intimidation": {
+    "parts": [
+      {
+        "form": "intimidate",
+        "meaning": "威吓"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词后缀，表示行为或结果"
+      }
+    ],
+    "note": "intimidation 指威吓行为。"
+  },
+  "desperation": {
+    "parts": [
+      {
+        "form": "desperate",
+        "meaning": "绝望的"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词词尾"
+      }
+    ],
+    "note": "desperate 和 desperation 可一起记，in desperation 指在绝望中。"
+  },
+  "indignation": {
+    "parts": [
+      {
+        "form": "indignant",
+        "meaning": "愤慨的"
+      },
+      {
+        "form": "-ation",
+        "meaning": "名词词尾"
+      }
+    ],
+    "note": "这两个词同源，可一起记：feel indignant 和 express indignation。"
+  },
+  "explanation": {
+    "parts": [
+      {
+        "form": "explain",
+        "meaning": "解释"
+      },
+      {
+        "form": "-ation",
+        "meaning": "名词词尾，表示过程或结果"
+      }
+    ],
+    "note": "词干拼写有变化。give an explanation 指作出解释。"
+  },
+  "storage": {
+    "parts": [
+      {
+        "form": "store",
+        "meaning": "储存"
+      },
+      {
+        "form": "-age",
+        "meaning": "名词后缀，表示过程或结果"
+      }
+    ],
+    "note": "storage capacity 指存储容量。"
+  },
+  "restoration": {
+    "parts": [
+      {
+        "form": "restore",
+        "meaning": "恢复、修复"
+      },
+      {
+        "form": "-ation",
+        "meaning": "名词后缀，表示过程或结果"
+      }
+    ],
+    "note": "词干拼写有变化。restoration work 是修复工作。"
+  },
+  "movement": {
+    "parts": [
+      {
+        "form": "move",
+        "meaning": "移动"
+      },
+      {
+        "form": "-ment",
+        "meaning": "名词后缀，表示过程或结果"
+      }
+    ],
+    "note": "也可指社会运动，如 a social movement。"
+  },
+  "frightening": {
+    "parts": [
+      {
+        "form": "frighten",
+        "meaning": "使害怕"
+      },
+      {
+        "form": "-ing",
+        "meaning": "可形成描述引发感受的形容词"
+      }
+    ],
+    "note": "frightening 描述事物令人害怕，frightened 描述人感到害怕。"
+  },
+  "challenging": {
+    "parts": [
+      {
+        "form": "challenge",
+        "meaning": "挑战"
+      },
+      {
+        "form": "-ing",
+        "meaning": "形容词形式"
+      }
+    ],
+    "note": "challenging describes a task that requires effort，常译「有挑战性的」。"
+  },
+  "worrisome": {
+    "parts": [
+      {
+        "form": "worry",
+        "meaning": "担心"
+      },
+      {
+        "form": "-some",
+        "meaning": "形容词后缀，表示引起某种感觉或有某种倾向"
+      }
+    ],
+    "note": "worrisome 表示令人担忧的。"
+  },
+  "minority": {
+    "parts": [
+      {
+        "form": "minor",
+        "meaning": "较小的；次要的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "名词后缀，表示状态或性质"
+      }
+    ],
+    "note": "minority 指少数或少数群体。"
+  },
+  "scholarly": {
+    "parts": [
+      {
+        "form": "scholar",
+        "meaning": "学者"
+      },
+      {
+        "form": "-ly",
+        "meaning": "这里构成形容词，表示有……特征的"
+      }
+    ],
+    "note": "scholarly journal 指学术期刊。"
+  },
+  "literary": {
+    "parts": [
+      {
+        "form": "littera",
+        "meaning": "拉丁语，字母、文字"
+      },
+      {
+        "form": "-ary",
+        "meaning": "形容词后缀，表示与……有关"
+      }
+    ],
+    "note": "literary 指文学的，literacy 指读写能力。",
+    "source": "https://ahdictionary.com/word/search.html?q=literary"
+  },
+  "periodical": {
+    "parts": [
+      {
+        "form": "period",
+        "meaning": "周期，时间段"
+      },
+      {
+        "form": "-ical",
+        "meaning": "形容词形式"
+      }
+    ],
+    "note": "作名词时可指定期出版的刊物。"
+  },
+  "fertilizer": {
+    "parts": [
+      {
+        "form": "fertilize",
+        "meaning": "给……施肥"
+      },
+      {
+        "form": "-er",
+        "meaning": "指执行某种作用的人或物"
+      }
+    ],
+    "note": "fertilizer 指肥料。"
+  },
+  "pesticide": {
+    "parts": [
+      {
+        "form": "pest",
+        "meaning": "害虫等有害生物"
+      },
+      {
+        "form": "-cide",
+        "meaning": "杀灭，源自拉丁语 caedere，杀死、砍"
+      }
+    ],
+    "note": "pesticide 指用于防治有害生物的药剂。",
+    "source": "https://ahdictionary.com/word/search.html?q=pesticide"
+  },
+  "herbicide": {
+    "parts": [
+      {
+        "form": "herb-",
+        "meaning": "植物、草"
+      },
+      {
+        "form": "-cide",
+        "meaning": "杀灭"
+      }
+    ],
+    "note": "herbicide 是除草剂。"
+  },
+  "artificial": {
+    "parts": [
+      {
+        "form": "artific-",
+        "meaning": "源于拉丁语 artificium，技艺、制作"
+      },
+      {
+        "form": "-ial",
+        "meaning": "形容词形式"
+      }
+    ],
+    "note": "artificial light 指人造光。",
+    "source": "https://ahdictionary.com/word/search.html?q=artificial"
+  },
+  "increasingly": {
+    "parts": [
+      {
+        "form": "increase",
+        "meaning": "增加"
+      },
+      {
+        "form": "-ing / -ly",
+        "meaning": "由形容词形式再构成副词"
+      }
+    ],
+    "note": "常放在形容词前，如 increasingly common（越来越常见）。"
+  },
+  "comparatively": {
+    "parts": [
+      {
+        "form": "comparative",
+        "meaning": "比较的；相对的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "comparatively small 指相对小。"
+  },
+  "widely": {
+    "parts": [
+      {
+        "form": "wide",
+        "meaning": "宽的；广的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "widely used 指广泛使用。"
+  },
+  "precisely": {
+    "parts": [
+      {
+        "form": "precise",
+        "meaning": "准确的；精准的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "precisely define 指精确定义。"
+  },
+  "promptly": {
+    "parts": [
+      {
+        "form": "prompt",
+        "meaning": "及时的、迅速的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "副词后缀"
+      }
+    ],
+    "note": "reply promptly 表示及时回复。"
+  },
+  "global": {
+    "parts": [
+      {
+        "form": "globe",
+        "meaning": "地球；球体"
+      },
+      {
+        "form": "-al",
+        "meaning": "形容词后缀"
+      }
+    ],
+    "note": "global 指全球范围内的。"
+  },
+  "scientific research": {
+    "parts": [
+      {
+        "form": "science",
+        "meaning": "科学"
+      },
+      {
+        "form": "-ific",
+        "meaning": "形容词形式的一部分"
+      },
+      {
+        "form": "research",
+        "meaning": "研究"
+      }
+    ],
+    "note": "整条考常用搭配，scientific research 为科学研究。"
   }
 }

@@ -11,7 +11,15 @@ const references = [
   ['un-', '可表示「不、未」，如 unexcused（未获批准的），也可表示解除，如 unpack（拆开包装）。',
     'https://dictionary.cambridge.org/grammar/british-grammar/prefixes'],
   ['con-', '常表示「一起、共同」，和 com-、col-、cor- 同源。如 contribute（贡献）、construct（建造）。',
-    'https://www.ahdictionary.com/word/search.html?id=C5517400']
+    'https://www.ahdictionary.com/word/search.html?id=C5517400'],
+  ['co-', '表示「一起、共同」，如 coordinate（协调）、cooperate（合作）。',
+    'https://ahdictionary.com/word/search.html?q=co-'],
+  ['inter-', '表示「在……之间」或「相互」，如 interact（互动）、international（国际的）。',
+    'https://dictionary.cambridge.org/grammar/british-grammar/prefixes'],
+  ['trans-', '表示「跨越」或「从一处转到另一处」，如 transfer（转移）、transport（运输）。',
+    'https://dictionary.cambridge.org/grammar/british-grammar/prefixes'],
+  ['sub-', '表示「在……下面」或「等级较低」，如 submarine（潜艇）、subordinate（从属的）。',
+    'https://dictionary.cambridge.org/grammar/british-grammar/prefixes']
 ];
 
 const POS = {

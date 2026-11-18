@@ -1,3 +1,5 @@
+import {answerQuestion} from './tutor.js';
+
 const CLIENTS = new Set([
   'https://cet6-study-nov26-parrot.linedsunflower3.chatgpt.site',
   'https://appassets.androidplatform.net'
@@ -122,6 +124,12 @@ export default {
     const path = new URL(request.url).pathname;
     if (path === '/' && request.method === 'GET') return send(200, {service: 'CET6 encrypted sync', version: 1});
     if (!CLIENTS.has(origin)) return send(403, {error: 'origin'});
+    const tutor = path.match(/^\/v1\/tutor\/([0-9a-f]{32})$/);
+    if (tutor) {
+      if (request.method === 'OPTIONS') return send(204);
+      const access = await bearerHash(request);
+      return answerQuestion({request, env, room:tutor[1], access, send, readBody});
+    }
     const route = path.match(/^\/v1\/(state|pair)\/([0-9a-f]{32})$/);
     if (!route) return send(404, {error: 'missing'});
     if (request.method === 'OPTIONS') return send(204);

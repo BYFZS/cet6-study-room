@@ -36,16 +36,13 @@ public final class MainActivity extends Activity {
     private static final String EXAM_HOST = "www.cettong.cn";
     private static final String EXAM_PATH = "/library/cet6/2025_06_1/";
     private static final String SYNC_HOST = "cet6-sync-nov26.linedsunflower3.chatgpt.site";
-    private static final String MODEL_HOST = "openrouter.ai";
-    private static final String MODEL_PATH = "/api/v1/chat/completions";
     private static final int OPEN_JSON = 1;
     private static final int SAVE_JSON = 2;
     private static final int MAX_JSON_CHARS = 10 * 1024 * 1024;
     private static final String CSP = "default-src 'self'; frame-src 'none'; object-src 'none'; "
         + "script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; "
         + "style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; "
-        + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + " https://" + MODEL_HOST
-        + MODEL_PATH + "; media-src 'self' blob:";
+        + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + "; media-src 'self' blob:";
 
     private WebView web;
     private TextToSpeech voice;
@@ -140,8 +137,6 @@ public final class MainActivity extends Activity {
             Uri uri = request.getUrl();
             if (isHttpsHost(uri, SYNC_HOST) && uri.getPath() != null
                 && uri.getPath().startsWith("/v1/") && !request.isForMainFrame()) return null;
-            if (!request.isForMainFrame() && isHttpsHost(uri, MODEL_HOST) && MODEL_PATH.equals(uri.getPath())
-                && ("POST".equals(request.getMethod()) || "OPTIONS".equals(request.getMethod()))) return null;
             if (!"GET".equals(request.getMethod())) return unavailable(403, "Forbidden");
             if (isHttpsHost(uri, EXAM_HOST) && uri.getPath() != null
                 && uri.getPath().startsWith(EXAM_PATH) && !request.isForMainFrame()) return null;

@@ -88,6 +88,13 @@ async function roomKeys(secret) {
   };
 }
 
+export async function tutorAccess() {
+  const config = loadJSON(STATE_KEY);
+  if (!/^[A-Za-z0-9_-]{43}$/.test(config?.secret || '')) return null;
+  const {id, token} = await roomKeys(config.secret);
+  return {url: SYNC_URL + '/v1/tutor/' + id, token};
+}
+
 async function pairKeys(code) {
   return {
     id: toHex(await digest('cet6-pair:' + code)).slice(0, 32),
