@@ -78,3 +78,11 @@
 .confusionGrid div{background:#fff;border-radius:6px;padding:8px 10px}
 .confusionGrid p{margin:2px 0 5px}
 @media(max-width:480px){.confusionGrid{grid-template-columns:1fr}}
+
+.trainHead{flex-wrap:wrap;gap:8px}
+#previousWordDialog{box-sizing:border-box;width:calc(100% - 28px);max-width:660px;margin:auto;padding:18px}
+#previousWordDialog h2{margin:0 0 8px}
+#previousWordBody{max-height:62vh;max-height:62dvh;overflow:auto;padding:0 8px 0 0}
+#previousWordBody div{display:block;margin-top:8px}
+#previousWordBody .confusionGrid{display:grid}
+#previousWordDialog form{margin:12px 0 0;justify-content:flex-end}
