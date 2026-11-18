@@ -91,3 +91,20 @@
 #previousWordBody div{display:block;margin-top:8px}
 #previousWordBody .confusionGrid{display:grid}
 #previousWordDialog form{margin:12px 0 0;justify-content:flex-end}
+
+.wordQuestionButton{margin-top:4px;border-color:#a9bda8}
+#wordQuestionDialog{box-sizing:border-box;width:calc(100% - 24px);max-width:660px;max-height:90dvh;margin:auto;padding:clamp(14px,4vw,24px);overflow:auto}
+#wordQuestionDialog h2{margin:0 0 8px}
+#wordQuestionWord{font-size:15px;font-weight:600}
+#wordQuestionChat{display:grid;gap:8px;max-height:32dvh;overflow:auto;margin:10px 0}
+#wordQuestionChat:empty{display:none}
+#wordQuestionChat div{display:block;background:#eff3e8;padding:9px 12px;border-radius:8px}
+#wordQuestionChat b{font-size:13px}
+#wordQuestionChat p{margin:5px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+#wordQuestionForm label{display:block;margin:9px 0 4px;font-size:13px;font-weight:600}
+#wordQuestionForm input[type=password],#wordQuestionPrompt{box-sizing:border-box;width:100%;border:1px solid #bacbb8;border-radius:7px;padding:9px;color:var(--green);background:#fff}
+#wordQuestionPrompt{resize:vertical;min-height:72px}
+#wordQuestionSetup{margin:10px 0;padding:9px 12px;background:#f3f5ee;border-radius:8px}
+#wordQuestionForm .actions,#wordQuestionDialog form[method=dialog]{margin:10px 0 0;justify-content:flex-end}
+#wordQuestionStatus{margin:0;font-size:13px}
+#wordQuestionStatus:not(:empty){margin-top:8px}

@@ -2,6 +2,7 @@ import {dayKey,grade,passedToday,prepareThree,recordStage,selectThreeWords,norma
 import {planTraining,attachAnswerTiming} from './adaptive-training.mjs?v=6';
 import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=10';
 import {partOfSpeechHTML,morphologyHTML,wordFamilyHTML,confusionHTML,confusionComparisonHTML,findMistakenWord} from './feedback-notes.mjs?v=17';
+import {initWordQuestions} from './word-questions.mjs?v=18';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);
 export const choiceOptions=harderOptions;
@@ -9,6 +10,8 @@ const CHOICE_VERSION=3;
 export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()=>{},onGroupFinished=()=>{}}){
  const previousDialog=$('previousWordDialog');
  const confusionDialog=$('confusionDialog');
+ const questionDialog=$('wordQuestionDialog');
+ const openWordQuestion=initWordQuestions($);
  const wordData=word=>getDeck().find(w=>w.word===word);
  const previousCard=()=>{
   const card=getDB().previousCard;
@@ -83,6 +86,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
   const c=getDB().session.current,pending=c.status==='pending';
   $('feedback').hidden=false;
   $('feedback').innerHTML=feedbackHTML(c);
+  addQuestionButton($('feedback'),c);
   if(pending){$('acceptMeaning').onclick=()=>answer(c.userAnswer,true);$('rejectMeaning').onclick=()=>answer(c.userAnswer,false);}else $('nextCard').hidden=false;$('options').querySelectorAll('button').forEach(b=>{const opt=c.options.find(o=>o.word===b.dataset.word);const meaning=opt?.meaning||wordData(b.dataset.word)?.meaning||opt?.label||'';b.innerHTML='<strong>'+esc(b.dataset.word)+'</strong><small>'+esc(meaning)+'</small>';b.classList.add('bilingual');b.classList.toggle('right',b.dataset.word===c.word);b.classList.toggle('wrong',!c.correct&&b.dataset.word===c.userAnswer);});}
  function finish(){
   const db=getDB(),s=db.session,count=Object.keys(s.passed).length;
@@ -102,6 +106,15 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
   }else $('returnHome').focus();
   onGroupFinished($('roundEnd'));
  }
+ function addQuestionButton(container,card){
+  const button=document.createElement('button');
+  button.type='button';
+  button.className='wordQuestionButton';
+  button.textContent='问这道题';
+  button.setAttribute('aria-haspopup','dialog');
+  button.onclick=()=>openWordQuestion(card,wordData(card.word));
+  container.append(button);
+ }
  function openPrevious(){
   const c=previousCard();
   if(!c||previousDialog.open)return;
@@ -110,6 +123,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
    choice.word+' · '+choice.meaning:c.userAnswer;
   pauseTiming();
   $('previousWordBody').innerHTML='<p><strong>你的答案</strong> · '+esc(answerText)+'</p>'+feedbackHTML(c);
+  addQuestionButton($('previousWordBody'),c);
   previousDialog.showModal();
   $('previousWordBody').scrollTop=0;
  }
@@ -131,7 +145,7 @@ export function initThreeUI({$,getDeck,getDB,view,save,message,esc,beforeNext=()
  nextCard.setAttribute('aria-keyshortcuts','Enter');
  nextCard.title='按回车继续';
  document.addEventListener('keydown',event=>{
-  if(event.key!=='Enter'||event.defaultPrevented||event.isComposing||event.keyCode===229||previousDialog.open)return;
+  if(event.key!=='Enter'||event.defaultPrevented||event.isComposing||event.keyCode===229||previousDialog.open||questionDialog.open)return;
   if(confusionDialog.open){
    if(event.repeat)event.preventDefault();
    return;
