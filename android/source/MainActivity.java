@@ -21,13 +21,23 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 import android.widget.FrameLayout;
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.SocketTimeoutException;
+import java.net.URL;
+import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.Collections;
 import java.util.Locale;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLException;
+import org.json.JSONObject;
 
 public final class MainActivity extends Activity {
     private static final String HOST = "appassets.androidplatform.net";
@@ -36,6 +46,7 @@ public final class MainActivity extends Activity {
     private static final String EXAM_HOST = "www.cettong.cn";
     private static final String EXAM_PATH = "/library/cet6/2025_06_1/";
     private static final String SYNC_HOST = "cet6-sync-nov26.linedsunflower3.chatgpt.site";
+    private static final int MAX_SYNC_BYTES = 1_400_000;
     private static final int OPEN_JSON = 1;
     private static final int SAVE_JSON = 2;
     private static final int MAX_JSON_CHARS = 10 * 1024 * 1024;
@@ -45,6 +56,7 @@ public final class MainActivity extends Activity {
         + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + "; media-src 'self' blob:";
 
     private WebView web;
+    private final ExecutorService syncRequests = Executors.newFixedThreadPool(2);
     private TextToSpeech voice;
     private boolean voiceReady;
     private ValueCallback<Uri[]> chooser;
@@ -173,6 +185,19 @@ public final class MainActivity extends Activity {
 
     public final class StudyBridge {
         @JavascriptInterface
+        public void syncRequest(String id, String path, String method, String token, String body) {
+            if (id == null || !id.matches("[0-9a-f]{32}")) return;
+            if (path == null || !path.matches("/v1/(state|pair|account|tutor)/[0-9a-f]{32}")
+                    || !("GET".equals(method) || "POST".equals(method) || "PUT".equals(method))
+                    || token == null || (!token.isEmpty() && !token.matches("[0-9a-f]{64}"))
+                    || (body != null && (body.length() > MAX_SYNC_BYTES || "GET".equals(method)))) {
+                replyToSync(id, 0, "", "request");
+                return;
+            }
+            if (!syncRequests.isShutdown()) syncRequests.execute(() -> exchangeSync(id, path, method, token, body));
+        }
+
+        @JavascriptInterface
         public void speak(String text, float rate) {
             if (text == null || text.isEmpty() || text.length() > 200) return;
             runOnUiThread(() -> {
@@ -201,6 +226,62 @@ public final class MainActivity extends Activity {
             }
             runOnUiThread(() -> beginExport(name, json));
         }
+    }
+
+    private void exchangeSync(String id, String path, String method, String token, String body) {
+        HttpsURLConnection connection = null;
+        try {
+            connection = (HttpsURLConnection) new URL("https://" + SYNC_HOST + path).openConnection();
+            connection.setRequestMethod(method);
+            connection.setInstanceFollowRedirects(false);
+            connection.setConnectTimeout(10000);
+            connection.setReadTimeout(path.startsWith("/v1/tutor/") ? 40000 : 15000);
+            connection.setUseCaches(false);
+            connection.setRequestProperty("Origin", "https://" + HOST);
+            if (!token.isEmpty()) connection.setRequestProperty("Authorization", "Bearer " + token);
+            if (body != null) {
+                byte[] data = body.getBytes(StandardCharsets.UTF_8);
+                if (data.length > MAX_SYNC_BYTES) {
+                    replyToSync(id, 0, "", "request");
+                    return;
+                }
+                connection.setDoOutput(true);
+                connection.setRequestProperty("Content-Type", "application/json");
+                connection.setFixedLengthStreamingMode(data.length);
+                try (OutputStream output = connection.getOutputStream()) { output.write(data); }
+            }
+            int status = connection.getResponseCode();
+            try (InputStream input = status < 400 ? connection.getInputStream() : connection.getErrorStream()) {
+                ByteArrayOutputStream output = new ByteArrayOutputStream();
+                byte[] buffer = new byte[8192];
+                if (input != null) {
+                    for (int size; (size = input.read(buffer)) != -1;) {
+                        if (output.size() + size > MAX_SYNC_BYTES) throw new IOException("response limit");
+                        output.write(buffer, 0, size);
+                    }
+                }
+                replyToSync(id, status, output.toString("UTF-8"), "");
+            }
+        } catch (UnknownHostException error) {
+            replyToSync(id, 0, "", "dns");
+        } catch (SSLException error) {
+            replyToSync(id, 0, "", "tls");
+        } catch (SocketTimeoutException error) {
+            replyToSync(id, 0, "", "timeout");
+        } catch (IOException error) {
+            replyToSync(id, 0, "", "network");
+        } finally {
+            if (connection != null) connection.disconnect();
+        }
+    }
+
+    private void replyToSync(String id, int status, String body, String error) {
+        runOnUiThread(() -> {
+            if (isDestroyed()) return;
+            String call = "window.cet6SyncReply && window.cet6SyncReply(" + JSONObject.quote(id)
+                + "," + status + "," + JSONObject.quote(body) + "," + JSONObject.quote(error) + ")";
+            web.evaluateJavascript(call, null);
+        });
     }
 
     private void beginExport(String name, String json) {
@@ -270,6 +351,7 @@ public final class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        syncRequests.shutdownNow();
         if (isFinishing()) clearExport();
         if (voice != null) voice.shutdown();
         web.destroy();

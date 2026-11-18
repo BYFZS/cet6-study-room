@@ -130,6 +130,12 @@
 .answerSoundPanel label{display:inline-flex;align-items:center;gap:6px;min-height:42px;font-size:13px;cursor:pointer}
 .answerSoundPanel input{width:16px;height:16px;accent-color:#20594b}
 
+#syncAccountForm{display:grid;gap:6px;margin:12px 0}
+#syncAccountForm input{width:100%;border:1px solid #cbd7c7;border-radius:7px;padding:9px}
+#syncAccountForm .actions{margin:4px 0 0}
+#syncLegacy{margin:10px 0}
+#syncLegacy summary{cursor:pointer;color:var(--green)}
+
 @media(max-width:600px){
   body.trainingMode > header,
   .trainingMode .study > .heading,

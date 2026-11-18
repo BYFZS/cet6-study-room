@@ -1,4 +1,5 @@
-import {tutorAccess} from './sync-client.mjs?v=20';
+import {tutorAccess} from './sync-client.mjs?v=24';
+import {syncRequest} from './sync-transport.mjs';
 
 export function wordQuestionContext(card, word) {
   const selected = card.options?.find(option => option.word === card.userAnswer);
@@ -66,28 +67,23 @@ export function initWordQuestions($) {
       if (request !== pending) return;
       if (!access) {
         pair.hidden = false;
-        status.textContent = '先绑定设备，即可使用豆包助教。';
+        status.textContent = '请先登录同步账号，即可使用豆包助教。';
         return;
       }
       pair.hidden = true;
-      const response = await fetch(access.url, {
-        method: 'POST',
-        headers: {'Authorization': 'Bearer '+access.token, 'Content-Type': 'application/json'},
-        credentials: 'omit',
-        redirect: 'error',
-        signal: pending.signal,
-        body: JSON.stringify({context, question, history:turns.slice(-6)})
+      const {status:code,data} = await syncRequest(access.path,{
+        method:'POST',token:access.token,signal:pending.signal,timeout:44000,
+        body:{context,question,history:turns.slice(-6)}
       });
-      const data = await response.json().catch(() => null);
       if (request !== pending) return;
-      if (response.status === 401 || response.status === 403) {
+      if (code === 401 || code === 403) {
         pair.hidden = false;
-        status.textContent = '设备绑定无法验证，请先检查同步设备。';
-      } else if (response.status === 402 || response.status === 429) {
+        status.textContent = '同步身份无法验证，请检查同步账号。';
+      } else if (code === 402 || code === 429) {
         status.textContent = data?.error === 'daily-limit' ? '今天的助教提问额度已用完，明天可以继续。' : '豆包试用额度已用完或暂时限流，请稍后再试。';
       } else {
         const reply = data?.reply;
-        if (!response.ok || data?.error || typeof reply !== 'string' || !reply.trim()) {
+        if (code !== 200 || data?.error || typeof reply !== 'string' || !reply.trim()) {
           status.textContent = '豆包暂时没有返回答案，可以稍后再试。';
           return;
         }

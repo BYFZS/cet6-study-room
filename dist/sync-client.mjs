@@ -1,10 +1,11 @@
 import {captureProgress, materializeProgress, mergeProgress, readProgressClocks, verifyProgress}
   from './sync-progress.mjs?v=9';
+import {syncRequest as request} from './sync-transport.mjs';
 
-export const SYNC_URL = 'https://cet6-sync-nov26.linedsunflower3.chatgpt.site';
 const encoder = new TextEncoder();
 const decoder = new TextDecoder();
 const STATE_KEY = 'cet6-sync-device-v1';
+const ACCOUNT_KEY = 'cet6-sync-account-owner-v1';
 const CLOCKS_KEY = 'cet6-sync-clocks-v1';
 const MAX_SEALED = 1_300_000;
 const MAX_PLAIN = 24_000_000;
@@ -92,7 +93,27 @@ export async function tutorAccess() {
   const config = loadJSON(STATE_KEY);
   if (!/^[A-Za-z0-9_-]{43}$/.test(config?.secret || '')) return null;
   const {id, token} = await roomKeys(config.secret);
-  return {url: SYNC_URL + '/v1/tutor/' + id, token};
+  return {path:'tutor/' + id, token};
+}
+
+function validateAccount(name,password) {
+  const username = name.trim().toLowerCase();
+  if (!/^[a-z0-9_-]{3,32}$/.test(username)) throw new Error('账号用 3–32 个字母、数字、下划线或短横线。');
+  if (password.length < 12 || password.length > 128) throw new Error('请输入 12–128 个字符的密码。');
+  return username;
+}
+
+const accountId = async username => toHex(await digest('cet6-account:'+username)).slice(0,32);
+
+async function accountKeys(password,salt) {
+  const material = await crypto.subtle.importKey('raw',encoder.encode(password),'PBKDF2',false,['deriveBits']);
+  const bytes = new Uint8Array(await crypto.subtle.deriveBits({
+    name:'PBKDF2', salt:fromBase64(salt), iterations:600000, hash:'SHA-256'
+  },material,512));
+  return {
+    token:toHex(bytes.subarray(0,32)),
+    encryption:await crypto.subtle.importKey('raw',bytes.subarray(32),'AES-GCM',false,['encrypt','decrypt'])
+  };
 }
 
 async function pairKeys(code) {
@@ -100,18 +121,6 @@ async function pairKeys(code) {
     id: toHex(await digest('cet6-pair:' + code)).slice(0, 32),
     encryption: await encryptionKey('cet6-pair-transfer', code)
   };
-}
-
-async function request(path, {method = 'GET', token, body} = {}) {
-  const headers = {};
-  if (token) headers.Authorization = 'Bearer ' + token;
-  if (body) headers['Content-Type'] = 'application/json';
-  const res = await fetch(SYNC_URL + '/v1/' + path, {
-    method, headers, body: body ? JSON.stringify(body) : undefined,
-    credentials: 'omit', cache: 'no-store', redirect: 'error',
-    signal: AbortSignal.timeout(12000)
-  });
-  return {status: res.status, data: await res.json()};
 }
 
 function restoreObservations(db, config) {
@@ -126,11 +135,28 @@ function restoreObservations(db, config) {
 
 export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
   let config = loadJSON(STATE_KEY);
+  let owner = config?.account || loadJSON(ACCOUNT_KEY);
   let observed = config ? restoreObservations(getDB(), config) : null;
   let pending = null;
   let active = null;
   let starting = false;
   let timer;
+  const report = snapshot => onStatus({...snapshot,account:config?.account,owner});
+  function saveConfig() {
+    localStorage.setItem(STATE_KEY, JSON.stringify(config));
+    if (config.account) {
+      owner = config.account;
+      localStorage.setItem(ACCOUNT_KEY, JSON.stringify(owner));
+    }
+  }
+
+  function checkedUsername(name,password) {
+    const username = validateAccount(name,password);
+    if (owner && owner !== username) {
+      throw new Error('这台设备的本地进度已关联账号 '+owner+'。请登录该账号。');
+    }
+    return username;
+  }
 
   function remember(snapshot) {
     observed = snapshot;
@@ -183,18 +209,18 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
       pending = combined;
       applyPending();
       config.syncedAt = Date.now();
-      localStorage.setItem(STATE_KEY, JSON.stringify(config));
-      onStatus({enabled: true, phase: 'synced', at: config.syncedAt, pending: Boolean(pending)});
+      saveConfig();
+      report({enabled: true, phase: 'synced', at: config.syncedAt, pending: Boolean(pending)});
       return keys;
     }
     throw new Error('另一台设备正在更新，稍后自动重试');
   }
 
-  async function connect(secret, allowCreate) {
+  async function connect(secret, allowCreate, username) {
     starting = true;
     try {
       const keys = await roomKeys(secret);
-      config = {secret, room: keys.id, device: toHex(random(16))};
+      config = {secret, room: keys.id, device: toHex(random(16)), account:username};
       observed = null;
       pending = null;
       return await exchange(allowCreate);
@@ -212,11 +238,11 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
   function run() {
     if (!config || starting || active) return active;
     if (!navigator.onLine) {
-      onStatus({enabled: true, phase: 'offline'});
+      report({enabled: true, phase: 'offline'});
       return;
     }
     active = exchange(false).catch(error => {
-      onStatus({enabled: true, phase: 'retry', detail: error.message});
+      report({enabled: true, phase: 'retry', detail: error.message});
     }).finally(() => {
       active = null;
     });
@@ -233,25 +259,79 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
         applyPending();
         run();
       } catch (error) {
-        onStatus({enabled: true, phase: 'retry', detail: error.message});
+        report({enabled: true, phase: 'retry', detail: error.message});
       }
     }, 850);
   }
 
   window.addEventListener('online', run);
   window.addEventListener('focus', run);
-  window.addEventListener('offline', () => { if (config) onStatus({enabled: true, phase: 'offline'}); });
+  window.addEventListener('offline', () => { if (config) report({enabled: true, phase: 'offline'}); });
   window.addEventListener('pagehide', () => { if (config && !starting) capture(); });
   document.addEventListener('visibilitychange', () => { if (!document.hidden) run(); });
   setInterval(() => { if (!document.hidden) run(); }, 20000);
   if (config) {
-    onStatus({enabled: true, phase: 'waiting', at: config.syncedAt});
+    report({enabled: true, phase: 'waiting', at: config.syncedAt});
     run();
-  } else onStatus({enabled: false, phase: 'off'});
+  } else report({enabled: false, phase: 'off'});
 
   return {
     changed, applyPending,
+    async register(name,password) {
+      const username = checkedUsername(name,password);
+      if (owner) throw new Error('该设备已有同步账号，请选择登录。');
+      const id = await accountId(username);
+      const salt = base64(random(16));
+      const auth = await accountKeys(password,salt);
+      const keys = await roomKeys(config?.secret || base64(random(32)));
+      const device = config?.device || toHex(random(16));
+      const body = {
+        salt, room:keys.id, roomToken:keys.token,
+        sealed:await seal(auth.encryption,id,encoder.encode(keys.secret))
+      };
+      if (!config) {
+        const snapshot = captureProgress(getDB(),null,device);
+        body.initial = await seal(keys.encryption,keys.id,await compress(JSON.stringify(snapshot)));
+        if (body.initial.length > MAX_SEALED) throw new Error('学习历史已超过同步容量，请先导出备份。');
+      }
+      const result = await request('account/'+id,{method:'PUT',token:auth.token,body});
+      if (result.status === 409) throw new Error('账号已存在或当前同步空间已有账号。请尝试登录。');
+      if (result.status !== 201) throw new Error('账号暂时无法创建，请稍后重试。');
+      config = {...config,secret:keys.secret,room:keys.id,device,account:username};
+      saveConfig();
+      report({enabled:true,phase:'waiting',at:config.syncedAt});
+      run();
+    },
+    async login(name,password) {
+      const username = checkedUsername(name,password);
+      const badPassword = '账号或密码不正确。';
+      const id = await accountId(username);
+      const path = 'account/'+id;
+      const lookup = await request(path);
+      if (lookup.status === 404) throw new Error(badPassword);
+      if (lookup.status !== 200) throw new Error('账号服务暂时不可用。');
+      const auth = await accountKeys(password,lookup.data.salt);
+      const result = await request(path,{method:'POST',token:auth.token});
+      if (result.status === 429) throw new Error('尝试次数过多，请过几分钟再登录。');
+      if (result.status === 401) throw new Error(badPassword);
+      if (result.status !== 200) throw new Error('账号服务暂时不可用。');
+      const secret = decoder.decode(await unseal(auth.encryption,id,result.data.sealed));
+      if (!/^[A-Za-z0-9_-]{43}$/.test(secret)) throw new Error('账号同步数据无效。');
+      const keys = await roomKeys(secret);
+      if (keys.id !== result.data.room) throw new Error('账号同步数据不匹配。');
+      if (config && config.room !== keys.id) {
+        throw new Error('本机已绑定另一个同步空间。请先导出学习记录并断开原有同步。');
+      }
+      if (!config) await connect(secret,false,username);
+      else {
+        config = {...config,account:username};
+        saveConfig();
+        report({enabled:true,phase:'waiting',at:config.syncedAt});
+        run();
+      }
+    },
     async createCode() {
+      if (owner && !config) throw new Error('请先登录本机的同步账号。');
       const keys = config ? await roomKeys(config.secret) : await connect(base64(random(32)), true);
       const code = base64(random(16));
       const pairing = await pairKeys(code);
@@ -263,6 +343,7 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
       return code;
     },
     async join(code) {
+      if (owner) throw new Error('本机已有同步账号，请用账号登录。');
       if (config) throw new Error('请先断开本机原有同步');
       code = code.trim();
       if (!/^[A-Za-z0-9_-]{22}$/.test(code)) throw new Error('请粘贴电脑生成的完整配对码');
@@ -281,7 +362,7 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
       pending = null;
       localStorage.removeItem(STATE_KEY);
       localStorage.removeItem(CLOCKS_KEY);
-      onStatus({enabled: false, phase: 'off'});
+      report({enabled: false, phase: 'off'});
     }
   };
 }

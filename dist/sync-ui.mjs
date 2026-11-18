@@ -1,4 +1,4 @@
-import {initProgressSync} from './sync-client.mjs?v=9';
+import {initProgressSync} from './sync-client.mjs?v=24';
 
 export function setupSyncUI(options) {
   const byId = id => document.getElementById(id);
@@ -9,18 +9,32 @@ export function setupSyncUI(options) {
   const unlink = byId('stopSync');
   const input = byId('syncJoinInput');
   const code = byId('syncCodeValue');
+  const accountForm = byId('syncAccountForm');
+  const register = byId('registerSyncAccount');
+  const login = byId('loginSyncAccount');
+  const username = byId('syncAccountName');
+  const password = byId('syncAccountPassword');
   let enabled = false;
+  let account, owner;
   let busy = false;
 
   function controls() {
     create.textContent = enabled ? '生成新配对码' : '启用同步并生成配对码';
     byId('syncJoin').hidden = enabled;
     unlink.hidden = !enabled;
-    for (const button of [create, join, unlink]) button.disabled = busy;
+    accountForm.hidden = Boolean(account);
+    register.hidden = Boolean(owner);
+    byId('syncLegacy').hidden = Boolean(owner) && !enabled;
+    username.readOnly = Boolean(owner);
+    if (owner) username.value = owner;
+    unlink.textContent = account ? '退出同步账号' : '断开本机同步';
+    for (const button of [create, join, unlink, register, login]) button.disabled = busy;
   }
 
   function status(snapshot) {
     enabled = snapshot.enabled;
+    account = snapshot.account;
+    owner = snapshot.owner;
     const updated = snapshot.at ? new Date(snapshot.at).toLocaleTimeString('zh-CN', {
       hour: '2-digit', minute: '2-digit'
     }) : '';
@@ -32,7 +46,7 @@ export function setupSyncUI(options) {
       synced: snapshot.pending ? '已同步 · 在当前题结束后更新' : '已自动同步 · ' + updated
     }[snapshot.phase];
     byId('syncStatus').textContent = label;
-    byId('syncDialogStatus').textContent = label;
+    byId('syncDialogStatus').textContent = account ? account + ' · ' + label : label;
     if (snapshot.phase === 'retry') error.textContent = snapshot.detail;
     else if (snapshot.phase === 'synced' && !busy) error.textContent = '';
     controls();
@@ -45,7 +59,7 @@ export function setupSyncUI(options) {
     error.textContent = '';
     controls();
     try { await doWork(); } catch (err) {
-      error.textContent = err.message === 'Failed to fetch' ? '无法连接同步服务，请稍后重试' : err.message;
+      error.textContent = err.message;
     } finally {
       busy = false;
       controls();
@@ -54,6 +68,18 @@ export function setupSyncUI(options) {
 
   byId('showSync').onclick = () => dialog.showModal();
   byId('closeSync').onclick = () => dialog.close();
+  dialog.addEventListener('close',()=>{password.value='';});
+  accountForm.onsubmit = event => {
+    event.preventDefault();
+    const creating = event.submitter === register;
+    const pass = password.value;
+    password.value = '';
+    action(async () => {
+      if (creating) await sync.register(username.value,pass);
+      else await sync.login(username.value,pass);
+      if (!error.textContent) error.textContent = creating ? '账号已创建。请在另一台设备登录同一账号。' : '已登录，联网后自动同步。';
+    });
+  };
   create.onclick = () => action(async () => {
     code.value = await sync.createCode();
     byId('syncCodePanel').hidden = false;

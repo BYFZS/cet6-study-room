@@ -2,7 +2,7 @@ import {dayKey,grade,passedToday,prepareThree,recordStage,selectThreeWords,norma
 import {planTraining,attachAnswerTiming} from './adaptive-training.mjs?v=6';
 import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=10';
 import {partOfSpeechHTML,morphologyHTML,wordFamilyHTML,spellingAlternative,confusionHTML,confusionComparisonHTML,findMistakenWord} from './feedback-notes.mjs?v=20';
-import {initWordQuestions} from './word-questions.mjs?v=20';
+import {initWordQuestions} from './word-questions.mjs?v=24';
 import {playAnswerSound} from './answer-sounds.mjs';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);
