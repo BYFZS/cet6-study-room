@@ -64,7 +64,10 @@
 @media(max-width:520px){.homeTraining,.quizHome{align-items:stretch;flex-direction:column;gap:10px}.quizHome progress{width:100%}}
 
 .studyNav{display:flex;flex-wrap:wrap}
-.sizeEntry{align-self:center;padding:6px 8px;font-size:13px;color:#315a48;text-underline-offset:3px}
+.studyNav button,.studyNav a{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;line-height:1.3}
+.studyNav a{border:1px solid #d4ddd3;border-radius:7px;background:#fff;color:var(--green);font-size:13px;text-decoration:none}
+.studyNav a:hover{background:#ecf1e8}
+@media(max-width:750px){.studyNav button,.studyNav a{padding:10px 12px}}
 .posLabel{display:inline-block;background:#dcebd5;color:#274b3c;border-radius:5px;padding:1px 6px;font-size:12px;font-weight:600;margin-left:7px}
 .morphNotes{padding:10px 0 0;border-top:1px solid #d5dfc8;margin-top:14px}
 .morphNotes h4{font-size:14px;margin:0 0 5px}
@@ -80,7 +83,9 @@
 @media(max-width:480px){.confusionGrid{grid-template-columns:1fr}}
 
 .trainHead{flex-wrap:wrap;gap:8px}
-#previousWordDialog{box-sizing:border-box;width:calc(100% - 28px);max-width:660px;margin:auto;padding:18px}
+#previousWordDialog,#confusionDialog{box-sizing:border-box;width:calc(100% - 28px);max-width:660px;margin:auto;padding:18px}
+#confusionDialog .confusionGrid div{background:#f1f4eb}
+#confusionDialog form{margin:16px 0 0;justify-content:flex-end}
 #previousWordDialog h2{margin:0 0 8px}
 #previousWordBody{max-height:62vh;max-height:62dvh;overflow:auto;padding:0 8px 0 0}
 #previousWordBody div{display:block;margin-top:8px}

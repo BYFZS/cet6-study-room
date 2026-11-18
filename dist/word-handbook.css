@@ -1,0 +1,23 @@
+.handbookNav{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.handbook h1{font-size:clamp(28px,4vw,42px);margin:22px 0}
+.handbookSearch{display:grid;gap:8px;max-width:580px}
+.handbookSearch label{font-size:14px;font-weight:600}
+.handbookSearch div{display:flex;gap:10px}
+.handbookSearch input{font:inherit;min-width:0;width:100%;border:1px solid #afc2b0;border-radius:8px;background:#fff;padding:11px 14px;color:var(--green)}
+.handbook .studyNav{margin:16px 0 10px}
+#handbookCount{font-size:13px;color:#54685b;margin-bottom:20px}
+.handbookSection{margin:24px 0 36px}
+.handbookSection h2{font-size:22px;margin:0 0 12px}
+.handbookGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,265px),1fr));gap:12px}
+.handbookCard{min-width:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px}
+.handbookCard h3{font-size:18px;margin:0 0 8px;overflow-wrap:anywhere}
+.handbookCard p{line-height:1.65;margin:0 0 8px}
+.handbookCard .gloss{font-size:14px;color:#44614d}
+.handbookExample{padding-top:9px;margin-top:9px;border-top:1px solid var(--line)}
+.handbookExample small,.handbookCard .note{display:block;color:#52675a;font-size:13px;line-height:1.65}
+.handbookCard .note{margin:12px 0 0}
+.handbookEssays .handbookGrid{grid-template-columns:1fr}
+.handbookEssays .handbookCard{padding:clamp(16px,4vw,32px)}
+.handbookEssays .handbookExample{max-width:74ch;line-height:1.7}
+.handbookEssays .handbookExample small{background:#eef3e8;border-radius:6px;padding:8px 12px;margin:6px 0 12px}
+.handbook footer{justify-content:flex-start;flex-wrap:wrap;gap:10px 18px}

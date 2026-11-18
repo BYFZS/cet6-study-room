@@ -7,7 +7,11 @@ const references = [
   ['in-', '可以表示「不」，如 inactive（不活跃的），也可以表示「进入」，如 inject（注入）。',
     'https://www.merriam-webster.com/dictionary/in-'],
   ['en-', '可以表示「使能、使成为」，如 enable（使能够），也可以表示「放入」，如 enclose（围住、封入）。',
-    'https://www.merriam-webster.com/dictionary/en-']
+    'https://www.merriam-webster.com/dictionary/en-'],
+  ['un-', '可表示「不、未」，如 unexcused（未获批准的），也可表示解除，如 unpack（拆开包装）。',
+    'https://dictionary.cambridge.org/grammar/british-grammar/prefixes'],
+  ['con-', '常表示「一起、共同」，和 com-、col-、cor- 同源。如 contribute（贡献）、construct（建造）。',
+    'https://www.ahdictionary.com/word/search.html?id=C5517400']
 ];
 
 const POS = {
@@ -19,6 +23,15 @@ export function partOfSpeechHTML(word, esc) {
   if (!word?.pos) return '';
   return '<span class="posLabel">'+word.pos.split('/').map(code =>
     esc(POS[code] + ' ' + code + '.')).join(' / ')+'</span>';
+}
+
+export function wordFamilyHTML(word, esc) {
+  if (!word.family) return '';
+  const {words, note} = word.family;
+  const entries = words.filter(([term]) => term !== word.word).map(([term,pos,meaning]) =>
+    '<li><b lang="en">'+esc(term)+'</b>'+partOfSpeechHTML({pos},esc)+' · '+esc(meaning)+'</li>').join('');
+  return '<section class="morphNotes"><h4>同族词</h4><ul>'+entries+'</ul>'+
+    (note ? '<p>'+esc(note)+'</p>' : '')+'</section>';
 }
 
 export function morphologyHTML(word, esc) {
@@ -38,30 +51,39 @@ export function morphologyHTML(word, esc) {
 }
 
 export function findMistakenWord(card, word, deck) {
-  if (card.status !== 'done' || card.correct || !card.userAnswer || card.userAnswer === '∅') return null;
-  const candidates = contrastCandidates(word, deck);
+  if (!['done','pending'].includes(card.status) || card.correct || !card.userAnswer || card.userAnswer === '∅') return null;
   const exact = term => String(term).trim().toLowerCase();
   const answer = exact(card.userAnswer);
   if (card.round < 3 && !card.assist) {
     const option = card.options.find(item => exact(item.word) === answer && item.word !== word.word);
-    if (option) return {...option, ...candidates.find(item => exact(item.word) === answer)};
+    return option ? {...option, ...contrastCandidates(word, deck).find(item => exact(item.word) === answer)} : null;
   }
-  if (card.assist) return candidates.find(item => exact(item.word) === answer) || null;
-  const matches = candidates.filter(item => item.meaning.split(/[，,；;、]/)
-    .some(meaning => normalize(meaning) === normalize(answer)));
+  if (card.assist) return contrastCandidates(word, deck).find(item => exact(item.word) === answer) || null;
+
+  const meaning = normalize(answer);
+  const hasMeaning = item => [...(item.aliases || []), ...item.meaning.split(/[，,；;、]/)]
+    .some(alias => normalize(alias) === meaning);
+  if (!meaning || hasMeaning(word) || word.relations?.synonyms?.some(hasMeaning)) return null;
+  const curated = (word.relations?.confusables || []).filter(hasMeaning);
+  if (curated.length) return curated.length === 1 ? curated[0] : null;
+  const synonyms = new Set((word.relations?.synonyms || []).map(item => exact(item.word)));
+  const matches = deck.filter(item => item.word !== word.word && !synonyms.has(exact(item.word)) && hasMeaning(item));
   return matches.length === 1 ? matches[0] : null;
+}
+
+export function confusionComparisonHTML(word, other, deck, esc) {
+  const otherWord = deck.find(item => item.word === other.word) || other;
+  const note = other.note && other.note !== '注意词形与词义的区别。'
+    ? '<p>'+esc(other.note)+'</p>' : '';
+  const example = otherWord.example
+    ? '<small>'+esc(otherWord.example)+'<br>'+esc(otherWord.translation)+'</small>' : '';
+  return '<div class="confusionGrid"><div><b>'+esc(word.word)+'</b><p>'+esc(word.meaning)+'</p><small>'+esc(word.collocation)+'</small></div>'+
+    '<div><b>'+esc(other.word)+'</b><p>'+esc(other.meaning)+'</p>'+example+'</div></div>'+note;
 }
 
 export function confusionHTML(card, word, deck, esc) {
   const other = findMistakenWord(card, word, deck);
   if (!other) return '';
-  const otherWord = deck.find(item => item.word === other.word);
-  const note = other.note && other.note !== '注意词形与词义的区别。'
-    ? '<p>'+esc(other.note)+'</p>' : '';
-  const example = otherWord
-    ? '<small>'+esc(otherWord.example)+'<br>'+esc(otherWord.translation)+'</small>' : '';
-  return '<details class="confusionPrompt"><summary>是不是把 <strong>'+esc(word.word)+'</strong> 和 <strong>'+
-    esc(other.word)+'</strong> 混淆了？<span>展开辨析</span></summary><div class="confusionGrid">'+
-    '<div><b>'+esc(word.word)+'</b><p>'+esc(word.meaning)+'</p><small>'+esc(word.collocation)+'</small></div>'+
-    '<div><b>'+esc(other.word)+'</b><p>'+esc(other.meaning)+'</p>'+example+'</div></div>'+note+'</details>';
+  return '<details class="confusionPrompt"><summary>你想的是不是 <strong>'+esc(other.word)+
+    '</strong>？<span>展开辨析</span></summary>'+confusionComparisonHTML(word, other, deck, esc)+'</details>';
 }

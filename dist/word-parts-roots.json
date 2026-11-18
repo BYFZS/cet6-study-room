@@ -1,4 +1,49 @@
 {
+  "unexcused": {
+    "parts": [
+      {
+        "form": "un-",
+        "meaning": "不、未，给形容词加上否定含义"
+      },
+      {
+        "form": "excused",
+        "meaning": "获准免除义务的，来自动词 excuse"
+      }
+    ],
+    "note": "an excused absence 是获准的缺席。加上 un- 后就是未获批准或没有正当理由的缺席。"
+  },
+  "applicant": {
+    "parts": [
+      {
+        "form": "ap-",
+        "meaning": "拉丁语前缀 ad- 在 p 前的一种形式，表示朝向、贴向"
+      },
+      {
+        "form": "plic-",
+        "meaning": "来自拉丁语 plicāre，意为折叠"
+      },
+      {
+        "form": "-ant",
+        "meaning": "这里表示做某事的人"
+      }
+    ],
+    "note": "记词可以联系同词族的 apply（申请）和 application（申请、申请书）。a job applicant 就是求职者。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=apply"
+  },
+  "contribute": {
+    "parts": [
+      {
+        "form": "con-",
+        "meaning": "一起、共同"
+      },
+      {
+        "form": "tribut-",
+        "meaning": "来自拉丁语 tribuere，意为给予、分配"
+      }
+    ],
+    "note": "可联想为大家各出一份力。contribute to 也可表示促成某个结果。",
+    "source": "https://ahdictionary.com/word/search.html?q=contribute"
+  },
   "achievement": {
     "parts": [
       {

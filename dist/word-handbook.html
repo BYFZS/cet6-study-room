@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>词汇手册 · CET6</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="study.css?v=17">
+  <link rel="stylesheet" href="word-handbook.css">
+</head>
+<body>
+  <header><a class="brand" href="study.html">CET<span>6</span><small>词汇训练室</small></a></header>
+  <main class="study handbook">
+    <nav class="handbookNav" aria-label="手册导航">
+      <a href="study.html">← 返回训练室</a>
+      <a id="otherHandbook" href="word-handbook.html?view=sentences">语句手册 →</a>
+    </nav>
+    <h1 id="handbookTitle">词汇手册</h1>
+    <form class="handbookSearch" role="search">
+      <label for="handbookQuery">搜索手册</label>
+      <div>
+        <input id="handbookQuery" type="search" placeholder="如 con-、耐心、截止" autocomplete="off">
+        <button type="reset" id="resetQuery" hidden>清除</button>
+      </div>
+    </form>
+    <div class="studyNav" id="handbookTabs" role="group" aria-label="手册分类"></div>
+    <p id="handbookCount" role="status">正在加载…</p>
+    <div id="handbookEntries"></div>
+    <footer id="handbookSources" hidden>
+      <a href="https://dictionary.cambridge.org/grammar/british-grammar/word-formation_2" target="_blank" rel="noopener">剑桥词典 · 构词</a>
+      <a href="https://www.ahdictionary.com/word/indoeurop.html" target="_blank" rel="noopener">美国传统词典 · 词根附录</a>
+      <a href="https://dictionary.cambridge.org/uk/grammar/british-grammar/prepositions-and-particles" target="_blank" rel="noopener">剑桥词典 · 介词</a>
+    </footer>
+  </main>
+  <script type="module" src="word-handbook.js"></script>
+</body>
+</html>

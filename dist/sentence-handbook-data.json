@@ -1,0 +1,36 @@
+{
+  "patterns": [
+    ["Although …, …","先承认局限，再给出主张",[["Although online courses offer flexibility, regular feedback is still essential.","虽然网络课程灵活，但定期反馈仍然很重要。"]],"although 引导从句，主句直接写。"],
+    ["What matters is whether …","把讨论转向真正重要的问题",[["What matters is whether students can explain how they reached their conclusions.","重要的是学生能否解释他们如何得出结论。"]]],
+    ["One reason … is that …","提出一条原因并解释机制",[["One reason the policy works is that it makes public transport more convenient.","这项政策有效的一个原因是，它让公共交通更方便。"]]],
+    ["This is especially true when …","指出前文观点在哪种情形下尤其成立",[["This is especially true when students receive feedback before the next assignment.","如果学生能在下一次作业前收到反馈，尤其如此。"]]],
+    ["By doing …, … can …","交代措施和效果",[["By sharing practice materials, teachers can reduce the cost of preparation.","通过共享练习资料，老师可以降低备课成本。"]],"by 后的动作由主句主语执行。"],
+    ["Only by … can …","用倒装强调达成目标的方式",[["Only by checking the evidence can readers decide whether the claim is reliable.","只有核对证据，读者才能判断这一说法是否可靠。"]],"Only by 放在句首时，can 等助动词放在主语前。"],
+    ["The more …, the more …","表达两个变化之间的关系",[["The more regularly students read, the more familiar they become with academic language.","学生阅读得越规律，就越熟悉学术语言。"]]],
+    ["not only … but also …","并列两个作用或结果",[["Group projects help students not only solve problems but also explain their reasoning.","小组项目既帮助学生解决问题，也帮助他们解释思路。"]],"两边尽量用同一种结构，例如 solve 和 explain。"],
+    ["This makes it easier for … to …","把前一句的做法与下一步效果连起来",[["This makes it easier for students to identify gaps in their understanding.","这样学生更容易找出自己没理解的地方。"]]],
+    ["Whether … depends on …","对结论加上条件，避免一概而论",[["Whether remote work improves productivity depends on the tasks involved.","远程工作能否提高效率，取决于涉及的具体任务。"]]],
+    ["A more practical approach is to …","在说明问题后提出可操作的办法",[["A more practical approach is to test the policy in a small number of schools first.","更可行的做法是先在少量学校试行这项政策。"]]],
+    ["To the extent that …, …","说明论点成立的范围",[["To the extent that automation reduces routine work, it can give staff more time to help customers.","自动化在减少例行工作的范围内，可以让员工腾出更多时间帮助顾客。"]],"适合限定结论。普通条件句也足以表达简单的条件。"],
+    ["…, which in turn …","说明第二步影响，构成短因果链",[["The new schedule gives students more time to sleep, which in turn helps them concentrate in class.","新课表让学生能多睡一会儿，进而帮助他们在课堂上集中注意力。"]]],
+    ["The point is to … while …","总结需要同时顾及的两个目标",[["The point is to save time while preserving the quality of feedback.","要做到节省时间，同时保证反馈质量。"]]]
+  ],
+  "essays": [
+    ["Using AI to Learn Independently","六级仿写题。讨论大学生如何使用人工智能辅助学习，同时保持独立思考。文中用具体学习场景说明。",[
+      ["AI tools can translate a difficult passage or suggest a clearer way to express an idea. These conveniences are valuable, but their educational value depends on what students do before and after consulting the tool. My view is that students should use AI to test and improve their own thinking.",
+       "开头先说真实用途，再用 depends on 提出判断标准，最后一句给出清晰立场。这三句都围绕题目中的「辅助」和「独立思考」。"],
+      ["A useful rule is to make a first attempt independently. For example, before asking for help with a reading passage, a student could underline the evidence for an answer and explain why a competing option is less convincing. The student can then compare that reasoning with the explanation offered by the tool. If the two disagree, going back to the passage is more useful than immediately changing the answer.",
+       "主体写出了可以照做的四步。先尝试、找证据、比理由、回原文。why 从句交代排除干扰项的依据，If 从句把建议放进具体情境。"],
+      ["Teachers can support this habit by asking students to submit a brief note explaining what they revised and why. This small change would make the learning process visible. Used in this way, AI can save time while leaving important decisions in the hands of the learner.",
+       "结尾给老师一个低成本做法，再用最后一句回应立场。while 同时保留「节省时间」与「学生自己做决定」两个目标。"]
+    ],"可积累表达：make a first attempt independently；underline the evidence for an answer；leave a decision in the hands of someone。"],
+    ["Why Universities Should Support Volunteering","六级仿写题。讨论大学应如何鼓励学生参加志愿活动，并说明这样做的好处。",[
+      ["University students often say that they would like to volunteer, yet some never find a role that fits their interests or timetable. Universities can make participation easier by working with local organisations and offering several kinds of placements.",
+       "开头明确了两个具体障碍：兴趣和时间。第二句马上给出大学可以采取的行动，主体就有内容可展开。"],
+      ["One benefit of volunteering is that it gives students a reason to use skills outside the classroom. A student who helps at a community reading club may have to explain the same story in several ways. That experience can improve communication skills and also teach the student to notice when a listener is confused. Local organisations benefit as well, provided that volunteers receive enough training to take on useful tasks.",
+       "用读书会举例，把「提升沟通能力」解释成同一故事换几种说法、观察听者是否困惑。provided that 点出机构受益还需要培训这个条件。"],
+      ["To make these benefits possible, universities could post roles with clear duties and realistic time commitments. They could also ask students to reflect on one challenge they faced during the placement. With this kind of support, volunteering can become a practical part of university education.",
+       "建议分别回应参与门槛和学习效果。clear duties、realistic time commitments 给出了可执行的细节，末句收回到大学教育。"]
+    ],"可积累表达：fit someone's timetable；take on useful tasks；reflect on a challenge。"]
+  ]
+}
