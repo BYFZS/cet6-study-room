@@ -1,7 +1,7 @@
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
 import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=6';
 import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS} from './learning-core.mjs?v=6';
-import {initThreeUI} from './three-round-ui.mjs?v=20';
+import {initThreeUI} from './three-round-ui.mjs?v=22';
 import {setupSyncUI} from './sync-ui.mjs?v=9';
 import {summarizeStudy} from './study-analytics.mjs?v=19';
 import {setupStudyStats} from './study-stats-ui.mjs?v=19';
@@ -12,7 +12,7 @@ let deck=[],baseline=null,db=emptyDB(),sync=null,quiz=null;
 try{baseline=JSON.parse(localStorage.getItem(BASE_KEY));const saved=JSON.parse(localStorage.getItem(LEARN_KEY));if([2,3].includes(saved?.version)&&saved.type==='cet6-learning')db=saved;}catch{}
 function message(s=''){$('message').textContent=s;}
 function save(notifySync=true){try{localStorage.setItem(LEARN_KEY,JSON.stringify(db));$('saved').textContent='已保存 · '+new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});if(notifySync)sync?.changed();}catch{message('浏览器无法保存，请立即导出学习记录备份。');}}
-function view(name){window.dispatchEvent(new CustomEvent('training-view-change',{detail:name}));['home','scores','words','analytics','contextQuiz','training','roundEnd'].forEach(v=>$(v).hidden=v!==name);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===name));if(name==='home')renderHome();if(name==='scores')renderScores();if(name==='words')renderWords();if(name==='analytics')studyStats.render();if(name==='contextQuiz')quiz?.render();}
+function view(name){const openingTraining=name==='training'&&$('training').hidden;window.dispatchEvent(new CustomEvent('training-view-change',{detail:name}));['home','scores','words','analytics','contextQuiz','training','roundEnd'].forEach(v=>$(v).hidden=v!==name);document.body.classList.toggle('trainingMode',name==='training');if(openingTraining&&matchMedia('(max-width:600px)').matches)window.scrollTo(0,0);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===name));if(name==='home')renderHome();if(name==='scores')renderScores();if(name==='words')renderWords();if(name==='analytics')studyStats.render();if(name==='contextQuiz')quiz?.render();}
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>view(b.dataset.view));
 const studyStats=setupStudyStats({$,getLogs:()=>studyLogWithQuizzes(db),openRepeated:()=>{$('listFilter').value='repeated';$('search').value='';view('words');}});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!$('analytics').hidden)studyStats.render();});

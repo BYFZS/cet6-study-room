@@ -123,3 +123,35 @@
 .practicePanel textarea{display:block;width:100%;min-height:160px;margin-top:6px;padding:10px;border:1px solid #bacbb8;border-radius:7px;resize:vertical}
 .practicePanel details{margin-top:18px}
 .practicePanel summary{cursor:pointer;font-weight:600}
+
+@media(max-width:600px){
+  body.trainingMode > header,
+  .trainingMode .study > .heading,
+  .trainingMode .study > .studyNav,
+  .trainingMode .study > footer{display:none}
+  .trainingMode .study{margin:10px auto 20px;padding:0 12px}
+  #training .trainHead{margin:0 0 8px;gap:6px;justify-content:flex-start}
+  #training .trainHead button{min-height:44px;padding:6px 9px;font-size:12px}
+  #roundProgress{flex:1 1 96px;text-align:right;font-size:11px;color:#54685b}
+  #training .flash{margin:0 auto;padding:15px;border-radius:14px}
+  #training .cycleSteps{gap:5px;margin-bottom:10px}
+  #training .cycleSteps span{padding:4px 8px}
+  #training #questionKind{margin:0 0 4px;font-size:11px;letter-spacing:.07em}
+  #training #question{margin:0 0 5px;line-height:1.2;overflow-wrap:anywhere}
+  #training #questionHint,#training #spellingContext{margin:5px 0;line-height:1.5;font-size:13px}
+  #training #speak,#training #showSpelling{min-height:44px}
+  .flash #options{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
+  .flash #options:empty{margin:0}
+  .flash #options button{min-height:58px;min-width:0;padding:9px 10px;line-height:1.4;font-size:14px;overflow-wrap:anywhere}
+  .flash #options .bilingual{justify-content:center;gap:3px}
+  .flash #options .bilingual strong{font-size:15px}
+  .flash #options .bilingual small{font-size:12px;line-height:1.4}
+  #training #markGuess:not([hidden]){min-height:44px;margin:0}
+  #training #spellArea{gap:6px;margin:10px 0}
+  #training #spelling{min-width:0;font-size:16px}
+  #training .flash > .actions{gap:6px;margin:8px 0 0}
+  #training .flash > .actions button,#training #nextCard{min-height:44px}
+  #training #feedback{padding:13px;margin:10px 0;overflow-wrap:anywhere}
+  #training #feedback h3{font-size:16px;margin:0 0 8px}
+  #training #feedback p{margin:7px 0;line-height:1.55}
+}
