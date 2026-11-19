@@ -4,7 +4,7 @@ import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=10';
 import {partOfSpeechHTML,meaningsByPartOfSpeechHTML,morphologyHTML,wordFamilyHTML,spellingAlternative,confusionHTML,confusionComparisonHTML,findMistakenWord} from './feedback-notes.mjs?v=34';
 import {initWordQuestions} from './word-questions.mjs?v=28';
 import {playAnswerSound,readSoundSettings} from './answer-sounds.mjs?v=44';
-import {createWordPronunciation} from './word-pronunciation.mjs?v=38';
+import {createWordPronunciation} from './word-pronunciation.mjs?v=45';
 import {antonymsFor} from './word-antonyms.mjs?v=39';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);

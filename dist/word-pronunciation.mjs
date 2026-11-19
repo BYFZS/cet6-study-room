@@ -1,6 +1,6 @@
 import {readSoundSettings} from './answer-sounds.mjs?v=34';
 
-const BRITISH_PLAYBACK_RATE = 0.85;
+const SLOW_PLAYBACK_RATE = 0.85;
 
 export function pronunciationFilename(word) {
   return word.replace(/[ ']/g, '_') + '.mp3';
@@ -24,7 +24,7 @@ export function createWordPronunciation() {
     const {pronunciationVolume:volume, accent:defaultAccent} = readSoundSettings();
     const explicitAccent=voiceAccent==="en-GB"||voiceAccent==="en-US";
     const accent=explicitAccent?voiceAccent:defaultAccent;
-    const playbackRate = accent === 'en-GB' ? BRITISH_PLAYBACK_RATE : 1;
+    const playbackRate = !example || accent === 'en-GB' ? SLOW_PLAYBACK_RATE : 1;
     if (!volume) { onMuted(); return; }
     const request = active = {accent,explicitAccent};
     function end() {
