@@ -1,4 +1,5 @@
 import {DAY} from './learning-core.mjs?v=6';
+import {STUDY_ACTIVITY} from './study-activity.mjs?v=42';
 
 const MINUTE = 60 * 1000;
 const HOUR = 60 * MINUTE;
@@ -32,7 +33,7 @@ export function calendarDays(month) {
 
 function answerInterval(log) {
   const timing = log.timing;
-  if (!timing?.reliable || !Number.isFinite(timing.activeMs) || timing.activeMs <= 0) return null;
+  if (timing?.studyActivityTracked || !timing?.reliable || !Number.isFinite(timing.activeMs) || timing.activeMs <= 0) return null;
   const end = Number.isFinite(timing.answeredAt) && timing.answeredAt > 0
     ? Math.min(timing.answeredAt, log.at) : log.at;
   const start = Number.isFinite(timing.shownAt) && timing.shownAt > 0 ? timing.shownAt : 0;
@@ -56,7 +57,7 @@ function summarizeTime(ranges, dayStart) {
   return {hourlyMs, milliseconds: hourlyMs.reduce((total, amount) => total + amount, 0)};
 }
 
-export function summarizeStudy(logs, now = Date.now()) {
+export function summarizeStudy(logs, now = Date.now(), rounds = []) {
   const firstDay = new Map();
   const days = new Map();
   const wrong = new Map();
@@ -64,6 +65,22 @@ export function summarizeStudy(logs, now = Date.now()) {
     if (!days.has(key)) days.set(key, {words: new Set(), ranges: [], attempts: 0});
     return days.get(key);
   };
+
+  const addRange = (start, end) => {
+    while (start < end) {
+      const key = localStudyDay(start);
+      const segmentEnd = Math.min(end, midnight(key) + DAY);
+      day(key).ranges.push([start, segmentEnd]);
+      start = segmentEnd;
+    }
+  };
+
+  for (const item of rounds) {
+    if (item?.mode !== STUDY_ACTIVITY) continue;
+    const {start, at: end} = item;
+    if (Number.isFinite(start) && Number.isFinite(end) && start > 0 && end > start
+      && end <= now && end - start <= DAY) addRange(start, end);
+  }
 
   for (const log of logs) {
     if (!log || typeof log.word !== 'string' || !Number.isFinite(log.at) || log.at <= 0 ||
@@ -76,15 +93,7 @@ export function summarizeStudy(logs, now = Date.now()) {
     entry.attempts++;
 
     const interval = answerInterval(log);
-    if (interval) {
-      let [start, end] = interval;
-      while (start < end) {
-        const timeDay = localStudyDay(start);
-        const segmentEnd = Math.min(end, midnight(timeDay) + DAY);
-        day(timeDay).ranges.push([start, segmentEnd]);
-        start = segmentEnd;
-      }
-    }
+    if (interval) addRange(...interval);
 
     if (log.correct || log.relatedAnswer) continue;
     if (!wrong.has(log.word)) wrong.set(log.word, {word: log.word, count: 0, spelling: 0, days: new Set(), latest: 0});

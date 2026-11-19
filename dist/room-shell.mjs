@@ -124,7 +124,7 @@ function mark(module) {
 }
 const url = new URL(location.href);
 const page = url.pathname.split('/').pop();
-if (page === 'practice.html') mark(({listening:'listen',reading:'read',writing:'write',translation:'translate'})[url.searchParams.get('skill')] || 'listen');
+if (page === 'practice.html' || page === 'practice') mark(({listening:'listen',reading:'read',writing:'write',translation:'translate'})[url.searchParams.get('skill')] || 'listen');
 else if (page === 'word-handbook.html' && url.searchParams.get('from') === 'writing') mark('write');
 else if (page === 'index.html' || !page) mark('exam');
 else mark(url.searchParams.get('view') === 'analytics' ? 'stats' : 'vocab');

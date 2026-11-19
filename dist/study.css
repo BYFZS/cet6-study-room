@@ -330,3 +330,17 @@ body.vocabularySubpage > header,
  .feedbackExample{flex-wrap:wrap;gap:4px}
  .feedbackExample .accentButtons{margin-top:0}
 }
+
+.listeningPanel{max-width:900px}
+.listeningParts{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px;margin:16px 0}
+.listeningParts button{display:grid;gap:3px;justify-items:center;padding:8px 6px}
+.listeningParts button span{font-size:.82em}
+.listeningParts button[aria-pressed=true]{background:#dceadb;border-color:#a6bc9b;color:#214f3e}
+[data-theme="dark"] .listeningParts button[aria-pressed=true]{background:#afdcbd;border-color:#afdcbd;color:#153829}
+.listeningTransport{display:grid;grid-template-columns:auto minmax(80px,1fr) auto;align-items:center;gap:12px}
+.listeningTransport input{width:100%;min-width:0;accent-color:var(--green)}
+.listeningTransport span{font-size:.9em;font-variant-numeric:tabular-nums}
+.listeningPanel .listeningQuestion{padding:0 0 12px;border-bottom:1px solid var(--line)}
+.listeningQuestion label{cursor:pointer}
+.practicePanel .listeningLinks{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+@media(max-width:420px){.listeningTransport{gap:7px}.listeningParts{grid-template-columns:repeat(3,minmax(0,1fr))}}

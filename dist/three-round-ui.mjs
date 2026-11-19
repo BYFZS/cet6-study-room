@@ -134,7 +134,7 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
   }
   if(!manual){pronunciation.stop();status.textContent='';}
   if(!c.relatedAnswer)playAnswerSound(decision);
-  attachAnswerTiming(db,c.word,c.timing||{},c.round);c.threePassed=!c.assist&&decision&&m.stage===3;c.checkPassed=!!c.check&&decision;s.attempts++;if(c.threePassed)s.passed[c.word]=true;else{s.queue.push(c.word);delete s.passed[c.word];}save();render();
+  attachAnswerTiming(db,c.word,{...c.timing,studyActivityTracked:true},c.round);c.threePassed=!c.assist&&decision&&m.stage===3;c.checkPassed=!!c.check&&decision;s.attempts++;if(c.threePassed)s.passed[c.word]=true;else{s.queue.push(c.word);delete s.passed[c.word];}save();render();
   if(!manual)playAfterAnswer(c);
   if(!confusionDialog.open && (manual || c.relatedAnswer || !openConfusion(c,w)))nextCard.focus({preventScroll:true});
  }

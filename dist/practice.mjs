@@ -4,7 +4,7 @@ const reading = 'A team compared two groups of learners who studied the same set
 const shortTasks = {
   listening: {
     title:'真题听力 · 2025 年 6 月第 1 套',
-    hint:'使用完整原录音，保留原速、原口音、题序和停顿。可打开原卷并跟着录音作答。'
+    hint:'选择一个分段，听原录音并作答。'
   },
   reading: {
     title:'阅读 · 间隔复习',
@@ -52,26 +52,8 @@ document.getElementById('practiceTitle').textContent = task.title;
 document.getElementById('practiceHint').textContent = task.hint;
 
 if (selected === 'listening') {
-  const base='https://www.cettong.cn/library/cet6/2025_06_1/';
-  const audio = add(exercise,'audio');
-  audio.controls=true;
-  audio.preload='none';
-  audio.src=base+'listening.mp3';
-  audio.setAttribute('aria-label','六级听力真题原录音');
-  const status=add(exercise,'p');
-  status.setAttribute('role','status');
-  audio.addEventListener('error',()=>{status.textContent='原录音暂时无法加载，可从备用来源打开。';});
-  const links=add(exercise,'div');
-  links.className='listeningLinks';
-  for(const [text,href,external] of [
-    ['打开听力原卷',base+'test.pdf',true],
-    ['备用音频与分段练习','https://eol.nju.edu.cn/cet6/papers/202506-1.html',true],
-    ['完整模拟考试','index.html?exam=1',false]
-  ]){
-    const link=add(links,'a',text);
-    link.href=href;
-    if(external){link.target='_blank';link.rel='noopener';}
-  }
+  const {mountListening} = await import('./listening-practice.mjs?v=43');
+  mountListening(exercise);
 } else if (selected === 'reading') {
   const passage = add(exercise,'p',task.passage);
   passage.className = 'practicePassage';

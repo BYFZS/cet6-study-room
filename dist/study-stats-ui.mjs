@@ -1,5 +1,5 @@
 import {dayKey} from './learning-core.mjs?v=6';
-import {calendarDays, formatStudyTime, heatLevel, shiftMonth, studyTimeHeatLevel, summarizeStudy} from './study-analytics.mjs?v=39';
+import {calendarDays, formatStudyTime, heatLevel, shiftMonth, studyTimeHeatLevel, summarizeStudy} from './study-analytics.mjs?v=42';
 
 const dateTitle = key => {
   const [year, month, day] = key.split('-').map(Number);
@@ -18,7 +18,7 @@ function hourlyHeatHTML(hourlyMs) {
   }).join('');
 }
 
-export function setupStudyStats({$, getLogs, openRepeated}) {
+export function setupStudyStats({$, getLogs, getRounds, openRepeated}) {
   let today = dayKey();
   let selected = today;
   let month = selected.slice(0, 7);
@@ -30,7 +30,7 @@ export function setupStudyStats({$, getLogs, openRepeated}) {
       month = current.slice(0, 7);
     }
     today = current;
-    const {daily, repeated} = summarizeStudy(getLogs());
+    const {daily, repeated} = summarizeStudy(getLogs(), Date.now(), getRounds());
     const date = daily.get(selected);
     const earliest = [...daily.keys()].sort()[0]?.slice(0, 7) ?? today.slice(0, 7);
     $('studyMonth').textContent = dateTitle(month);

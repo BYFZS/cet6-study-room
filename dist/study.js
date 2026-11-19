@@ -2,11 +2,12 @@ import {filterMistakes} from './mistake-filters.mjs?v=27';
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
 import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=31';
 import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
-import {initThreeUI} from './three-round-ui.mjs?v=39';
+import {initThreeUI} from './three-round-ui.mjs?v=42';
 import {setupSyncUI} from './sync-ui.mjs?v=27';
-import {summarizeStudy} from './study-analytics.mjs?v=39';
-import {setupStudyStats} from './study-stats-ui.mjs?v=39';
+import {summarizeStudy} from './study-analytics.mjs?v=42';
+import {setupStudyStats} from './study-stats-ui.mjs?v=42';
 import {setupContextQuiz} from './context-quiz-ui.mjs?v=41';
+import {STUDY_ACTIVITY, trackStudyActivity} from './study-activity.mjs?v=42';
 import {studyLogWithQuizzes} from './context-quiz.mjs?v=41';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let deck=[],optionPositions={},baseline=null,db=emptyDB(),sync=null,quiz=null;
@@ -14,6 +15,7 @@ try{baseline=JSON.parse(localStorage.getItem(BASE_KEY));const saved=JSON.parse(l
 function message(s=''){$('message').textContent=s;}
 function save(notifySync=true){try{localStorage.setItem(LEARN_KEY,JSON.stringify(db));$('saved').textContent='已保存 · '+new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});if(notifySync)sync?.changed();}catch{message('浏览器无法保存，请立即导出学习记录备份。');}}
 function view(name) {
+ if (!['training','contextQuiz','words'].includes(name)) studyActivity.pause();
  const openingTraining = name === 'training' && $('training').hidden;
  const insideTraining = name === 'training' || name === 'roundEnd';
  const showingStats = name === 'analytics';
@@ -52,7 +54,22 @@ $('backToVocabulary').onclick = event => {
  window.scrollTo(0, 0);
  $('vocabNav').querySelector('[data-view="home"]').focus({preventScroll: true});
 };
-const studyStats=setupStudyStats({$,getLogs:()=>studyLogWithQuizzes(db),openRepeated:()=>{$('listFilter').value='repeated';$('search').value='';view('words');}});
+const studyStats=setupStudyStats({$,getLogs:()=>studyLogWithQuizzes(db),getRounds:()=>db.rounds??[],openRepeated:()=>{$('listFilter').value='repeated';$('search').value='';view('words');}});
+const studyActivity=trackStudyActivity({
+ isStudying:()=>!$('siteSettings')?.open&&!$('syncDialog').open&&
+  (!$('training').hidden||!$('words').hidden||!$('contextQuiz').hidden&&Boolean($('quizSubmit')||$('quizBack'))),
+ record:(start,end)=>{
+  db.rounds??=[];
+  db.rounds.push({mode:STUDY_ACTIVITY,start,at:end});
+  save();
+ }
+});
+const studyActivityObserver=new MutationObserver(studyActivity.refresh);
+for(const id of ['training','words','contextQuiz','siteSettings','syncDialog']){
+ const node=$(id);
+ if(node)studyActivityObserver.observe(node,{attributes:true,attributeFilter:['hidden','open']});
+}
+studyActivityObserver.observe($('quizPanel'),{childList:true});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!$('analytics').hidden)studyStats.render();});
 function renderHome(){
  const now=Date.now(),memories=Object.values(db.memories);

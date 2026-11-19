@@ -49,4 +49,16 @@ assert.equal(calendarDays('2028-02').filter(Boolean).length, 29);
 assert.equal(calendarDays('2026-11')[6], '2026-11-01');
 assert.deepEqual([0, 1, 5, 10, 20].map(heatLevel), [0, 1, 2, 3, 4]);
 assert.equal(formatStudyTime(225000), '3 分 45 秒');
+const logged = summarizeStudy([
+  log('avoid', 18, '08:00:30', {timing: timed(30000)}),
+  log('likely', 18, '08:04:00', {timing: {...timed(180000),studyActivityTracked:true}})
+], time(19, '10:00:00'), [
+  {mode:'study-activity',start:time(18,'07:59:50'),at:time(18,'08:01:30')},
+  {mode:'study-activity',start:time(18,'08:00:40'),at:time(18,'08:01:10')},
+  {mode:'study-activity',start:time(19,'09:00:00'),at:time(19,'09:02:00')}
+]).daily;
+assert.equal(logged.get('2026-11-18').milliseconds,100000);
+assert.deepEqual(logged.get('2026-11-18').hourlyMs,expectedHours({7:10000,8:90000}));
+assert.equal(logged.get('2026-11-19').practiced,0);
+assert.equal(logged.get('2026-11-19').milliseconds,120000);
 console.log('PASS: historical counts, daily word deduplication, overlapping and cross-midnight timing, and repeated errors.');
