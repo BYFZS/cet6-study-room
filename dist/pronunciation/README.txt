@@ -13,3 +13,5 @@
     python generate-pronunciations.py en_GB-cori-high.onnx en-GB
     python generate-pronunciations.py en_US-ljspeech-medium.onnx en-US --examples
     python generate-pronunciations.py en_GB-cori-high.onnx en-GB --examples
+    python generate-pronunciations.py en_US-ljspeech-medium.onnx en-US --options
+    python generate-pronunciations.py en_GB-cori-high.onnx en-GB --options

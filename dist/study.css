@@ -247,3 +247,30 @@ body.vocabularySubpage > header,
 .mistakeFilters label{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:600}
 .mistakeFilters select,.settingRow select{border:1px solid #c5d5c6;border-radius:8px;background-color:#f6f9f4;padding:8px 32px 8px 10px;color:#294e42;min-height:37px;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23547969' stroke-width='1.6'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
 #mistakeResults{color:#536b5e;font-size:12px;margin-inline-start:auto}
+.flash #options .optionWithPronunciation{display:grid;grid-template-columns:minmax(0,1fr) 42px;gap:1px;min-width:0;background:#f5f8f3;border:1px solid #d6e1d4;border-radius:8px;overflow:hidden}
+.flash #options .optionWithPronunciation:has(.right){background:#deedce;border-color:#97b57a}
+.flash #options .optionWithPronunciation:has(.wrong){background:#f6dfcf;border-color:#d0a18b}
+.flash #options .optionWithPronunciation>button{border:0;background:transparent;border-radius:0}
+.flash #options .optionWithPronunciation>button[data-word]:disabled{opacity:1;cursor:default}
+.flash #options .optionWithPronunciation>.optionSpeaker{display:grid;place-items:center;align-self:stretch;min-height:44px;padding:0;border-left:1px solid #67887840}
+.flash #options .optionWithPronunciation>.optionSpeaker:hover{background:#668f7826}
+.flash #options .optionSpeaker:focus-visible{outline:2px solid #20594b;outline-offset:-3px}
+.flash #options .optionSpeaker svg{width:17px;height:17px}
+[data-theme="dark"] #training #options .optionWithPronunciation{background:#263932;border-color:#506c5d}
+[data-theme="dark"] #training #options .optionWithPronunciation:has(.right){background:#2a5239;border-color:#7ab08a}
+[data-theme="dark"] #training #options .optionWithPronunciation:has(.wrong){background:#563a2d;border-color:#b48b75}
+[data-theme="dark"] #training #options .optionWithPronunciation>button{background:transparent}
+@media(max-width:600px){
+ .flash #options .optionWithPronunciation{grid-template-columns:minmax(0,1fr) 36px}
+ .flash #options .optionWithPronunciation>button[data-word]{gap:5px;padding:5px}
+}
+.questionTitleActions{display:flex;justify-content:flex-end;align-items:center;gap:6px;flex-wrap:wrap;flex:none}
+#markEasy{padding:6px 11px;border-color:#a5bf9f;border-radius:12px;background:#e8f2e2;color:#27563c;font-weight:650;min-height:40px}
+#markEasy:hover{background:#d8ead2}
+[data-theme="dark"] #markEasy{background:#31543f;border-color:#6a9477;color:#e1f4e6}
+@media(max-width:600px){.questionTitleActions{max-width:46%}#markEasy{min-height:36px;font-size:12px;padding:5px 8px}}
+.compactLibraryInfo{padding:14px 18px}
+.compactLibraryInfo h2{margin:0;display:flex;align-items:center;gap:10px}
+.compactLibraryInfo h2 span{font-size:12px;font-weight:600;border-radius:10px;padding:1px 8px;color:#315844;background:#e3efe1}
+.compactLibraryInfo p{margin:4px 0}
+[data-theme="dark"] .compactLibraryInfo h2 span{color:#e0f5e6;background:#365949}

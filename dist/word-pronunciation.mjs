@@ -30,8 +30,6 @@ export function createWordPronunciation() {
         active = undefined;
         if (!['canceled', 'interrupted'].includes(error)) onFailure();
       }
-      // The Android app ships both voices; its system bridge is used only by older clients.
-      if (window.CET6Android) { fail(); return; }
       const synth = window.speechSynthesis;
       if (!synth || !window.SpeechSynthesisUtterance) { fail(); return; }
       try {
@@ -51,7 +49,8 @@ export function createWordPronunciation() {
       } catch { fail(); }
     }
     try {
-      const url = new URL((example ? './example-audio/' : './pronunciation/') + accent + '/' + encodeURIComponent(pronunciationFilename(word)) + '?v=1', import.meta.url);
+      const directory=example?'./example-audio/':'./pronunciation/';
+      const url = new URL(directory + accent + '/' + encodeURIComponent(pronunciationFilename(word)) + '?v=1', import.meta.url);
       // Only one short clip is fetched per play: a desktop browser need not have a voice installed.
       const clip = request.clip = new window.Audio(url.href);
       clip.volume = volume * 0.82;

@@ -14,7 +14,10 @@ parser = argparse.ArgumentParser(description="Generate the CET6 bundled English 
 parser.add_argument("model", type=Path, help="Path to the Piper voice model (with its JSON config).")
 parser.add_argument("accent", choices=["en-US", "en-GB"])
 parser.add_argument("--examples", action="store_true", help="Generate the full example sentence for every term.")
+parser.add_argument("--options", action="store_true", help="Generate audio for extra distractors.")
 args = parser.parse_args()
+if args.examples and args.options:
+    parser.error("--examples and --options cannot be combined")
 dist = Path(__file__).resolve().parent / "dist"
 out = dist / ("example-audio" if args.examples else "pronunciation") / args.accent
 out.mkdir(parents=True, exist_ok=True)
@@ -22,6 +25,9 @@ deck = {}
 for name in ("base-words", "paper-words", "paper-extra-reading", "paper-extra-mixed", "paper-writing-translation"):
     for item in json.loads((dist / (name + ".json")).read_text(encoding="utf-8-sig")):
         deck.setdefault(item["word"].strip().lower(), item)
+
+if args.options:
+    deck = dict.fromkeys(json.loads((dist / "option-pronunciations.json").read_text(encoding="utf-8")))
 
 # Context disambiguates heteronyms and the initialism. Only the declared
 # target pronunciation is synthesized (not the whole example sentence).

@@ -1,8 +1,8 @@
 import {filterMistakes} from './mistake-filters.mjs?v=27';
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
-import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=6';
-import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS} from './learning-core.mjs?v=6';
-import {initThreeUI} from './three-round-ui.mjs?v=27';
+import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=31';
+import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
+import {initThreeUI} from './three-round-ui.mjs?v=31';
 import {setupSyncUI} from './sync-ui.mjs?v=27';
 import {summarizeStudy} from './study-analytics.mjs?v=19';
 import {setupStudyStats} from './study-stats-ui.mjs?v=19';
@@ -72,7 +72,8 @@ function renderScores(){const box=$('scoreBox'),rows=gradeBaseline(baseline,deck
 function renderWords(){
  document.querySelectorAll('[data-word-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.wordFilter===$('listFilter').value)));
  const filter=$('listFilter').value,search=$('search').value.trim().toLowerCase();
- const repeated=filter==='repeated';
+ const repeated=filter==='repeated', easy=filter==='easy';
+ $('easyWordInfo').hidden=!easy;
  $('repeatInfo').hidden=$('mistakeFilters').hidden=!repeated;
  const misses=new Map(repeated?summarizeStudy(studyLogWithQuizzes(db)).repeated.map(item=>[item.word,item]):[]);
  const due=filter==='due'?new Set(selectThreeWords(deck,db,'due',deck.length)):new Set();
@@ -80,26 +81,31 @@ function renderWords(){
  const pool=repeated?[...misses.keys()].map(word=>deckByWord.get(word)).filter(Boolean):deck;
  let rows=pool.filter(w=>(repeated||filter==='all'||filter==='weak'&&weakThree(db.memories[w.word])||
    filter==='due'&&due.has(w.word)||filter==='core'&&w.priority==='core'||
-   filter==='paper'&&w.source!=='基础摸底'||filter==='passed'&&previouslyPassed(db.memories[w.word]))&&
+   filter==='paper'&&w.source!=='基础摸底'||filter==='passed'&&previouslyPassed(db.memories[w.word])||
+   easy&&db.memories[w.word]?.easy===true&&previouslyPassed(db.memories[w.word]))&&
    (!search||(w.word+' '+w.meaning).toLowerCase().includes(search)));
  if(repeated){
   rows=filterMistakes(rows,misses,$('mistakeKind').value,$('mistakeOrder').value);
   $('mistakeResults').textContent='显示 '+rows.length+' / '+pool.length+' 个';
  }
+ if(easy){
+  rows.sort((a,b)=>db.memories[a.word].due-db.memories[b.word].due||a.word.localeCompare(b.word,'en'));
+  $('easyWordCount').textContent=rows.length+' 个';
+ }
  $('wordList').innerHTML=rows.length?rows.map(w=>{
   const m=db.memories[w.word],miss=misses.get(w.word);
-  const status=passedToday(m)?(m.lastVerifiedDay===dayKey()?'今日抽查通过':'今日三轮通过'):
+  const status=m?.easy&&previouslyPassed(m)?'熟练词':passedToday(m)?(m.lastVerifiedDay===dayKey()?'今日抽查通过':'今日三轮通过'):
    weakThree(m)?'需要重练':m?.cycleDay===dayKey()&&m.stage>0?'已过'+m.stage+'/3轮':m?.attempts?'待复测':'未训练';
   const missText=miss?'<p class="repeatCount">累计答错 '+miss.count+' 次'+(miss.spelling?'（拼写 '+miss.spelling+' 次）':'')+
    ' · '+miss.days.size+' 天 · 最近 '+dayKey(miss.latest)+'</p>':'';
-  const timing=previouslyPassed(m)?' · 复习间隔 '+REVIEW_INTERVALS[m.reviewLevel||0]+' 天':'';
+  const timing=previouslyPassed(m)?' · 复习间隔 '+(m.easy?EASY_REVIEW_DAYS:REVIEW_INTERVALS[m.reviewLevel||0])+' 天':'';
   const dueText=m?.due?' · 下次 '+new Date(m.due).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'';
   return '<article class="wordCard"><div class="wordTop"><strong>'+esc(w.word)+'</strong><span>'+status+' · '+esc(w.source)+'</span>'+
    '<button data-toggle="'+esc(w.word)+'">'+(m?.manualWeak?'取消手动收藏':'手动收藏')+'</button></div>'+
    missText+'<p class="meaning">'+esc(w.meaning)+'</p><p class="example">'+esc(w.example)+'</p><p>'+
    esc(w.translation)+'</p><p>'+esc(w.collocation)+'</p><small>练习 '+(m?.attempts||0)+' 次 · 三轮通过 '+
    (m?.passDays?.length||0)+' 个日期'+timing+dueText+'</small></article>';
- }).join(''):'<div class="panel"><p>'+(repeated&&!pool.length?'累计答错两次的词会出现在这里。':'暂无符合筛选的词。')+'</p></div>';
+ }).join(''):'<div class="panel"><p>'+(repeated&&!pool.length?'累计答错两次的词会出现在这里。':easy&&!search?'还没有熟练词。在词汇训练中点「简单」即可加入。':'暂无符合筛选的词。')+'</p></div>';
  $('wordList').querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{
   const m=db.memories[b.dataset.toggle]||newMemory();
   m.manualWeak=!m.manualWeak;

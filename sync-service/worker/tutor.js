@@ -5,6 +5,52 @@ const DAILY_LIMIT = 80;
 const PROMPT = '你是大学英语六级的词汇助教。用清楚的简体中文直接回答问题。先解释本题中的词义或错因，再给出简短的英文例句和中文意思。比较近义词时说明词性、搭配和使用场景。把本题内容视作学习材料。遇到不确定的内容如实说明。回答用短段落或编号。';
 const CONTEXT_FIELDS = ['单词','词义','词性','例句','翻译','搭配','我的答案','判定'];
 
+function report(kind, detail = {}) {
+  // Never log the upstream response body, request headers or learner input.
+  console.warn('cet6-tutor', JSON.stringify({kind,...detail}));
+}
+
+async function askArk(apiKey, model, messages) {
+  const abort = new AbortController();
+  const timer = setTimeout(() => abort.abort(), 35000);
+  try {
+    const response = await fetch(ARK_URL, {
+      method:'POST',
+      headers:{Authorization:'Bearer '+apiKey, 'Content-Type':'application/json'},
+      redirect:'manual',
+      signal:abort.signal,
+      body:JSON.stringify({model, max_completion_tokens:650, thinking:{type:'disabled'}, messages})
+    });
+    const data = await response.json().catch(() => null);
+    const status = response.status;
+    const code = typeof data?.error?.code === 'string' && /^[A-Za-z0-9_.-]{1,100}$/.test(data.error.code) ? data.error.code : '';
+    if (status === 402 || status === 429 || /quota|balance|overdue|limit/i.test(code)) {
+      report('quota',{status,code});
+      return [429,{error:'model-limit'}];
+    }
+    if (status === 401 || status === 403 || status === 404) {
+      report('upstream-config',{status,code});
+      return [503,{error:'model-config'}];
+    }
+    if (!response.ok || !data) {
+      report('upstream-http',{status,code});
+      return [502,{error:'model-unavailable'}];
+    }
+    const content = data.choices?.[0]?.message?.content;
+    const reply = typeof content === 'string' ? content.trim() :
+      Array.isArray(content) ? content.filter(part=>part?.type==='text'&&typeof part.text==='string').map(part=>part.text).join('\n').trim() : '';
+    if (reply) return [200,{reply}];
+    const finish = data.choices?.[0]?.finish_reason;
+    report('empty-reply',{status,finish:typeof finish==='string'&&/^[a-z_]{1,40}$/.test(finish)?finish:''});
+    return [502,{error:'model-empty'}];
+  } catch (error) {
+    report(abort.signal.aborted?'timeout':'upstream-fetch', {type:error?.name==='TypeError'?'TypeError':'Error'});
+    return [502,{error:abort.signal.aborted?'model-timeout':'model-unavailable'}];
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export async function answerQuestion({request, env, room, access, send, readBody}) {
   if (request.method !== 'POST') return send(405, {error:'method'});
   if (!access) return send(401, {error:'unauthorized'});
@@ -43,31 +89,24 @@ export async function answerQuestion({request, env, room, access, send, readBody
   if (!reservation) return send(429, {error:'daily-limit'});
   await env.DB.prepare('DELETE FROM tutor_daily WHERE day < ?').bind(day).run();
 
-  try {
-    const response = await fetch(ARK_URL, {
-      method:'POST',
-      headers:{'Authorization':'Bearer '+env.ARK_API_KEY, 'Content-Type':'application/json'},
-      redirect:'error',
-      signal:AbortSignal.timeout(35000),
-      body:JSON.stringify({
-        model:MODEL,
-        max_completion_tokens:650,
-        thinking:{type:'disabled'},
-        messages:[
-          {role:'system',content:PROMPT},
-          {role:'user',content:'本题信息\n'+JSON.stringify(context)},
-          ...history,
-          {role:'user',content:question}
-        ]
-      })
-    });
-    const data = await response.json();
-    if (response.status === 402 || response.status === 429 || /quota|balance|overdue|limit/i.test(data.error?.code || '')) {
-      return send(429, {error:'model-limit'});
+  const [status,reply] = await askArk(env.ARK_API_KEY,env.ARK_MODEL?.trim() || MODEL,[
+    {role:'system',content:PROMPT},
+    {role:'user',content:'本题信息\n'+JSON.stringify(context)},
+    ...history,
+    {role:'user',content:question}
+  ]);
+  if (status >= 500) {
+    // A gateway failure yielded no useful answer. Only refund the reserved app quota.
+    try {
+      await env.DB.batch([
+        env.DB.prepare('UPDATE tutor_daily SET requests = requests - 1 WHERE day = ? AND room_id = ? AND requests > 1')
+          .bind(day,room),
+        env.DB.prepare('DELETE FROM tutor_daily WHERE day = ? AND room_id = ? AND requests = 1 AND changes() = 0')
+          .bind(day,room)
+      ]);
+    } catch {
+      report('quota-refund');
     }
-    const reply = data.choices?.[0]?.message?.content?.trim();
-    return response.ok && reply ? send(200, {reply}) : send(503, {error:'model-unavailable'});
-  } catch {
-    return send(502, {error:'model-unavailable'});
   }
+  return send(status,reply);
 }

@@ -13,7 +13,7 @@ export function wordQuestionContext(card, word) {
     翻译: word.translation,
     搭配: word.collocation,
     我的答案: answer,
-    判定: card.guessed ? (card.correct ? '猜对，稍后重测' : '猜错') : card.status === 'pending' ? '待核对' : card.correct ? '正确' :
+    判定: card.easy ? '用户标记为简单' : card.guessed ? (card.correct ? '猜对，稍后重测' : '猜错') : card.status === 'pending' ? '待核对' : card.correct ? '正确' :
       card.relatedAnswer ? '答案符合中文提示，继续练习目标词拼写' : '错误'
   };
 }
@@ -81,6 +81,10 @@ export function initWordQuestions($) {
         status.textContent = '同步身份无法验证，请检查同步账号。';
       } else if (code === 402 || code === 429) {
         status.textContent = data?.error === 'daily-limit' ? '今天的助教提问额度已用完，明天可以继续。' : '豆包试用额度已用完或暂时限流，请稍后再试。';
+      } else if(data?.error==='model-config'){
+        status.textContent='豆包助教的方舟权限或模型配置有误，暂时无法回答。';
+      } else if(data?.error==='model-timeout'){
+        status.textContent='豆包响应超时，请稍后重试。';
       } else {
         const reply = data?.reply;
         if (code !== 200 || data?.error || typeof reply !== 'string' || !reply.trim()) {

@@ -12,6 +12,11 @@ export function grade(response,word,override){
  if(tokens.length&&tokens.every(t=>aliases.includes(t)))return 'correct';
  return 'pending';
 }
+// An isolated recall prompt accepts common senses across the word's parts of speech.
+export function gradeWordRecall(value,word,customAliases=[]){
+ const glosses=Object.values(word.posGlosses||{}).flatMap(gloss=>gloss.split(/[，,；;、\/\n]/));
+ return grade({meaning:value,confidence:'known'},{...word,aliases:[...word.aliases,...customAliases,...glosses]});
+}
 export function gradeBaseline(baseline,deck,overrides={}){
  if(!baseline?.responses)return [];
  return baseline.responses.map(r=>{const word=deck.find(w=>w.word===r.word);return {...r,result:word?grade(r,word,overrides[r.word]):'pending'};});
@@ -54,15 +59,17 @@ export function validateBackup(raw,validWords){
 }
 export const nextDayTime=(now=Date.now())=>new Date(dayKey(now)+'T00:00:00+08:00').getTime()+DAY;
 export function mergeWordDecks(lists){const map=new Map();for(const item of lists.flat()){const id=item.word.toLowerCase().trim();if(!map.has(id)){map.set(id,{...item,word:id,sources:[item.source]});continue;}const previous=map.get(id);previous.aliases=[...new Set([...previous.aliases,...item.aliases,...item.meaning.split(/[；;、，,]/)])];previous.sources=[...new Set([...previous.sources,item.source])];}return [...map.values()];}
+export const EASY_REVIEW_DAYS=10;
+export const isEasyCoolingDown=(memory,now=Date.now())=>memory?.easy===true&&memory.due>now;
 export const REVIEW_INTERVALS=[1,2,4,7,15,30];
 export const passedToday=(m,now=Date.now())=>!!m&&m.protocol===3&&(m.lastPassDay===dayKey(now)||m.lastVerifiedDay===dayKey(now))&&m.stage===3&&!m.needsRelearn;
 export const previouslyPassed=m=>!!m&&m.passDays?.length>0&&!m.needsRelearn;
 export const reviewDueTime=(now,days)=>new Date(dayKey(now)+'T00:00:00+08:00').getTime()+days*DAY;
 export function selectPassedWords(deck,db,size=10,random=Math.random,now=Date.now()){
- const pool=deck.filter(w=>previouslyPassed(db.memories[w.word])&&!(db.memories[w.word].cycleDay===dayKey(now)&&db.memories[w.word].stage>0&&db.memories[w.word].stage<3)).map(w=>w.word);
+ const pool=deck.filter(w=>previouslyPassed(db.memories[w.word])&&!isEasyCoolingDown(db.memories[w.word],now)&&!(db.memories[w.word].cycleDay===dayKey(now)&&db.memories[w.word].stage>0&&db.memories[w.word].stage<3)).map(w=>w.word);
  for(let i=pool.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}return pool.slice(0,size);
 }
-export function canSpotCheck(m,scope='due',now=Date.now()){return previouslyPassed(m)&&(scope==='check'||m.due<=now)&&!(m.cycleDay===dayKey(now)&&m.stage>0&&m.stage<3);}
+export function canSpotCheck(m,scope='due',now=Date.now()){return previouslyPassed(m)&&!isEasyCoolingDown(m,now)&&(scope==='check'||m.due<=now)&&!(m.cycleDay===dayKey(now)&&m.stage>0&&m.stage<3);}
 export const weakThree=(m,now=Date.now())=>!!m&&(m.manualWeak||!passedToday(m,now)&&(m.seedWeak||m.failures>0));
 export function migrateThree(db,now=Date.now()){
  db.version=3;db.customAliases??={};db.overrides??={};db.logs??=[];db.memories??={};
@@ -81,15 +88,26 @@ export function recordStage(db,word,round,correct,manual=false,now=Date.now()){
  if(round!==m.stage+1||round>3)throw Error('轮次已变化，请重新开始当前词');
  m.attempts++;m.lastReviewed=now;
  if(correct){m.correct++;m.stage++;if(m.stage===3){m.lastPassDay=dayKey(now);m.passDays??=[];if(!m.passDays.includes(m.lastPassDay))m.passDays.push(m.lastPassDay);m.correctDays=[...m.passDays];m.seedWeak=false;m.needsRelearn=false;m.learningMisses=0;m.reviewLevel=0;m.lastVerifiedDay=null;m.due=nextDayTime(now);}}
- else{m.failures++;m.learningMisses=(m.learningMisses||0)+1;m.stage=0;m.seedWeak=true;m.needsRelearn=true;m.reviewLevel=0;m.lastVerifiedDay=null;m.due=now;if(m.lastPassDay===dayKey(now))m.lastPassDay=null;}
+ else{delete m.easy;m.failures++;m.learningMisses=(m.learningMisses||0)+1;m.stage=0;m.seedWeak=true;m.needsRelearn=true;m.reviewLevel=0;m.lastVerifiedDay=null;m.due=now;if(m.lastPassDay===dayKey(now))m.lastPassDay=null;}
  db.logs.push({word,round,correct,manual,protocol:3,threePassed:correct&&m.stage===3,at:now});return m;
+}
+export function markWordEasy(db,word,now=Date.now()){
+ const m=prepareThree(db,word,now);
+ const day=dayKey(now);
+ m.easy=true;m.stage=3;m.lastPassDay=day;m.lastReviewed=now;
+ m.passDays??=[];if(!m.passDays.includes(day))m.passDays.push(day);
+ m.correctDays=[...m.passDays];
+ m.seedWeak=false;m.needsRelearn=false;m.learningMisses=0;m.slowRecall=false;
+ m.reviewLevel=0;m.lastVerifiedDay=null;m.lastScheduledReviewDay=null;
+ m.due=reviewDueTime(now,EASY_REVIEW_DAYS);
+ return m;
 }
 export function recordSpotCheck(db,word,correct,manual=false,now=Date.now()){
  const m=db.memories[word];if(!previouslyPassed(m))throw Error('这个词需要先完成三轮训练');
  const scheduled=m.due<=now;
  m.attempts++;m.lastReviewed=now;m.lastCheckedAt=now;
- if(correct){m.correct++;if(m.due<=now&&m.lastScheduledReviewDay!==dayKey(now)){m.reviewLevel=Math.min((m.reviewLevel||0)+1,REVIEW_INTERVALS.length-1);m.due=reviewDueTime(now,REVIEW_INTERVALS[m.reviewLevel]);m.lastScheduledReviewDay=dayKey(now);}m.stage=3;m.cycleDay=dayKey(now);m.lastVerifiedDay=dayKey(now);m.seedWeak=false;}
- else{m.failures++;m.learningMisses=(m.learningMisses||0)+1;m.stage=0;m.cycleDay=dayKey(now);m.needsRelearn=true;m.seedWeak=true;m.reviewLevel=0;m.lastVerifiedDay=null;m.lastScheduledReviewDay=null;m.lastPassDay=null;m.due=now;}
+ if(correct){m.correct++;if(scheduled&&m.lastScheduledReviewDay!==dayKey(now)){if(!m.easy)m.reviewLevel=Math.min((m.reviewLevel||0)+1,REVIEW_INTERVALS.length-1);m.due=reviewDueTime(now,m.easy?EASY_REVIEW_DAYS:REVIEW_INTERVALS[m.reviewLevel]);m.lastScheduledReviewDay=dayKey(now);}m.stage=3;m.cycleDay=dayKey(now);m.lastVerifiedDay=dayKey(now);m.seedWeak=false;}
+ else{m.failures++;m.learningMisses=(m.learningMisses||0)+1;m.stage=0;m.cycleDay=dayKey(now);m.needsRelearn=true;m.seedWeak=true;m.reviewLevel=0;m.lastVerifiedDay=null;m.lastScheduledReviewDay=null;m.lastPassDay=null;delete m.easy;m.due=now;}
  db.logs.push({word,correct,manual,protocol:3,check:true,scheduled,reviewLevel:m.reviewLevel,at:now});return m;
 }
 export function selectThreeWords(deck,db,filter='due',size=10,now=Date.now()){
@@ -107,7 +125,7 @@ export function selectThreeWords(deck,db,filter='due',size=10,now=Date.now()){
 export const needsSpellingAid=m=>!!m&&(m.learningMisses||0)>=2&&!passedToday(m);
 export const spellingMatches=(answer,word)=>String(answer).normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ')===word.toLowerCase().trim();
 export function recordSpellingAid(db,word,correct,hintSeen=false,now=Date.now()){
- const m=prepareThree(db,word,now);m.attempts++;m.aidAttempts=(m.aidAttempts||0)+1;m.stage=0;m.needsRelearn=true;m.seedWeak=true;m.due=now;
+ const m=prepareThree(db,word,now);delete m.easy;m.attempts++;m.aidAttempts=(m.aidAttempts||0)+1;m.stage=0;m.needsRelearn=true;m.seedWeak=true;m.due=now;
  if(correct){m.aidCorrect=(m.aidCorrect||0)+1;m.learningMisses=0;}else m.learningMisses=Math.max(2,m.learningMisses||0);
  db.logs.push({word,correct,assist:true,mode:'spelling-aid',hintSeen,protocol:3,at:now});return m;
 }
