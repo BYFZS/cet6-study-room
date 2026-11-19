@@ -68,12 +68,12 @@
 [data-theme="dark"] .analyticsMetrics dt{color:#b8cfc2}
 [data-theme="dark"] .analyticsMetrics dd{color:#edf6ef}
 [data-theme="dark"] .analyticsHeat :is(.heatWeek,.heatFuture){color:#a6bbae}
-[data-theme="dark"] .analyticsHeat :is(.heatCell,.heatLegend [class^="heat"]){background:var(--heat-fill);color:var(--heat-ink,#edf6ef)}
-[data-theme="dark"] .analyticsHeat .heat0{--heat-fill:#283a32}
-[data-theme="dark"] .analyticsHeat .heat1{--heat-fill:#355342}
-[data-theme="dark"] .analyticsHeat .heat2{--heat-fill:#427251}
-[data-theme="dark"] .analyticsHeat .heat3{--heat-fill:#7ab38a;--heat-ink:#132c20}
-[data-theme="dark"] .analyticsHeat .heat4{--heat-fill:#afdeb8;--heat-ink:#132c20}
+[data-theme="dark"] :is(.analyticsHeat,.analyticsHours) :is(.heatCell,.hourHeatCell,.heatLegend [class^="heat"]){background:var(--heat-fill);color:var(--heat-ink,#edf6ef)}
+[data-theme="dark"] :is(.analyticsHeat,.analyticsHours) .heat0{--heat-fill:#283a32}
+[data-theme="dark"] :is(.analyticsHeat,.analyticsHours) .heat1{--heat-fill:#355342}
+[data-theme="dark"] :is(.analyticsHeat,.analyticsHours) .heat2{--heat-fill:#427251}
+[data-theme="dark"] :is(.analyticsHeat,.analyticsHours) .heat3{--heat-fill:#7ab38a;--heat-ink:#132c20}
+[data-theme="dark"] :is(.analyticsHeat,.analyticsHours) .heat4{--heat-fill:#afdeb8;--heat-ink:#132c20}
 [data-theme="dark"] .analyticsHeat .heatCell:is(:hover,[aria-pressed="true"]){border-color:#89b59d}
 [data-theme="dark"] .analyticsHeat .heatCell:is(:focus-visible,[aria-pressed="true"]){outline:2px solid #a9d8bb;outline-offset:1px}
 [data-theme="dark"] :is(.paperPane canvas,.paperPane iframe){color-scheme:light}

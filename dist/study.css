@@ -43,6 +43,14 @@
 .heat4{background:#317758;color:white}
 .heatLegend{display:flex;align-items:center;gap:5px;margin-top:14px;font-size:12px}
 .heatLegend span{padding:3px 6px;border-radius:4px}
+.analyticsHours{margin-top:16px}
+.analyticsHours h2{margin:0;font-size:19px}
+.hourHeatGrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:6px;padding:0;margin:14px 0 0;list-style:none}
+.hourHeatCell{display:grid;align-content:center;justify-items:center;min-height:48px;min-width:0;padding:4px 2px;border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 22%,transparent);border-radius:7px;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+.hourHeatCell .heatCount{font-size:11px;overflow-wrap:anywhere;text-align:center}
+@media(max-width:1100px){.hourHeatGrid{grid-template-columns:repeat(8,minmax(0,1fr))}}
+@media(max-width:640px){.hourHeatGrid{grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}}
+@media(max-width:360px){.hourHeatGrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 #studyRepeated{margin-top:14px}
 #repeatInfo{margin-bottom:12px}
 .repeatCount{font-weight:600;color:#8b492f}

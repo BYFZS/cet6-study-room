@@ -1,8 +1,10 @@
 import {DAY} from './learning-core.mjs?v=6';
 
-const MAX_ANSWER_MS = 3 * 60 * 1000;
+const MINUTE = 60 * 1000;
+const HOUR = 60 * MINUTE;
+const MAX_ANSWER_MS = 3 * MINUTE;
 const MIN_REPEATED_ERRORS = 2;
-const UTC_OFFSET = 8 * 60 * 60 * 1000;
+const UTC_OFFSET = 8 * HOUR;
 const midnight = key => Date.parse(key + 'T00:00:00+08:00');
 const utcDay = key => new Date(key + 'T00:00:00Z');
 export const localStudyDay = time => new Date(time + UTC_OFFSET).toISOString().slice(0, 10);
@@ -38,15 +40,20 @@ function answerInterval(log) {
   return duration > 0 ? [end - duration, end] : null;
 }
 
-function unionDuration(ranges) {
-  let total = 0;
-  let lastEnd = 0;
+function summarizeTime(ranges, dayStart) {
+  const hourlyMs = Array(24).fill(0);
+  let coveredThrough = dayStart;
   for (const [start, end] of ranges.sort((a, b) => a[0] - b[0])) {
-    if (end <= lastEnd) continue;
-    total += end - Math.max(start, lastEnd);
-    lastEnd = end;
+    let cursor = Math.max(start, coveredThrough);
+    while (cursor < end) {
+      const hour = Math.floor((cursor - dayStart) / HOUR);
+      const boundary = Math.min(end, dayStart + (hour + 1) * HOUR);
+      hourlyMs[hour] += boundary - cursor;
+      cursor = boundary;
+    }
+    coveredThrough = Math.max(coveredThrough, end);
   }
-  return total;
+  return {hourlyMs, milliseconds: hourlyMs.reduce((total, amount) => total + amount, 0)};
 }
 
 export function summarizeStudy(logs, now = Date.now()) {
@@ -93,7 +100,7 @@ export function summarizeStudy(logs, now = Date.now()) {
     const newWords = [...entry.words].filter(word => firstDay.get(word) === key).length;
     daily.set(key, {
       newWords, reviewed: entry.words.size - newWords, practiced: entry.words.size,
-      attempts: entry.attempts, milliseconds: unionDuration(entry.ranges)
+      attempts: entry.attempts, ...summarizeTime(entry.ranges, midnight(key))
     });
   }
   const repeated = [...wrong.values()].filter(item => item.count >= MIN_REPEATED_ERRORS)
@@ -106,6 +113,13 @@ export function heatLevel(practiced) {
   if (practiced >= 10) return 3;
   if (practiced >= 5) return 2;
   return practiced > 0 ? 1 : 0;
+}
+
+export function studyTimeHeatLevel(milliseconds) {
+  if (milliseconds >= 15 * MINUTE) return 4;
+  if (milliseconds >= 5 * MINUTE) return 3;
+  if (milliseconds >= MINUTE) return 2;
+  return milliseconds > 0 ? 1 : 0;
 }
 
 export function formatStudyTime(milliseconds) {

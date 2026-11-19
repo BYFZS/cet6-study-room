@@ -5,6 +5,7 @@ import {partOfSpeechHTML,meaningsByPartOfSpeechHTML,morphologyHTML,wordFamilyHTM
 import {initWordQuestions} from './word-questions.mjs?v=28';
 import {playAnswerSound,readSoundSettings} from './answer-sounds.mjs?v=34';
 import {createWordPronunciation} from './word-pronunciation.mjs?v=38';
+import {antonymsFor} from './word-antonyms.mjs?v=39';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);
 export const choiceOptions=harderOptions;
@@ -176,7 +177,8 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
  });
  function relationHTML(w){
   const {synonyms=[],senses=[],confusables:listed=[],note}=w.relations||{};
-  const seen=new Set([w.word,...synonyms.map(item=>item.word.toLowerCase())]);
+  const antonyms=antonymsFor(w.word);
+  const seen=new Set([w.word,...[...synonyms,...antonyms].map(item=>item.word.toLowerCase())]);
   const raw=[...listed,...contrastCandidates(w,getDeck()).slice(0,3)];
   const confusables=[];
   for(const item of raw){
@@ -191,6 +193,7 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
    +sense.items.map(item=>'<li>'+meaningLine(item)+'</li>').join('')+'</ul></div>').join('');
   const synonymHTML=sensesHTML||synonyms.map(item=>'<p>'+meaningLine(item)+'</p>').join('');
   return '<div class="wordRelations">'+(synonymHTML?'<section class="synonymNotes"><h4>近义词 / 近义表达</h4>'+synonymHTML+'</section>':'')
+   +(antonyms.length?'<section class="antonymNotes"><h4>反义词</h4><div class="synonymSense"><ul>'+antonyms.map(item=>'<li>'+meaningLine(item)+'</li>').join('')+'</ul></div></section>':'')
    +(confusables.length?'<h4>易混淆词辨析</h4>'+confusables.map(item=>'<p>'+meaningLine(item)+'</p>').join(''):'')
    +(note?'<p class="fine">'+esc(note)+'</p>':'')+'</div>';
  }
