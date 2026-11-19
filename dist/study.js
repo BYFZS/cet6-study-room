@@ -2,11 +2,11 @@ import {filterMistakes} from './mistake-filters.mjs?v=27';
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
 import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=31';
 import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
-import {initThreeUI} from './three-round-ui.mjs?v=42';
+import {initThreeUI} from './three-round-ui.mjs?v=44';
 import {setupSyncUI} from './sync-ui.mjs?v=27';
 import {summarizeStudy} from './study-analytics.mjs?v=42';
 import {setupStudyStats} from './study-stats-ui.mjs?v=42';
-import {setupContextQuiz} from './context-quiz-ui.mjs?v=41';
+import {setupContextQuiz} from './context-quiz-ui.mjs?v=44';
 import {STUDY_ACTIVITY, trackStudyActivity} from './study-activity.mjs?v=42';
 import {studyLogWithQuizzes} from './context-quiz.mjs?v=41';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -140,8 +140,26 @@ document.querySelectorAll('[data-word-filter]').forEach(button=>button.onclick=(
 initThreeUI({$,getDeck:()=>deck,getDB:()=>db,getOptionPosition:term=>optionPositions[term],view,save,message,esc,beforeNext:()=>sync?.applyPending(),onGroupFinished:container=>quiz?.announceAtGroupEnd(container)});
 $('import').onclick=()=>$('file').click();$('file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>10*1024*1024)throw Error('文件超过10MB');const raw=JSON.parse(await file.text());if(raw.test==='cet6-vocabulary-01'){if(raw.status!=='submitted'||raw.responses?.length!==20||new Set(raw.responses.map(r=>r.word)).size!==20||raw.responses.some(r=>!deck.slice(0,20).some(w=>w.word===r.word)||typeof r.meaning!=='string'||!['known','familiar','unknown'].includes(r.confidence)))throw Error('20词答卷格式不正确，需导入已提交的答卷');baseline=raw;localStorage.setItem(BASE_KEY,JSON.stringify(raw));syncBaseline(db,baseline,deck);migrateThree(db);save();message('答卷已导入并评分，错词与眼熟词已加入复习队列。');view('scores');}else{validateBackup(raw,deck.map(w=>w.word));if(!confirm('导入备份会替换当前浏览器的词汇学习记录。是否继续？'))return;db=migrateThree(raw.learning);db.session=null;db.overrides??={};baseline=raw.baseline||null;if(baseline)localStorage.setItem(BASE_KEY,JSON.stringify(baseline));else localStorage.removeItem(BASE_KEY);save();message('备份已恢复。');view('home');}}catch(err){message('导入失败：'+err.message);}finally{e.target.value='';}};
 $('backup').onclick=()=>{const out={type:'cet6-learning-backup',version:3,exportedAt:new Date().toISOString(),baseline,learning:db};const url=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='CET6-词汇学习记录-'+dayKey()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);};
-try{const responses=await Promise.all(['base-words.json','paper-words.json','paper-extra-reading.json','paper-extra-mixed.json','paper-writing-translation.json'].map(async path=>{const r=await fetch(path);if(!r.ok)throw Error(path+'加载失败');return r.json();}));deck=mergeWordDecks(responses);const relations=await Promise.all(['word-relations-a.json?v=19','word-relations-b.json','synonym-senses-priority.json?v=10','synonym-senses-general.json?v=10','synonym-senses-usage.json?v=10'].map(async p=>{const r=await fetch(p);if(!r.ok)throw Error('词义辨析加载失败');return r.json();}));deck=attachSynonymSenses(attachRelations(deck,...relations.slice(0,2)),...relations.slice(2));syncBaseline(db,baseline,deck);migrateThree(db);save();
- const [hintA,hintB,combinations,prefixes,roots,posA,posB,families,phrases,glosses,distractorPos,syllables]=await Promise.all(['context-hints-a.json','context-hints-b.json','context-combinations.json','word-parts-prefixes.json','word-parts-roots.json','word-pos-a.json','word-pos-b.json','word-families.json','word-phrase-notes.json','word-pos-glosses.json','distractor-pos.json','word-syllables.json'].map(async path=>{const response=await fetch(path+(['word-parts-roots.json','word-parts-prefixes.json','word-families.json','word-phrase-notes.json'].includes(path)?'?v=26':'?v=12'));if(!response.ok)throw Error('词汇附加资料加载失败：'+path);return response.json();}));
+const initialParams = new URLSearchParams(location.search);
+if (initialParams.get('view') === 'analytics') view('analytics');
+const loadStudyFiles = paths => Promise.all(paths.map(async path => {
+  const response = await fetch(path);
+  if (!response.ok) throw Error(path + ' 加载失败');
+  return response.json();
+}));
+try {
+ const [responses, relations, details] = await Promise.all([
+  loadStudyFiles(['base-words.json','paper-words.json','paper-extra-reading.json','paper-extra-mixed.json','paper-writing-translation.json']),
+  loadStudyFiles(['word-relations-a.json?v=19','word-relations-b.json','synonym-senses-priority.json?v=10','synonym-senses-general.json?v=10','synonym-senses-usage.json?v=10']),
+  loadStudyFiles(['context-hints-a.json?v=12','context-hints-b.json?v=12','context-combinations.json?v=12',
+   'word-parts-prefixes.json?v=26','word-parts-roots.json?v=26','word-pos-a.json?v=12','word-pos-b.json?v=12',
+   'word-families.json?v=26','word-phrase-notes.json?v=26','word-pos-glosses.json?v=12','distractor-pos.json?v=12','word-syllables.json?v=12'])
+ ]);
+ const [hintA,hintB,combinations,prefixes,roots,posA,posB,families,phrases,glosses,distractorPos,syllables] = details;
+ deck=attachSynonymSenses(attachRelations(mergeWordDecks(responses),...relations.slice(0,2)),...relations.slice(2));
+ syncBaseline(db,baseline,deck);
+ migrateThree(db);
+ save();
  const morphology={...roots,...prefixes},positions={...posA,...posB};
  const familyByWord=new Map(families.flatMap(family=>family.words.map(([term])=>[term,family])));
  optionPositions={...distractorPos,...Object.fromEntries(families.flatMap(group=>group.words.map(([term,pos])=>[term,pos]))),...positions};
@@ -162,5 +180,5 @@ try{const responses=await Promise.all(['base-words.json','paper-words.json','pap
   }
  });
  $('showSync').disabled=false;
- const params=new URLSearchParams(location.search);if(params.get('sync')==='1'){const url=new URL(location.href);url.searchParams.delete('sync');history.replaceState(null,'',url);$('showSync').click();}const initialView=params.get('view');if(initialView==='scores')view('scores');else if(initialView==='analytics')view('analytics');else if(initialView==='contextQuiz')view('contextQuiz');else if(initialView==='training')$('startRound').click();}catch(e){message('词库加载失败，请刷新重试：'+e.message);$('startRound').disabled=true;}
+ const params=initialParams;if(params.get('sync')==='1'){const url=new URL(location.href);url.searchParams.delete('sync');history.replaceState(null,'',url);$('showSync').click();}const initialView=params.get('view');if(initialView==='scores')view('scores');else if(initialView==='analytics')view('analytics');else if(initialView==='contextQuiz')view('contextQuiz');else if(initialView==='training')$('startRound').click();}catch(e){message('词库加载失败，请刷新重试：'+e.message);$('startRound').disabled=true;}
 

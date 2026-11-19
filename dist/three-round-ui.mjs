@@ -3,7 +3,7 @@ import {planTraining,attachAnswerTiming} from './adaptive-training.mjs?v=29';
 import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=10';
 import {partOfSpeechHTML,meaningsByPartOfSpeechHTML,morphologyHTML,wordFamilyHTML,spellingAlternative,confusionHTML,confusionComparisonHTML,findMistakenWord} from './feedback-notes.mjs?v=34';
 import {initWordQuestions} from './word-questions.mjs?v=28';
-import {playAnswerSound,readSoundSettings} from './answer-sounds.mjs?v=34';
+import {playAnswerSound,readSoundSettings} from './answer-sounds.mjs?v=44';
 import {createWordPronunciation} from './word-pronunciation.mjs?v=38';
 import {antonymsFor} from './word-antonyms.mjs?v=39';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -22,6 +22,7 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
  const status=$('pronunciationStatus');
  const syllableHint=$('wordSyllables');
  let spokenCard;
+ let pronunciationRequest=0;
  function displaySyllables(card){
   const form=wordData(card?.word)?.syllables;
   const current=getDB().session?.current;
@@ -53,6 +54,7 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
    const current=getDB().session?.current;
    if(current?.word===word){speakCard(current,{status,manual:true});return;}
    status.textContent='';
+   pronunciationRequest++;
    pronunciation.play(word,{
     onMuted:()=>{status.textContent='词汇读音音量为 0，可在设置里调高。';},
     onFailure:()=>{status.textContent='读音未能播放，请重试。';}
@@ -63,6 +65,7 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
  }
  function speakCard(card,{example,status,accent,manual=false}){
   if(!card)return;
+  if(manual)pronunciationRequest++;
   status.textContent='';
   pronunciation.play(card.word,{
    example,accent,
@@ -78,8 +81,13 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
    onFailure:()=>{status.textContent=example?'例句读音未能播放，请重试。':'单词读音未能播放，请重试或查看拼写。';}
   });
  }
- function playAfterAnswer(card){
-  if(readSoundSettings().autoPronounce)speakCard(card,{status});
+ function playAfterAnswer(card, effect){
+  if(!readSoundSettings().autoPronounce)return;
+  const request=++pronunciationRequest;
+  Promise.resolve(effect).then(()=>{
+   if(request===pronunciationRequest&&getDB().session?.current===card&&
+     !$('training').hidden&&!document.hidden&&readSoundSettings().autoPronounce)speakCard(card,{status});
+  });
  }
  for(const [container,statusEl,card] of [
   [$('feedback'),$('exampleStatus'),()=>getDB().session?.current],[$('previousWordBody'),previousStatus,()=>previousCard()]
@@ -133,9 +141,9 @@ export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,vie
    db.logs.at(-1).relatedAnswer=true;
   }
   if(!manual){pronunciation.stop();status.textContent='';}
-  if(!c.relatedAnswer)playAnswerSound(decision);
+  const effect=c.relatedAnswer?null:playAnswerSound(decision);
   attachAnswerTiming(db,c.word,{...c.timing,studyActivityTracked:true},c.round);c.threePassed=!c.assist&&decision&&m.stage===3;c.checkPassed=!!c.check&&decision;s.attempts++;if(c.threePassed)s.passed[c.word]=true;else{s.queue.push(c.word);delete s.passed[c.word];}save();render();
-  if(!manual)playAfterAnswer(c);
+  if(!manual)playAfterAnswer(c,effect);
   if(!confusionDialog.open && (manual || c.relatedAnswer || !openConfusion(c,w)))nextCard.focus({preventScroll:true});
  }
  function renderSpellingCue(card,word){

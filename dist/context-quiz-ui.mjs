@@ -1,3 +1,4 @@
+import {playAnswerSound} from './answer-sounds.mjs?v=44';
 import {dayKey} from './learning-core.mjs?v=6';
 import {QUIZ_ATTEMPT, QUIZ_MARK, QUIZ_SIZE, makeQuizQuestions, quizAttempts, quizKey, quizResults,
   reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish, mistakeTimes, restrictQuizQuestion} from './context-quiz.mjs?v=41';
@@ -135,6 +136,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
     const db = getDB();
     db.rounds ??= [];
     db.rounds.push(attempt);
+    if (results.every(item => item.status !== 'pending')) playAnswerSound(results.every(item => item.status === 'correct'));
     draft = null;
     storeDraft();
     save();
@@ -166,6 +168,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
     panel.querySelectorAll('[data-quiz-mark]').forEach(button => button.onclick = () => {
       db.rounds.push({mode: QUIZ_MARK, attempt: attempt.id, word: button.dataset.quizTarget,
         correct: button.dataset.quizMark === 'yes', at: Date.now()});
+      playAnswerSound(button.dataset.quizMark === 'yes');
       save();
       renderReport(attempt);
     });

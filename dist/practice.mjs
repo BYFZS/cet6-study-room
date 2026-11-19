@@ -1,4 +1,4 @@
-import {playAnswerSound} from './answer-sounds.mjs?v=34';
+import {playAnswerSound} from './answer-sounds.mjs?v=44';
 
 const reading = 'A team compared two groups of learners who studied the same set of unfamiliar words. One group studied for thirty minutes in a single session. The other split the same amount of time across three days. Both groups did equally well on a test immediately after their final session. A week later, however, the group that had spaced out its practice remembered more words. The result suggests that the timing of practice matters when the goal is to remember information over time.';
 const shortTasks = {
@@ -52,7 +52,7 @@ document.getElementById('practiceTitle').textContent = task.title;
 document.getElementById('practiceHint').textContent = task.hint;
 
 if (selected === 'listening') {
-  const {mountListening} = await import('./listening-practice.mjs?v=43');
+  const {mountListening} = await import('./listening-practice.mjs?v=44');
   mountListening(exercise);
 } else if (selected === 'reading') {
   const passage = add(exercise,'p',task.passage);

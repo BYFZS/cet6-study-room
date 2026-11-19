@@ -1,4 +1,4 @@
-import {initAnswerSoundSettings} from './answer-sounds.mjs?v=34';
+import {initAnswerSoundSettings} from './answer-sounds.mjs?v=44';
 
 const icons = {
   panel:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/>',
@@ -58,7 +58,11 @@ panel.innerHTML = '<div class="settingsTop"><h2 id="siteSettingsTitle">设置</h
 document.body.append(panel);
 initAnswerSoundSettings(panel);
 const systemTheme=matchMedia('(prefers-color-scheme: dark)');
-const applyTheme=value=>{document.documentElement.dataset.theme=value==='system'?(systemTheme.matches?'dark':'light'):value;};
+const applyTheme=value=>{
+  const dark=value==='dark'||value!=='light'&&systemTheme.matches;
+  document.documentElement.dataset.theme=dark?'dark':'light';
+  window.CET6Android?.setPageDark?.(dark);
+};
 const theme=settingChoice('roomTheme','cet6-room-theme','system',applyTheme);
 systemTheme.addEventListener('change',()=>applyTheme(theme()));
 settingChoice('explanationSize','cet6-explanation-size','16',value=>

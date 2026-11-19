@@ -50,20 +50,21 @@ export function initAnswerSoundSettings(panel) {
   panel.addEventListener('cet6-settings-open', follow);
 }
 
-export function playAnswerSound(correct) {
+export async function playAnswerSound(correct) {
   const preferences = readSoundSettings();
   if (!preferences[correct ? 'correct' : 'wrong'] || !preferences.effectsVolume) return;
   const Audio = window.AudioContext || window.webkitAudioContext;
   if (!Audio) return;
   try {
     audio ??= new Audio();
-    const play = () => {
+    if (audio.state !== 'running') await audio.resume();
+    await new Promise(resolve => {
       const current=readSoundSettings();
       const volume=current.effectsVolume;
-      if (!volume || !current[correct ? "correct" : "wrong"]) return;
+      if (!volume || !current[correct ? "correct" : "wrong"]) {resolve();return;}
       const start = audio.currentTime + 0.005;
       const notes = correct ? [[740,0,.095],[1109,.083,.125]] : [[294,0,.115],[175,.115,.155]];
-      notes.forEach(([frequency,offset,duration]) => {
+      notes.forEach(([frequency,offset,duration],index) => {
         const oscillator = audio.createOscillator();
         const gain = audio.createGain();
         const at = start + offset;
@@ -79,10 +80,9 @@ export function playAnswerSound(correct) {
         oscillator.onended = () => {
           oscillator.disconnect();
           gain.disconnect();
+          if(index===notes.length-1)resolve();
         };
       });
-    };
-    if (audio.state === 'running') play();
-    else audio.resume().then(play).catch(() => {});
+    });
   } catch {}
 }

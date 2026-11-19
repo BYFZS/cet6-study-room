@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Insets;
 import android.net.Uri;
@@ -50,6 +51,8 @@ public final class MainActivity extends Activity {
     private static final String HOME = "https://" + HOST + PATH + "study.html";
     private static final String EXAM_HOST = "www.cettong.cn";
     private static final String EXAM_PATH = "/library/cet6/2025_06_1/";
+    private static final String LISTENING_HOST = "www.yingyuzhenti.com";
+    private static final String LISTENING_PATH = "/cet-audio/cet6_2025_06_1/";
     private static final String SYNC_HOST = "cet6-sync-nov26.linedsunflower3.chatgpt.site";
     private static final String RELEASE_API = "https://api.github.com/repos/BYFZS/cet6-study-room/releases/latest";
     private static final String RELEASE_ASSETS = "https://github.com/BYFZS/cet6-study-room/releases/download/";
@@ -63,9 +66,17 @@ public final class MainActivity extends Activity {
     private static final String CSP = "default-src 'self'; frame-src 'none'; object-src 'none'; "
         + "script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; "
         + "style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; "
-        + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + "; media-src 'self' blob: https://" + EXAM_HOST;
+        + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + "; media-src 'self' blob: https://" + EXAM_HOST + " https://" + LISTENING_HOST + LISTENING_PATH;
 
     private WebView web;
+    private FrameLayout root;
+    private boolean pageDark;
+
+    private void applyPageBackground() {
+        int background = pageDark ? Color.rgb(20, 30, 27) : Color.rgb(244, 245, 239);
+        root.setBackgroundColor(background);
+        web.setBackgroundColor(background);
+    }
     private final ExecutorService syncRequests = Executors.newFixedThreadPool(2);
     private TextToSpeech voice;
     private boolean voiceReady;
@@ -89,9 +100,11 @@ public final class MainActivity extends Activity {
         }
         setTitle("CET6 复习室");
         web = new WebView(this);
-        web.setBackgroundColor(Color.rgb(244, 245, 239));
-        FrameLayout root = new FrameLayout(this);
-        root.setBackgroundColor(Color.rgb(244, 245, 239));
+        root = new FrameLayout(this);
+        boolean systemDark = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
+            == Configuration.UI_MODE_NIGHT_YES;
+        pageDark = getSharedPreferences("cet6-ui", MODE_PRIVATE).getBoolean("dark", systemDark);
+        applyPageBackground();
         root.addView(web, new FrameLayout.LayoutParams(-1, -1));
         if (Build.VERSION.SDK_INT >= 30) {
             root.setOnApplyWindowInsetsListener((view, insets) -> {
@@ -334,6 +347,10 @@ public final class MainActivity extends Activity {
             if (!"GET".equals(request.getMethod())) return unavailable(403, "Forbidden");
             if (isHttpsHost(uri, EXAM_HOST) && uri.getPath() != null
                 && uri.getPath().startsWith(EXAM_PATH) && !request.isForMainFrame()) return null;
+            String listeningPath = uri.getPath();
+            if (!request.isForMainFrame() && isHttpsHost(uri, LISTENING_HOST) && listeningPath != null
+                && listeningPath.startsWith(LISTENING_PATH)
+                && listeningPath.substring(LISTENING_PATH.length()).matches("[a-f0-9]{20}[.]mp3")) return null;
             if (!isLocal(uri)) return unavailable(403, "Forbidden");
             String resource = uri.getPath().substring(PATH.length());
             if (resource.isEmpty()) resource = "index.html";
@@ -366,6 +383,15 @@ public final class MainActivity extends Activity {
     }
 
     public final class StudyBridge {
+        @JavascriptInterface
+        public void setPageDark(boolean dark) {
+            runOnUiThread(() -> {
+                if (isDestroyed() || pageDark == dark) return;
+                pageDark = dark;
+                applyPageBackground();
+                getSharedPreferences("cet6-ui", MODE_PRIVATE).edit().putBoolean("dark", dark).apply();
+            });
+        }
         @JavascriptInterface
         public void checkForUpdates() {
             runOnUiThread(() -> checkForUpdate(true));
