@@ -9,6 +9,9 @@ import android.graphics.Insets;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.SystemClock;
 import android.speech.tts.TextToSpeech;
 import android.view.WindowInsets;
 import android.webkit.JavascriptInterface;
@@ -50,7 +53,9 @@ public final class MainActivity extends Activity {
     private static final String SYNC_HOST = "cet6-sync-nov26.linedsunflower3.chatgpt.site";
     private static final String RELEASE_API = "https://api.github.com/repos/BYFZS/cet6-study-room/releases/latest";
     private static final String RELEASE_ASSETS = "https://github.com/BYFZS/cet6-study-room/releases/download/";
-    private static final long UPDATE_INTERVAL = 24 * 60 * 60 * 1000L;
+    private static final long UPDATE_INTERVAL = 10 * 60 * 1000L;
+    private static final long UPDATE_RETRY_INTERVAL = 2 * 60 * 1000L;
+    private static final long DEFER_UPDATE_INTERVAL = 24 * 60 * 60 * 1000L;
     private static final int MAX_SYNC_BYTES = 1_400_000;
     private static final int OPEN_JSON = 1;
     private static final int SAVE_JSON = 2;
@@ -67,6 +72,9 @@ public final class MainActivity extends Activity {
     private ValueCallback<Uri[]> chooser;
     private File pendingExport;
     private final ExecutorService updateRequests = Executors.newSingleThreadExecutor();
+    private final Handler updateTimer = new Handler(Looper.getMainLooper());
+    private final Runnable automaticUpdateCheck = () -> checkForUpdate(false);
+    private long nextUpdateCheck;
     private boolean updateInFlight;
     private boolean manualUpdateCheck;
     private boolean foreground;
@@ -138,12 +146,27 @@ public final class MainActivity extends Activity {
     @Override
     protected void onPause() {
         foreground = false;
+        updateTimer.removeCallbacks(automaticUpdateCheck);
         super.onPause();
     }
 
+    private void scheduleUpdateCheck() {
+        updateTimer.removeCallbacks(automaticUpdateCheck);
+        if (foreground && updateDialog == null) {
+            updateTimer.postDelayed(automaticUpdateCheck, Math.max(0, nextUpdateCheck - SystemClock.elapsedRealtime()));
+        }
+    }
+
+    private void planUpdateCheck(long interval) {
+        nextUpdateCheck = SystemClock.elapsedRealtime() + interval;
+        scheduleUpdateCheck();
+    }
+
+    private static boolean isVersion(String version) {
+        return version != null && version.matches("[0-9]{1,6}([.][0-9]{1,6}){2}");
+    }
+
     private static int compareVersions(String remote, String local) {
-        if (!remote.matches("[0-9]{1,6}([.][0-9]{1,6}){2}")
-            || !local.matches("[0-9]{1,6}([.][0-9]{1,6}){2}")) return 0;
         String[] left = remote.split("[.]");
         String[] right = local.split("[.]");
         for (int i = 0; i < 3; i++) {
@@ -157,6 +180,8 @@ public final class MainActivity extends Activity {
         HttpsURLConnection connection = (HttpsURLConnection) new URL(RELEASE_API).openConnection();
         try {
             connection.setInstanceFollowRedirects(false);
+            connection.setUseCaches(false);
+            connection.setRequestProperty("Cache-Control", "no-cache");
             connection.setConnectTimeout(6500);
             connection.setReadTimeout(6500);
             connection.setRequestProperty("Accept", "application/vnd.github+json");
@@ -178,16 +203,17 @@ public final class MainActivity extends Activity {
     }
 
     private void checkForUpdate(boolean manual) {
-        if (isDestroyed() || isFinishing() || updateDialog != null) return;
+        if (!foreground || isDestroyed() || isFinishing() || updateDialog != null) return;
         if (updateInFlight) {
             if (manual && !manualUpdateCheck) notice("正在检查更新…");
             manualUpdateCheck |= manual;
             return;
         }
-        long now = System.currentTimeMillis();
-        android.content.SharedPreferences prefs = getSharedPreferences("cet6-updates", MODE_PRIVATE);
-        long last = prefs.getLong("lastSuccessfulCheck", 0);
-        if (!manual && now >= last && now - last < UPDATE_INTERVAL) return;
+        if (!manual && SystemClock.elapsedRealtime() < nextUpdateCheck) {
+            scheduleUpdateCheck();
+            return;
+        }
+        updateTimer.removeCallbacks(automaticUpdateCheck);
         updateInFlight = true;
         manualUpdateCheck = manual;
         if (manual) notice("正在检查更新…");
@@ -205,15 +231,20 @@ public final class MainActivity extends Activity {
                 boolean requested = manualUpdateCheck;
                 manualUpdateCheck = false;
                 if (isFinishing() || isDestroyed() || !foreground) return;
-                if (release == null || version == null) {
+                if (release == null || !isVersion(version)) {
+                    planUpdateCheck(UPDATE_RETRY_INTERVAL);
                     if (requested) notice("暂时无法连接 GitHub 检查更新，学习功能仍可使用。");
                     return;
                 }
                 String tag = release.optString("tag_name");
                 String releaseVersion = tag.startsWith("v") ? tag.substring(1) : "";
-                if (compareVersions(releaseVersion, version) <= 0
-                    || release.optBoolean("draft") || release.optBoolean("prerelease")) {
-                    prefs.edit().putLong("lastSuccessfulCheck", now).apply();
+                if (!isVersion(releaseVersion) || release.optBoolean("draft") || release.optBoolean("prerelease")) {
+                    planUpdateCheck(UPDATE_RETRY_INTERVAL);
+                    if (requested) notice("暂时无法读取正式版本信息，请稍后重试。");
+                    return;
+                }
+                if (compareVersions(releaseVersion, version) <= 0) {
+                    planUpdateCheck(UPDATE_INTERVAL);
                     if (requested) notice("当前已是最新版本 v" + version);
                     return;
                 }
@@ -231,10 +262,20 @@ public final class MainActivity extends Activity {
                     }
                 }
                 if (!available) {
+                    planUpdateCheck(UPDATE_RETRY_INTERVAL);
                     if (requested) notice("新版安装包还未上传完成，请稍后重试。");
                     return;
                 }
-                prefs.edit().putLong("lastSuccessfulCheck", now).apply();
+                android.content.SharedPreferences prefs = getSharedPreferences("cet6-updates", MODE_PRIVATE);
+                long deferredAt = prefs.getLong("deferredAt", 0);
+                long elapsed = System.currentTimeMillis() - deferredAt;
+                if (!requested && tag.equals(prefs.getString("deferredTag", ""))
+                    && elapsed >= 0 && elapsed < DEFER_UPDATE_INTERVAL) {
+                    planUpdateCheck(UPDATE_INTERVAL);
+                    return;
+                }
+                Runnable defer = () -> prefs.edit().putString("deferredTag", tag)
+                    .putLong("deferredAt", System.currentTimeMillis()).apply();
                 String notes = release.optString("body", "").trim();
                 if (notes.length() > 1800) notes = notes.substring(0, 1800) + "…";
                 String explanation = "当前 v" + version + "，最新 " + tag
@@ -242,12 +283,17 @@ public final class MainActivity extends Activity {
                 updateDialog = new AlertDialog.Builder(this)
                     .setTitle("CET6 有新版本")
                     .setMessage(explanation)
-                    .setNegativeButton("稍后", null)
+                    .setNegativeButton("稍后", (dialog, button) -> defer.run())
+                    .setOnCancelListener(dialog -> defer.run())
                     .setPositiveButton("下载安装包", (dialog, button) -> {
+                        defer.run();
                         try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(download))); }
                         catch (ActivityNotFoundException e) { notice("找不到可下载安装包的浏览器。"); }
                     }).create();
-                updateDialog.setOnDismissListener(dialog -> updateDialog = null);
+                updateDialog.setOnDismissListener(dialog -> {
+                    updateDialog = null;
+                    planUpdateCheck(UPDATE_INTERVAL);
+                });
                 updateDialog.show();
             });
         });
@@ -492,6 +538,8 @@ public final class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        foreground = false;
+        updateTimer.removeCallbacks(automaticUpdateCheck);
         syncRequests.shutdownNow();
         updateRequests.shutdownNow();
         if (updateDialog != null) updateDialog.dismiss();
