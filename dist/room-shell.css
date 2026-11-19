@@ -77,7 +77,59 @@
 [data-theme="dark"] .analyticsHeat .heatCell:is(:hover,[aria-pressed="true"]){border-color:#89b59d}
 [data-theme="dark"] .analyticsHeat .heatCell:is(:focus-visible,[aria-pressed="true"]){outline:2px solid #a9d8bb;outline-offset:1px}
 [data-theme="dark"] :is(.paperPane canvas,.paperPane iframe){color-scheme:light}
-[data-theme="dark"] #siteSettings::backdrop{background:#0009}
+[data-theme="dark"] dialog::backdrop{background:#0a1410b3}
+
+:root[data-theme="dark"]{
+  --dark-panel:#1f2c27;
+  --dark-inset:#273a31;
+  --dark-fill:#304b3e;
+  --dark-border:#4c6859;
+  --dark-text:#e1eee6;
+  --dark-secondary:#b5c9be;
+  --dark-accent:#afdcbd;
+  --dark-accent-ink:#153829;
+  --dark-caution:#48362b;
+  --dark-caution-text:#f2d6a8
+}
+[data-theme="dark"] #wordQuestionChat>div{
+  background:var(--dark-inset);color:var(--dark-text);border:1px solid var(--dark-border)
+}
+[data-theme="dark"] #wordQuestionChat>div:nth-child(odd){background:var(--dark-fill)}
+[data-theme="dark"] #wordQuestionChat b{color:var(--dark-accent)}
+[data-theme="dark"] :is(.practicePassage,.sizeMeta span,.handbookEssays .handbookExample small,.vocab .note){
+  background:var(--dark-inset);color:var(--dark-text)
+}
+[data-theme="dark"] :is(.sizeMeta,.sizeProgress,.scoreBig span,.handbookCard .gloss,.handbookCard .note,.vrow .num,.cycleSteps span:not(.current,.complete),footer){
+  color:var(--dark-secondary)
+}
+[data-theme="dark"] :is(#handbookCount,.quizProgress,.sizeEstimate,.definition,.scoreTable .good){
+  color:var(--dark-accent)
+}
+[data-theme="dark"] :is(.scoreTable .bad,#vnotice){color:#f0c3ac}
+[data-theme="dark"] .quizQuestion mark,
+[data-theme="dark"] .sizeRow button[aria-pressed="true"]{
+  background:var(--dark-accent);color:var(--dark-accent-ink)
+}
+[data-theme="dark"] #training .spellingHint{
+  background:var(--dark-caution);color:var(--dark-caution-text)!important
+}
+
+[data-theme="dark"] :is(.vbar,.vrow,.results details){background:var(--dark-panel);color:var(--dark-text)}
+[data-theme="dark"] :is(.vrow input,.vrow select,.answerPane textarea,.qrow select){
+  background:var(--dark-inset);color:var(--dark-text);border-color:var(--dark-border)
+}
+[data-theme="dark"] :is(.vrow input,.vrow select):disabled{background:var(--dark-panel);color:var(--dark-secondary)}
+[data-theme="dark"] :is(#paperScroller,#audioPanel,.groupLabel){background:var(--dark-inset);color:var(--dark-text)}
+[data-theme="dark"] :is(.qhead label,.setup p,.load){color:var(--dark-secondary)}
+[data-theme="dark"] #stages span{color:var(--dark-secondary)}
+[data-theme="dark"] #stages .done,
+[data-theme="dark"] .keygrid div{background:var(--dark-fill);color:var(--dark-text)}
+[data-theme="dark"] #stages .current,
+[data-theme="dark"] #answerArea .choices .chosen{background:var(--dark-accent);color:var(--dark-accent-ink)}
+[data-theme="dark"] .keygrid .wrong,
+[data-theme="dark"] #notice:not(:empty){background:var(--dark-caution);color:var(--dark-caution-text)}
+[data-theme="dark"] :is(#volume,progress){accent-color:var(--dark-accent)}
+[data-theme="dark"] :where(button,a,summary):focus-visible{outline:2px solid var(--dark-accent);outline-offset:2px}
 @media(max-width:600px){#siteSettings{padding:14px 16px}.settingRow{min-height:42px}}
 
 /* Match ID-level training styles as well as field classes on the other pages. */
