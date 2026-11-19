@@ -1,7 +1,7 @@
 import {dayKey,grade,passedToday,prepareThree,recordStage,selectThreeWords,normalize,selectPassedWords,canSpotCheck,recordSpotCheck,needsSpellingAid,spellingMatches,recordSpellingAid} from './learning-core.mjs?v=6';
 import {planTraining,attachAnswerTiming} from './adaptive-training.mjs?v=6';
 import {harderOptions,contrastCandidates} from './word-contrasts.mjs?v=10';
-import {partOfSpeechHTML,morphologyHTML,wordFamilyHTML,spellingAlternative,confusionHTML,confusionComparisonHTML,findMistakenWord} from './feedback-notes.mjs?v=20';
+import {partOfSpeechHTML,morphologyHTML,wordFamilyHTML,spellingAlternative,confusionHTML,confusionComparisonHTML,findMistakenWord} from './feedback-notes.mjs?v=26';
 import {initWordQuestions} from './word-questions.mjs?v=24';
 import {playAnswerSound} from './answer-sounds.mjs';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};

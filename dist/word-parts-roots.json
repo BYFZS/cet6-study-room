@@ -589,19 +589,6 @@
     ],
     "note": "表示无生命的，也可指缺少活力。"
   },
-  "requirement": {
-    "parts": [
-      {
-        "form": "require",
-        "meaning": "需要、要求"
-      },
-      {
-        "form": "-ment",
-        "meaning": "表示事物或结果的名词后缀"
-      }
-    ],
-    "note": "拼写保留 require 的词尾 e。合起来表示要求或必要条件。"
-  },
   "usable": {
     "parts": [
       {
@@ -878,19 +865,6 @@
     ],
     "note": "指某一比例高得或低得不相称。"
   },
-  "regardless of": {
-    "parts": [
-      {
-        "form": "regard",
-        "meaning": "注意、顾及"
-      },
-      {
-        "form": "-less",
-        "meaning": "没有、不顾"
-      }
-    ],
-    "note": "regardless of 后接不影响行动的因素。"
-  },
   "self-reliance": {
     "parts": [
       {
@@ -981,23 +955,6 @@
       }
     ],
     "note": "bureaucratic procedures 指繁复的官僚程序。"
-  },
-  "financial backing": {
-    "parts": [
-      {
-        "form": "finance",
-        "meaning": "资金、财务"
-      },
-      {
-        "form": "-ial",
-        "meaning": "常构成与……有关的形容词"
-      },
-      {
-        "form": "backing",
-        "meaning": "支持"
-      }
-    ],
-    "note": "整个短语表示资金支持。"
   },
   "frustration": {
     "parts": [
@@ -1327,21 +1284,2607 @@
     ],
     "note": "global 指全球范围内的。"
   },
-  "scientific research": {
+  "situated": {
     "parts": [
       {
-        "form": "science",
-        "meaning": "科学"
+        "form": "situate",
+        "meaning": "安置；使处于"
       },
       {
-        "form": "-ific",
-        "meaning": "形容词形式的一部分"
+        "form": "-ed",
+        "meaning": "过去分词词尾，这里作形容词"
       },
       {
-        "form": "research",
-        "meaning": "研究"
+        "form": "situs",
+        "meaning": "拉丁语，地点、位置"
       }
     ],
-    "note": "整条考常用搭配，scientific research 为科学研究。"
+    "source": "https://ahdictionary.com/word/search.html?q=situate",
+    "note": "be situated near 表示位于……附近。其动词 situate 经拉丁语 situāre（安置）追溯到 situs（位置）。"
+  },
+  "situate": {
+    "parts": [
+      {
+        "form": "situāre",
+        "meaning": "中世纪拉丁语，安置、使处于"
+      },
+      {
+        "form": "situs",
+        "meaning": "拉丁语，位置、地点"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=situate"
+  },
+  "situation": {
+    "parts": [
+      {
+        "form": "situatio",
+        "meaning": "中世纪拉丁语，位置、处境"
+      },
+      {
+        "form": "situāre",
+        "meaning": "安置、使处于"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?id=S5474100"
+  },
+  "provide": {
+    "parts": [
+      {
+        "form": "prōvidēre",
+        "meaning": "拉丁语，预先看见、作准备"
+      },
+      {
+        "form": "prō-",
+        "meaning": "向前；预先"
+      },
+      {
+        "form": "vidēre",
+        "meaning": "看见"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=provide"
+  },
+  "improve": {
+    "parts": [
+      {
+        "form": "emprouer",
+        "meaning": "古法语，获利、使有益"
+      }
+    ],
+    "note": "常用 improve on a previous result 表示超过之前的成果。",
+    "source": "https://ahdictionary.com/word/search.html?q=improve"
+  },
+  "avoid": {
+    "parts": [
+      {
+        "form": "evuider",
+        "meaning": "古法语，清空、避开"
+      }
+    ],
+    "note": "avoid 后可直接接名词或动词 -ing 形式，如 avoid making mistakes。",
+    "source": "https://ahdictionary.com/word/search.html?q=avoid"
+  },
+  "likely": {
+    "parts": [
+      {
+        "form": "like",
+        "meaning": "相像的；旧用法含适合、可能之意"
+      },
+      {
+        "form": "-ly",
+        "meaning": "构成形容词的词尾"
+      }
+    ],
+    "note": "likely 既可作形容词，也可作副词。如 be likely to do 和 will likely do。"
+  },
+  "concern": {
+    "parts": [
+      {
+        "form": "concernere",
+        "meaning": "拉丁语，混合、涉及"
+      }
+    ],
+    "note": "常见 be concerned about 是担心，be concerned with 是与……有关。",
+    "source": "https://ahdictionary.com/word/search.html?q=concern"
+  },
+  "benefit": {
+    "parts": [
+      {
+        "form": "bene",
+        "meaning": "拉丁语，好、善"
+      },
+      {
+        "form": "factum",
+        "meaning": "拉丁语，所做的事"
+      }
+    ],
+    "note": "可联想有益之举，现代常用 benefit from 表示从……受益。",
+    "source": "https://ahdictionary.com/word/search.html?q=benefit"
+  },
+  "evidence": {
+    "parts": [
+      {
+        "form": "evident",
+        "meaning": "明显的"
+      },
+      {
+        "form": "-ence",
+        "meaning": "构成名词的词尾"
+      }
+    ],
+    "note": "evident 历史上与拉丁语 vidēre（看见）相关。"
+  },
+  "despite": {
+    "parts": [
+      {
+        "form": "despit",
+        "meaning": "古法语，轻蔑"
+      }
+    ],
+    "note": "现代用作介词表示尽管，后接名词、代词或动词 -ing 形式。",
+    "source": "https://ahdictionary.com/word/search.html?q=despite",
+    "heading": "词源和用法"
+  },
+  "affect": {
+    "parts": [
+      {
+        "form": "afficere",
+        "meaning": "拉丁语，作用于、影响"
+      },
+      {
+        "form": "af-",
+        "meaning": "ad- 在 f 前的变体"
+      },
+      {
+        "form": "facere",
+        "meaning": "做、使发生"
+      }
+    ],
+    "note": "这里练习动词 affect，常见含义是影响。",
+    "source": "https://ahdictionary.com/word/search.html?q=affect"
+  },
+  "lack": {
+    "parts": [
+      {
+        "form": "lack",
+        "meaning": "现代英语中的基础词，可作名词或动词"
+      }
+    ],
+    "note": "a lack of time 是缺乏时间，lack time 用作动词。",
+    "heading": "词形与用法"
+  },
+  "assume": {
+    "parts": [
+      {
+        "form": "assūmere",
+        "meaning": "拉丁语，拿取、接受"
+      },
+      {
+        "form": "as-",
+        "meaning": "ad- 在 s 前的变体"
+      },
+      {
+        "form": "sūmere",
+        "meaning": "拿取"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=assume"
+  },
+  "assumption": {
+    "parts": [
+      {
+        "form": "assumptio",
+        "meaning": "拉丁语，接受或承担"
+      },
+      {
+        "form": "assumpt-",
+        "meaning": "assume 的拉丁语分词词干"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词词尾"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=assumption"
+  },
+  "maintain": {
+    "parts": [
+      {
+        "form": "main",
+        "meaning": "古法语，手"
+      },
+      {
+        "form": "tenir",
+        "meaning": "古法语，握住、保持"
+      }
+    ],
+    "note": "现代动词可表示维持，也可表示坚持主张。",
+    "source": "https://ahdictionary.com/word/search.html?q=maintain"
+  },
+  "maintenance": {
+    "parts": [
+      {
+        "form": "maintain",
+        "meaning": "维持、维护"
+      },
+      {
+        "form": "-ance",
+        "meaning": "名词词尾；词干拼写变为 mainten-"
+      }
+    ],
+    "note": "equipment maintenance 指设备维护。"
+  },
+  "approach": {
+    "parts": [
+      {
+        "form": "ap-",
+        "meaning": "历史上 ad- 的变体，向、靠近"
+      },
+      {
+        "form": "proche",
+        "meaning": "古法语，近"
+      }
+    ],
+    "note": "可作动词表示靠近，也可作名词表示处理问题的方法。",
+    "source": "https://ahdictionary.com/word/search.html?q=approach"
+  },
+  "significant": {
+    "parts": [
+      {
+        "form": "significāre",
+        "meaning": "拉丁语，表示、意指"
+      },
+      {
+        "form": "-ant",
+        "meaning": "来源于拉丁语分词的形容词词尾"
+      }
+    ],
+    "note": "现代常表示重要的，或幅度显著的。",
+    "source": "https://ahdictionary.com/word/search.html?q=significant"
+  },
+  "account": {
+    "parts": [
+      {
+        "form": "acont",
+        "meaning": "古法语，账目、计数"
+      }
+    ],
+    "note": "动词短语 account for 可表示解释原因，也可表示占某一比例。",
+    "source": "https://ahdictionary.com/word/search.html?q=account"
+  },
+  "decline": {
+    "parts": [
+      {
+        "form": "dēclīnāre",
+        "meaning": "拉丁语，向下弯或偏离"
+      },
+      {
+        "form": "dē-",
+        "meaning": "向下、离开"
+      },
+      {
+        "form": "clīnāre",
+        "meaning": "倾斜"
+      }
+    ],
+    "note": "可表示数量下降，也可表示婉拒邀请。",
+    "source": "https://ahdictionary.com/word/search.html?q=decline"
+  },
+  "absence": {
+    "parts": [
+      {
+        "form": "absentia",
+        "meaning": "拉丁语，不在场"
+      },
+      {
+        "form": "abs-",
+        "meaning": "离开"
+      }
+    ],
+    "note": "absence from class 是缺课，in the absence of 可表示在缺少……的情况下。",
+    "source": "https://ahdictionary.com/word/search.html?q=absence"
+  },
+  "absent": {
+    "parts": [
+      {
+        "form": "absēns",
+        "meaning": "拉丁语，离开、不在场"
+      },
+      {
+        "form": "abs-",
+        "meaning": "离开"
+      }
+    ],
+    "note": "absent 是形容词，常说 be absent from class；absence 是名词。",
+    "source": "https://ahdictionary.com/word/search.html?q=absent"
+  },
+  "excused": {
+    "parts": [
+      {
+        "form": "excuse",
+        "meaning": "原谅；准许免除"
+      },
+      {
+        "form": "-ed",
+        "meaning": "过去分词词尾"
+      }
+    ],
+    "note": "an excused absence 是获准缺席。"
+  },
+  "peer": {
+    "parts": [
+      {
+        "form": "pār",
+        "meaning": "拉丁语，同等的"
+      }
+    ],
+    "note": "这里是名词，指同龄或地位相当的人。peer pressure 是同伴压力。",
+    "source": "https://ahdictionary.com/word/search.html?q=peer"
+  },
+  "academic": {
+    "parts": [
+      {
+        "form": "academy",
+        "meaning": "学院；学术机构"
+      },
+      {
+        "form": "-ic",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "从 academy 到 academic，词干也随之变形。"
+  },
+  "crisis": {
+    "parts": [
+      {
+        "form": "krisis",
+        "meaning": "希腊语，判断、决定；转折"
+      }
+    ],
+    "note": "复数写作 crises，常见搭配 face a crisis。",
+    "source": "https://ahdictionary.com/word/search.html?q=crisis"
+  },
+  "passion": {
+    "parts": [
+      {
+        "form": "passiō",
+        "meaning": "拉丁语，受苦、经历"
+      }
+    ],
+    "note": "现代常表示强烈热情，如 a passion for science。",
+    "source": "https://ahdictionary.com/word/search.html?q=passion"
+  },
+  "pursue": {
+    "parts": [
+      {
+        "form": "poursuivre",
+        "meaning": "古法语，追赶、继续"
+      },
+      {
+        "form": "suivre",
+        "meaning": "跟随"
+      }
+    ],
+    "note": "pursue a career 指从事某一职业，pursue a goal 指追求目标。",
+    "source": "https://ahdictionary.com/word/search.html?q=pursue"
+  },
+  "pursuit": {
+    "parts": [
+      {
+        "form": "pursuite",
+        "meaning": "古法语，追赶或追求"
+      }
+    ],
+    "note": "和 pursue 属同一词族，in pursuit of 指为了追求……。",
+    "source": "https://ahdictionary.com/word/search.html?q=pursuit"
+  },
+  "perpetuate": {
+    "parts": [
+      {
+        "form": "perpetual",
+        "meaning": "持续不断的"
+      },
+      {
+        "form": "-ate",
+        "meaning": "用于构成动词"
+      }
+    ],
+    "note": "perpetuate a myth 指使某个错误观念一直流传。"
+  },
+  "exploit": {
+    "parts": [
+      {
+        "form": "esploit",
+        "meaning": "古法语，成就、结果"
+      }
+    ],
+    "note": "动词可表示利用资源，也可表示剥削某人。",
+    "source": "https://ahdictionary.com/word/search.html?q=exploit"
+  },
+  "community": {
+    "parts": [
+      {
+        "form": "commūnis",
+        "meaning": "拉丁语，共同的、共享的"
+      },
+      {
+        "form": "commūnitās",
+        "meaning": "共同体、共同关系"
+      }
+    ],
+    "note": "a local community 是当地社区。",
+    "source": "https://ahdictionary.com/word/search.html?q=community"
+  },
+  "patron": {
+    "parts": [
+      {
+        "form": "patrōnus",
+        "meaning": "拉丁语，保护人、庇护者"
+      }
+    ],
+    "note": "现代可指艺术资助者，也可指商店、餐厅等的顾客。",
+    "source": "https://ahdictionary.com/word/search.html?q=patron"
+  },
+  "archive": {
+    "parts": [
+      {
+        "form": "arkheion",
+        "meaning": "希腊语，官署；也指官方文档保存处"
+      }
+    ],
+    "note": "archive 作动词可表示把资料归档。",
+    "source": "https://ahdictionary.com/word/search.html?q=archive"
+  },
+  "ancestry": {
+    "parts": [
+      {
+        "form": "ancestor",
+        "meaning": "祖先"
+      },
+      {
+        "form": "-y",
+        "meaning": "这里构成名词，表示血统或祖先群体"
+      }
+    ]
+  },
+  "discourse": {
+    "parts": [
+      {
+        "form": "discursus",
+        "meaning": "拉丁语，来回奔走；后发展出谈论义"
+      },
+      {
+        "form": "dis-",
+        "meaning": "分开、向不同方向"
+      },
+      {
+        "form": "currere",
+        "meaning": "跑"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=discourse"
+  },
+  "synthetic": {
+    "parts": [
+      {
+        "form": "syn-",
+        "meaning": "希腊语结合形式，一起"
+      },
+      {
+        "form": "thesis",
+        "meaning": "放置"
+      }
+    ],
+    "note": "synthetic 可指合成的、人工制造的。可结合同族词 synthesis 记忆。",
+    "source": "https://ahdictionary.com/word/search.html?q=synthetic"
+  },
+  "contaminated": {
+    "parts": [
+      {
+        "form": "contaminate",
+        "meaning": "污染"
+      },
+      {
+        "form": "-ed",
+        "meaning": "过去分词词尾，可表示已受影响的状态"
+      }
+    ]
+  },
+  "hamper": {
+    "parts": [
+      {
+        "form": "hamper",
+        "meaning": "独立作为动词，表示阻碍"
+      }
+    ],
+    "note": "可说 hamper progress（阻碍进展）。同形名词 hamper 表示带盖的大篮子，单独记。",
+    "heading": "词形与用法"
+  },
+  "chronic": {
+    "parts": [
+      {
+        "form": "khronos",
+        "meaning": "希腊语，时间"
+      },
+      {
+        "form": "-ic",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "chronic illness 是慢性病，也可形容长期反复存在的问题。",
+    "source": "https://ahdictionary.com/word/search.html?q=chronic"
+  },
+  "official": {
+    "parts": [
+      {
+        "form": "officium",
+        "meaning": "拉丁语，职责、职务"
+      },
+      {
+        "form": "officiālis",
+        "meaning": "有关职务的"
+      }
+    ],
+    "note": "official 可作形容词，a government official 里的 official 是名词。",
+    "source": "https://ahdictionary.com/word/search.html?q=official"
+  },
+  "deplore": {
+    "parts": [
+      {
+        "form": "dēplōrāre",
+        "meaning": "拉丁语，哀悼、深感悲痛"
+      },
+      {
+        "form": "dē-",
+        "meaning": "这里加强语气"
+      },
+      {
+        "form": "plōrāre",
+        "meaning": "哭泣、哀号"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=deplore"
+  },
+  "suffer": {
+    "parts": [
+      {
+        "form": "sufferre",
+        "meaning": "拉丁语，承受"
+      },
+      {
+        "form": "suf-",
+        "meaning": "sub- 在 f 前的变体"
+      },
+      {
+        "form": "ferre",
+        "meaning": "带、承载"
+      }
+    ],
+    "note": "suffer from 后常接疾病或长期困扰。",
+    "source": "https://ahdictionary.com/word/search.html?q=suffer"
+  },
+  "urge": {
+    "parts": [
+      {
+        "form": "urgēre",
+        "meaning": "拉丁语，驱赶、催促"
+      }
+    ],
+    "note": "urge someone to do 表示敦促某人做某事。",
+    "source": "https://ahdictionary.com/word/search.html?q=urge"
+  },
+  "attend": {
+    "parts": [
+      {
+        "form": "attendere",
+        "meaning": "拉丁语，伸向、注意"
+      },
+      {
+        "form": "at-",
+        "meaning": "ad- 在 t 前的变体"
+      },
+      {
+        "form": "tendere",
+        "meaning": "伸、拉紧"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=attend"
+  },
+  "primary": {
+    "parts": [
+      {
+        "form": "prīmārius",
+        "meaning": "拉丁语，首要的"
+      },
+      {
+        "form": "prīmus",
+        "meaning": "第一、首要"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=primary"
+  },
+  "harm": {
+    "parts": [
+      {
+        "form": "hearm",
+        "meaning": "古英语，伤害、悲痛"
+      }
+    ],
+    "note": "do harm to 是对……造成伤害。",
+    "source": "https://ahdictionary.com/word/search.html?q=harm"
+  },
+  "meanwhile": {
+    "parts": [
+      {
+        "form": "mean",
+        "meaning": "这里是居中的、中间的"
+      },
+      {
+        "form": "while",
+        "meaning": "一段时间"
+      }
+    ],
+    "note": "现代多作副词，表示与此同时。",
+    "heading": "复合词构成"
+  },
+  "signal": {
+    "parts": [
+      {
+        "form": "signum",
+        "meaning": "拉丁语，记号、标记"
+      }
+    ],
+    "note": "常见 a warning signal 和 signal a change。",
+    "source": "https://ahdictionary.com/word/search.html?q=signal"
+  },
+  "challenge": {
+    "parts": [
+      {
+        "form": "chalenge",
+        "meaning": "古法语，指责、质疑"
+      }
+    ],
+    "note": "a challenge to authority 指对权威的挑战。",
+    "source": "https://ahdictionary.com/word/search.html?q=challenge"
+  },
+  "policy": {
+    "parts": [
+      {
+        "form": "politeia",
+        "meaning": "希腊语，政治组织、政体"
+      }
+    ],
+    "note": "这里指政策。表示保险单的 policy 属另一词源，用法单独记。",
+    "source": "https://ahdictionary.com/word/search.html?q=policy"
+  },
+  "punish": {
+    "parts": [
+      {
+        "form": "pūnīre",
+        "meaning": "拉丁语，惩罚"
+      },
+      {
+        "form": "poena",
+        "meaning": "拉丁语，惩罚、罚金"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=punish"
+  },
+  "pressure": {
+    "parts": [
+      {
+        "form": "press",
+        "meaning": "按、压"
+      },
+      {
+        "form": "-ure",
+        "meaning": "名词词尾"
+      }
+    ],
+    "note": "be under pressure 表示承受压力。"
+  },
+  "channel": {
+    "parts": [
+      {
+        "form": "canālis",
+        "meaning": "拉丁语，水管、沟渠"
+      }
+    ],
+    "note": "从水道延伸到电视频道、沟通渠道，也可作动词表示引导。",
+    "source": "https://ahdictionary.com/word/search.html?q=channel"
+  },
+  "determine": {
+    "parts": [
+      {
+        "form": "dētermināre",
+        "meaning": "拉丁语，划定范围"
+      },
+      {
+        "form": "terminus",
+        "meaning": "界限、终点"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=determine"
+  },
+  "fascinate": {
+    "parts": [
+      {
+        "form": "fascināre",
+        "meaning": "拉丁语，施魔法、迷住"
+      }
+    ],
+    "note": "可以说 be fascinated by something，表示被吸引或对其着迷。",
+    "source": "https://ahdictionary.com/word/search.html?q=fascinate"
+  },
+  "decade": {
+    "parts": [
+      {
+        "form": "dekas",
+        "meaning": "希腊语，十个一组"
+      },
+      {
+        "form": "deka",
+        "meaning": "十"
+      }
+    ],
+    "note": "表示十年，如 over the past decade。",
+    "source": "https://ahdictionary.com/word/search.html?q=decade"
+  },
+  "career": {
+    "parts": [
+      {
+        "form": "carrière",
+        "meaning": "法语，赛道、历程"
+      }
+    ],
+    "note": "现代常表示职业生涯，career path 是职业发展路径。"
+  },
+  "principle": {
+    "parts": [
+      {
+        "form": "principium",
+        "meaning": "拉丁语，开端、基础"
+      }
+    ],
+    "note": "a basic principle 是基本原则。principal 作形容词时表示主要的。",
+    "source": "https://ahdictionary.com/word/search.html?q=principle"
+  },
+  "stun": {
+    "parts": [
+      {
+        "form": "estoner",
+        "meaning": "古法语，使震惊"
+      }
+    ],
+    "note": "同族词常见 stunned（感到震惊）与 stunning（令人惊叹）。",
+    "source": "https://ahdictionary.com/word/search.html?q=stun"
+  },
+  "survey": {
+    "parts": [
+      {
+        "form": "sur-",
+        "meaning": "古法语，在上方"
+      },
+      {
+        "form": "veoir",
+        "meaning": "古法语，看"
+      }
+    ],
+    "note": "conduct a survey 是进行调查；动词还可表示审视或勘测。",
+    "source": "https://ahdictionary.com/word/search.html?q=survey"
+  },
+  "regard": {
+    "parts": [
+      {
+        "form": "regarder",
+        "meaning": "法语，看、注视"
+      }
+    ],
+    "note": "regard A as B 表示把 A 看作 B。"
+  },
+  "priority": {
+    "parts": [
+      {
+        "form": "prior",
+        "meaning": "先前的、优先的"
+      },
+      {
+        "form": "-ity",
+        "meaning": "名词词尾"
+      }
+    ],
+    "note": "a top priority 指最优先的事项。"
+  },
+  "advocate": {
+    "parts": [
+      {
+        "form": "advocāre",
+        "meaning": "拉丁语，召请到身边"
+      },
+      {
+        "form": "ad-",
+        "meaning": "向、到"
+      },
+      {
+        "form": "vocāre",
+        "meaning": "呼叫"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=advocate"
+  },
+  "compelling": {
+    "parts": [
+      {
+        "form": "compel",
+        "meaning": "迫使；驱使"
+      },
+      {
+        "form": "-ing",
+        "meaning": "现在分词词尾，在这里构成形容词"
+      }
+    ],
+    "note": "a compelling argument 指有说服力的论点。"
+  },
+  "motivation": {
+    "parts": [
+      {
+        "form": "motivate",
+        "meaning": "激励、给……动机"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词词尾，拼写去掉 motivate 的词尾 e"
+      }
+    ]
+  },
+  "promote": {
+    "parts": [
+      {
+        "form": "prōmovēre",
+        "meaning": "拉丁语，向前推动"
+      },
+      {
+        "form": "prō-",
+        "meaning": "向前"
+      },
+      {
+        "form": "movēre",
+        "meaning": "移动"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=promote"
+  },
+  "stable": {
+    "parts": [
+      {
+        "form": "stābilis",
+        "meaning": "拉丁语，稳固的"
+      },
+      {
+        "form": "stāre",
+        "meaning": "站立"
+      }
+    ],
+    "note": "这里是形容词「稳定的」，指马厩的名词 stable 要按另一义项记。",
+    "source": "https://ahdictionary.com/word/search.html?q=stable"
+  },
+  "loan": {
+    "parts": [
+      {
+        "form": "lán",
+        "meaning": "古诺尔斯语，借用、贷款"
+      }
+    ],
+    "note": "take out a loan 是办理贷款；loan 作动词强调借出。"
+  },
+  "rent": {
+    "parts": [
+      {
+        "form": "rente",
+        "meaning": "古法语，收入、定期付款"
+      }
+    ],
+    "note": "租用或出租都可用 rent，要结合宾语和介词判断。",
+    "source": "https://ahdictionary.com/word/search.html?q=rent"
+  },
+  "aspirant": {
+    "parts": [
+      {
+        "form": "aspire",
+        "meaning": "渴望、立志"
+      },
+      {
+        "form": "-ant",
+        "meaning": "可用来指做某事的人"
+      }
+    ],
+    "note": "an aspirant to high office 是有志于担任高职的人。"
+  },
+  "well-off": {
+    "parts": [
+      {
+        "form": "well",
+        "meaning": "好、在良好状况下"
+      },
+      {
+        "form": "off",
+        "meaning": "在 well-off 中和 well 构成固定表达"
+      }
+    ],
+    "note": "整体指经济宽裕的，如 a well-off family。",
+    "heading": "复合词构成"
+  },
+  "potential": {
+    "parts": [
+      {
+        "form": "potentia",
+        "meaning": "拉丁语，能力、力量"
+      },
+      {
+        "form": "potēns",
+        "meaning": "有能力的"
+      }
+    ],
+    "note": "形容词是潜在的；名词是潜力，常见 reach one's potential。",
+    "source": "https://ahdictionary.com/word/search.html?q=potential"
+  },
+  "sacrifice": {
+    "parts": [
+      {
+        "form": "sacer",
+        "meaning": "拉丁语，神圣的"
+      },
+      {
+        "form": "facere",
+        "meaning": "做"
+      }
+    ],
+    "note": "现代也指为了更重要的事牺牲时间、利益等。",
+    "source": "https://ahdictionary.com/word/search.html?q=sacrifice"
+  },
+  "leisure": {
+    "parts": [
+      {
+        "form": "leisir",
+        "meaning": "古法语，获准、有空"
+      }
+    ],
+    "note": "at leisure 指空闲时，leisure activities 是休闲活动。",
+    "source": "https://ahdictionary.com/word/search.html?q=leisure"
+  },
+  "municipal": {
+    "parts": [
+      {
+        "form": "mūnicipium",
+        "meaning": "拉丁语，自治市"
+      }
+    ],
+    "note": "municipal services 是市政服务。",
+    "source": "https://ahdictionary.com/word/search.html?q=municipal"
+  },
+  "budget": {
+    "parts": [
+      {
+        "form": "bougette",
+        "meaning": "古法语，小袋子"
+      }
+    ],
+    "note": "现代常见 on a tight budget 指预算很紧。",
+    "source": "https://ahdictionary.com/word/search.html?q=budget"
+  },
+  "assault": {
+    "parts": [
+      {
+        "form": "assalt",
+        "meaning": "古法语，攻击"
+      }
+    ],
+    "note": "可作名词或动词，常指袭击。",
+    "source": "https://ahdictionary.com/word/search.html?q=assault"
+  },
+  "mediate": {
+    "parts": [
+      {
+        "form": "mediāre",
+        "meaning": "拉丁语，居中、调停"
+      },
+      {
+        "form": "medius",
+        "meaning": "中间的"
+      }
+    ],
+    "note": "mediate a dispute 是调解争端。",
+    "source": "https://ahdictionary.com/word/search.html?q=mediate"
+  },
+  "offering": {
+    "parts": [
+      {
+        "form": "offer",
+        "meaning": "提供、提出"
+      },
+      {
+        "form": "-ing",
+        "meaning": "这里表示所提供的东西或行为"
+      }
+    ],
+    "note": "a new product offering 指新推出的产品。"
+  },
+  "institution": {
+    "parts": [
+      {
+        "form": "īnstitūtiō",
+        "meaning": "拉丁语，设立、安排"
+      },
+      {
+        "form": "instituere",
+        "meaning": "设立"
+      }
+    ],
+    "note": "既可指大学等机构，也可指长期形成的社会制度。",
+    "source": "https://ahdictionary.com/word/search.html?q=institution"
+  },
+  "branch": {
+    "parts": [
+      {
+        "form": "branche",
+        "meaning": "古法语，枝条"
+      }
+    ],
+    "note": "从树枝引申出机构分部、学科分支等义。",
+    "source": "https://ahdictionary.com/word/search.html?q=branch"
+  },
+  "outreach": {
+    "parts": [
+      {
+        "form": "out",
+        "meaning": "向外"
+      },
+      {
+        "form": "reach",
+        "meaning": "接触、触及"
+      }
+    ],
+    "note": "community outreach 指机构主动联系或服务社区。"
+  },
+  "depressed": {
+    "parts": [
+      {
+        "form": "depress",
+        "meaning": "压低；使沮丧"
+      },
+      {
+        "form": "-ed",
+        "meaning": "过去分词词尾"
+      }
+    ],
+    "note": "a depressed economy 是萧条的经济，feel depressed 是感到抑郁或沮丧。"
+  },
+  "surrounding": {
+    "parts": [
+      {
+        "form": "surround",
+        "meaning": "围绕"
+      },
+      {
+        "form": "-ing",
+        "meaning": "现在分词词尾，这里用作形容词"
+      }
+    ],
+    "note": "the surrounding area 是周边地区，surroundings 是周围环境。"
+  },
+  "hub": {
+    "parts": [
+      {
+        "form": "hub",
+        "meaning": "词源不详；原指轮毂"
+      }
+    ],
+    "note": "现代可指枢纽、中心，如 a transport hub（交通枢纽）。",
+    "heading": "词形与用法"
+  },
+  "vibrant": {
+    "parts": [
+      {
+        "form": "vibrāre",
+        "meaning": "拉丁语，振动、摆动"
+      },
+      {
+        "form": "-ant",
+        "meaning": "这里构成形容词"
+      }
+    ],
+    "note": "vibrant colours 是鲜艳的颜色，a vibrant city 是充满活力的城市。",
+    "source": "https://ahdictionary.com/word/search.html?q=vibrant"
+  },
+  "agency": {
+    "parts": [
+      {
+        "form": "agent",
+        "meaning": "代理人；发挥作用的人或事物"
+      },
+      {
+        "form": "-cy",
+        "meaning": "名词构词中的词尾成分"
+      }
+    ],
+    "note": "a travel agency 是旅行社；human agency 指人的自主行动能力。"
+  },
+  "pioneer": {
+    "parts": [
+      {
+        "form": "pionnier",
+        "meaning": "法语，步兵；后指开路的人"
+      }
+    ],
+    "note": "pioneer 作动词可表示率先开创。"
+  },
+  "nurture": {
+    "parts": [
+      {
+        "form": "norture",
+        "meaning": "古法语，养育、教养"
+      }
+    ],
+    "note": "nurture talent 表示培养人才。",
+    "source": "https://ahdictionary.com/word/search.html?q=nurture"
+  },
+  "foster": {
+    "parts": [
+      {
+        "form": "fōstrian",
+        "meaning": "古英语，养育、扶养"
+      }
+    ],
+    "note": "foster cooperation 指促进合作，foster parents 指寄养家庭的父母。",
+    "source": "https://ahdictionary.com/word/search.html?q=foster"
+  },
+  "artifact": {
+    "parts": [
+      {
+        "form": "arte",
+        "meaning": "拉丁语，以技艺、人工制作"
+      },
+      {
+        "form": "factum",
+        "meaning": "做成的东西"
+      }
+    ],
+    "note": "也可拼作 artefact，常见 historical artifacts（历史文物）。",
+    "source": "https://ahdictionary.com/word/search.html?q=artifact"
+  },
+  "vital": {
+    "parts": [
+      {
+        "form": "vīta",
+        "meaning": "拉丁语，生命"
+      },
+      {
+        "form": "-al",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "be vital to 表示对……至关重要。",
+    "source": "https://ahdictionary.com/word/search.html?q=vital"
+  },
+  "afford": {
+    "parts": [
+      {
+        "form": "āforþian",
+        "meaning": "古英语，使能够、提供"
+      }
+    ],
+    "note": "can afford to do 表示承担得起做某事的代价。",
+    "source": "https://ahdictionary.com/word/search.html?q=afford"
+  },
+  "tutor": {
+    "parts": [
+      {
+        "form": "tūtor",
+        "meaning": "拉丁语，保护人、监护人"
+      }
+    ],
+    "note": "现代常指导师或辅导老师，也可作动词表示辅导。",
+    "source": "https://ahdictionary.com/word/search.html?q=tutor"
+  },
+  "bridge": {
+    "parts": [
+      {
+        "form": "brycg",
+        "meaning": "古英语，桥"
+      }
+    ],
+    "note": "bridge a gap 指弥合差距。",
+    "source": "https://ahdictionary.com/word/search.html?q=bridge"
+  },
+  "divide": {
+    "parts": [
+      {
+        "form": "dīvidere",
+        "meaning": "拉丁语，分开"
+      }
+    ],
+    "note": "divide A into B 是把 A 分成若干部分。",
+    "source": "https://ahdictionary.com/word/search.html?q=divide"
+  },
+  "annual": {
+    "parts": [
+      {
+        "form": "annus",
+        "meaning": "拉丁语，年"
+      },
+      {
+        "form": "-al",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=annual"
+  },
+  "boost": {
+    "parts": [
+      {
+        "form": "boost",
+        "meaning": "词源不详；早期指向上推"
+      }
+    ],
+    "note": "可说 boost confidence（增强信心），也可说 a boost in sales（销量提升）。",
+    "heading": "词形与用法"
+  },
+  "convince": {
+    "parts": [
+      {
+        "form": "convincere",
+        "meaning": "拉丁语，驳倒、证实"
+      },
+      {
+        "form": "con-",
+        "meaning": "在这里加强语气"
+      },
+      {
+        "form": "vincere",
+        "meaning": "征服、胜过"
+      }
+    ],
+    "note": "convince someone of something 指使某人确信。",
+    "source": "https://ahdictionary.com/word/search.html?q=convince"
+  },
+  "income": {
+    "parts": [
+      {
+        "form": "in",
+        "meaning": "向内"
+      },
+      {
+        "form": "come",
+        "meaning": "来"
+      }
+    ],
+    "note": "可联想为流入的收入，常见 household income。",
+    "heading": "复合词构成"
+  },
+  "at-risk": {
+    "parts": [
+      {
+        "form": "at risk",
+        "meaning": "处于风险中"
+      }
+    ],
+    "note": "连字符形式常放在名词前，如 at-risk students；表语通常写 are at risk。",
+    "heading": "复合词构成"
+  },
+  "status": {
+    "parts": [
+      {
+        "form": "status",
+        "meaning": "拉丁语，状态、地位"
+      },
+      {
+        "form": "stāre",
+        "meaning": "站立"
+      }
+    ],
+    "note": "social status 是社会地位，application status 是申请状态。",
+    "source": "https://ahdictionary.com/word/search.html?q=status"
+  },
+  "consumer": {
+    "parts": [
+      {
+        "form": "consume",
+        "meaning": "消费、消耗"
+      },
+      {
+        "form": "-er",
+        "meaning": "做某事的人"
+      }
+    ],
+    "note": "consumer spending 是消费者支出。"
+  },
+  "producer": {
+    "parts": [
+      {
+        "form": "produce",
+        "meaning": "生产、制作"
+      },
+      {
+        "form": "-er",
+        "meaning": "表示做某事的人或实体"
+      }
+    ],
+    "note": "a film producer 是电影制片人。"
+  },
+  "gain": {
+    "parts": [
+      {
+        "form": "gagner",
+        "meaning": "古法语，获得、赢得"
+      }
+    ],
+    "note": "gain experience 是积累经验，a gain in efficiency 是效率提高。",
+    "source": "https://ahdictionary.com/word/search.html?q=gain"
+  },
+  "workshop": {
+    "parts": [
+      {
+        "form": "work",
+        "meaning": "工作、制作"
+      },
+      {
+        "form": "shop",
+        "meaning": "作坊"
+      }
+    ],
+    "note": "既可指工场，也可指以实际练习为主的研习班。",
+    "heading": "复合词构成"
+  },
+  "virtual": {
+    "parts": [
+      {
+        "form": "virtuālis",
+        "meaning": "中世纪拉丁语，有效力的"
+      },
+      {
+        "form": "virtūs",
+        "meaning": "力量、才能"
+      }
+    ],
+    "note": "virtual meeting 可指线上会议，a virtual certainty 表示几乎确定的事。",
+    "source": "https://ahdictionary.com/word/search.html?q=virtual"
+  },
+  "ideology": {
+    "parts": [
+      {
+        "form": "ideo-",
+        "meaning": "观念、思想"
+      },
+      {
+        "form": "-logy",
+        "meaning": "研究、体系"
+      }
+    ],
+    "note": "指一套相互关联的思想信念，常见 political ideology。"
+  },
+  "dialogue": {
+    "parts": [
+      {
+        "form": "dia-",
+        "meaning": "希腊语，通过、在……之间"
+      },
+      {
+        "form": "logos",
+        "meaning": "言语、论述"
+      }
+    ],
+    "note": "dialogue 强调交流，可用于 engage in dialogue（开展对话）。",
+    "source": "https://ahdictionary.com/word/search.html?q=dialogue"
+  },
+  "expression": {
+    "parts": [
+      {
+        "form": "express",
+        "meaning": "表达"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词词尾"
+      }
+    ],
+    "note": "facial expression 是面部表情，freedom of expression 是表达自由。"
+  },
+  "preserve": {
+    "parts": [
+      {
+        "form": "praeservāre",
+        "meaning": "拉丁语，预先保护"
+      },
+      {
+        "form": "prae-",
+        "meaning": "预先"
+      },
+      {
+        "form": "servāre",
+        "meaning": "保存、守护"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=preserve"
+  },
+  "creation": {
+    "parts": [
+      {
+        "form": "create",
+        "meaning": "创造"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词词尾，拼写去掉 create 的词尾 e"
+      }
+    ]
+  },
+  "counsel": {
+    "parts": [
+      {
+        "form": "consilium",
+        "meaning": "拉丁语，建议、商议"
+      }
+    ],
+    "note": "可指劝告，也可指法律顾问；counseling 常指咨询辅导。",
+    "source": "https://ahdictionary.com/word/search.html?q=counsel"
+  },
+  "consequence": {
+    "parts": [
+      {
+        "form": "consequī",
+        "meaning": "拉丁语，紧随其后"
+      },
+      {
+        "form": "con-",
+        "meaning": "加强语气"
+      },
+      {
+        "form": "sequī",
+        "meaning": "跟随"
+      }
+    ],
+    "note": "可理解为随之而来的结果，as a consequence 意为因此。",
+    "source": "https://ahdictionary.com/word/search.html?q=consequence"
+  },
+  "medical": {
+    "parts": [
+      {
+        "form": "medic-",
+        "meaning": "来自拉丁语 medicus，医师、医治的"
+      },
+      {
+        "form": "-al",
+        "meaning": "与……有关"
+      }
+    ],
+    "note": "medical care 是医疗照护。",
+    "source": "https://ahdictionary.com/word/search.html?q=medical"
+  },
+  "identify": {
+    "parts": [
+      {
+        "form": "ident-",
+        "meaning": "与同一性、身份有关"
+      },
+      {
+        "form": "-ify",
+        "meaning": "构成动词"
+      }
+    ],
+    "note": "identify a problem 是识别问题，identify with 是认同或产生共鸣。"
+  },
+  "needy": {
+    "parts": [
+      {
+        "form": "need",
+        "meaning": "需要"
+      },
+      {
+        "form": "-y",
+        "meaning": "有……特点的"
+      }
+    ],
+    "note": "the needy 指有经济困难的人。"
+  },
+  "formulate": {
+    "parts": [
+      {
+        "form": "formula",
+        "meaning": "公式；规则；表达方式"
+      },
+      {
+        "form": "-ate",
+        "meaning": "构成动词"
+      }
+    ],
+    "note": "formulate a plan 指制订计划，formulate a question 指组织问题的表述。"
+  },
+  "technician": {
+    "parts": [
+      {
+        "form": "technic-",
+        "meaning": "有关技艺、技术的构词成分"
+      },
+      {
+        "form": "-ian",
+        "meaning": "从事某事的人"
+      }
+    ],
+    "note": "a lab technician 是实验室技术员。"
+  },
+  "consult": {
+    "parts": [
+      {
+        "form": "consultāre",
+        "meaning": "拉丁语，商议、考虑"
+      }
+    ],
+    "note": "consult a doctor 是请教医生，consult a dictionary 是查词典。",
+    "source": "https://ahdictionary.com/word/search.html?q=consult"
+  },
+  "designate": {
+    "parts": [
+      {
+        "form": "dēsignāre",
+        "meaning": "拉丁语，标记、指定"
+      },
+      {
+        "form": "signum",
+        "meaning": "标记"
+      }
+    ],
+    "note": "designate someone as chair 指指定某人担任主席。",
+    "source": "https://ahdictionary.com/word/search.html?q=designate"
+  },
+  "engineer": {
+    "parts": [
+      {
+        "form": "engine",
+        "meaning": "现代词义包括发动机；早期曾指机械装置"
+      },
+      {
+        "form": "-eer",
+        "meaning": "表示从事某事的人"
+      }
+    ],
+    "note": "engineer 可作动词，表示设计、策划。"
+  },
+  "content": {
+    "parts": [
+      {
+        "form": "contentum",
+        "meaning": "拉丁语，所包含的东西"
+      },
+      {
+        "form": "continēre",
+        "meaning": "容纳、包含"
+      }
+    ],
+    "note": "这里的 content 指内容，重音在第一音节。",
+    "source": "https://ahdictionary.com/word/search.html?q=content"
+  },
+  "store": {
+    "parts": [
+      {
+        "form": "estorer",
+        "meaning": "古法语，备置、储备"
+      }
+    ],
+    "note": "store data 指存储数据，storage 是名词。",
+    "source": "https://ahdictionary.com/word/search.html?q=store"
+  },
+  "wipe": {
+    "parts": [
+      {
+        "form": "wīpian",
+        "meaning": "古英语，擦拭"
+      }
+    ],
+    "note": "wipe the screen 是擦屏幕，wipe a drive 则可指清除硬盘数据。",
+    "source": "https://ahdictionary.com/word/search.html?q=wipe"
+  },
+  "directory": {
+    "parts": [
+      {
+        "form": "direct",
+        "meaning": "引导、指示"
+      },
+      {
+        "form": "-ory",
+        "meaning": "构成名词的词尾"
+      }
+    ],
+    "note": "a phone directory 是电话号码簿，在计算机中 directory 指目录。"
+  },
+  "arbitrate": {
+    "parts": [
+      {
+        "form": "arbitrārī",
+        "meaning": "拉丁语，判断、仲裁"
+      },
+      {
+        "form": "arbiter",
+        "meaning": "裁决者"
+      }
+    ],
+    "note": "arbitrate a dispute 是对争议进行仲裁。",
+    "source": "https://ahdictionary.com/word/search.html?q=arbitrate"
+  },
+  "solicitor": {
+    "parts": [
+      {
+        "form": "solicit",
+        "meaning": "请求、征求、招揽"
+      },
+      {
+        "form": "-or",
+        "meaning": "做某事的人"
+      }
+    ],
+    "note": "在英国法律语境中，solicitor 常指事务律师。"
+  },
+  "dispute": {
+    "parts": [
+      {
+        "form": "disputāre",
+        "meaning": "拉丁语，讨论、争辩"
+      },
+      {
+        "form": "dis-",
+        "meaning": "分开"
+      },
+      {
+        "form": "putāre",
+        "meaning": "斟酌、估算"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=dispute"
+  },
+  "escalate": {
+    "parts": [
+      {
+        "form": "escalator",
+        "meaning": "自动扶梯；escalate 由此逆构"
+      }
+    ],
+    "note": "多用于问题、冲突或成本升级，例如 tensions escalated。"
+  },
+  "property": {
+    "parts": [
+      {
+        "form": "proprietās",
+        "meaning": "拉丁语，所有权、专属性"
+      },
+      {
+        "form": "proprius",
+        "meaning": "自己的、固有的"
+      }
+    ],
+    "note": "在科学语境中，property 往往指性质，在法律语境中常指财产。",
+    "source": "https://ahdictionary.com/word/search.html?q=property"
+  },
+  "court": {
+    "parts": [
+      {
+        "form": "cort",
+        "meaning": "古法语，庭院；宫廷"
+      }
+    ],
+    "note": "现代常见 court of law（法庭）和 tennis court（网球场）。",
+    "source": "https://ahdictionary.com/word/search.html?q=court"
+  },
+  "legal": {
+    "parts": [
+      {
+        "form": "lēx / lēgis",
+        "meaning": "拉丁语，法律"
+      },
+      {
+        "form": "-al",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "可表与法律有关，也可表法律允许的。",
+    "source": "https://ahdictionary.com/word/search.html?q=legal"
+  },
+  "function": {
+    "parts": [
+      {
+        "form": "fūnctiō",
+        "meaning": "拉丁语，履行、执行"
+      }
+    ],
+    "note": "the function of a tool 指工具的功能，function as 表示起……作用。",
+    "source": "https://ahdictionary.com/word/search.html?q=function"
+  },
+  "arbitrary": {
+    "parts": [
+      {
+        "form": "arbitrārius",
+        "meaning": "拉丁语，由裁决者决定的"
+      },
+      {
+        "form": "arbiter",
+        "meaning": "裁决者"
+      }
+    ],
+    "note": "现代常形容决定缺乏固定规则或依据。",
+    "source": "https://ahdictionary.com/word/search.html?q=arbitrary"
+  },
+  "argument": {
+    "parts": [
+      {
+        "form": "argue",
+        "meaning": "争论；论证"
+      },
+      {
+        "form": "-ment",
+        "meaning": "名词词尾"
+      }
+    ],
+    "note": "make an argument 指提出论点；have an argument 指发生争吵。"
+  },
+  "unique": {
+    "parts": [
+      {
+        "form": "ūnicus",
+        "meaning": "拉丁语，唯一的"
+      },
+      {
+        "form": "ūnus",
+        "meaning": "一"
+      }
+    ],
+    "note": "be unique to 指为……所独有。",
+    "source": "https://ahdictionary.com/word/search.html?q=unique"
+  },
+  "stake": {
+    "parts": [
+      {
+        "form": "stake",
+        "meaning": "桩、立柱；也可指赌注、利害关系"
+      }
+    ],
+    "note": "这里练的是引申义，have a stake in 指与……有利害关系。",
+    "heading": "词形与用法"
+  },
+  "express": {
+    "parts": [
+      {
+        "form": "exprimere",
+        "meaning": "拉丁语，压出；表达"
+      },
+      {
+        "form": "ex-",
+        "meaning": "向外"
+      },
+      {
+        "form": "premere",
+        "meaning": "压、按"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=express"
+  },
+  "prior": {
+    "parts": [
+      {
+        "form": "prior",
+        "meaning": "拉丁语，较早的、在前的"
+      }
+    ],
+    "note": "prior to 作介词短语，表示在……之前。",
+    "source": "https://ahdictionary.com/word/search.html?q=prior"
+  },
+  "novel": {
+    "parts": [
+      {
+        "form": "novellus",
+        "meaning": "拉丁语，新颖的、年幼的"
+      },
+      {
+        "form": "novus",
+        "meaning": "新的"
+      }
+    ],
+    "note": "这里是形容词，a novel approach 是新颖的方法。",
+    "source": "https://ahdictionary.com/word/search.html?q=novel"
+  },
+  "propose": {
+    "parts": [
+      {
+        "form": "proposer",
+        "meaning": "古法语，提出；后来也有建议义"
+      }
+    ],
+    "note": "propose a plan 是提出计划，propose doing something 是建议做某事。",
+    "source": "https://ahdictionary.com/word/search.html?q=propose"
+  },
+  "accumulate": {
+    "parts": [
+      {
+        "form": "accumulāre",
+        "meaning": "拉丁语，把东西堆起来"
+      },
+      {
+        "form": "ac-",
+        "meaning": "ad- 在 c 前的变体"
+      },
+      {
+        "form": "cumulus",
+        "meaning": "堆、大量"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=accumulate"
+  },
+  "cognitive": {
+    "parts": [
+      {
+        "form": "cognōscere",
+        "meaning": "拉丁语，认识、了解"
+      },
+      {
+        "form": "-ive",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "cognitive skills 指认知技能。",
+    "source": "https://ahdictionary.com/word/search.html?q=cognitive"
+  },
+  "wisdom": {
+    "parts": [
+      {
+        "form": "wise",
+        "meaning": "明智的"
+      },
+      {
+        "form": "-dom",
+        "meaning": "表示状态、性质"
+      }
+    ],
+    "note": "the wisdom of a decision 可指某个决定是否明智。"
+  },
+  "emergency": {
+    "parts": [
+      {
+        "form": "emergere",
+        "meaning": "拉丁语，浮现、出现"
+      }
+    ],
+    "note": "an emergency 表示突然发生、需要立即处理的紧急情况。",
+    "source": "https://ahdictionary.com/word/search.html?q=emergency"
+  },
+  "alienate": {
+    "parts": [
+      {
+        "form": "alien",
+        "meaning": "外来的、疏远的"
+      },
+      {
+        "form": "-ate",
+        "meaning": "构成动词"
+      }
+    ],
+    "note": "alienate customers 可指使顾客疏远或失去支持。"
+  },
+  "profit": {
+    "parts": [
+      {
+        "form": "proficere",
+        "meaning": "拉丁语，取得进展、获益"
+      }
+    ],
+    "note": "make a profit 指获利，profit from 也可泛指受益于。",
+    "source": "https://ahdictionary.com/word/search.html?q=profit"
+  },
+  "steady": {
+    "parts": [
+      {
+        "form": "stead",
+        "meaning": "位置、立足处"
+      },
+      {
+        "form": "-y",
+        "meaning": "构成形容词"
+      }
+    ],
+    "note": "steady growth 指稳定增长。"
+  },
+  "adverse": {
+    "parts": [
+      {
+        "form": "adversus",
+        "meaning": "拉丁语，相对的、反对的"
+      },
+      {
+        "form": "ad-",
+        "meaning": "向、对"
+      },
+      {
+        "form": "vertere",
+        "meaning": "转"
+      }
+    ],
+    "note": "adverse effects 指不利影响。",
+    "source": "https://ahdictionary.com/word/search.html?q=adverse"
+  },
+  "physical": {
+    "parts": [
+      {
+        "form": "physikós",
+        "meaning": "希腊语，自然的"
+      },
+      {
+        "form": "physis",
+        "meaning": "自然"
+      }
+    ],
+    "note": "可指身体的、物质现实的或物理学的，取决于被修饰的名词。",
+    "source": "https://ahdictionary.com/word/search.html?q=physical"
+  },
+  "wage": {
+    "parts": [
+      {
+        "form": "wage",
+        "meaning": "工资；同形动词常见 wage a war"
+      }
+    ],
+    "note": "wages 常指按小时、天或周计的劳动报酬。",
+    "heading": "词形与用法"
+  },
+  "liberate": {
+    "parts": [
+      {
+        "form": "līberāre",
+        "meaning": "拉丁语，释放"
+      },
+      {
+        "form": "līber",
+        "meaning": "自由的"
+      },
+      {
+        "form": "-ate",
+        "meaning": "动词词尾"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=liberate"
+  },
+  "tedious": {
+    "parts": [
+      {
+        "form": "taedium",
+        "meaning": "拉丁语，厌倦"
+      },
+      {
+        "form": "-ous",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "a tedious task 指乏味、耗时的工作。",
+    "source": "https://ahdictionary.com/word/search.html?q=tedious"
+  },
+  "laborious": {
+    "parts": [
+      {
+        "form": "labor",
+        "meaning": "劳动、费力"
+      },
+      {
+        "form": "-ious",
+        "meaning": "形容词词尾"
+      }
+    ],
+    "note": "a laborious process 指需要付出很多努力的过程。"
+  },
+  "opportunity": {
+    "parts": [
+      {
+        "form": "opportūnitās",
+        "meaning": "拉丁语，适宜的时机"
+      },
+      {
+        "form": "opportūnus",
+        "meaning": "适时的"
+      }
+    ],
+    "note": "an opportunity to learn 是学习的机会。",
+    "source": "https://ahdictionary.com/word/search.html?q=opportunity"
+  },
+  "prioritize": {
+    "parts": [
+      {
+        "form": "priority",
+        "meaning": "优先事项或级别"
+      },
+      {
+        "form": "-ize",
+        "meaning": "使处于某种状态、按某种方式处理"
+      }
+    ]
+  },
+  "workplace": {
+    "parts": [
+      {
+        "form": "work",
+        "meaning": "工作"
+      },
+      {
+        "form": "place",
+        "meaning": "地点"
+      }
+    ],
+    "note": "the workplace 可指工作场所，也可泛指职场。",
+    "heading": "复合词构成"
+  },
+  "attitude": {
+    "parts": [
+      {
+        "form": "attitudine",
+        "meaning": "意大利语，姿势、姿态"
+      }
+    ],
+    "note": "现代常指态度，常用 attitude to 或 attitude toward。"
+  },
+  "distinguish": {
+    "parts": [
+      {
+        "form": "distinguere",
+        "meaning": "拉丁语，分开、作标记"
+      }
+    ],
+    "note": "distinguish A from B 表示区分 A 和 B。",
+    "source": "https://ahdictionary.com/word/search.html?q=distinguish"
+  },
+  "observe": {
+    "parts": [
+      {
+        "form": "observāre",
+        "meaning": "拉丁语，留心、遵守"
+      }
+    ],
+    "note": "observe a change 指观察到变化，observe a rule 指遵守规则。",
+    "source": "https://ahdictionary.com/word/search.html?q=observe"
+  },
+  "inference": {
+    "parts": [
+      {
+        "form": "infer",
+        "meaning": "推断"
+      },
+      {
+        "form": "-ence",
+        "meaning": "形成表示行为或结果的名词"
+      }
+    ],
+    "note": "draw an inference 是根据已有证据作出推断。"
+  },
+  "persistence": {
+    "parts": [
+      {
+        "form": "persist",
+        "meaning": "持续、坚持"
+      },
+      {
+        "form": "-ence",
+        "meaning": "表示行为或状态的名词词尾"
+      }
+    ]
+  },
+  "adapt": {
+    "parts": [
+      {
+        "form": "adaptāre",
+        "meaning": "拉丁语，使配合、使适应"
+      },
+      {
+        "form": "ad-",
+        "meaning": "向、到"
+      },
+      {
+        "form": "aptāre",
+        "meaning": "使适合"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=adapt"
+  },
+  "habitual": {
+    "parts": [
+      {
+        "form": "habit",
+        "meaning": "习惯"
+      },
+      {
+        "form": "-ual",
+        "meaning": "构成形容词的词尾"
+      }
+    ],
+    "note": "habitual behaviour 指习惯性行为。"
+  },
+  "scrutinize": {
+    "parts": [
+      {
+        "form": "scrutiny",
+        "meaning": "细查、审视"
+      },
+      {
+        "form": "-ize",
+        "meaning": "动词词尾，词干拼写变为 scrutin-"
+      }
+    ],
+    "note": "scrutinize the evidence 指仔细审查证据。"
+  },
+  "trait": {
+    "parts": [
+      {
+        "form": "trait",
+        "meaning": "法语，线条、特征"
+      }
+    ],
+    "note": "a personality trait 指性格特征。"
+  },
+  "dawn": {
+    "parts": [
+      {
+        "form": "dagian",
+        "meaning": "古英语，天亮"
+      }
+    ],
+    "note": "常见 at dawn（黎明时）与 the dawn of an era（时代的开端）。",
+    "source": "https://ahdictionary.com/word/search.html?q=dawn"
+  },
+  "vary": {
+    "parts": [
+      {
+        "form": "variāre",
+        "meaning": "拉丁语，使不同、改变"
+      },
+      {
+        "form": "varius",
+        "meaning": "多样的"
+      }
+    ],
+    "note": "vary from person to person 表示因人而异。",
+    "source": "https://ahdictionary.com/word/search.html?q=vary"
+  },
+  "custom": {
+    "parts": [
+      {
+        "form": "consuetūdō",
+        "meaning": "拉丁语，习惯"
+      }
+    ],
+    "note": "指习俗；形容词 custom 常指专门定制的。",
+    "source": "https://ahdictionary.com/word/search.html?q=custom"
+  },
+  "willing": {
+    "parts": [
+      {
+        "form": "will",
+        "meaning": "意愿；愿意"
+      },
+      {
+        "form": "-ing",
+        "meaning": "在这里形成形容词"
+      }
+    ],
+    "note": "be willing to do 表示愿意做某事。"
+  },
+  "violate": {
+    "parts": [
+      {
+        "form": "violāre",
+        "meaning": "拉丁语，侵犯、损害"
+      }
+    ],
+    "note": "violate a rule 是违反规则，violate privacy 是侵犯隐私。",
+    "source": "https://ahdictionary.com/word/search.html?q=violate"
+  },
+  "irritate": {
+    "parts": [
+      {
+        "form": "irrītāre",
+        "meaning": "拉丁语，刺激、惹恼"
+      }
+    ],
+    "note": "既可指让人生气，也可指刺激皮肤、眼睛等。",
+    "source": "https://ahdictionary.com/word/search.html?q=irritate"
+  },
+  "exotic": {
+    "parts": [
+      {
+        "form": "exōtikós",
+        "meaning": "希腊语，外来的"
+      },
+      {
+        "form": "exō",
+        "meaning": "在外"
+      }
+    ],
+    "note": "exotic plants 指异域植物，也可形容因异域特色而新奇。",
+    "source": "https://ahdictionary.com/word/search.html?q=exotic"
+  },
+  "adopt": {
+    "parts": [
+      {
+        "form": "adoptāre",
+        "meaning": "拉丁语，选取、收养"
+      },
+      {
+        "form": "ad-",
+        "meaning": "向、到"
+      },
+      {
+        "form": "optāre",
+        "meaning": "选择、希望"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=adopt"
+  },
+  "courtesy": {
+    "parts": [
+      {
+        "form": "corteisie",
+        "meaning": "古法语，宫廷礼仪、礼貌"
+      }
+    ],
+    "note": "courtesy 可指礼貌或善意，as a courtesy 指出于礼貌。",
+    "source": "https://ahdictionary.com/word/search.html?q=courtesy"
+  },
+  "campus": {
+    "parts": [
+      {
+        "form": "campus",
+        "meaning": "拉丁语，平地、原野"
+      }
+    ],
+    "note": "英语中指校园，常用 on campus。",
+    "source": "https://ahdictionary.com/word/search.html?q=campus"
+  },
+  "anxiety": {
+    "parts": [
+      {
+        "form": "anxietās",
+        "meaning": "拉丁语，忧虑"
+      },
+      {
+        "form": "anxius",
+        "meaning": "焦虑的"
+      }
+    ],
+    "note": "anxiety about an exam 指对考试的焦虑。",
+    "source": "https://ahdictionary.com/word/search.html?q=anxiety"
+  },
+  "catastrophe": {
+    "parts": [
+      {
+        "form": "katastrophḗ",
+        "meaning": "希腊语，翻转、结局"
+      },
+      {
+        "form": "kata-",
+        "meaning": "向下"
+      },
+      {
+        "form": "strophē",
+        "meaning": "转动"
+      }
+    ],
+    "note": "catastrophe 指严重灾难或彻底失败。",
+    "source": "https://ahdictionary.com/word/search.html?q=catastrophe"
+  },
+  "specific": {
+    "parts": [
+      {
+        "form": "speciēs",
+        "meaning": "拉丁语，种类、形态"
+      },
+      {
+        "form": "facere",
+        "meaning": "做、形成"
+      }
+    ],
+    "note": "a specific example 是一个具体例子；specific to 表示某事物所特有。",
+    "source": "https://ahdictionary.com/word/search.html?q=specific"
+  },
+  "toxic": {
+    "parts": [
+      {
+        "form": "toxikón",
+        "meaning": "希腊语，与弓箭毒药有关"
+      }
+    ],
+    "note": "toxic substances 指有毒物质，也可引申为有害的环境或关系。",
+    "source": "https://ahdictionary.com/word/search.html?q=toxic"
+  },
+  "lawn": {
+    "parts": [
+      {
+        "form": "launde",
+        "meaning": "古法语，树林中的空地"
+      }
+    ],
+    "note": "英语 lawn 指修剪过的草坪，mow the lawn 是修剪草坪。",
+    "source": "https://ahdictionary.com/word/search.html?q=lawn"
+  },
+  "sidewalk": {
+    "parts": [
+      {
+        "form": "side",
+        "meaning": "旁边"
+      },
+      {
+        "form": "walk",
+        "meaning": "步行道"
+      }
+    ],
+    "note": "主要用于美式英语，英式英语常用 pavement。",
+    "heading": "复合词构成"
+  },
+  "waterway": {
+    "parts": [
+      {
+        "form": "water",
+        "meaning": "水"
+      },
+      {
+        "form": "way",
+        "meaning": "通道"
+      }
+    ],
+    "note": "an inland waterway 是内河航道。",
+    "heading": "复合词构成"
+  },
+  "wildlife": {
+    "parts": [
+      {
+        "form": "wild",
+        "meaning": "野生的"
+      },
+      {
+        "form": "life",
+        "meaning": "生物、生命"
+      }
+    ],
+    "note": "通常用作不可数名词，如 protect wildlife。",
+    "heading": "复合词构成"
+  },
+  "soil": {
+    "parts": [
+      {
+        "form": "solum",
+        "meaning": "拉丁语，地面、土地"
+      }
+    ],
+    "note": "这里练的是名词土壤，例如 fertile soil。动词 soil（弄脏）的词源不同。",
+    "source": "https://ahdictionary.com/word/search.html?q=soil"
+  },
+  "ingredient": {
+    "parts": [
+      {
+        "form": "ingredī",
+        "meaning": "拉丁语，进入、踏入"
+      },
+      {
+        "form": "in-",
+        "meaning": "进入"
+      },
+      {
+        "form": "gradī",
+        "meaning": "行走、迈步"
+      }
+    ],
+    "note": "可联想为放进配方的成分；也可指成功所需的因素。",
+    "source": "https://ahdictionary.com/word/search.html?q=ingredient"
+  },
+  "absorb": {
+    "parts": [
+      {
+        "form": "absorbēre",
+        "meaning": "拉丁语，吞下、吸入"
+      },
+      {
+        "form": "ab-",
+        "meaning": "离开"
+      },
+      {
+        "form": "sorbēre",
+        "meaning": "吸、吞咽"
+      }
+    ],
+    "note": "可说 absorb water（吸水），也可说 absorb information（吸收信息）。",
+    "source": "https://ahdictionary.com/word/search.html?q=absorb"
+  },
+  "extreme": {
+    "parts": [
+      {
+        "form": "extrēmus",
+        "meaning": "拉丁语，最外端的、最远的"
+      }
+    ],
+    "note": "extreme 固定搭配包括 extreme weather（极端天气）。",
+    "source": "https://ahdictionary.com/word/search.html?q=extreme"
+  },
+  "drought": {
+    "parts": [
+      {
+        "form": "drūgath",
+        "meaning": "古英语，干燥"
+      },
+      {
+        "form": "drūge",
+        "meaning": "干的"
+      }
+    ],
+    "note": "同词族可联系 dry，a prolonged drought 是长期干旱。",
+    "source": "https://ahdictionary.com/word/search.html?q=drought"
+  },
+  "flood": {
+    "parts": [
+      {
+        "form": "flōd",
+        "meaning": "古英语，洪水、水流"
+      }
+    ],
+    "note": "a flood of applications 可比喻申请大量涌入。",
+    "source": "https://ahdictionary.com/word/search.html?q=flood"
+  },
+  "weed": {
+    "parts": [
+      {
+        "form": "wēod",
+        "meaning": "古英语，草本植物、杂草"
+      }
+    ],
+    "note": "动词 weed the garden 意为给花园除杂草。",
+    "source": "https://ahdictionary.com/word/search.html?q=weed"
+  },
+  "prepare": {
+    "parts": [
+      {
+        "form": "praeparāre",
+        "meaning": "拉丁语，预先准备"
+      },
+      {
+        "form": "prae-",
+        "meaning": "提前"
+      },
+      {
+        "form": "parāre",
+        "meaning": "使就绪"
+      }
+    ],
+    "source": "https://ahdictionary.com/word/search.html?q=prepare"
+  },
+  "cite": {
+    "parts": [
+      {
+        "form": "citāre",
+        "meaning": "拉丁语，召唤、提及"
+      }
+    ],
+    "note": "cite a source 指引用来源，cite an example 指举出实例。",
+    "source": "https://ahdictionary.com/word/search.html?q=cite"
+  },
+  "develop": {
+    "parts": [
+      {
+        "form": "desveloper",
+        "meaning": "古法语，打开包裹、展开"
+      }
+    ],
+    "note": "现代可指发展、培养、研发，如 develop a skill。",
+    "source": "https://ahdictionary.com/word/search.html?q=develop"
+  },
+  "laboratory": {
+    "parts": [
+      {
+        "form": "labōrātōrium",
+        "meaning": "中世纪拉丁语，工作场所"
+      },
+      {
+        "form": "labōrāre",
+        "meaning": "工作"
+      }
+    ],
+    "note": "口语和日常语境常用缩略词 lab。",
+    "source": "https://ahdictionary.com/word/search.html?q=laboratory"
+  },
+  "accommodate": {
+    "parts": [
+      {
+        "form": "accommodāre",
+        "meaning": "拉丁语，使适合"
+      },
+      {
+        "form": "ac-",
+        "meaning": "ad- 在 c 前的变体"
+      },
+      {
+        "form": "commodus",
+        "meaning": "合适的、便利的"
+      }
+    ],
+    "note": "可指容纳人数，也可指为需求作调整。",
+    "source": "https://ahdictionary.com/word/search.html?q=accommodate"
+  },
+  "orbit": {
+    "parts": [
+      {
+        "form": "orbita",
+        "meaning": "拉丁语，车轮留下的轨迹"
+      },
+      {
+        "form": "orbis",
+        "meaning": "圆、圆盘"
+      }
+    ],
+    "note": "in orbit 指在轨运行；orbit Earth 指绕地球运行。",
+    "source": "https://ahdictionary.com/word/search.html?q=orbit"
+  },
+  "surface": {
+    "parts": [
+      {
+        "form": "sur-",
+        "meaning": "来自法语，表示在……上"
+      },
+      {
+        "form": "face",
+        "meaning": "面"
+      }
+    ],
+    "note": "on the surface 可指在表面上，也可指表面看来。"
+  },
+  "application": {
+    "parts": [
+      {
+        "form": "apply",
+        "meaning": "申请；应用"
+      },
+      {
+        "form": "-ation",
+        "meaning": "构成名词，词干变为 applic-"
+      }
+    ],
+    "note": "application form 是申请表，practical application 是实际应用。"
+  },
+  "billion": {
+    "parts": [
+      {
+        "form": "bi-",
+        "meaning": "历史构词中表示二次方"
+      },
+      {
+        "form": "million",
+        "meaning": "百万"
+      }
+    ],
+    "source": "https://www.ahdictionary.com/word/search.html?q=billion",
+    "note": "这是历史构词，现代英语 billion 指十亿。"
+  },
+  "technology": {
+    "parts": [
+      {
+        "form": "tekhnē",
+        "meaning": "希腊语，技艺、技术"
+      },
+      {
+        "form": "-logy",
+        "meaning": "系统研究、论述"
+      }
+    ],
+    "note": "现代还可泛指技术方法、设备与实践。",
+    "source": "https://ahdictionary.com/word/search.html?q=technology"
+  },
+  "contribution": {
+    "parts": [
+      {
+        "form": "contribute",
+        "meaning": "贡献"
+      },
+      {
+        "form": "-ion",
+        "meaning": "名词词尾，拼写去掉 contribute 的词尾 e"
+      }
+    ]
   }
 }

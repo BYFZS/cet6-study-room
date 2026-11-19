@@ -43,16 +43,21 @@ export function wordFamilyHTML(word, esc) {
   const {words, note} = word.family;
   const entries = words.filter(([term]) => term !== word.word).map(([term,pos,meaning]) =>
     '<li><b lang="en">'+esc(term)+'</b>'+partOfSpeechHTML({pos},esc)+' · '+esc(meaning)+'</li>').join('');
-  return '<section class="morphNotes"><h4>同族词</h4><ul>'+entries+'</ul>'+
+  if (!entries || word.phrase) return '';
+  return '<section class="morphNotes"><h4>'+esc(word.family.heading || '同族词')+'</h4><ul>'+entries+'</ul>'+
     (note ? '<p>'+esc(note)+'</p>' : '')+'</section>';
 }
 
 export function morphologyHTML(word, esc) {
-  const data = word.morphology;
-  const parts = data?.parts?.length ? '<h4>词根和词缀</h4><ul>' +
+  const data = word.phrase || word.morphology;
+  const heading = word.phrase ? '短语构成' : data?.heading || '词根和词缀';
+  const parts = data?.parts?.length ? '<h4>'+esc(heading)+'</h4><ul>' +
     data.parts.map(item => '<li><b>'+esc(item.form)+'</b> · '+esc(item.meaning)+'</li>').join('') + '</ul>' +
     (data.note ? '<p>'+esc(data.note)+'</p>' : '') + (data.source && /^https:\/\/[^\s]+$/.test(data.source)
       ? '<a class="fine" href="'+esc(data.source)+'" target="_blank" rel="noopener">查词源 ↗</a>' : '') : '';
+  const examples = word.phrase?.examples?.length ? '<h4>搭配与用法</h4><ul>' +
+    word.phrase.examples.map(([example, meaning]) =>
+      '<li><b lang="en">'+esc(example)+'</b> · '+esc(meaning)+'</li>').join('') + '</ul>' : '';
   const relevant = references.filter(([form]) =>
     word.word.startsWith(form.slice(0,-1)) && data?.parts?.some(item => item.form === form));
   const guide = relevant.length ? '<details class="prefixGuide"><summary>常见前缀 '+
@@ -60,7 +65,7 @@ export function morphologyHTML(word, esc) {
     relevant.map(([form, description, url]) => '<li><b>'+esc(form)+'</b> · '+esc(description)+
       ' <a href="'+esc(url)+'" target="_blank" rel="noopener">词典 ↗</a></li>').join('') +
     '</ul></details>' : '';
-  return parts || guide ? '<div class="morphNotes">'+parts+guide+'</div>' : '';
+  return parts || guide || examples ? '<div class="morphNotes">'+parts+guide+examples+'</div>' : '';
 }
 
 export function findMistakenWord(card, word, deck) {

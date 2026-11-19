@@ -1,0 +1,1151 @@
+{
+  "make sense": {
+    "parts": [
+      {
+        "form": "make",
+        "meaning": "构成、产生"
+      },
+      {
+        "form": "sense",
+        "meaning": "意义、道理"
+      }
+    ],
+    "examples": [
+      [
+        "That makes sense.",
+        "这说得通。"
+      ],
+      [
+        "make sense of the data",
+        "弄懂这些数据"
+      ]
+    ]
+  },
+  "show up": {
+    "parts": [
+      {
+        "form": "show",
+        "meaning": "显露、出现"
+      },
+      {
+        "form": "up",
+        "meaning": "与 show 构成短语动词"
+      }
+    ],
+    "examples": [
+      [
+        "show up late",
+        "迟到"
+      ],
+      [
+        "show up for an interview",
+        "出席面试"
+      ]
+    ]
+  },
+  "relate to": {
+    "parts": [
+      {
+        "form": "relate",
+        "meaning": "联系；产生共鸣"
+      },
+      {
+        "form": "to",
+        "meaning": "引出联系或共鸣的对象"
+      }
+    ],
+    "note": "历史词源。relate 来自 relātus。现代英语中 relate to a topic 是与话题有关，relate to someone 也可指理解某人的感受或产生共鸣。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=relate",
+    "examples": [
+      [
+        "relate to a topic",
+        "与某个话题有关"
+      ],
+      [
+        "relate to someone",
+        "理解某人的感受"
+      ]
+    ]
+  },
+  "equal to": {
+    "parts": [
+      {
+        "form": "equal",
+        "meaning": "相等的；能胜任的"
+      },
+      {
+        "form": "to",
+        "meaning": "引出比较对象或任务"
+      }
+    ],
+    "examples": [
+      [
+        "be equal to the task",
+        "能胜任这个任务"
+      ],
+      [
+        "equal in size",
+        "尺寸相等"
+      ]
+    ]
+  },
+  "due to": {
+    "parts": [
+      {
+        "form": "due",
+        "meaning": "归因于；预定的"
+      },
+      {
+        "form": "to",
+        "meaning": "这里引出原因"
+      }
+    ],
+    "examples": [
+      [
+        "due to heavy rain",
+        "由于大雨"
+      ],
+      [
+        "be due to arrive",
+        "预计到达（另一用法）"
+      ]
+    ]
+  },
+  "regardless of": {
+    "parts": [
+      {
+        "form": "regardless",
+        "meaning": "不予考虑的；不管怎样"
+      },
+      {
+        "form": "of",
+        "meaning": "引出不影响结果的因素"
+      }
+    ],
+    "note": "regardless of 后接不影响行动的因素。",
+    "examples": [
+      [
+        "regardless of age",
+        "不论年龄"
+      ],
+      [
+        "regardless of whether it rains",
+        "不论是否下雨"
+      ]
+    ]
+  },
+  "graduate school": {
+    "parts": [
+      {
+        "form": "graduate",
+        "meaning": "研究生阶段的"
+      },
+      {
+        "form": "school",
+        "meaning": "学院、教育机构"
+      }
+    ],
+    "examples": [
+      [
+        "apply to graduate school",
+        "申请读研"
+      ],
+      [
+        "graduate student",
+        "研究生"
+      ]
+    ]
+  },
+  "figure out": {
+    "parts": [
+      {
+        "form": "figure",
+        "meaning": "计算、琢磨"
+      },
+      {
+        "form": "out",
+        "meaning": "与 figure 一起表达解决或弄明白"
+      }
+    ],
+    "examples": [
+      [
+        "figure out why it failed",
+        "弄明白失败的原因"
+      ],
+      [
+        "figure out a solution",
+        "想出解决办法"
+      ]
+    ]
+  },
+  "refer to": {
+    "parts": [
+      {
+        "form": "refer",
+        "meaning": "提到、查阅、指代"
+      },
+      {
+        "form": "to",
+        "meaning": "引出所指对象"
+      }
+    ],
+    "note": "历史词源。拉丁语 referre 原有带回、报告等义。现代英语可用 refer to a term 表示提到一个术语，也可用 refer to a manual 表示查阅手册。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=refer",
+    "examples": [
+      [
+        "refer to a manual",
+        "查阅手册"
+      ],
+      [
+        "The term refers to a process.",
+        "这个术语指一种过程。"
+      ]
+    ]
+  },
+  "with ease": {
+    "parts": [
+      {
+        "form": "with",
+        "meaning": "表示方式"
+      },
+      {
+        "form": "ease",
+        "meaning": "轻松、容易"
+      }
+    ],
+    "examples": [
+      [
+        "complete the task with ease",
+        "轻松完成任务"
+      ],
+      [
+        "at ease",
+        "自在、放松"
+      ]
+    ]
+  },
+  "in the meantime": {
+    "parts": [
+      {
+        "form": "in",
+        "meaning": "用于表示一段时间"
+      },
+      {
+        "form": "meantime",
+        "meaning": "两件事情之间的时间"
+      }
+    ],
+    "examples": [
+      [
+        "In the meantime, keep practising.",
+        "在此期间继续练习。"
+      ],
+      [
+        "for the time being",
+        "暂时"
+      ]
+    ]
+  },
+  "get a foot in the door": {
+    "parts": [
+      {
+        "form": "a foot in the door",
+        "meaning": "比喻先争取到进入某个行业或机构的机会"
+      },
+      {
+        "form": "get",
+        "meaning": "获得"
+      }
+    ],
+    "examples": [
+      [
+        "an internship can get you a foot in the door",
+        "实习能帮你迈出入行的第一步"
+      ]
+    ]
+  },
+  "have access to": {
+    "parts": [
+      {
+        "form": "access",
+        "meaning": "进入、使用或获得的机会"
+      },
+      {
+        "form": "to",
+        "meaning": "引出可获得或使用的对象"
+      }
+    ],
+    "examples": [
+      [
+        "have access to a library",
+        "能使用图书馆"
+      ],
+      [
+        "get access to the data",
+        "获得数据访问权限"
+      ]
+    ]
+  },
+  "level the playing field": {
+    "parts": [
+      {
+        "form": "level",
+        "meaning": "使平坦、使平等"
+      },
+      {
+        "form": "playing field",
+        "meaning": "运动场，比喻竞争环境"
+      }
+    ],
+    "examples": [
+      [
+        "level the playing field for small firms",
+        "让小企业在更公平的条件下竞争"
+      ],
+      [
+        "a level playing field",
+        "公平的竞争环境"
+      ]
+    ]
+  },
+  "engage in": {
+    "parts": [
+      {
+        "form": "engage",
+        "meaning": "参与、投入"
+      },
+      {
+        "form": "in",
+        "meaning": "引出活动"
+      }
+    ],
+    "examples": [
+      [
+        "engage in dialogue",
+        "开展对话"
+      ],
+      [
+        "engage in research",
+        "参与研究"
+      ]
+    ]
+  },
+  "focal point": {
+    "parts": [
+      {
+        "form": "focal",
+        "meaning": "与焦点有关的"
+      },
+      {
+        "form": "point",
+        "meaning": "点；中心"
+      }
+    ],
+    "examples": [
+      [
+        "the focal point of the discussion",
+        "讨论的焦点"
+      ],
+      [
+        "a focal point for visitors",
+        "吸引游客的中心"
+      ]
+    ]
+  },
+  "relevant to": {
+    "parts": [
+      {
+        "form": "relevant",
+        "meaning": "相关的；切题的"
+      },
+      {
+        "form": "to",
+        "meaning": "引出相关的对象"
+      }
+    ],
+    "note": "历史词源。词形经中世纪拉丁语发展出切题、相关的现代义。relevant to the question 指与这个问题相关。",
+    "source": "https://www.ahdictionary.com/word/search.html?q=relevant",
+    "examples": [
+      [
+        "relevant to the question",
+        "与问题相关"
+      ],
+      [
+        "directly relevant",
+        "直接相关"
+      ]
+    ]
+  },
+  "free of charge": {
+    "parts": [
+      {
+        "form": "free",
+        "meaning": "没有、免除"
+      },
+      {
+        "form": "charge",
+        "meaning": "费用"
+      }
+    ],
+    "examples": [
+      [
+        "deliver free of charge",
+        "免费送达"
+      ],
+      [
+        "at no extra charge",
+        "无需额外付费"
+      ]
+    ]
+  },
+  "participate in": {
+    "parts": [
+      {
+        "form": "participate",
+        "meaning": "参与"
+      },
+      {
+        "form": "in",
+        "meaning": "引出活动"
+      }
+    ],
+    "examples": [
+      [
+        "participate in a survey",
+        "参与调查"
+      ],
+      [
+        "participate actively in class",
+        "积极参与课堂活动"
+      ]
+    ]
+  },
+  "set up": {
+    "parts": [
+      {
+        "form": "set",
+        "meaning": "放置；安排"
+      },
+      {
+        "form": "up",
+        "meaning": "与 set 构成短语动词"
+      }
+    ],
+    "examples": [
+      [
+        "set up a business",
+        "创办企业"
+      ],
+      [
+        "set up an experiment",
+        "布置实验"
+      ]
+    ]
+  },
+  "current events": {
+    "parts": [
+      {
+        "form": "current",
+        "meaning": "当前的"
+      },
+      {
+        "form": "events",
+        "meaning": "事件"
+      }
+    ],
+    "examples": [
+      [
+        "discuss current events",
+        "讨论时事"
+      ],
+      [
+        "keep up with current events",
+        "关注时事"
+      ]
+    ]
+  },
+  "in person": {
+    "parts": [
+      {
+        "form": "in person",
+        "meaning": "本人、亲自到场"
+      },
+      {
+        "form": "person",
+        "meaning": "人、本人"
+      }
+    ],
+    "examples": [
+      [
+        "attend the interview in person",
+        "亲自参加面试"
+      ],
+      [
+        "meet someone in person",
+        "和某人当面见面"
+      ]
+    ]
+  },
+  "at large": {
+    "parts": [
+      {
+        "form": "at large",
+        "meaning": "固定表达，可表示整体上，也可表示仍在逃"
+      },
+      {
+        "form": "large",
+        "meaning": "意义取决于整条短语和语境"
+      }
+    ],
+    "examples": [
+      [
+        "society at large",
+        "整个社会"
+      ],
+      [
+        "The suspect is still at large.",
+        "嫌疑人仍在逃。"
+      ]
+    ]
+  },
+  "come along": {
+    "parts": [
+      {
+        "form": "come",
+        "meaning": "来"
+      },
+      {
+        "form": "along",
+        "meaning": "与 come 构成短语动词"
+      }
+    ],
+    "examples": [
+      [
+        "come along with us",
+        "跟我们一起来"
+      ],
+      [
+        "How is the project coming along?",
+        "项目进展如何？"
+      ]
+    ]
+  },
+  "financial backing": {
+    "parts": [
+      {
+        "form": "financial",
+        "meaning": "资金、财务方面的"
+      },
+      {
+        "form": "backing",
+        "meaning": "支持、资助"
+      }
+    ],
+    "note": "整个短语表示资金支持。",
+    "examples": [
+      [
+        "get financial backing",
+        "获得资金支持"
+      ],
+      [
+        "back a project",
+        "支持一个项目"
+      ]
+    ]
+  },
+  "in part": {
+    "parts": [
+      {
+        "form": "in part",
+        "meaning": "部分地、一定程度上"
+      },
+      {
+        "form": "part",
+        "meaning": "部分"
+      }
+    ],
+    "examples": [
+      [
+        "in part because of the cost",
+        "部分原因在于成本"
+      ],
+      [
+        "partly due to the delay",
+        "部分是因为延误"
+      ]
+    ]
+  },
+  "job stability": {
+    "parts": [
+      {
+        "form": "job",
+        "meaning": "工作"
+      },
+      {
+        "form": "stability",
+        "meaning": "稳定性"
+      }
+    ],
+    "examples": [
+      [
+        "long-term job stability",
+        "长期工作稳定性"
+      ],
+      [
+        "job security",
+        "工作保障，强调不容易失业"
+      ]
+    ]
+  },
+  "as a result": {
+    "parts": [
+      {
+        "form": "as a result",
+        "meaning": "因此、结果是"
+      },
+      {
+        "form": "result",
+        "meaning": "结果"
+      }
+    ],
+    "examples": [
+      [
+        "As a result, costs fell.",
+        "因此，成本下降了。"
+      ],
+      [
+        "as a result of the change",
+        "由于这一改变"
+      ]
+    ]
+  },
+  "end up": {
+    "parts": [
+      {
+        "form": "end",
+        "meaning": "结束"
+      },
+      {
+        "form": "up",
+        "meaning": "与 end 构成短语动词"
+      }
+    ],
+    "examples": [
+      [
+        "end up working late",
+        "最终工作到很晚"
+      ],
+      [
+        "end up in hospital",
+        "最后住进医院"
+      ]
+    ]
+  },
+  "in charge": {
+    "parts": [
+      {
+        "form": "in charge",
+        "meaning": "负责、掌管"
+      },
+      {
+        "form": "charge",
+        "meaning": "责任、管理"
+      }
+    ],
+    "examples": [
+      [
+        "be in charge of the project",
+        "负责这个项目"
+      ],
+      [
+        "take charge of the team",
+        "接管团队"
+      ]
+    ]
+  },
+  "back up": {
+    "parts": [
+      {
+        "form": "back",
+        "meaning": "支持；向后"
+      },
+      {
+        "form": "up",
+        "meaning": "与 back 构成短语动词"
+      }
+    ],
+    "examples": [
+      [
+        "back up your files",
+        "备份文件"
+      ],
+      [
+        "back up a claim with evidence",
+        "用证据支持主张"
+      ]
+    ]
+  },
+  "hard drive": {
+    "parts": [
+      {
+        "form": "hard",
+        "meaning": "硬质的"
+      },
+      {
+        "form": "drive",
+        "meaning": "这里指驱动器"
+      }
+    ],
+    "examples": [
+      [
+        "an external hard drive",
+        "外置硬盘"
+      ],
+      [
+        "replace a hard drive",
+        "更换硬盘"
+      ]
+    ]
+  },
+  "rely on": {
+    "parts": [
+      {
+        "form": "rely",
+        "meaning": "依靠、信赖"
+      },
+      {
+        "form": "on",
+        "meaning": "引出依靠的对象"
+      }
+    ],
+    "examples": [
+      [
+        "rely on public transport",
+        "依赖公共交通"
+      ],
+      [
+        "rely on someone to help",
+        "指望某人帮忙"
+      ]
+    ]
+  },
+  "suffer from": {
+    "parts": [
+      {
+        "form": "suffer",
+        "meaning": "受苦、遭受"
+      },
+      {
+        "form": "from",
+        "meaning": "引出疾病或困扰"
+      }
+    ],
+    "examples": [
+      [
+        "suffer from anxiety",
+        "受焦虑困扰"
+      ],
+      [
+        "suffer from a shortage of staff",
+        "因人手不足而受困"
+      ]
+    ]
+  },
+  "in control": {
+    "parts": [
+      {
+        "form": "in control",
+        "meaning": "掌控局面"
+      },
+      {
+        "form": "control",
+        "meaning": "控制、支配"
+      }
+    ],
+    "examples": [
+      [
+        "be in control of the situation",
+        "掌控局面"
+      ],
+      [
+        "bring a fire under control",
+        "控制住火势"
+      ]
+    ]
+  },
+  "at risk": {
+    "parts": [
+      {
+        "form": "at",
+        "meaning": "用于表示状态"
+      },
+      {
+        "form": "risk",
+        "meaning": "风险"
+      }
+    ],
+    "examples": [
+      [
+        "put someone at risk",
+        "使某人面临风险"
+      ],
+      [
+        "at risk of flooding",
+        "有遭遇洪水的风险"
+      ]
+    ]
+  },
+  "adhere to": {
+    "parts": [
+      {
+        "form": "adhere",
+        "meaning": "遵守；黏附"
+      },
+      {
+        "form": "to",
+        "meaning": "引出所遵守的规则或黏附的表面"
+      }
+    ],
+    "examples": [
+      [
+        "adhere to a schedule",
+        "遵守时间安排"
+      ],
+      [
+        "adhere to the surface",
+        "黏附在表面上"
+      ]
+    ]
+  },
+  "focus on": {
+    "parts": [
+      {
+        "form": "focus",
+        "meaning": "集中注意力"
+      },
+      {
+        "form": "on",
+        "meaning": "引出关注的对象"
+      }
+    ],
+    "examples": [
+      [
+        "focus on the main issue",
+        "聚焦主要问题"
+      ],
+      [
+        "place the focus on students",
+        "把重点放在学生身上"
+      ]
+    ]
+  },
+  "get rid of": {
+    "parts": [
+      {
+        "form": "get rid of",
+        "meaning": "摆脱、除去"
+      },
+      {
+        "form": "of",
+        "meaning": "引出要除去的对象"
+      }
+    ],
+    "examples": [
+      [
+        "get rid of unwanted files",
+        "删除不需要的文件"
+      ],
+      [
+        "get rid of a bad habit",
+        "改掉坏习惯"
+      ]
+    ]
+  },
+  "instead of": {
+    "parts": [
+      {
+        "form": "instead",
+        "meaning": "作为替代"
+      },
+      {
+        "form": "of",
+        "meaning": "引出被替代的事物或做法"
+      }
+    ],
+    "examples": [
+      [
+        "walk instead of driving",
+        "步行代替开车"
+      ],
+      [
+        "Use this instead.",
+        "用这个来代替吧。"
+      ]
+    ]
+  },
+  "job application": {
+    "parts": [
+      {
+        "form": "job",
+        "meaning": "工作、职位"
+      },
+      {
+        "form": "application",
+        "meaning": "申请"
+      }
+    ],
+    "examples": [
+      [
+        "submit a job application",
+        "提交求职申请"
+      ],
+      [
+        "job applicant",
+        "求职者"
+      ]
+    ]
+  },
+  "ought to": {
+    "parts": [
+      {
+        "form": "ought to",
+        "meaning": "表示应该或按理说会"
+      },
+      {
+        "form": "to",
+        "meaning": "后接动词原形"
+      }
+    ],
+    "examples": [
+      [
+        "You ought to check the figures.",
+        "你应该核对数据。"
+      ],
+      [
+        "It ought to work.",
+        "按理说行得通。"
+      ]
+    ]
+  },
+  "personal experience": {
+    "parts": [
+      {
+        "form": "personal",
+        "meaning": "个人的、亲身的"
+      },
+      {
+        "form": "experience",
+        "meaning": "经历、经验"
+      }
+    ],
+    "examples": [
+      [
+        "speak from personal experience",
+        "根据亲身经历来说"
+      ],
+      [
+        "first-hand experience",
+        "第一手经历"
+      ]
+    ]
+  },
+  "space station": {
+    "parts": [
+      {
+        "form": "space",
+        "meaning": "太空"
+      },
+      {
+        "form": "station",
+        "meaning": "驻地、站"
+      }
+    ],
+    "examples": [
+      [
+        "aboard the space station",
+        "在空间站内"
+      ],
+      [
+        "spacewalk",
+        "太空行走"
+      ]
+    ]
+  },
+  "cubic meter": {
+    "parts": [
+      {
+        "form": "cubic",
+        "meaning": "立方的"
+      },
+      {
+        "form": "meter",
+        "meaning": "米；英式拼写为 metre"
+      }
+    ],
+    "examples": [
+      [
+        "several cubic meters of water",
+        "几立方米的水"
+      ],
+      [
+        "square meter",
+        "平方米"
+      ]
+    ]
+  },
+  "scientific research": {
+    "parts": [
+      {
+        "form": "scientific",
+        "meaning": "科学的"
+      },
+      {
+        "form": "research",
+        "meaning": "研究"
+      }
+    ],
+    "note": "整条考常用搭配，scientific research 为科学研究。",
+    "examples": [
+      [
+        "conduct scientific research",
+        "开展科学研究"
+      ],
+      [
+        "scientific evidence",
+        "科学证据"
+      ]
+    ]
+  },
+  "carry out": {
+    "parts": [
+      {
+        "form": "carry",
+        "meaning": "拿、带"
+      },
+      {
+        "form": "out",
+        "meaning": "与 carry 构成短语动词，表示把事情付诸实施"
+      }
+    ],
+    "examples": [
+      [
+        "carry out a survey",
+        "开展调查"
+      ],
+      [
+        "carry out repairs",
+        "进行修理"
+      ]
+    ]
+  },
+  "space medicine": {
+    "parts": [
+      {
+        "form": "space",
+        "meaning": "太空"
+      },
+      {
+        "form": "medicine",
+        "meaning": "医学"
+      }
+    ],
+    "examples": [
+      [
+        "research in space medicine",
+        "航天医学研究"
+      ],
+      [
+        "the health of astronauts",
+        "航天员健康"
+      ]
+    ]
+  },
+  "materials science": {
+    "parts": [
+      {
+        "form": "materials",
+        "meaning": "材料，通常用复数"
+      },
+      {
+        "form": "science",
+        "meaning": "科学"
+      }
+    ],
+    "examples": [
+      [
+        "study materials science",
+        "学习材料科学"
+      ],
+      [
+        "materials engineering",
+        "材料工程"
+      ]
+    ]
+  },
+  "research finding": {
+    "parts": [
+      {
+        "form": "research",
+        "meaning": "研究"
+      },
+      {
+        "form": "finding",
+        "meaning": "发现、研究结果"
+      }
+    ],
+    "examples": [
+      [
+        "report research findings",
+        "报告研究发现"
+      ],
+      [
+        "preliminary findings",
+        "初步发现"
+      ]
+    ]
+  },
+  "economic benefit": {
+    "parts": [
+      {
+        "form": "economic",
+        "meaning": "经济方面的"
+      },
+      {
+        "form": "benefit",
+        "meaning": "好处、收益"
+      }
+    ],
+    "examples": [
+      [
+        "the economic benefits of tourism",
+        "旅游业带来的经济效益"
+      ],
+      [
+        "long-term economic gains",
+        "长期经济收益"
+      ]
+    ]
+  },
+  "space breeding": {
+    "parts": [
+      {
+        "form": "space",
+        "meaning": "太空"
+      },
+      {
+        "form": "breeding",
+        "meaning": "育种"
+      }
+    ],
+    "examples": [
+      [
+        "space breeding experiments",
+        "航天育种试验"
+      ],
+      [
+        "plant breeding",
+        "植物育种"
+      ]
+    ]
+  }
+}

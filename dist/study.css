@@ -155,9 +155,12 @@ body.vocabularySubpage > header,
 .choiceText{min-width:0;overflow-wrap:anywhere}
 .flash #options .right .choiceIndex{background:#c5e0af;color:#2f5628}
 .flash #options .wrong .choiceIndex{background:#f1cdb5;color:#743e23}
-#training #trainingActions{justify-content:flex-start;gap:2px 12px;margin:10px 0 0;padding-top:5px;border-top:1px solid var(--line)}
-#training #trainingActions button,#training #markGuess{min-height:44px;padding:6px 4px;border:0;background:transparent;color:#47665b;font-size:13px;line-height:1.3}
-#training #trainingActions button:hover,#training #markGuess:hover{color:#174538;text-decoration:underline;text-underline-offset:3px}
+#training #trainingActions{justify-content:flex-start;gap:8px;margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line)}
+#training #trainingActions button,#training #markGuess{min-height:44px;padding:8px 12px;border:1px solid #a7b9ae;border-radius:8px;background:#fff;color:#284e42;font-size:13px;font-weight:600;line-height:1.3}
+#training #trainingActions #forget{border-color:#c4ac91;background:#fcf3e7;color:#69482c}
+#training #trainingActions button:hover,#training #markGuess:hover{background:#edf4ee;border-color:#739780}
+#training #trainingActions #forget:hover{background:#f6e6d2;border-color:#a77e55}
+#training #trainingActions button:focus-visible,#training #markGuess:focus-visible{outline:2px solid #20594b;outline-offset:2px}
 #training #markGuess{margin:-7px 0 0}
 
 @media(max-width:600px){
