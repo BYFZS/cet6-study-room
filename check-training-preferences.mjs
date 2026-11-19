@@ -9,6 +9,17 @@ import {filterMistakes} from './dist/mistake-filters.mjs';
 
 const read = name => JSON.parse(readFileSync(new URL('./dist/'+name+'.json',import.meta.url),'utf8').replace(/^\uFEFF/,''));
 const deck = mergeWordDecks(['base-words','paper-words','paper-extra-reading','paper-extra-mixed','paper-writing-translation'].map(read));
+const syllables=read('word-syllables');
+const vocabulary=new Set(deck.map(({word})=>word));
+for (const [word,split] of Object.entries(syllables)) {
+ assert.ok(vocabulary.has(word),word);
+ assert.ok(split.includes('/')&&!/\/\/|^\/|\/$/.test(split),word);
+ assert.equal(split.replaceAll('/',''),word);
+}
+assert.equal(syllables.dispute,'dis/pute');
+assert.equal(syllables['carry out'],'car/ry out');
+assert.equal(syllables.store,undefined);
+
 const filenames = deck.map(({word})=>pronunciationFilename(word)).sort();
 const extra = read('option-pronunciations');
 const allAudio = [...filenames,...extra.map(pronunciationFilename)].sort();

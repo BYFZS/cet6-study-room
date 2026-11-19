@@ -1,4 +1,4 @@
-import {readSoundSettings} from './answer-sounds.mjs?v=27';
+import {readSoundSettings} from './answer-sounds.mjs?v=34';
 
 export function pronunciationFilename(word) {
   return word.replace(/[ ']/g, '_') + '.mp3';
@@ -13,15 +13,22 @@ export function createWordPronunciation() {
     if (current?.utterance) window.speechSynthesis?.cancel();
   }
   window.addEventListener('cet6-sound-change', () => {
-    const {volume, accent} = readSoundSettings();
-    if (!volume || (active && active.accent !== accent)) stop();
+    const {pronunciationVolume:volume, accent} = readSoundSettings();
+    if (!volume || (active && !active.explicitAccent && active.accent !== accent)) stop();
     else if (active?.clip) active.clip.volume = volume * 0.82;
   });
-  function play(word, {example, onPlaying=()=>{}, onFailure=()=>{}, onMuted=()=>{}} = {}) {
+  function play(word, {example, accent:voiceAccent, onPlaying=()=>{}, onEnded=()=>{}, onFailure=()=>{}, onMuted=()=>{}} = {}) {
     stop();
-    const {volume, accent} = readSoundSettings();
+    const {pronunciationVolume:volume, accent:defaultAccent} = readSoundSettings();
+    const explicitAccent=voiceAccent==="en-GB"||voiceAccent==="en-US";
+    const accent=explicitAccent?voiceAccent:defaultAccent;
     if (!volume) { onMuted(); return; }
-    const request = active = {accent};
+    const request = active = {accent,explicitAccent};
+    function end() {
+      if (active !== request) return;
+      active = undefined;
+      onEnded();
+    }
     function systemVoice() {
       if (active !== request || request.utterance) return;
       request.clip?.pause();
@@ -36,14 +43,14 @@ export function createWordPronunciation() {
         const utterance = request.utterance = new window.SpeechSynthesisUtterance(example || word);
         utterance.lang = accent;
         utterance.rate = 0.8;
-        utterance.volume = readSoundSettings().volume * 0.82;
+        utterance.volume = readSoundSettings().pronunciationVolume * 0.82;
         const english = (synth.getVoices?.() || []).filter(voice => /^en\b/i.test(voice.lang));
         const matches = voice => voice.lang.replace('_', '-').toLowerCase() === accent.toLowerCase();
         const voice = english.find(v => v.localService && matches(v)) || english.find(matches);
         if (english.length && !voice) { fail('voice-unavailable'); return; }
         if (voice) { utterance.voice = voice; utterance.lang = voice.lang; }
         utterance.onstart = () => { if (active === request) onPlaying(); };
-        utterance.onend = () => { if (active === request) active = undefined; };
+        utterance.onend = end;
         utterance.onerror = event => fail(event.error);
         synth.speak(utterance);
       } catch { fail(); }
@@ -55,7 +62,7 @@ export function createWordPronunciation() {
       const clip = request.clip = new window.Audio(url.href);
       clip.volume = volume * 0.82;
       clip.onplaying = () => { if (active === request) onPlaying(); };
-      clip.onended = () => { if (active === request) active = undefined; };
+      clip.onended = () => { if (!request.utterance) end(); };
       clip.onerror = systemVoice;
       clip.play().catch(systemVoice);
     } catch { systemVoice(); }

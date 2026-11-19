@@ -1,8 +1,10 @@
 .roomSidebar{display:none}
-#siteSettings{color:#183c35;width:min(490px,calc(100% - 24px));padding:22px;border:1px solid #cddbd0;border-radius:16px}
+#siteSettings{color:#183c35;width:min(490px,calc(100% - 24px));margin:auto;max-height:calc(100% - 24px);overflow:auto;padding:20px 22px;border:1px solid #cddbd0;border-radius:16px}
 #siteSettings::backdrop{background:#1c322a70}
-.settingsTop{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#siteSettings .settingsTop{margin:0;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .settingsTop h2{margin:0;font-size:22px}
+#siteSettings .settingsTop form{margin:0}
+#siteSettings section:last-child .settingRow:last-child{border-bottom:0}
 #siteSettings section+section{margin-top:18px}
 #siteSettings h3{margin:15px 0 4px;font-size:15px;color:#537064}
 .settingRow{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:45px;border-bottom:1px solid #e2e9df;font-size:15px}
@@ -20,14 +22,16 @@
   .roomSidebarTop .brand{font-size:23px}
   .roomSidebar button,.roomSidebar nav a{display:flex;align-items:center;gap:11px;min-width:0;min-height:42px;border:0;border-radius:9px;background:transparent;padding:7px 10px;text-align:left;color:#294e42;text-decoration:none;font-size:14px}
   .roomSidebar svg{width:20px;height:20px;flex:none}
-  .roomSidebar nav{display:grid;gap:4px;align-content:start;overflow:auto}
+  .roomSidebar nav{display:grid;grid-template-columns:minmax(0,1fr);align-content:start;gap:4px;margin:0;min-height:0;overflow-x:hidden;overflow-y:auto}
+  .roomSidebar nav a>span{padding:0;border:0;border-radius:0;color:inherit;font-size:inherit;white-space:nowrap}
   .roomSidebar nav a[aria-current="page"]{background:#d4e4d5;font-weight:700;color:#164539}
   .roomSidebar button:hover,.roomSidebar nav a:hover{background:#deeadf}
   .roomSidebarBottom{display:flex;gap:3px;margin-top:auto;padding-top:8px;border-top:1px solid #d4e0d3}
   .roomSidebarBottom button:first-child{flex:1}
   .roomSidebarBottom span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-  .roomSidebarCollapsed .roomSidebarTop{justify-content:center;padding:0}
-  .roomSidebarCollapsed .roomSidebar span,.roomSidebarCollapsed .roomSidebarTop .brand{display:none}
+  .roomSidebarCollapsed .roomSidebarTop{flex-direction:column;justify-content:center;gap:4px;padding:0}
+  .roomSidebarCollapsed .roomSidebar nav a>span,.roomSidebarCollapsed .roomSidebarBottom button>span{display:none}
+  .roomSidebarCollapsed .roomSidebarTop .brand{font-size:15px;line-height:1;display:block;text-align:center;border-radius:9px;background:var(--rail-logo,#dfebe0);min-height:33px;line-height:33px;padding:0 5px}
   .roomSidebarCollapsed .roomSidebarBottom{flex-direction:column}
   .roomSidebarCollapsed .roomSidebar button,.roomSidebarCollapsed .roomSidebar nav a{justify-content:center;padding:7px}
   body.withRoomShell:not(.cet6Native) .moduleNav{display:none}
@@ -46,7 +50,7 @@
 [data-theme="dark"] :is(.primary,button.active,.studyNav a[aria-current="page"],.roomSidebar nav a[aria-current="page"],.wordFilterGroup button[aria-pressed="true"]){background:#afdcbd;color:#153829;border-color:#afdcbd}
 [data-theme="dark"] .roomSidebar :is(nav a,button){color:#e1eee6}
 @media(min-width:950px){body.withRoomShell:not(.cet6Native) .roomSidebar{background:var(--shell-background,#ebf0e8);border-color:var(--shell-border,#d8e2d6)}}
-[data-theme="dark"]{--shell-background:#1f2c27;--shell-border:#3c5147}
+[data-theme="dark"]{--shell-background:#1f2c27;--shell-border:#3c5147;--rail-logo:#2a4035}
 [data-theme="dark"] .roomSidebar nav a[aria-current="page"]{color:#153829}
 [data-theme="dark"] :is(.roomSidebar nav a:hover,.roomSidebar button:hover){background:#365245}
 [data-theme="dark"] :is(.roomSidebarBottom,.settingRow,.wordRelations,.morphNotes,.synonymSense,#feedback){border-color:#466052}
@@ -63,3 +67,28 @@
 [data-theme="dark"] :is(.paperPane canvas,.paperPane iframe){color-scheme:light}
 [data-theme="dark"] #siteSettings::backdrop{background:#0009}
 @media(max-width:600px){#siteSettings{padding:14px 16px}.settingRow{min-height:42px}}
+
+/* Match ID-level training styles as well as field classes on the other pages. */
+[data-theme="dark"] :is(#spelling,#search,#wordQuestionPrompt,#practiceDraft,#response,#reflection,#syncDialog input,.sizeRow input,.handbookSearch input,.quizHint input){
+  background-color:#283b33;color:#edf6ef;border-color:#537363;caret-color:#c0e9d2
+}
+[data-theme="dark"] :is(input,textarea)::placeholder{color:#abc0b4;opacity:1}
+[data-theme="dark"] :is(input:not([type="checkbox"],[type="radio"],[type="range"]),textarea,select):focus-visible{
+  outline:2px solid #9acdb4;outline-offset:2px
+}
+[data-theme="dark"] :is(#spelling,#search,#wordQuestionPrompt,#practiceDraft,#response,#reflection,#syncDialog input,.sizeRow input,.handbookSearch input,.quizHint input):disabled{
+  background-color:#24342d;color:#c4d6cb;border-color:#466052;opacity:1
+}
+#siteSettings .settingChoiceRow{margin:0;flex-wrap:wrap;padding-block:4px}
+#siteSettings .settingChoices{margin:0;justify-content:flex-start;display:flex;gap:2px;flex-wrap:wrap;border-radius:11px;border:1px solid #cfdfd1;background:#eff4ee;padding:3px}
+.settingChoices label{position:relative;display:flex}
+.settingChoices input[type="radio"]{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.settingChoices span{display:flex;align-items:center;justify-content:center;min-height:34px;padding:4px 9px;border-radius:7px;color:#375e4e;white-space:nowrap;cursor:pointer}
+.settingChoices label:hover span{background:#e0ebe1}
+.settingChoices input:checked+span{font-weight:650;color:#193f30;background:#d5e8d7}
+.settingChoices input:focus-visible+span{outline:2px solid #467660;outline-offset:1px}
+[data-theme="dark"] .settingChoices{background:#263831;border-color:#476356}
+[data-theme="dark"] .settingChoices span{color:#d0e4d8}
+[data-theme="dark"] .settingChoices label:hover span{background:#304b3e}
+[data-theme="dark"] .settingChoices input:checked+span{background:#a9d8bb;color:#17382a}
+[data-theme="dark"] .settingChoices input:focus-visible+span{outline-color:#a9d8bb}

@@ -62,7 +62,7 @@ export function morphologyHTML(word, esc) {
   const heading = word.phrase ? '短语构成' : data?.heading || '词根和词缀';
   const prefix = form => !word.phrase && /^[a-zA-Z]+-$/.test(form) &&
     word.word.startsWith(form.slice(0,-1));
-  const partRow = item => '<li class="'+(prefix(item.form)?'prefixPart':'rootPart')+'"><b>'+
+  const partRow = item => '<li class="'+(prefix(item.form)?'prefixPart':'rootPart')+'"><b lang="en">'+
     esc(item.form)+'</b> · '+esc(item.meaning)+'</li>';
   const parts = data?.parts?.length ? '<div class="wordParts'+(word.phrase?' phraseParts':'')+'"><h4>'+
     esc(heading)+'</h4><ul>'+data.parts.map(partRow).join('')+'</ul>'+
@@ -76,7 +76,7 @@ export function morphologyHTML(word, esc) {
     word.word.startsWith(form.slice(0,-1)) && data?.parts?.some(item => item.form === form));
   const guide = relevant.length ? '<details class="prefixGuide"><summary>常见前缀 '+
     relevant.map(([form]) => esc(form)).join('、')+'</summary><ul>' +
-    relevant.map(([form, description, url]) => '<li><b>'+esc(form)+'</b> · '+esc(description)+
+    relevant.map(([form, description, url]) => '<li><b lang="en">'+esc(form)+'</b> · '+esc(description)+
       ' <a href="'+esc(url)+'" target="_blank" rel="noopener">词典 ↗</a></li>').join('') +
     '</ul></details>' : '';
   return parts || guide || examples ? '<div class="morphNotes">'+parts+guide+examples+'</div>' : '';
@@ -107,10 +107,12 @@ export function confusionComparisonHTML(word, other, deck, esc) {
   const otherWord = deck.find(item => item.word === other.word) || other;
   const note = other.note && other.note !== '注意词形与词义的区别。'
     ? '<p>'+esc(other.note)+'</p>' : '';
-  const example = otherWord.example
-    ? '<small>'+esc(otherWord.example)+'<br>'+esc(otherWord.translation)+'</small>' : '';
-  return '<div class="confusionGrid"><div><b>'+esc(word.word)+'</b><p>'+esc(word.meaning)+'</p><small>'+esc(word.collocation)+'</small></div>'+
-    '<div><b>'+esc(other.word)+'</b><p>'+esc(other.meaning)+'</p>'+example+'</div></div>'+note;
+  const entry = (item, label) => '<section class="confusionCard"><span class="confusionRole">'+label+'</span>'+
+    '<b lang="en">'+esc(item.word)+'</b><p class="confusionMeaning">'+esc(item.meaning)+'</p>'+
+    (item.collocation ? '<p class="confusionCollocation">'+esc(item.collocation)+'</p>' : '')+
+    (item.example ? '<p class="confusionExample"><span lang="en">'+esc(item.example)+'</span>'+
+      (item.translation?'<span>'+esc(item.translation)+'</span>':'')+'</p>' : '')+'</section>';
+  return '<div class="confusionGrid">'+entry(word,'本题词')+entry(otherWord,'易混词')+'</div>'+note;
 }
 
 export function confusionHTML(card, word, deck, esc) {

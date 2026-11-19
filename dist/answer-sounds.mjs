@@ -1,6 +1,7 @@
 const key = 'cet6-answer-sounds-v1';
-let settings = {correct:true, wrong:true, autoPronounce:false, accent:"en-US", volume:0.8};
+let settings = {correct:true, wrong:true, autoPronounce:false, accent:"en-US", pronunciationVolume:0.55, effectsVolume:0.85};
 let audio;
+const volumeValue=(value,fallback)=>Number.isFinite(value)?Math.min(1,Math.max(0,value)):fallback;
 
 export function readSoundSettings() {
   try {
@@ -10,7 +11,8 @@ export function readSoundSettings() {
       wrong:saved.wrong !== false,
       autoPronounce:saved.autoPronounce === true,
       accent:saved.accent === "en-GB" ? "en-GB" : "en-US",
-      volume:Number.isFinite(saved.volume) ? Math.min(1, Math.max(0, saved.volume)) : 0.8
+      pronunciationVolume:volumeValue(saved.pronunciationVolume,volumeValue(saved.volume,0.55)),
+      effectsVolume:volumeValue(saved.effectsVolume,0.85)
     };
   } catch {}
   return settings;
@@ -18,10 +20,9 @@ export function readSoundSettings() {
 
 export function initAnswerSoundSettings(panel) {
   const controls = [...panel.querySelectorAll('[data-answer-sound]')];
-  const volume = panel.querySelector('[data-sound-volume]');
-  const value = panel.querySelector('output');
-  const accent = panel.querySelector('#wordAccent');
-  accent.onchange = () => update({accent:accent.value});
+  const sliders = [...panel.querySelectorAll('[data-sound-volume]')];
+  const accents = [...panel.querySelectorAll('[name="wordAccent"]')];
+  for (const radio of accents) radio.onchange = () => update({accent:radio.value});
   function update(patch) {
     settings = {...readSoundSettings(), ...patch};
     try { localStorage.setItem(key, JSON.stringify(settings)); } catch {}
@@ -30,45 +31,51 @@ export function initAnswerSoundSettings(panel) {
   function follow() {
     const current = readSoundSettings();
     for (const control of controls) control.checked = current[control.dataset.answerSound];
-    accent.value = current.accent;
-    volume.value = Math.round(current.volume * 100);
-    value.value = volume.value + '%';
+    for (const radio of accents) radio.checked = radio.value===current.accent;
+    for (const slider of sliders) {
+      slider.value = Math.round(current[slider.dataset.soundVolume] * 100);
+      slider.parentElement.querySelector('output').value = slider.value + '%';
+    }
   }
   for (const control of controls) {
     control.onchange = () => update({[control.dataset.answerSound]:control.checked});
   }
-  volume.oninput = () => {
-    value.value = volume.value + '%';
-    update({volume:Number(volume.value) / 100});
-  };
+  for (const slider of sliders) {
+    slider.oninput = () => {
+      slider.parentElement.querySelector('output').value = slider.value + '%';
+      update({[slider.dataset.soundVolume]:Number(slider.value) / 100});
+    };
+  }
   follow();
   panel.addEventListener('cet6-settings-open', follow);
 }
 
 export function playAnswerSound(correct) {
   const preferences = readSoundSettings();
-  if (!preferences[correct ? 'correct' : 'wrong'] || !preferences.volume) return;
+  if (!preferences[correct ? 'correct' : 'wrong'] || !preferences.effectsVolume) return;
   const Audio = window.AudioContext || window.webkitAudioContext;
   if (!Audio) return;
   try {
     audio ??= new Audio();
     const play = () => {
-      const volume = readSoundSettings().volume;
-      if (!volume) return;
+      const current=readSoundSettings();
+      const volume=current.effectsVolume;
+      if (!volume || !current[correct ? "correct" : "wrong"]) return;
       const start = audio.currentTime + 0.005;
-      const notes = correct ? [659, 880] : [370, 277];
-      notes.forEach((frequency, index) => {
+      const notes = correct ? [[740,0,.095],[1109,.083,.125]] : [[294,0,.115],[175,.115,.155]];
+      notes.forEach(([frequency,offset,duration]) => {
         const oscillator = audio.createOscillator();
         const gain = audio.createGain();
-        const at = start + index * 0.065;
+        const at = start + offset;
+        oscillator.type = correct ? "sine" : "triangle";
         oscillator.frequency.value = frequency;
         oscillator.connect(gain);
         gain.connect(audio.destination);
         gain.gain.setValueAtTime(0, at);
-        gain.gain.linearRampToValueAtTime(0.21 * volume, at + 0.009);
-        gain.gain.exponentialRampToValueAtTime(0.004 * volume, at + 0.085);
+        gain.gain.linearRampToValueAtTime((correct?0.42:0.46) * volume, at + (correct?.007:.016));
+        gain.gain.exponentialRampToValueAtTime(0.003 * volume, at + duration);
         oscillator.start(at);
-        oscillator.stop(at + 0.09);
+        oscillator.stop(at + duration + 0.005);
         oscillator.onended = () => {
           oscillator.disconnect();
           gain.disconnect();

@@ -77,14 +77,9 @@
 .prefixGuide{margin:8px 0}
 .confusionPrompt{background:#fff9f2;border:1px solid #e8caae;border-radius:8px;padding:10px 12px;margin:10px 0 14px;color:#673a25}
 .confusionPrompt summary span{font-size:12px;font-weight:400;text-decoration:underline;margin-left:8px}
-.confusionGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
-.confusionGrid div{background:#fff;border-radius:6px;padding:8px 10px}
-.confusionGrid p{margin:2px 0 5px}
-@media(max-width:480px){.confusionGrid{grid-template-columns:1fr}}
 
 .trainHead{flex-wrap:wrap;gap:8px}
 #previousWordDialog,#confusionDialog{box-sizing:border-box;width:calc(100% - 28px);max-width:660px;margin:auto;padding:18px}
-#confusionDialog .confusionGrid div{background:#f1f4eb}
 #confusionDialog form{margin:16px 0 0;justify-content:flex-end}
 #previousWordDialog h2{margin:0 0 8px}
 #previousWordBody{max-height:62vh;max-height:62dvh;overflow:auto;padding:0 8px 0 0}
@@ -247,23 +242,19 @@ body.vocabularySubpage > header,
 .mistakeFilters label{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:600}
 .mistakeFilters select,.settingRow select{border:1px solid #c5d5c6;border-radius:8px;background-color:#f6f9f4;padding:8px 32px 8px 10px;color:#294e42;min-height:37px;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23547969' stroke-width='1.6'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
 #mistakeResults{color:#536b5e;font-size:12px;margin-inline-start:auto}
-.flash #options .optionWithPronunciation{display:grid;grid-template-columns:minmax(0,1fr) 42px;gap:1px;min-width:0;background:#f5f8f3;border:1px solid #d6e1d4;border-radius:8px;overflow:hidden}
+.flash #options .optionWithPronunciation{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:7px;min-width:0;padding-inline-end:10px;background:#f5f8f3;border:1px solid #d6e1d4;border-radius:8px}
 .flash #options .optionWithPronunciation:has(.right){background:#deedce;border-color:#97b57a}
 .flash #options .optionWithPronunciation:has(.wrong){background:#f6dfcf;border-color:#d0a18b}
 .flash #options .optionWithPronunciation>button{border:0;background:transparent;border-radius:0}
 .flash #options .optionWithPronunciation>button[data-word]:disabled{opacity:1;cursor:default}
-.flash #options .optionWithPronunciation>.optionSpeaker{display:grid;place-items:center;align-self:stretch;min-height:44px;padding:0;border-left:1px solid #67887840}
-.flash #options .optionWithPronunciation>.optionSpeaker:hover{background:#668f7826}
+.flash #options .optionWithPronunciation>.optionSpeaker{display:grid;grid-template:1fr/1fr;place-items:center;gap:0;width:40px;min-height:40px;aspect-ratio:1;align-self:center;padding:0;border:1px solid #a4844955;border-radius:10px;color:#765018;background:#f5e7cc}
+.flash #options .optionWithPronunciation>.optionSpeaker:hover{background:#ebd5ab}
 .flash #options .optionSpeaker:focus-visible{outline:2px solid #20594b;outline-offset:-3px}
-.flash #options .optionSpeaker svg{width:17px;height:17px}
+.flash #options .optionSpeaker svg{width:21px;height:21px;display:block}
 [data-theme="dark"] #training #options .optionWithPronunciation{background:#263932;border-color:#506c5d}
 [data-theme="dark"] #training #options .optionWithPronunciation:has(.right){background:#2a5239;border-color:#7ab08a}
 [data-theme="dark"] #training #options .optionWithPronunciation:has(.wrong){background:#563a2d;border-color:#b48b75}
 [data-theme="dark"] #training #options .optionWithPronunciation>button{background:transparent}
-@media(max-width:600px){
- .flash #options .optionWithPronunciation{grid-template-columns:minmax(0,1fr) 36px}
- .flash #options .optionWithPronunciation>button[data-word]{gap:5px;padding:5px}
-}
 .questionTitleActions{display:flex;justify-content:flex-end;align-items:center;gap:6px;flex-wrap:wrap;flex:none}
 #markEasy{padding:6px 11px;border-color:#a5bf9f;border-radius:12px;background:#e8f2e2;color:#27563c;font-weight:650;min-height:40px}
 #markEasy:hover{background:#d8ead2}
@@ -274,3 +265,59 @@ body.vocabularySubpage > header,
 .compactLibraryInfo h2 span{font-size:12px;font-weight:600;border-radius:10px;padding:1px 8px;color:#315844;background:#e3efe1}
 .compactLibraryInfo p{margin:4px 0}
 [data-theme="dark"] .compactLibraryInfo h2 span{color:#e0f5e6;background:#365949}
+#training .wordSyllables{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin:9px 0 0;color:#315e4a;line-height:1.4}
+.wordSyllables span{font-size:14px;font-weight:600}
+.wordSyllables strong{font-size:20px;font-weight:700;overflow-wrap:anywhere}
+[data-theme="dark"] #training .wordSyllables{color:#b9e3cb!important}
+[data-theme="dark"] #training #options .optionWithPronunciation>.optionSpeaker{color:#f4ce87;background:#4c412d}
+[data-theme="dark"] #training #options .optionWithPronunciation>.optionSpeaker:hover{background:#625033}
+[data-theme="dark"] .flash #options .optionSpeaker:focus-visible{outline-color:#f4ce87}
+/* Keep the answer and pronunciation as separate targets without a full-height divider. */
+.flash #options .optionWithPronunciation>button[data-word]{align-self:stretch;align-items:start;gap:10px;padding:11px 2px 11px 11px}
+.flash #options .optionWithPronunciation .choiceIndex{width:26px;height:26px;font-size:13px;margin-top:1px}
+.flash #options .optionWithPronunciation .choiceMeanings{font-weight:450;margin-top:4px}
+.flash #options .optionWithPronunciation .meaningRow{gap:4px 6px}
+.flash #options .optionWithPronunciation .meaningRow>span:last-child{min-width:0;text-align:start}
+@media(max-width:600px){
+  .flash #options .optionWithPronunciation{gap:3px;padding-inline-end:5px}
+  .flash #options .optionWithPronunciation>button[data-word]{gap:5px;padding:8px 0 8px 5px}
+  .flash #options .optionWithPronunciation .choiceIndex{width:22px;height:22px;font-size:11px}
+  .flash #options .optionWithPronunciation>.optionSpeaker{width:32px;min-height:36px;border-radius:8px}
+  .flash #options .optionSpeaker svg{width:18px;height:18px}
+}
+:is(#feedback,#previousWordBody) :is(.morphNotes ul,.synonymSense li){font-size:inherit}
+:is(#feedback,#previousWordBody) [lang="en"]{font-size:1.125em;line-height:1.38;overflow-wrap:anywhere}
+:is(#feedback,#previousWordBody) .answerMeaning>strong[lang="en"]{font-size:1.375em;font-weight:680}
+:is(#feedback,#previousWordBody) .feedbackExample [lang="en"]{font-size:1.1875em}
+:is(#feedback,#previousWordBody) .feedbackExample :lang(en){font-weight:500}
+.confusionGrid{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:12px 0 0;
+ font-size:var(--explanation-size,16px);line-height:1.5;border:1px solid var(--comparison-line,#d7e3d7);
+ background:var(--comparison-surface,#f1f6ef);border-radius:12px;color:var(--comparison-text,#224438)
+}
+.confusionGrid>.confusionCard{padding:14px 15px;min-width:0;display:grid;align-content:start;gap:6px}
+.confusionGrid>.confusionCard+.confusionCard{border-inline-start:1px solid var(--comparison-line,#d7e3d7)}
+.confusionCard .confusionRole{justify-self:start;padding:2px 7px;border-radius:5px;background:var(--comparison-badge,#dfecdf);font-size:.75em;font-weight:650;color:var(--comparison-label,#355b48)}
+.confusionCard>b[lang="en"]{font-size:1.23em;overflow-wrap:anywhere}
+.confusionGrid .confusionCard p{font-size:inherit;color:inherit;margin:0;overflow-wrap:anywhere;line-height:1.5}
+.confusionCard .confusionMeaning{font-weight:650}
+.confusionGrid .confusionCollocation{color:var(--comparison-label,#355b48);font-size:.9em}
+.confusionGrid .confusionExample{margin-top:3px;padding-top:8px;border-top:1px solid var(--comparison-line,#d7e3d7)}
+.confusionExample span{display:block}
+.confusionExample span+span{font-size:.9em;color:var(--comparison-label,#355b48)}
+[data-theme="dark"] .confusionGrid{
+ --comparison-surface:#263a31;--comparison-line:#4a6759;--comparison-text:#e4f2e9;
+ --comparison-badge:#354f42;--comparison-label:#b9d3c5
+}
+@media(max-width:480px){
+ .confusionGrid{grid-template-columns:1fr}
+ .confusionGrid>.confusionCard+.confusionCard{border-inline-start:0;border-top:1px solid var(--comparison-line,#d7e3d7)}
+}
+.accentButtons{display:inline-flex;align-items:center;gap:6px;flex:none}
+.accentButtons button{min-height:40px;min-width:52px;padding:7px 9px;font-weight:600}
+.feedbackExample .accentButtons{align-self:flex-start;margin-top:6px}
+@media(max-width:600px){
+ #training .accentButtons button{min-height:40px;min-width:44px;padding:6px 8px}
+ .feedbackExample{flex-wrap:wrap;gap:4px}
+ .feedbackExample .accentButtons{margin-top:0}
+}
