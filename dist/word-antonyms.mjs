@@ -42,6 +42,10 @@ const antonyms = {
   unique: [{word:'common',meaning:'常见的；普通的',note:'用于对比“独特、少见”与“常见”。'}],
   unusable: [{word:'usable',meaning:'可用的'}],
   usable: [{word:'unusable',meaning:'无法使用的'}],
+  virtual: [
+    {word:'real',meaning:'真实的；现实中的',note:'对应“虚拟的”，如 the virtual world 与 the real world。'},
+    {word:'in-person',meaning:'现场的；面对面的',note:'对应“线上的”，如 a virtual tour 与 an in-person tour。'}
+  ],
   wealthy: [{word:'poor',meaning:'贫穷的'}],
   willing: [{word:'unwilling',meaning:'不愿意的'}]
 };

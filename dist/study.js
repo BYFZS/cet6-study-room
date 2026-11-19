@@ -1,8 +1,8 @@
 import {filterMistakes} from './mistake-filters.mjs?v=27';
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
 import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=31';
-import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
-import {initThreeUI} from './three-round-ui.mjs?v=45';
+import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,markWordEasy,reviewDueTime,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
+import {initThreeUI} from './three-round-ui.mjs?v=46';
 import {setupSyncUI} from './sync-ui.mjs?v=27';
 import {summarizeStudy} from './study-analytics.mjs?v=42';
 import {setupStudyStats} from './study-stats-ui.mjs?v=42';
@@ -11,10 +11,13 @@ import {STUDY_ACTIVITY, trackStudyActivity} from './study-activity.mjs?v=42';
 import {studyLogWithQuizzes} from './context-quiz.mjs?v=41';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let deck=[],optionPositions={},baseline=null,db=emptyDB(),sync=null,quiz=null;
+const initialParams = new URLSearchParams(location.search);
+let pendingInitialView = initialParams.get('view');
 try{baseline=JSON.parse(localStorage.getItem(BASE_KEY));const saved=JSON.parse(localStorage.getItem(LEARN_KEY));if([2,3].includes(saved?.version)&&saved.type==='cet6-learning')db=saved;}catch{}
 function message(s=''){$('message').textContent=s;}
 function save(notifySync=true){try{localStorage.setItem(LEARN_KEY,JSON.stringify(db));$('saved').textContent='已保存 · '+new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});if(notifySync)sync?.changed();}catch{message('浏览器无法保存，请立即导出学习记录备份。');}}
 function view(name) {
+ pendingInitialView = null;
  if (!['training','contextQuiz','words'].includes(name)) studyActivity.pause();
  const openingTraining = name === 'training' && $('training').hidden;
  const insideTraining = name === 'training' || name === 'roundEnd';
@@ -25,6 +28,7 @@ function view(name) {
  for (const section of ['home', 'scores', 'words', 'analytics', 'contextQuiz', 'training', 'roundEnd']) {
   $(section).hidden = section !== name;
  }
+ delete document.documentElement.dataset.loadingAnalytics;
  $('moduleNav').hidden = insideTraining || insideVocabulary;
  $('vocabNav').hidden = insideTraining || insideVocabulary || showingStats;
  $('backToVocabulary').hidden = !insideVocabulary;
@@ -47,6 +51,21 @@ function view(name) {
  if (enteringSubpage) $('backToVocabulary').focus({preventScroll: true});
 }
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>view(b.dataset.view));
+document.addEventListener('click', event => {
+ const link = event.target.closest('#vocabModule, #statsModule, #roomSidebarLinks [data-module="vocab"], #roomSidebarLinks [data-module="stats"]');
+ if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+ event.preventDefault();
+ const url = new URL(location.href);
+ const name = link.id === 'statsModule' || link.dataset.module === 'stats' ? 'analytics' : 'home';
+ if (name === 'analytics') url.searchParams.set('view', name);
+ else url.searchParams.delete('view');
+ if (url.href !== location.href) history.pushState(null, '', url);
+ view(name);
+ window.scrollTo(0, 0);
+});
+window.addEventListener('popstate', () => {
+ view(new URLSearchParams(location.search).get('view') === 'analytics' ? 'analytics' : 'home');
+});
 $('backToVocabulary').onclick = event => {
  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
  event.preventDefault();
@@ -89,7 +108,7 @@ function renderScores(){const box=$('scoreBox'),rows=gradeBaseline(baseline,deck
 function renderWords(){
  document.querySelectorAll('[data-word-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.wordFilter===$('listFilter').value)));
  const filter=$('listFilter').value,search=$('search').value.trim().toLowerCase();
- const repeated=filter==='repeated', easy=filter==='easy';
+ const repeated=filter==='repeated', easy=filter==='easy', showEasyButton=easy||filter==='all';
  $('easyWordInfo').hidden=!easy;
  $('repeatInfo').hidden=$('mistakeFilters').hidden=!repeated;
  const misses=new Map(repeated?summarizeStudy(studyLogWithQuizzes(db)).repeated.map(item=>[item.word,item]):[]);
@@ -117,21 +136,41 @@ function renderWords(){
    ' · '+miss.days.size+' 天 · 最近 '+dayKey(miss.latest)+'</p>':'';
   const timing=previouslyPassed(m)?' · 复习间隔 '+(m.easy?EASY_REVIEW_DAYS:REVIEW_INTERVALS[m.reviewLevel||0])+' 天':'';
   const dueText=m?.due?' · 下次 '+new Date(m.due).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'';
-  return '<article class="wordCard"><div class="wordTop"><strong>'+esc(w.word)+'</strong><span>'+status+' · '+esc(w.source)+'</span>'+
-   '<button data-toggle="'+esc(w.word)+'">'+(m?.manualWeak?'取消手动收藏':'手动收藏')+'</button></div>'+
+  const easyButton=showEasyButton?'<button type="button" data-library-easy aria-pressed="'+Boolean(m?.easy)+'">'+(m?.easy?'取消简单':'标记简单')+'</button>':'';
+  return '<article class="wordCard" data-library-word="'+esc(w.word)+'"><div class="wordTop"><strong>'+esc(w.word)+'</strong><span>'+status+' · '+esc(w.source)+'</span>'+
+   '<div class="wordActions">'+easyButton+'<button type="button" data-toggle>'+(m?.manualWeak?'取消手动收藏':'手动收藏')+'</button></div></div>'+
    missText+'<p class="meaning">'+esc(w.meaning)+'</p><p class="example">'+esc(w.example)+'</p><p>'+
    esc(w.translation)+'</p><p>'+esc(w.collocation)+'</p><small>练习 '+(m?.attempts||0)+' 次 · 三轮通过 '+
    (m?.passDays?.length||0)+' 个日期'+timing+dueText+'</small></article>';
  }).join(''):'<div class="panel"><p>'+(repeated&&!pool.length?'累计答错两次的词会出现在这里。':easy&&!search?'还没有熟练词。在词汇训练中点「简单」即可加入。':'暂无符合筛选的词。')+'</p></div>';
- $('wordList').querySelectorAll('[data-toggle]').forEach(b=>b.onclick=()=>{
-  const m=db.memories[b.dataset.toggle]||newMemory();
-  m.manualWeak=!m.manualWeak;
-  if(m.manualWeak)m.due=Date.now();
-  db.memories[b.dataset.toggle]=m;
-  save();
-  renderWords();
- });
 }
+$('wordList').addEventListener('click', event => {
+ const button=event.target.closest('button[data-toggle],button[data-library-easy]');
+ if(!button)return;
+ const word=button.closest('[data-library-word]').dataset.libraryWord;
+ const m=db.memories[word]||newMemory();
+ const marking=button.hasAttribute('data-library-easy');
+ if(!marking){
+  m.manualWeak=!m.manualWeak;
+  if(m.manualWeak&&!m.easy)m.due=Date.now();
+  db.memories[word]=m;
+ }else if(!m.easy){
+  const {beforeLibraryEasy, ...previous}=m;
+  const now=Date.now();
+  const snapshot=structuredClone(previous);
+  markWordEasy(db,word,now).beforeLibraryEasy={at:now,previous:snapshot};
+ }else if(m.beforeLibraryEasy?.at===m.lastReviewed){
+  db.memories[word]={...m.beforeLibraryEasy.previous,manualWeak:m.manualWeak};
+ }else{
+  delete m.easy;
+  delete m.beforeLibraryEasy;
+  m.due=Math.min(m.due,reviewDueTime(Date.now(),REVIEW_INTERVALS[m.reviewLevel||0]));
+ }
+ save();
+ renderWords();
+ const card=[...$('wordList').children].find(item=>item.dataset.libraryWord===word);
+ (card?.querySelector(marking?'[data-library-easy]':'[data-toggle]')??$('words').querySelector('[data-word-filter][aria-pressed="true"]'))?.focus({preventScroll:true});
+});
 $('search').oninput=$('mistakeKind').onchange=$('mistakeOrder').onchange=renderWords;
 document.querySelectorAll('[data-word-filter]').forEach(button=>button.onclick=()=>{
  $('listFilter').value=button.dataset.wordFilter;
@@ -140,8 +179,7 @@ document.querySelectorAll('[data-word-filter]').forEach(button=>button.onclick=(
 initThreeUI({$,getDeck:()=>deck,getDB:()=>db,getOptionPosition:term=>optionPositions[term],view,save,message,esc,beforeNext:()=>sync?.applyPending(),onGroupFinished:container=>quiz?.announceAtGroupEnd(container)});
 $('import').onclick=()=>$('file').click();$('file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>10*1024*1024)throw Error('文件超过10MB');const raw=JSON.parse(await file.text());if(raw.test==='cet6-vocabulary-01'){if(raw.status!=='submitted'||raw.responses?.length!==20||new Set(raw.responses.map(r=>r.word)).size!==20||raw.responses.some(r=>!deck.slice(0,20).some(w=>w.word===r.word)||typeof r.meaning!=='string'||!['known','familiar','unknown'].includes(r.confidence)))throw Error('20词答卷格式不正确，需导入已提交的答卷');baseline=raw;localStorage.setItem(BASE_KEY,JSON.stringify(raw));syncBaseline(db,baseline,deck);migrateThree(db);save();message('答卷已导入并评分，错词与眼熟词已加入复习队列。');view('scores');}else{validateBackup(raw,deck.map(w=>w.word));if(!confirm('导入备份会替换当前浏览器的词汇学习记录。是否继续？'))return;db=migrateThree(raw.learning);db.session=null;db.overrides??={};baseline=raw.baseline||null;if(baseline)localStorage.setItem(BASE_KEY,JSON.stringify(baseline));else localStorage.removeItem(BASE_KEY);save();message('备份已恢复。');view('home');}}catch(err){message('导入失败：'+err.message);}finally{e.target.value='';}};
 $('backup').onclick=()=>{const out={type:'cet6-learning-backup',version:3,exportedAt:new Date().toISOString(),baseline,learning:db};const url=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='CET6-词汇学习记录-'+dayKey()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);};
-const initialParams = new URLSearchParams(location.search);
-if (initialParams.get('view') === 'analytics') view('analytics');
+if (pendingInitialView === 'analytics') view('analytics');
 const loadStudyFiles = paths => Promise.all(paths.map(async path => {
   const response = await fetch(path);
   if (!response.ok) throw Error(path + ' 加载失败');
@@ -150,7 +188,7 @@ const loadStudyFiles = paths => Promise.all(paths.map(async path => {
 try {
  const [responses, relations, details] = await Promise.all([
   loadStudyFiles(['base-words.json','paper-words.json','paper-extra-reading.json','paper-extra-mixed.json','paper-writing-translation.json']),
-  loadStudyFiles(['word-relations-a.json?v=19','word-relations-b.json','synonym-senses-priority.json?v=10','synonym-senses-general.json?v=10','synonym-senses-usage.json?v=10']),
+  loadStudyFiles(['word-relations-a.json?v=19','word-relations-b.json','synonym-senses-priority.json?v=10','synonym-senses-general.json?v=10','synonym-senses-usage.json?v=11']),
   loadStudyFiles(['context-hints-a.json?v=12','context-hints-b.json?v=12','context-combinations.json?v=12',
    'word-parts-prefixes.json?v=26','word-parts-roots.json?v=26','word-pos-a.json?v=12','word-pos-b.json?v=12',
    'word-families.json?v=26','word-phrase-notes.json?v=26','word-pos-glosses.json?v=12','distractor-pos.json?v=12','word-syllables.json?v=12'])
@@ -180,5 +218,13 @@ try {
   }
  });
  $('showSync').disabled=false;
- const params=initialParams;if(params.get('sync')==='1'){const url=new URL(location.href);url.searchParams.delete('sync');history.replaceState(null,'',url);$('showSync').click();}const initialView=params.get('view');if(initialView==='scores')view('scores');else if(initialView==='analytics')view('analytics');else if(initialView==='contextQuiz')view('contextQuiz');else if(initialView==='training')$('startRound').click();}catch(e){message('词库加载失败，请刷新重试：'+e.message);$('startRound').disabled=true;}
+ if(initialParams.get('sync')==='1'){const url=new URL(location.href);url.searchParams.delete('sync');history.replaceState(null,'',url);$('showSync').click();}
+ const initialView=pendingInitialView;
+ if(initialView==='training')$('startRound').click();
+ else if(initialView==='scores'||initialView==='contextQuiz')view(initialView);
+ else if(!$('analytics').hidden)studyStats.render();
+ else if(!$('scores').hidden)renderScores();
+ else if(!$('words').hidden)renderWords();
+ else if(!$('contextQuiz').hidden)quiz.render();
+}catch(e){message('词库加载失败，请刷新重试：'+e.message);$('startRound').disabled=true;}
 

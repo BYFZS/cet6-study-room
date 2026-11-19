@@ -1,4 +1,14 @@
 {
+  "virtual": [
+    {"label":"虚拟的；线上的","items":[
+      {"word":"simulated","meaning":"模拟的","note":"强调用模型或计算机模拟真实体验。"},
+      {"word":"online","meaning":"在线的","note":"用于会议、课程和参观等通过网络进行的活动。"}
+    ]},
+    {"label":"实际上相当于；几乎就是","items":[
+      {"word":"in effect","meaning":"实际上","note":"如 a virtual ban 指实际效果等同于禁令。"},
+      {"word":"practically","meaning":"几乎","note":"如 a virtual certainty 可改写为 practically certain。"}
+    ]}
+  ],
   "unique": [{"label":"独特的","items":[{"word":"distinctive","meaning":"有辨识度的","note":"强调容易被认出"},{"word":"one of a kind","meaning":"独一无二的","note":"用于强调无同类事物"}]}],
   "conflict": [{"label":"冲突；分歧","items":[{"word":"clash","meaning":"冲突","note":"可指意见或利益冲突"},{"word":"disagreement","meaning":"意见不合","note":"语气较轻"}]},{"label":"与……相冲突","items":[{"word":"be incompatible with","meaning":"与……不相容"},{"word":"clash with","meaning":"与……发生冲突"}]}],
   "foresee": [{"label":"预见","items":[{"word":"anticipate","meaning":"预料到","note":"也可指预先准备"},{"word":"predict","meaning":"预测","note":"着重对将来作出判断"}]}],

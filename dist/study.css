@@ -349,3 +349,9 @@ body.vocabularySubpage > header,
 .listeningReview h4{margin:0 0 8px}
 .listeningTranscript{display:block;width:100%;height:auto;margin-top:12px;border:1px solid var(--line);border-radius:6px}
 .listeningResult{line-height:1.6}
+
+.wordTop{flex-wrap:wrap}
+.wordActions{display:flex;gap:8px;flex-wrap:wrap;margin-inline-start:auto}
+.wordActions button{margin:0}
+.wordActions [data-library-easy][aria-pressed="true"]{background:var(--library-easy-bg,#dfeddc);color:var(--library-easy-text,#224b3d);border-color:var(--library-easy-border,#b9d4b9)}
+[data-theme="dark"] .wordActions{--library-easy-bg:#325440;--library-easy-text:#e3f5e9;--library-easy-border:#5a826c}

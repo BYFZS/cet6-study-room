@@ -18,7 +18,7 @@ for(const [word,senses] of grouped){
   assert.ok(items.every(item=>item.word.trim()&&item.meaning.trim()&&item.word.toLowerCase()!==word),word);
  }
 }
-assert.equal(grouped.length,140);
+assert.equal(grouped.length,141);
 assert.equal(deck.find(word=>word.word==='account').relations.senses.length,4);
 for(const word of deck){
  const synonyms=new Set(word.relations.synonyms.map(item=>item.word.toLowerCase()));
@@ -32,4 +32,4 @@ assert.ok(harderOptions(likely,deck,1).some(o=>o.word==='like'&&o.meaning.includ
 assert.ok(harderOptions(resource,deck,2).some(o=>o.word==='source'&&o.meaning.includes('来源')));
 assert.ok(harderOptions(wealthy,deck,2).some(o=>o.word==='healthy'));
 assert.ok(contrastCandidates(likely,deck).slice(0,3).every(o=>o.kind==='confusable'));
-console.log('PASS: 383 relation entries, 140 grouped synonym entries, no synonyms as distractors, bilingual options and confusable priority.');
+console.log('PASS: 383 relation entries, 141 grouped synonym entries, no synonyms as distractors, bilingual options and confusable priority.');
