@@ -1,16 +1,10 @@
-import {playAnswerSound} from './answer-sounds.mjs';
+import {playAnswerSound} from './answer-sounds.mjs?v=27';
 
-const listening = 'When the university library first extended its evening hours, staff expected most visitors to borrow books. In fact, many students came to use the quiet study rooms. Some shared crowded flats, while others had long gaps between work and evening classes. After reviewing the feedback, the library kept more study rooms open and moved the closing time of the borrowing desk back to its original hour.';
 const reading = 'A team compared two groups of learners who studied the same set of unfamiliar words. One group studied for thirty minutes in a single session. The other split the same amount of time across three days. Both groups did equally well on a test immediately after their final session. A week later, however, the group that had spaced out its practice remembered more words. The result suggests that the timing of practice matters when the goal is to remember information over time.';
 const shortTasks = {
   listening: {
-    title:'听力 · 图书馆延长开放',
-    hint:'听一遍短文，抓住预期和实际情况的差别，再选答案。本练习使用合成语音。',
-    passage:listening,
-    question:'Why did many students visit the library in the evening?',
-    options:['To borrow more books.', 'To find a quiet place to study.', 'To attend evening classes.', 'To give staff feedback.'],
-    answer:1,
-    note:'In fact 提示实际情况。录音说许多学生来用安静的自习室。borrow books 是工作人员原先的预期。'
+    title:'真题听力 · 2025 年 6 月第 1 套',
+    hint:'使用完整原录音，保留原速、原口音、题序和停顿。可打开原卷并跟着录音作答。'
   },
   reading: {
     title:'阅读 · 间隔复习',
@@ -57,39 +51,36 @@ document.querySelector('[data-skill="' + selected + '"]').setAttribute('aria-cur
 document.getElementById('practiceTitle').textContent = task.title;
 document.getElementById('practiceHint').textContent = task.hint;
 
-if (Object.hasOwn(shortTasks,selected)) {
-  const isListening = selected === 'listening';
-  if (isListening) {
-    const play = add(exercise,'button','播放听力');
-    play.type = 'button';
-    const audioStatus = add(exercise,'span');
-    audioStatus.setAttribute('role','status');
-    play.onclick = () => {
-      if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) {
-        audioStatus.textContent = '当前设备无法播放合成语音，可以展开原文。';
-        return;
-      }
-      const utterance = new SpeechSynthesisUtterance(task.passage);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.88;
-      utterance.onerror = () => { audioStatus.textContent = '语音暂时不可用，可以展开原文。'; };
-      speechSynthesis.cancel();
-      audioStatus.textContent = '';
-      speechSynthesis.speak(utterance);
-      play.textContent = '重听';
-    };
-    window.addEventListener('pagehide',() => window.speechSynthesis?.cancel());
-  } else {
-    const passage = add(exercise,'p',task.passage);
-    passage.className = 'practicePassage';
-    passage.lang = 'en';
+if (selected === 'listening') {
+  const base='https://www.cettong.cn/library/cet6/2025_06_1/';
+  const audio = add(exercise,'audio');
+  audio.controls=true;
+  audio.preload='none';
+  audio.src=base+'listening.mp3';
+  audio.setAttribute('aria-label','六级听力真题原录音');
+  const status=add(exercise,'p');
+  status.setAttribute('role','status');
+  audio.addEventListener('error',()=>{status.textContent='原录音暂时无法加载，可从备用来源打开。';});
+  const links=add(exercise,'div');
+  links.className='listeningLinks';
+  for(const [text,href,external] of [
+    ['打开听力原卷',base+'test.pdf',true],
+    ['备用音频与分段练习','https://eol.nju.edu.cn/cet6/papers/202506-1.html',true],
+    ['完整模拟考试','index.html?exam=1',false]
+  ]){
+    const link=add(links,'a',text);
+    link.href=href;
+    if(external){link.target='_blank';link.rel='noopener';}
   }
+} else if (selected === 'reading') {
+  const passage = add(exercise,'p',task.passage);
+  passage.className = 'practicePassage';
+  passage.lang = 'en';
   const form = add(exercise,'form');
   const group = add(form,'fieldset');
   add(group,'legend',task.question).lang = 'en';
   const feedback = add(exercise,'p');
   feedback.setAttribute('role','status');
-  let script;
   for (const [index,option] of task.options.entries()) {
     const label = add(group,'label');
     const input = add(label,'input');
@@ -100,17 +91,11 @@ if (Object.hasOwn(shortTasks,selected)) {
     add(label,'span',String.fromCharCode(65+index)+'. '+option).lang = 'en';
   }
   add(form,'button','核对答案').className = 'primary';
-  if (isListening) {
-    script = add(exercise,'details');
-    add(script,'summary','听力原文');
-    add(script,'p',task.passage).lang = 'en';
-  }
   form.onsubmit = event => {
     event.preventDefault();
     const correct = Number(new FormData(form).get('choice')) === task.answer;
     playAnswerSound(correct);
     feedback.textContent = (correct ? '答对了。' : '参考答案为 '+String.fromCharCode(65+task.answer)+'。')+task.note;
-    if (script) script.open = true;
   };
 } else {
   const prompt = add(exercise,'p',task.prompt);

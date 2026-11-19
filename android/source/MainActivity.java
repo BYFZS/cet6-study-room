@@ -1,6 +1,7 @@
 package io.github.byfzs.cet6room;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
@@ -38,6 +39,7 @@ import java.util.concurrent.Executors;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLException;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 public final class MainActivity extends Activity {
     private static final String HOST = "appassets.androidplatform.net";
@@ -46,6 +48,9 @@ public final class MainActivity extends Activity {
     private static final String EXAM_HOST = "www.cettong.cn";
     private static final String EXAM_PATH = "/library/cet6/2025_06_1/";
     private static final String SYNC_HOST = "cet6-sync-nov26.linedsunflower3.chatgpt.site";
+    private static final String RELEASE_API = "https://api.github.com/repos/BYFZS/cet6-study-room/releases/latest";
+    private static final String RELEASE_ASSETS = "https://github.com/BYFZS/cet6-study-room/releases/download/";
+    private static final long UPDATE_INTERVAL = 24 * 60 * 60 * 1000L;
     private static final int MAX_SYNC_BYTES = 1_400_000;
     private static final int OPEN_JSON = 1;
     private static final int SAVE_JSON = 2;
@@ -53,7 +58,7 @@ public final class MainActivity extends Activity {
     private static final String CSP = "default-src 'self'; frame-src 'none'; object-src 'none'; "
         + "script-src 'self' 'unsafe-inline' blob:; worker-src 'self' blob:; "
         + "style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; "
-        + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + "; media-src 'self' blob:";
+        + "connect-src 'self' https://" + EXAM_HOST + " https://" + SYNC_HOST + "; media-src 'self' blob: https://" + EXAM_HOST;
 
     private WebView web;
     private final ExecutorService syncRequests = Executors.newFixedThreadPool(2);
@@ -61,6 +66,11 @@ public final class MainActivity extends Activity {
     private boolean voiceReady;
     private ValueCallback<Uri[]> chooser;
     private File pendingExport;
+    private final ExecutorService updateRequests = Executors.newSingleThreadExecutor();
+    private boolean updateInFlight;
+    private boolean manualUpdateCheck;
+    private boolean foreground;
+    private AlertDialog updateDialog;
 
     @Override
     protected void onCreate(Bundle state) {
@@ -118,6 +128,131 @@ public final class MainActivity extends Activity {
         if (state == null || web.restoreState(state) == null) web.loadUrl(HOME);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        foreground = true;
+        checkForUpdate(false);
+    }
+
+    @Override
+    protected void onPause() {
+        foreground = false;
+        super.onPause();
+    }
+
+    private static int compareVersions(String remote, String local) {
+        if (!remote.matches("[0-9]{1,6}([.][0-9]{1,6}){2}")
+            || !local.matches("[0-9]{1,6}([.][0-9]{1,6}){2}")) return 0;
+        String[] left = remote.split("[.]");
+        String[] right = local.split("[.]");
+        for (int i = 0; i < 3; i++) {
+            int difference = Integer.compare(Integer.parseInt(left[i]), Integer.parseInt(right[i]));
+            if (difference != 0) return difference;
+        }
+        return 0;
+    }
+
+    private JSONObject readLatestRelease() throws Exception {
+        HttpsURLConnection connection = (HttpsURLConnection) new URL(RELEASE_API).openConnection();
+        try {
+            connection.setInstanceFollowRedirects(false);
+            connection.setConnectTimeout(6500);
+            connection.setReadTimeout(6500);
+            connection.setRequestProperty("Accept", "application/vnd.github+json");
+            connection.setRequestProperty("User-Agent", "CET6-Study-Room-Android");
+            if (connection.getResponseCode() != 200) throw new IOException("Release request failed");
+            try (InputStream input = connection.getInputStream()) {
+                ByteArrayOutputStream body = new ByteArrayOutputStream();
+                byte[] buffer = new byte[4096];
+                int length;
+                while ((length = input.read(buffer)) != -1) {
+                    if (body.size() + length > 262144) throw new IOException("Release response too large");
+                    body.write(buffer, 0, length);
+                }
+                return new JSONObject(new String(body.toByteArray(), StandardCharsets.UTF_8));
+            }
+        } finally {
+            connection.disconnect();
+        }
+    }
+
+    private void checkForUpdate(boolean manual) {
+        if (isDestroyed() || isFinishing() || updateDialog != null) return;
+        if (updateInFlight) {
+            if (manual && !manualUpdateCheck) notice("正在检查更新…");
+            manualUpdateCheck |= manual;
+            return;
+        }
+        long now = System.currentTimeMillis();
+        android.content.SharedPreferences prefs = getSharedPreferences("cet6-updates", MODE_PRIVATE);
+        long last = prefs.getLong("lastSuccessfulCheck", 0);
+        if (!manual && now >= last && now - last < UPDATE_INTERVAL) return;
+        updateInFlight = true;
+        manualUpdateCheck = manual;
+        if (manual) notice("正在检查更新…");
+        updateRequests.execute(() -> {
+            JSONObject result = null;
+            String current = null;
+            try {
+                current = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+                result = readLatestRelease();
+            } catch (Exception ignored) {}
+            JSONObject release = result;
+            String version = current;
+            runOnUiThread(() -> {
+                updateInFlight = false;
+                boolean requested = manualUpdateCheck;
+                manualUpdateCheck = false;
+                if (isFinishing() || isDestroyed() || !foreground) return;
+                if (release == null || version == null) {
+                    if (requested) notice("暂时无法连接 GitHub 检查更新，学习功能仍可使用。");
+                    return;
+                }
+                String tag = release.optString("tag_name");
+                String releaseVersion = tag.startsWith("v") ? tag.substring(1) : "";
+                if (compareVersions(releaseVersion, version) <= 0
+                    || release.optBoolean("draft") || release.optBoolean("prerelease")) {
+                    prefs.edit().putLong("lastSuccessfulCheck", now).apply();
+                    if (requested) notice("当前已是最新版本 v" + version);
+                    return;
+                }
+                String assetName = "CET6-Study-Room-" + releaseVersion + ".apk";
+                String download = RELEASE_ASSETS + tag + "/" + assetName;
+                JSONArray assets = release.optJSONArray("assets");
+                boolean available = false;
+                for (int i = 0; assets != null && i < assets.length(); i++) {
+                    JSONObject asset = assets.optJSONObject(i);
+                    if (asset != null && assetName.equals(asset.optString("name"))
+                        && "uploaded".equals(asset.optString("state"))
+                        && download.equals(asset.optString("browser_download_url"))) {
+                        available = true;
+                        break;
+                    }
+                }
+                if (!available) {
+                    if (requested) notice("新版安装包还未上传完成，请稍后重试。");
+                    return;
+                }
+                prefs.edit().putLong("lastSuccessfulCheck", now).apply();
+                String notes = release.optString("body", "").trim();
+                if (notes.length() > 1800) notes = notes.substring(0, 1800) + "…";
+                String explanation = "当前 v" + version + "，最新 " + tag
+                    + (notes.isEmpty() ? "" : "\n\n" + notes) + "\n\n下载后请在安卓安装器中确认。";
+                updateDialog = new AlertDialog.Builder(this)
+                    .setTitle("CET6 有新版本")
+                    .setMessage(explanation)
+                    .setNegativeButton("稍后", null)
+                    .setPositiveButton("下载安装包", (dialog, button) -> {
+                        try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(download))); }
+                        catch (ActivityNotFoundException e) { notice("找不到可下载安装包的浏览器。"); }
+                    }).create();
+                updateDialog.setOnDismissListener(dialog -> updateDialog = null);
+                updateDialog.show();
+            });
+        });
+    }
+
     private static boolean isHttpsHost(Uri uri, String host) {
         return "https".equals(uri.getScheme()) && host.equals(uri.getHost()) && uri.getPort() == -1;
     }
@@ -139,6 +274,7 @@ public final class MainActivity extends Activity {
             case "js":
             case "mjs": return "text/javascript";
             case "json": return "application/json";
+            case "mp3": return "audio/mpeg";
             default: return "application/octet-stream";
         }
     }
@@ -184,6 +320,11 @@ public final class MainActivity extends Activity {
     }
 
     public final class StudyBridge {
+        @JavascriptInterface
+        public void checkForUpdates() {
+            runOnUiThread(() -> checkForUpdate(true));
+        }
+
         @JavascriptInterface
         public void syncRequest(String id, String path, String method, String token, String body) {
             if (id == null || !id.matches("[0-9a-f]{32}")) return;
@@ -352,6 +493,8 @@ public final class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         syncRequests.shutdownNow();
+        updateRequests.shutdownNow();
+        if (updateDialog != null) updateDialog.dismiss();
         if (isFinishing()) clearExport();
         if (voice != null) voice.shutdown();
         web.destroy();

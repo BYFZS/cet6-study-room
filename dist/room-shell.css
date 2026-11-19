@@ -1,0 +1,65 @@
+.roomSidebar{display:none}
+#siteSettings{color:#183c35;width:min(490px,calc(100% - 24px));padding:22px;border:1px solid #cddbd0;border-radius:16px}
+#siteSettings::backdrop{background:#1c322a70}
+.settingsTop{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.settingsTop h2{margin:0;font-size:22px}
+#siteSettings section+section{margin-top:18px}
+#siteSettings h3{margin:15px 0 4px;font-size:15px;color:#537064}
+.settingRow{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:45px;border-bottom:1px solid #e2e9df;font-size:15px}
+.settingRow select{width:auto;min-width:96px;padding:6px 9px}
+.settingRow input[type="checkbox"]{width:18px;height:18px;accent-color:#20594b}
+.settingsVolume{display:grid;grid-template-columns:1fr auto;row-gap:0;padding:6px 0}
+.settingsVolume output{font-variant-numeric:tabular-nums;color:#476d5d}
+.settingsVolume input{grid-column:1/-1;width:100%;accent-color:#20594b;height:28px;margin:0}
+[data-open-settings]:focus-visible,.roomSidebar button:focus-visible,.roomSidebar a:focus-visible{outline:2px solid #20594b;outline-offset:2px}
+@media(min-width:950px){
+  body.withRoomShell:not(.cet6Native){--room-sidebar-width:214px;padding-inline-start:var(--room-sidebar-width)}
+  body.withRoomShell.roomSidebarCollapsed:not(.cet6Native){--room-sidebar-width:64px}
+  body.withRoomShell:not(.cet6Native) .roomSidebar{position:fixed;inset:0 auto 0 0;width:var(--room-sidebar-width);display:flex;flex-direction:column;gap:16px;padding:13px 10px;background:#ebf0e8;border-right:1px solid #d8e2d6;z-index:3}
+  .roomSidebarTop{display:flex;justify-content:space-between;align-items:center;padding:0 4px;min-height:42px;gap:8px}
+  .roomSidebarTop .brand{font-size:23px}
+  .roomSidebar button,.roomSidebar nav a{display:flex;align-items:center;gap:11px;min-width:0;min-height:42px;border:0;border-radius:9px;background:transparent;padding:7px 10px;text-align:left;color:#294e42;text-decoration:none;font-size:14px}
+  .roomSidebar svg{width:20px;height:20px;flex:none}
+  .roomSidebar nav{display:grid;gap:4px;align-content:start;overflow:auto}
+  .roomSidebar nav a[aria-current="page"]{background:#d4e4d5;font-weight:700;color:#164539}
+  .roomSidebar button:hover,.roomSidebar nav a:hover{background:#deeadf}
+  .roomSidebarBottom{display:flex;gap:3px;margin-top:auto;padding-top:8px;border-top:1px solid #d4e0d3}
+  .roomSidebarBottom button:first-child{flex:1}
+  .roomSidebarBottom span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .roomSidebarCollapsed .roomSidebarTop{justify-content:center;padding:0}
+  .roomSidebarCollapsed .roomSidebar span,.roomSidebarCollapsed .roomSidebarTop .brand{display:none}
+  .roomSidebarCollapsed .roomSidebarBottom{flex-direction:column}
+  .roomSidebarCollapsed .roomSidebar button,.roomSidebarCollapsed .roomSidebar nav a{justify-content:center;padding:7px}
+  body.withRoomShell:not(.cet6Native) .moduleNav{display:none}
+  body.withRoomShell:not(.cet6Native) .compactSettings{display:none}
+}
+.practicePanel audio{display:block;width:100%;max-width:640px;margin:16px 0}
+.listeningLinks{display:flex;gap:10px 18px;flex-wrap:wrap}
+.listeningLinks a{color:inherit;padding:6px 0}
+:root[data-theme="dark"]{color-scheme:dark;background:#141e1b;color:#e1eee6;--green:#a2dcc5;--line:#364740;--muted:#aac0b5}
+[data-theme="dark"] body{background:#141e1b;color:#e1eee6}
+[data-theme="dark"] :is(header,.panel,.wordCard,.setup,.paperPane,.answerPane,.questionRow,.studyStats div,.analyticsDay,.analyticsHeat,.sizeChoices button,.handbookCard,.resultCard,.roomSidebar,#siteSettings,dialog){background:#1f2c27;color:#e1eee6;border-color:#3c5147}
+[data-theme="dark"] :is(.heading p,.panel p,.fine,small,.studyStats span,.wordTop span,.wordFilterGroup>span,#mistakeResults,.eyebrow,#roundProgress,#training #questionHint,#siteSettings h3,.settingsVolume output){color:#b5c9be!important}
+[data-theme="dark"] :is(.brand,.wordSearchRow label,.wordCard .example,#feedback p,.wordRelations p,.wordRelations h4,.wordRelations h5,.morphNotes h4,.choiceText small){color:#d7e9df}
+[data-theme="dark"] :is(button,input:not([type="checkbox"],[type="radio"],[type="range"]),select,textarea,.studyNav a,.parentBack,.wordFilterGroup button){background-color:#283b33;color:#e1eee6;border-color:#4c6859}
+[data-theme="dark"] :is(button:hover,.studyNav a:hover,.parentBack:hover){background-color:#365245;color:#f1fff6}
+[data-theme="dark"] :is(.primary,button.active,.studyNav a[aria-current="page"],.roomSidebar nav a[aria-current="page"],.wordFilterGroup button[aria-pressed="true"]){background:#afdcbd;color:#153829;border-color:#afdcbd}
+[data-theme="dark"] .roomSidebar :is(nav a,button){color:#e1eee6}
+@media(min-width:950px){body.withRoomShell:not(.cet6Native) .roomSidebar{background:var(--shell-background,#ebf0e8);border-color:var(--shell-border,#d8e2d6)}}
+[data-theme="dark"]{--shell-background:#1f2c27;--shell-border:#3c5147}
+[data-theme="dark"] .roomSidebar nav a[aria-current="page"]{color:#153829}
+[data-theme="dark"] :is(.roomSidebar nav a:hover,.roomSidebar button:hover){background:#365245}
+[data-theme="dark"] :is(.roomSidebarBottom,.settingRow,.wordRelations,.morphNotes,.synonymSense,#feedback){border-color:#466052}
+[data-theme="dark"] :is(#feedback,.posLabel,.choiceIndex,.cycleSteps .complete){background:#2c4438;color:#d9f5e0}
+[data-theme="dark"] .cycleSteps .current{background:#afdcbd;color:#153829}
+[data-theme="dark"] #training #options button{background:#263932;color:#e0f2e7;border-color:#506c5d}
+[data-theme="dark"] #training #options .right{background:#2a5239;border-color:#7ab08a}
+[data-theme="dark"] #training #options .wrong{background:#563a2d;border-color:#b48b75}
+[data-theme="dark"] #training #trainingActions button,[data-theme="dark"] #training #markGuess{background:#283b33;color:#e1eee6;border-color:#4c6859}
+[data-theme="dark"] #training #trainingActions #forget{background:#4b362c;color:#f1dfd4;border-color:#855d49}
+[data-theme="dark"] :is(#message:not(:empty),.confusionPrompt,.confusionDetails){background:#4b362c;color:#f1dfd4}
+[data-theme="dark"] .repeatCount{color:#f1bd9f!important}
+[data-theme="dark"] .heatGrid [class*="heat"]{color:#142c21}
+[data-theme="dark"] :is(.paperPane canvas,.paperPane iframe){color-scheme:light}
+[data-theme="dark"] #siteSettings::backdrop{background:#0009}
+@media(max-width:600px){#siteSettings{padding:14px 16px}.settingRow{min-height:42px}}

@@ -34,6 +34,7 @@ export function setupSyncUI(options) {
   function status(snapshot) {
     enabled = snapshot.enabled;
     account = snapshot.account;
+    window.dispatchEvent(new CustomEvent('cet6-sync-account', {detail:account}));
     owner = snapshot.owner;
     const updated = snapshot.at ? new Date(snapshot.at).toLocaleTimeString('zh-CN', {
       hour: '2-digit', minute: '2-digit'

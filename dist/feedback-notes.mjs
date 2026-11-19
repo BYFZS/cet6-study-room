@@ -24,13 +24,22 @@ const references = [
 
 const POS = {
   n:'名词', v:'动词', adj:'形容词', adv:'副词', prep:'介词',
-  conj:'连词', pron:'代词', num:'数词', int:'感叹词'
+  conj:'连词', pron:'代词', num:'数词', int:'感叹词', phrase:'短语'
 };
 
 export function partOfSpeechHTML(word, esc) {
   if (!word?.pos) return '';
   return '<span class="posLabel">'+word.pos.split('/').map(code =>
-    esc(POS[code] + ' ' + code + '.')).join(' / ')+'</span>';
+    esc(code==='phrase'?POS[code]:POS[code] + ' ' + code + '.')).join(' / ')+'</span>';
+}
+
+export function meaningsByPartOfSpeechHTML(word, esc) {
+  const codes = word.pos?.split('/') || [];
+  const glosses = word.posGlosses;
+  const row = (pos, meaning) => '<span class="meaningRow">'+partOfSpeechHTML({pos},esc)+'<span>'+esc(meaning)+'</span></span>';
+  return glosses && codes.every(code=>glosses[code])
+    ? codes.map(code=>row(code,glosses[code])).join('')
+    : row(word.pos,word.meaning);
 }
 
 export function spellingAlternative(answer, word) {
@@ -44,17 +53,22 @@ export function wordFamilyHTML(word, esc) {
   const entries = words.filter(([term]) => term !== word.word).map(([term,pos,meaning]) =>
     '<li><b lang="en">'+esc(term)+'</b>'+partOfSpeechHTML({pos},esc)+' · '+esc(meaning)+'</li>').join('');
   if (!entries || word.phrase) return '';
-  return '<section class="morphNotes"><h4>'+esc(word.family.heading || '同族词')+'</h4><ul>'+entries+'</ul>'+
+  return '<section class="morphNotes familyNotes"><h4>'+esc(word.family.heading || '同族词')+'</h4><ul>'+entries+'</ul>'+
     (note ? '<p>'+esc(note)+'</p>' : '')+'</section>';
 }
 
 export function morphologyHTML(word, esc) {
   const data = word.phrase || word.morphology;
   const heading = word.phrase ? '短语构成' : data?.heading || '词根和词缀';
-  const parts = data?.parts?.length ? '<h4>'+esc(heading)+'</h4><ul>' +
-    data.parts.map(item => '<li><b>'+esc(item.form)+'</b> · '+esc(item.meaning)+'</li>').join('') + '</ul>' +
-    (data.note ? '<p>'+esc(data.note)+'</p>' : '') + (data.source && /^https:\/\/[^\s]+$/.test(data.source)
-      ? '<a class="fine" href="'+esc(data.source)+'" target="_blank" rel="noopener">查词源 ↗</a>' : '') : '';
+  const prefix = form => !word.phrase && /^[a-zA-Z]+-$/.test(form) &&
+    word.word.startsWith(form.slice(0,-1));
+  const partRow = item => '<li class="'+(prefix(item.form)?'prefixPart':'rootPart')+'"><b>'+
+    esc(item.form)+'</b> · '+esc(item.meaning)+'</li>';
+  const parts = data?.parts?.length ? '<div class="wordParts'+(word.phrase?' phraseParts':'')+'"><h4>'+
+    esc(heading)+'</h4><ul>'+data.parts.map(partRow).join('')+'</ul>'+
+    (data.note ? '<p class="constructionNote">'+esc(data.note)+'</p>' : '')+
+    (data.source && /^https:\/\/[^\s]+$/.test(data.source)
+      ? '<a class="fine constructionNote" href="'+esc(data.source)+'" target="_blank" rel="noopener">查词源 ↗</a>' : '')+'</div>' : '';
   const examples = word.phrase?.examples?.length ? '<h4>搭配与用法</h4><ul>' +
     word.phrase.examples.map(([example, meaning]) =>
       '<li><b lang="en">'+esc(example)+'</b> · '+esc(meaning)+'</li>').join('') + '</ul>' : '';

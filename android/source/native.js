@@ -1,6 +1,19 @@
 (() => {
   const bridge = window.CET6Android;
   if (!bridge) return;
+  document.addEventListener('DOMContentLoaded', () => {
+    const settings = document.getElementById('siteSettings');
+    if (!settings || typeof bridge.checkForUpdates !== 'function') return;
+    const section = document.createElement('section');
+    const heading = document.createElement('h3');
+    heading.textContent = '安卓版本';
+    const check = document.createElement('button');
+    check.type = 'button';
+    check.textContent = '检查更新';
+    check.onclick = () => bridge.checkForUpdates();
+    section.append(heading, check);
+    settings.append(section);
+  }, {once:true});
 
   const createObjectUrl = URL.createObjectURL.bind(URL);
   const revokeObjectUrl = URL.revokeObjectURL.bind(URL);

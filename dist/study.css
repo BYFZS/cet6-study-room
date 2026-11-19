@@ -123,11 +123,6 @@
 .practicePanel details{margin-top:18px}
 .practicePanel summary{cursor:pointer;font-weight:600}
 
-.answerSoundPanel{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;padding:8px 16px}
-.answerSoundPanel h2{font-size:14px;margin:3px 0}
-.answerSoundPanel div{display:flex;gap:6px 18px;flex-wrap:wrap}
-.answerSoundPanel label{display:inline-flex;align-items:center;gap:6px;min-height:42px;font-size:13px;cursor:pointer}
-.answerSoundPanel input{width:16px;height:16px;accent-color:#20594b}
 
 #syncAccountForm{display:grid;gap:6px;margin:12px 0}
 #syncAccountForm input{width:100%;border:1px solid #cbd7c7;border-radius:7px;padding:9px}
@@ -188,3 +183,67 @@ body.vocabularySubpage > header,
   #training #feedback h3{font-size:16px;margin:0 0 8px}
   #training #feedback p{margin:7px 0;line-height:1.55}
 }
+.questionPane,#feedback{min-width:0}
+.questionTitleRow{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.questionTitleRow h2{min-width:0;overflow-wrap:anywhere}
+.questionTitleRow .wordQuestionButton{flex:none;font-size:13px;font-weight:600;margin:0;padding:8px 12px;min-height:44px;background:#f4f8f2}
+.questionTitleRow .wordQuestionButton:hover{background:#e5eee1}
+#pronunciationStatus:empty,#exampleStatus:empty,#previousPronunciationStatus:empty{display:none}
+#training #feedback,#previousWordBody{font-size:var(--explanation-size,16px);line-height:1.65}
+#training #feedback p,#previousWordBody p{font-size:inherit;line-height:1.65}
+#training #feedback .fine,#previousWordBody .fine{font-size:.83em!important}
+#training #feedback h3{font-size:1.15em}
+#training #feedback h4,#previousWordBody h4,
+#training #feedback h5,#previousWordBody h5{font-size:1em}
+#training #feedback small,#previousWordBody small{font-size:.89em}
+.answerMeaning{display:grid;gap:4px;margin:0 0 12px}
+.meaningRow{display:flex;align-items:baseline;gap:6px}
+.meaningRow + .meaningRow{margin-top:4px}
+.meaningRow .posLabel{flex:none;margin:0}
+.choiceMeanings{display:block;font-size:13px;line-height:1.42}
+.choiceMeanings .meaningRow + .meaningRow{margin-top:2px}
+.choiceMeanings .posLabel{font-size:10px;padding:1px 3px}
+.feedbackExample{display:flex;align-items:flex-start;gap:10px;justify-content:space-between}
+.feedbackExample p{margin:6px 0!important;min-width:0}
+.feedbackExample button{flex:none;min-height:40px;padding:6px 8px;font-size:12px}
+.hide-explanation-family .familyNotes,.hide-explanation-synonyms .synonymNotes,
+.hide-explanation-prefixes .prefixPart,.hide-explanation-prefixes .prefixGuide,
+.hide-explanation-roots .wordParts:not(.phraseParts) .rootPart,
+.hide-explanation-roots .wordParts:not(.phraseParts) .constructionNote,
+.hide-explanation-prefixes .wordParts:has(.prefixPart) .constructionNote,
+.hide-explanation-prefixes .wordParts:not(.phraseParts):not(:has(.rootPart)),
+.hide-explanation-roots .wordParts:not(.phraseParts):not(:has(.prefixPart)),
+.hide-explanation-roots.hide-explanation-prefixes .wordParts:not(.phraseParts),
+.hide-explanation-roots.hide-explanation-prefixes .morphNotes:not(.familyNotes):has(.wordParts:not(.phraseParts)),
+.hide-explanation-family .morphNotes.familyNotes{display:none}
+.hide-explanation-prefixes .morphNotes:not(.familyNotes):has(.wordParts:not(.phraseParts)):not(:has(.rootPart)),
+.hide-explanation-roots .morphNotes:not(.familyNotes):has(.wordParts:not(.phraseParts)):not(:has(.prefixPart)){display:none}
+.wordTools.panel{display:grid;gap:14px;padding:15px 18px}
+.wordSearchRow{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center}
+.wordSearchRow label{font-size:14px;font-weight:650;color:#32594a}
+.wordFilterGroups{display:flex;gap:10px 16px;flex-wrap:wrap}
+.wordFilterGroup{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.wordFilterGroup>span{font-size:12px;color:#536b5e;font-weight:650;margin-right:3px}
+.wordFilterGroup button{min-height:37px;border-radius:8px;padding:6px 10px;background:#f6f8f4}
+.wordFilterGroup button:hover{background:#e6eee2}
+.wordFilterGroup button[aria-pressed="true"]{background:#dceadb;border-color:#8cae99;color:#214f3e;font-weight:650}
+.wordFilterGroup button:focus-visible{outline:2px solid #20594b;outline-offset:2px}
+@media(min-width:1130px){
+  body:not(.cet6Native) .study:has(#training:not([hidden])){max-width:1420px}
+  body:not(.cet6Native) #training.withFeedback .flash{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);grid-template-rows:max-content 1fr;gap:16px 25px;align-items:start;padding:28px}
+  body:not(.cet6Native) #training.withFeedback .questionPane{grid-column:1;grid-row:1}
+  body:not(.cet6Native) #training.withFeedback #feedback{grid-column:2;grid-row:1/span 2;margin:0}
+  body:not(.cet6Native) #training.withFeedback #nextCard{grid-column:1;grid-row:2;align-self:start}
+}
+@media(max-width:600px){
+  .questionTitleRow .wordQuestionButton{min-height:36px;font-size:12px;padding:5px 7px}
+  #training .trainHead{flex-wrap:wrap}
+  .wordFilterGroup button{min-height:40px}
+  .wordFilterGroup>span{width:100%}
+  .choiceMeanings .meaningRow{flex-wrap:wrap;gap:2px 4px}
+  #training #feedbackBody .feedbackExample p{font-size:inherit}
+}
+.mistakeFilters{display:flex;gap:10px 18px;flex-wrap:wrap;align-items:center;padding:10px 18px}
+.mistakeFilters label{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:600}
+.mistakeFilters select,.settingRow select{border:1px solid #c5d5c6;border-radius:8px;background-color:#f6f9f4;padding:8px 32px 8px 10px;color:#294e42;min-height:37px;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23547969' stroke-width='1.6'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
+#mistakeResults{color:#536b5e;font-size:12px;margin-inline-start:auto}

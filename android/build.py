@@ -68,7 +68,7 @@ def build(args):
         bundled = assets / "site"
         shutil.copytree(site, bundled)
         shutil.copy2(source / "native.js", bundled / "android-native.js")
-        for name in ("index.html", "study.html", "vocabulary.html", "practice.html"):
+        for name in ("index.html", "study.html", "vocabulary.html", "practice.html", "word-handbook.html", "vocab-size.html"):
             file = bundled / name
             html = file.read_text(encoding="utf-8")
             if "</head>" not in html:
