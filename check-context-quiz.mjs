@@ -31,6 +31,23 @@ assert.deepEqual(plan.targets,batch);
 const mixed=sourceLogs.map(row=>row.word!=='avoid'?{...row,correct:true}:row);
 assert.deepEqual(reviewQuizPlan(mixed,[],100,last+2000).targets,['avoid']);
 assert.equal(reviewQuizPlan(sourceLogs.map(row=>({...row,correct:true})),[],100,last+2000).ready,false);
+const quizHistory = [
+  {mode:'context-quiz',id:'one',batch:'first',at:first-3000,
+    results:[{word:'avoid',status:'correct'},{word:'avoid',status:'correct'}]},
+  {mode:'context-quiz',id:'same-batch',batch:'first',at:first-2500,
+    results:[{word:'avoid',status:'correct'}]},
+  {mode:'context-quiz',id:'two',batch:'second',at:first-2000,results:[{word:'avoid',status:'pending'}]}
+];
+assert.deepEqual(reviewQuizPlan(mixed,quizHistory,100,last+2000).targets,['avoid']);
+quizHistory.push({mode:'context-quiz-mark',attempt:'two',word:'avoid',at:first-1000,correct:true});
+const afterTwo = reviewQuizPlan(sourceLogs,quizHistory,100,last+2000);
+assert.equal(afterTwo.ready,true);
+assert.equal(afterTwo.words.length,100);
+assert.deepEqual(afterTwo.targets,batch.filter(word=>word!=='avoid'));
+assert.equal(reviewQuizPlan(mixed,quizHistory,100,last+2000).ready,false);
+quizHistory.push({mode:'context-quiz-mark',attempt:'two',word:'avoid',at:first-500,correct:false});
+assert.deepEqual(reviewQuizPlan(mixed,quizHistory,100,last+2000).targets,['avoid']);
+
 const firstPair=pairs[0],trimmed=restrictQuizQuestion(firstPair,new Set(['require']));
 validate(trimmed);
 assert.equal(Object.keys(trimmed.answers).length,1);

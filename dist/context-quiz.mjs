@@ -4,6 +4,7 @@ import {localStudyDay} from './study-analytics.mjs?v=12';
 export const QUIZ_SIZE = 100;
 export const QUIZ_ATTEMPT = 'context-quiz';
 export const QUIZ_MARK = 'context-quiz-mark';
+const QUIZ_CORRECT_LIMIT = 2;
 export const quizKey = reviews => reviews.join(';');
 const englishPattern = /\[([^\]:]+)(?::([^\]]+))?\]/g;
 const chinesePattern = /\{([^{}]+)\}/g;
@@ -12,6 +13,13 @@ const clean = value => normalize(String(value).normalize('NFKC')).replace(/[\sâ€
 export function reviewQuizPlan(logs, rounds = [], size = QUIZ_SIZE, now = Date.now()) {
   const taken = new Set(rounds.filter(r => r.mode === QUIZ_ATTEMPT).flatMap(r => r.reviews || []));
   const missedAt = mistakeTimes(logs, rounds);
+  const gradedHistory = rounds.filter(item => Number.isFinite(item?.at) && item.at <= now);
+  const correctCounts = new Map();
+  for (const attempt of quizAttempts(gradedHistory)) {
+    const passed = new Set(quizResults(attempt, gradedHistory)
+      .filter(item => item.status === 'correct').map(item => item.word));
+    for (const word of passed) correctCounts.set(word, (correctCounts.get(word) ?? 0) + 1);
+  }
   const first = new Map();
   const dailyReviews = new Set();
   const words = new Set();
@@ -28,9 +36,10 @@ export function reviewQuizPlan(logs, rounds = [], size = QUIZ_SIZE, now = Date.n
     words.add(log.word);
     reviews.push(key);
     if (words.size === size) {
-      const targets = [...words].filter(word => (missedAt.get(word) ?? Infinity) <= log.at);
+      const targets = [...words].filter(word =>
+        (missedAt.get(word) ?? Infinity) <= log.at && (correctCounts.get(word) ?? 0) < QUIZ_CORRECT_LIMIT);
       if (targets.length) return {reviews, words: [...words], targets, ready: true};
-      // A cohort without errors needs no quiz. Continue counting the subsequent practice.
+      // Continue counting when every candidate is either error-free or has passed enough quizzes.
       words.clear();
       reviews = [];
     }

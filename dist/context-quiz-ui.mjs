@@ -1,6 +1,6 @@
 import {dayKey} from './learning-core.mjs?v=6';
 import {QUIZ_ATTEMPT, QUIZ_MARK, QUIZ_SIZE, makeQuizQuestions, quizAttempts, quizKey, quizResults,
-  reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish, mistakeTimes, restrictQuizQuestion} from './context-quiz.mjs?v=19';
+  reviewQuizPlan, scoreQuizWord, splitChinese, splitEnglish, mistakeTimes, restrictQuizQuestion} from './context-quiz.mjs?v=41';
 import {partOfSpeechHTML} from './feedback-notes.mjs?v=12';
 
 const DRAFT_KEY = 'cet6-context-quiz-draft-v1';
@@ -178,7 +178,7 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
     if (selected) { renderReport(selected); return; }
     const plan = progress();
     panel.innerHTML = `<h2>句中填义小测</h2>
-      <p>累计复习 ${QUIZ_SIZE} 个不同词后，从中选有错题记录的词，考它们在句中的意思。</p>
+      <p>累计复习 ${QUIZ_SIZE} 个不同词后，从中选有错题记录的词。一个词在小测里累计答对两次，后续出卷就会跳过。</p>
       <progress max="${QUIZ_SIZE}" value="${plan.words.length}" aria-label="复习词数"></progress>
       <p>已复习 ${plan.words.length} / ${QUIZ_SIZE} 个不同词${plan.ready?' · 本卷 '+plan.targets.length+' 个错词':''}</p>
       <button id="quizBegin" class="primary"${plan.ready ? '' : ' disabled'}>开始小测 →</button>

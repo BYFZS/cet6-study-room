@@ -6,8 +6,8 @@ import {initThreeUI} from './three-round-ui.mjs?v=39';
 import {setupSyncUI} from './sync-ui.mjs?v=27';
 import {summarizeStudy} from './study-analytics.mjs?v=39';
 import {setupStudyStats} from './study-stats-ui.mjs?v=39';
-import {setupContextQuiz} from './context-quiz-ui.mjs?v=19';
-import {studyLogWithQuizzes} from './context-quiz.mjs?v=19';
+import {setupContextQuiz} from './context-quiz-ui.mjs?v=41';
+import {studyLogWithQuizzes} from './context-quiz.mjs?v=41';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let deck=[],optionPositions={},baseline=null,db=emptyDB(),sync=null,quiz=null;
 try{baseline=JSON.parse(localStorage.getItem(BASE_KEY));const saved=JSON.parse(localStorage.getItem(LEARN_KEY));if([2,3].includes(saved?.version)&&saved.type==='cet6-learning')db=saved;}catch{}
