@@ -38,7 +38,7 @@ export function setupStudyStats({$, getLogs, openRepeated}) {
       const label = `${dateTitle(key)}，练习 ${count} 个词`;
       return `<button type="button" class="heatCell heat${heatLevel(count)}" data-day="${key}"
         aria-label="${label}" aria-pressed="${key === selected}" title="${label}">
-        <span>${day}</span>${count ? `<small>${count} 词</small>` : ''}</button>`;
+        <span>${day}</span>${count ? `<span class="heatCount">${count} 词</span>` : ''}</button>`;
     }).join('');
   }
 
@@ -62,6 +62,7 @@ export function setupStudyStats({$, getLogs, openRepeated}) {
     selected = button.dataset.day;
     render();
     $('studyCalendar').querySelector(`[data-day="${selected}"]`)?.focus({preventScroll: true});
+    $('studyDayDetails').scrollIntoView({block: 'nearest'});
   };
   return {render};
 }

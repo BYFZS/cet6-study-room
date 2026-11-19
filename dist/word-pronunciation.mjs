@@ -1,5 +1,7 @@
 import {readSoundSettings} from './answer-sounds.mjs?v=34';
 
+const BRITISH_PLAYBACK_RATE = 0.85;
+
 export function pronunciationFilename(word) {
   return word.replace(/[ ']/g, '_') + '.mp3';
 }
@@ -22,6 +24,7 @@ export function createWordPronunciation() {
     const {pronunciationVolume:volume, accent:defaultAccent} = readSoundSettings();
     const explicitAccent=voiceAccent==="en-GB"||voiceAccent==="en-US";
     const accent=explicitAccent?voiceAccent:defaultAccent;
+    const playbackRate = accent === 'en-GB' ? BRITISH_PLAYBACK_RATE : 1;
     if (!volume) { onMuted(); return; }
     const request = active = {accent,explicitAccent};
     function end() {
@@ -42,7 +45,7 @@ export function createWordPronunciation() {
       try {
         const utterance = request.utterance = new window.SpeechSynthesisUtterance(example || word);
         utterance.lang = accent;
-        utterance.rate = 0.8;
+        utterance.rate = 0.8 * playbackRate;
         utterance.volume = readSoundSettings().pronunciationVolume * 0.82;
         const english = (synth.getVoices?.() || []).filter(voice => /^en\b/i.test(voice.lang));
         const matches = voice => voice.lang.replace('_', '-').toLowerCase() === accent.toLowerCase();
@@ -60,6 +63,8 @@ export function createWordPronunciation() {
       const url = new URL(directory + accent + '/' + encodeURIComponent(pronunciationFilename(word)) + '?v=1', import.meta.url);
       // Only one short clip is fetched per play: a desktop browser need not have a voice installed.
       const clip = request.clip = new window.Audio(url.href);
+      clip.playbackRate = playbackRate;
+      clip.preservesPitch = true;
       clip.volume = volume * 0.82;
       clip.onplaying = () => { if (active === request) onPlaying(); };
       clip.onended = () => { if (!request.utterance) end(); };

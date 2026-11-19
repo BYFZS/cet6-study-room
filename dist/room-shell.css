@@ -60,10 +60,22 @@
 [data-theme="dark"] #training #options .right{background:#2a5239;border-color:#7ab08a}
 [data-theme="dark"] #training #options .wrong{background:#563a2d;border-color:#b48b75}
 [data-theme="dark"] #training #trainingActions button,[data-theme="dark"] #training #markGuess{background:#283b33;color:#e1eee6;border-color:#4c6859}
+[data-theme="dark"] #training :is(#markEasy,#markGuess)[aria-pressed="true"]{background:#afdcbd;color:#153829;border-color:#afdcbd}
 [data-theme="dark"] #training #trainingActions #forget{background:#4b362c;color:#f1dfd4;border-color:#855d49}
 [data-theme="dark"] :is(#message:not(:empty),.confusionPrompt,.confusionDetails){background:#4b362c;color:#f1dfd4}
 [data-theme="dark"] .repeatCount{color:#f1bd9f!important}
-[data-theme="dark"] .heatGrid [class*="heat"]{color:#142c21}
+[data-theme="dark"] .analyticsMetrics div{background:#273b32;border-color:#466052}
+[data-theme="dark"] .analyticsMetrics dt{color:#b8cfc2}
+[data-theme="dark"] .analyticsMetrics dd{color:#edf6ef}
+[data-theme="dark"] .analyticsHeat :is(.heatWeek,.heatFuture){color:#a6bbae}
+[data-theme="dark"] .analyticsHeat :is(.heatCell,.heatLegend [class^="heat"]){background:var(--heat-fill);color:var(--heat-ink,#edf6ef)}
+[data-theme="dark"] .analyticsHeat .heat0{--heat-fill:#283a32}
+[data-theme="dark"] .analyticsHeat .heat1{--heat-fill:#355342}
+[data-theme="dark"] .analyticsHeat .heat2{--heat-fill:#427251}
+[data-theme="dark"] .analyticsHeat .heat3{--heat-fill:#7ab38a;--heat-ink:#132c20}
+[data-theme="dark"] .analyticsHeat .heat4{--heat-fill:#afdeb8;--heat-ink:#132c20}
+[data-theme="dark"] .analyticsHeat .heatCell:is(:hover,[aria-pressed="true"]){border-color:#89b59d}
+[data-theme="dark"] .analyticsHeat .heatCell:is(:focus-visible,[aria-pressed="true"]){outline:2px solid #a9d8bb;outline-offset:1px}
 [data-theme="dark"] :is(.paperPane canvas,.paperPane iframe){color-scheme:light}
 [data-theme="dark"] #siteSettings::backdrop{background:#0009}
 @media(max-width:600px){#siteSettings{padding:14px 16px}.settingRow{min-height:42px}}
