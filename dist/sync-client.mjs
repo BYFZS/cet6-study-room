@@ -175,12 +175,13 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
     return snapshot;
   }
 
-  function applyPending() {
+  function applyPending(updateStatus = false) {
     if (!pending || !canApply()) return;
     const next = mergeProgress(capture(), pending);
     pending = null;
     apply(materializeProgress(structuredClone(next)));
     remember(next);
+    if (updateStatus && config.syncedAt) report({enabled:true,phase:'synced',at:config.syncedAt});
   }
 
   async function exchange(allowCreate) {
@@ -276,7 +277,7 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
   } else report({enabled: false, phase: 'off'});
 
   return {
-    changed, applyPending,
+    changed, applyPending: () => applyPending(true),
     async register(name,password) {
       const username = checkedUsername(name,password);
       if (owner) throw new Error('该设备已有同步账号，请选择登录。');

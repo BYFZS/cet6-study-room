@@ -10,6 +10,7 @@ import {emptyDB,recordStage,recordSpotCheck,selectThreeWords} from './dist/learn
 const db = new DatabaseSync(':memory:');
 db.exec('PRAGMA foreign_keys = ON;');
 db.exec(readFileSync('./sync-service/drizzle/0000_sync.sql','utf8'));
+db.exec(readFileSync('./sync-service/drizzle/0002_sync_accounts.sql','utf8'));
 const env = {DB: {prepare(query) {
   return {bind(...params) {
     return {first: async () => db.prepare(query).get(...params), run: async () => db.prepare(query).run(...params)};
@@ -95,6 +96,8 @@ assert.equal(phone.db.memories.require.stage,3);
 assert.equal(phone.status.pending,true);
 phone.canApply=true;
 phone.call(()=>phone.sync.applyPending());
+assert.equal(phone.status.phase,'synced');
+assert.equal(Boolean(phone.status.pending),false);
 assert.equal(phone.db.memories.require.stage,0);
 assert(selectThreeWords(deviceWords.map(word=>({word})),phone.db,'due',4).includes('require'));
 await phone.call(phone.sync.disconnect);

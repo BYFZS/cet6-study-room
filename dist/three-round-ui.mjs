@@ -9,6 +9,21 @@ import {antonymsFor} from './word-antonyms.mjs?v=46';
 const shuffle=items=>{const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 const aliases=w=>[...w.aliases,...w.meaning.split(/[；;、，,]/)].map(normalize).filter(Boolean);
 export const choiceOptions=harderOptions;
+
+export function reconcilePausedCard(session, local, incoming, now = Date.now()) {
+ const card = session?.current;
+ if (!card || card.status === 'done' || local === incoming) return;
+ const scope = (session.checkWords || []).includes(card.word) ? 'check' : session.scope;
+ const state = memory => [
+  isEasyCoolingDown(memory, now), passedToday(memory, now), needsSpellingAid(memory),
+  canSpotCheck(memory, scope, now), memory?.protocol === 3 && memory.cycleDay === dayKey(now) ? memory.stage : 0
+ ];
+ const next = state(incoming);
+ if (state(local).every((value, index) => value === next[index])) return;
+ // The saved question no longer matches the synced review stage. Rebuild it on resume.
+ session.queue = [card.word, ...session.queue.filter(word => word !== card.word)];
+ session.current = null;
+}
 const CHOICE_VERSION=3;
 export function initThreeUI({$,getDeck,getDB,getOptionPosition=()=>undefined,view,save,message,esc,beforeNext=()=>{},onGroupFinished=()=>{}}){
  const previousDialog=$('previousWordDialog');

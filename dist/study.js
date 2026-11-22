@@ -2,8 +2,8 @@ import {filterMistakes} from './mistake-filters.mjs?v=27';
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
 import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=31';
 import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,markWordEasy,reviewDueTime,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
-import {initThreeUI} from './three-round-ui.mjs?v=46';
-import {setupSyncUI} from './sync-ui.mjs?v=27';
+import {initThreeUI,reconcilePausedCard} from './three-round-ui.mjs?v=47';
+import {setupSyncUI} from './sync-ui.mjs?v=28';
 import {summarizeStudy} from './study-analytics.mjs?v=42';
 import {setupStudyStats} from './study-stats-ui.mjs?v=42';
 import {setupContextQuiz} from './context-quiz-ui.mjs?v=44';
@@ -28,6 +28,7 @@ function view(name) {
  for (const section of ['home', 'scores', 'words', 'analytics', 'contextQuiz', 'training', 'roundEnd']) {
   $(section).hidden = section !== name;
  }
+ if (name !== 'training') sync?.applyPending();
  delete document.documentElement.dataset.loadingAnalytics;
  $('moduleNav').hidden = insideTraining || insideVocabulary;
  $('vocabNav').hidden = insideTraining || insideVocabulary || showingStats;
@@ -207,8 +208,10 @@ try {
  renderHome();
  sync=setupSyncUI({
   getDB:()=>db, getWords:()=>deck.map(word=>word.word),
-  canApply:()=>!db.session?.current||db.session.current.status==='done',
+  canApply:()=>$('training').hidden||!db.session?.current||db.session.current.status==='done',
   apply:progress=>{
+   const word = db.session?.current?.word;
+   if (word && $('training').hidden) reconcilePausedCard(db.session, db.memories[word], progress.memories[word]);
    Object.assign(db,progress);save(false);
    if(!$('home').hidden)renderHome();
    if(!$('words').hidden)renderWords();
