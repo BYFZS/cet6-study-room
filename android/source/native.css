@@ -1,0 +1,37 @@
+body.nativeCompactNavigation > header {
+  min-height:56px; height:auto; padding:6px 14px; gap:8px; flex-wrap:nowrap;
+}
+.nativeCompactNavigation > header .brand {margin-inline-end:auto}
+.nativeCompactNavigation > header .brand small {display:none}
+.nativeCompactNavigation > header button {min-height:42px; padding:6px 11px; font-size:14px}
+.nativeCompactNavigation main > .moduleNav {display:none}
+.nativeCompactNavigation .study {margin-top:16px}
+.nativeCompactNavigation main > .heading h1 {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap;
+}
+.nativeCompactNavigation #vocabNav:not([hidden]) {
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:0 0 14px;
+}
+.nativeCompactNavigation #vocabNav button {min-height:44px; padding:6px 4px; font-size:clamp(12px,3.6vw,14px)}
+.nativeMenu {
+  box-sizing:border-box; width:min(400px,calc(100% - 24px)); max-height:calc(100% - 24px);
+  margin:auto; border:1px solid var(--line); border-radius:14px; padding:16px; color:inherit;
+}
+.nativeMenuTitle {display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px}
+.nativeMenuTitle h2 {font-size:18px; margin:0}
+.nativeMenuTitle button {min-height:42px}
+.nativeMenuItems {display:grid; gap:6px}
+.nativeMenuItems a,.nativeMenuItems button {
+  display:flex; align-items:center; min-height:44px; gap:10px; color:var(--green); text-align:start;
+  text-decoration:none; font-size:15px; padding:8px 10px; border:1px solid var(--line); border-radius:8px;
+}
+.nativeMenuItems a[aria-current="page"] {font-weight:700; background:#d4e4d5; color:#164539}
+[data-theme="dark"] .nativeMenuItems a[aria-current="page"] {background:#afdcbd; color:#153829}
+.nativeMenuItems svg {width:20px; height:20px; flex:none}
+body.cet6Native #training:has(#nextCard:not([hidden])) {padding-bottom:65px; touch-action:pan-y pinch-zoom}
+body.cet6Native #nextCard:not([hidden]) {
+  position:fixed; z-index:3; inset-inline:12px; bottom:12px; width:auto; min-height:48px;
+  font-size:15px; border:1px solid var(--green); box-shadow:0 3px 14px #10181245;
+}
+[data-theme="dark"] body.cet6Native #nextCard:not([hidden]) {border-color:#afdcbd}

@@ -68,13 +68,14 @@ def build(args):
         bundled = assets / "site"
         shutil.copytree(site, bundled)
         shutil.copy2(source / "native.js", bundled / "android-native.js")
+        shutil.copy2(source / "native.css", bundled / "android-native.css")
         for name in ("index.html", "study.html", "vocabulary.html", "practice.html", "word-handbook.html", "vocab-size.html"):
             file = bundled / name
             html = file.read_text(encoding="utf-8")
             if "</head>" not in html:
                 raise ValueError(f"Missing HTML head: {name}")
-            file.write_text(html.replace("</head>", '<script src="android-native.js"></script></head>', 1),
-                            encoding="utf-8")
+            native_assets = '<link rel="stylesheet" href="android-native.css"><script src="android-native.js"></script>'
+            file.write_text(html.replace("</head>", native_assets + "</head>", 1), encoding="utf-8")
 
         classes = staging / "classes"
         classes.mkdir()
