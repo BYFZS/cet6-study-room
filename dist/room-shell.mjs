@@ -1,4 +1,4 @@
-import {initAnswerSoundSettings} from './answer-sounds.mjs?v=44';
+import {initAnswerSoundSettings} from './answer-sounds.mjs?v=45';
 
 const choices = (label,name,items) => '<div class="settingRow settingChoiceRow">'+
   '<span id="'+name+'Label">'+label+'</span><div class="settingChoices" role="radiogroup" aria-labelledby="'+name+'Label">'+

@@ -59,7 +59,7 @@ export function wordFamilyHTML(word, esc) {
 
 export function morphologyHTML(word, esc) {
   const data = word.phrase || word.morphology;
-  const heading = word.phrase ? '短语构成' : data?.heading || '词根和词缀';
+  const heading = data?.heading || (word.phrase ? '短语构成' : '词根和词缀');
   const prefix = form => !word.phrase && /^[a-zA-Z]+-$/.test(form) &&
     word.word.startsWith(form.slice(0,-1));
   const partRow = item => '<li class="'+(prefix(item.form)?'prefixPart':'rootPart')+'"><b lang="en">'+

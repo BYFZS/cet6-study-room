@@ -1,1 +1,488 @@
-{"provide":{"synonyms":[{"word":"supply","meaning":"提供；供应"}],"confusables":[{"word":"prove","meaning":"证明","note":"provide是提供，prove是证明"}]},"avoid":{"synonyms":[{"word":"keep away from","meaning":"避开"}],"confusables":[{"word":"afford","meaning":"负担得起","note":"avoid与afford拼写相近，含义不同"}]},"likely":{"synonyms":[{"word":"probable","meaning":"可能的"}],"confusables":[{"word":"like","meaning":"喜欢；像","note":"likely表示可能，不能直接当作like"}]},"benefit":{"synonyms":[{"word":"advantage","meaning":"好处；优势"}],"confusables":[{"word":"beneficiary","meaning":"受益人","note":"benefit是益处或使受益，beneficiary是人"}]},"evidence":{"synonyms":[{"word":"proof","meaning":"证据"}],"confusables":[{"word":"evident","meaning":"明显的","note":"evidence是证据，evident表示明显"}]},"affect":{"synonyms":[{"word":"influence","meaning":"影响"}],"confusables":[{"word":"effect","meaning":"效果；作用","note":"affect通常是动词，effect通常是名词"}]},"assume":{"synonyms":[{"word":"suppose","meaning":"假定；认为"}],"confusables":[{"word":"consume","meaning":"消耗","note":"assume是假定，consume是消耗"}]},"contribute":{"synonyms":[{"word":"make a contribution","meaning":"作贡献"}],"confusables":[{"word":"distribute","meaning":"分发；分配","note":"contribute是贡献，distribute是分发"}]},"significant":{"synonyms":[{"word":"important","meaning":"重要的"}],"confusables":[{"word":"signify","meaning":"表示；意味着","note":"significant是形容词，不是动词“标志着”"}]},"decline":{"synonyms":[{"word":"decrease","meaning":"下降；减少"}],"confusables":[{"word":"incline","meaning":"倾向；倾斜","note":"decline可表示下降，incline可表示倾向"}],"note":"decrease只对应下降或减少，不对应拒绝义"},"excused":{"synonyms":[{"word":"approved","meaning":"获准的"}],"confusables":[{"word":"unexcused","meaning":"未经批准的","note":"un-改变词义"}]},"peer":{"synonyms":[{"word":"person of the same age","meaning":"同龄人"}],"confusables":[{"word":"pear","meaning":"梨","note":"peer与pear同音，拼写和意思不同"}]},"achievement":{"synonyms":[{"word":"accomplishment","meaning":"成就"}],"confusables":[{"word":"achieve","meaning":"实现；取得","note":"achievement是成就，achieve是实现某事的动作"}]},"crisis":{"synonyms":[{"word":"critical situation","meaning":"危急局面"}],"confusables":[{"word":"critic","meaning":"评论家","note":"crisis是局面，critic是人"}]},"resource":{"synonyms":[{"word":"available means","meaning":"可利用的资源或手段"}],"confusables":[{"word":"source","meaning":"来源","note":"source强调来源，resource强调可利用的资源"},{"word":"recourse","meaning":"求助；依靠","note":"have recourse to表示求助于"}]},"pursue":{"synonyms":[{"word":"seek","meaning":"追求；寻求"}],"confusables":[{"word":"persuade","meaning":"说服","note":"pursue是追求，persuade是说服"}]},"inequality":{"synonyms":[{"word":"unequal treatment","meaning":"不平等待遇"}],"confusables":[{"word":"equality","meaning":"平等","note":"in-在此表示否定"}]},"wealthy":{"synonyms":[{"word":"rich","meaning":"富有的"}],"confusables":[{"word":"healthy","meaning":"健康的","note":"wealthy与healthy拼写相近"}]},"employer":{"synonyms":[{"word":"person or company that hires","meaning":"雇用他人的人或公司"}],"confusables":[{"word":"employee","meaning":"雇员","note":"employer雇人，employee受雇"}]},"community":{"synonyms":[{"word":"local group","meaning":"本地群体"}],"confusables":[{"word":"committee","meaning":"委员会","note":"community是群体或社区，committee是委员会"}]},"archive":{"synonyms":[{"word":"records collection","meaning":"档案集"}],"confusables":[{"word":"achieve","meaning":"实现；取得","note":"archive与achieve拼写接近"}]},"immigration":{"synonyms":[{"word":"moving into a country","meaning":"移居入境"}],"confusables":[{"word":"emigration","meaning":"移居国外","note":"immigration看入境，emigration看迁出"}]},"synthetic":{"synonyms":[{"word":"artificial","meaning":"合成的；人造的"}],"confusables":[{"word":"sympathetic","meaning":"有同情心的","note":"synthetic与sympathetic不是同一词根"}]},"emission":{"synonyms":[{"word":"release","meaning":"排放；释放"}],"confusables":[{"word":"omission","meaning":"遗漏","note":"emission排出，omission漏掉"}]},"chronic":{"synonyms":[{"word":"long-lasting","meaning":"长期持续的"}],"confusables":[{"word":"chronological","meaning":"按时间顺序的","note":"共同部分与时间相关，但含义不同"}]},"deplore":{"synonyms":[{"word":"strongly condemn","meaning":"强烈谴责"}],"confusables":[{"word":"deploy","meaning":"部署","note":"deplore谴责，deploy部署"}]},"suffer":{"synonyms":[{"word":"experience hardship","meaning":"遭受困苦"}],"confusables":[{"word":"supper","meaning":"晚餐","note":"suffer与supper拼写相近"}]},"attend":{"synonyms":[{"word":"be present at","meaning":"出席"}],"confusables":[{"word":"attention","meaning":"注意；注意力","note":"attend可接活动，attention指注意力"}]},"make sense":{"synonyms":[{"word":"be reasonable","meaning":"有道理"}],"confusables":[]},"attendance":{"synonyms":[{"word":"being present","meaning":"出席；出勤"}],"confusables":[{"word":"attendant","meaning":"服务员","note":"attendance指出勤情况，attendant指人"}]},"eject":{"synonyms":[{"word":"expel","meaning":"驱逐；赶出"}],"confusables":[{"word":"inject","meaning":"注射；注入","note":"eject向外排出，inject注入"}]},"relate to":{"synonyms":[{"word":"be connected with","meaning":"与……有关"}],"confusables":[],"note":"relate to还可表示理解或认同某人的感受"},"equal to":{"synonyms":[{"word":"as much as","meaning":"与……一样多"}],"confusables":[],"note":"as much as只对应数量比较，不涵盖能够胜任义"},"signal":{"synonyms":[{"word":"sign","meaning":"迹象；信号"}],"confusables":[{"word":"single","meaning":"单一的","note":"signal是信号，single表示单个"}]},"hardship":{"synonyms":[{"word":"difficulty","meaning":"艰难；困苦"}],"confusables":[{"word":"hardness","meaning":"硬度","note":"hardship是困苦，hardness是硬度"}]},"problematic":{"synonyms":[{"word":"troublesome","meaning":"有问题的；麻烦的"}],"confusables":[]},"policy":{"synonyms":[{"word":"guideline","meaning":"方针；准则"}],"confusables":[{"word":"police","meaning":"警察","note":"policy是政策，police是警察"}]},"accountable":{"synonyms":[{"word":"responsible","meaning":"负有责任的"}],"confusables":[{"word":"accountant","meaning":"会计师","note":"accountable是负责任的，accountant是职业"}]},"effectively":{"synonyms":[{"word":"successfully","meaning":"有效地"}],"confusables":[{"word":"efficiently","meaning":"高效地","note":"effectively看是否达到效果，efficiently看效率"}]},"punish":{"synonyms":[{"word":"penalize","meaning":"惩罚"}],"confusables":[{"word":"publish","meaning":"出版；发表","note":"punish与publish拼写相近"}]},"channel":{"synonyms":[{"word":"route","meaning":"渠道；途径"}],"confusables":[{"word":"canal","meaning":"运河","note":"channel可指渠道或频道，canal通常指人工运河"}]},"promptly":{"synonyms":[{"word":"without delay","meaning":"及时地"}],"confusables":[{"word":"properly","meaning":"恰当地","note":"promptly强调及时，properly强调方式正确"}]},"determine":{"synonyms":[{"word":"decide","meaning":"决定；确定"}],"confusables":[]},"fascinate":{"synonyms":[{"word":"captivate","meaning":"使着迷"}],"confusables":[{"word":"facilitate","meaning":"促进；使便利","note":"fascinate吸引，facilitate使某事容易"}]},"encounter":{"synonyms":[{"word":"come across","meaning":"遇到"}],"confusables":[{"word":"counter","meaning":"柜台；反驳","note":"encounter表示遭遇，不等于counter"}]},"employment":{"synonyms":[{"word":"paid work","meaning":"有报酬的工作"}],"confusables":[{"word":"unemployment","meaning":"失业","note":"un-改变词义"}]},"sociologist":{"synonyms":[{"word":"expert in sociology","meaning":"社会学家"}],"confusables":[{"word":"psychologist","meaning":"心理学家","note":"socio-关乎社会，psycho-关乎心理"}]},"refer to":{"synonyms":[{"word":"mention","meaning":"提到"}],"confusables":[{"word":"prefer","meaning":"更喜欢","note":"refer是提及，prefer是偏好"}],"note":"mention不涵盖查阅等其他义"},"stun":{"synonyms":[{"word":"shock","meaning":"使震惊"}],"confusables":[{"word":"stunt","meaning":"特技；阻碍生长","note":"stun震惊，stunt有特技等义"}]},"regard":{"synonyms":[{"word":"view","meaning":"看待"}],"confusables":[{"word":"reward","meaning":"奖励；报酬","note":"regard看待，reward奖励"}],"note":"view只对应看待义"},"instability":{"synonyms":[{"word":"lack of stability","meaning":"不稳定"}],"confusables":[{"word":"stability","meaning":"稳定","note":"in-在此表示否定"}]},"compelling":{"synonyms":[{"word":"convincing","meaning":"令人信服的"}],"confusables":[{"word":"compulsory","meaning":"强制的；必修的","note":"compelling令人信服，compulsory必须执行"}]},"overwork":{"synonyms":[{"word":"work too much","meaning":"过度工作"}],"confusables":[{"word":"overlook","meaning":"忽视；俯瞰","note":"overwork与overlook是不同动词"}]},"pursuit":{"synonyms":[{"word":"seeking","meaning":"追寻；追求"}],"confusables":[]},"stable":{"synonyms":[{"word":"steady","meaning":"稳定的"}],"confusables":[{"word":"staple","meaning":"主食；订书钉","note":"stable与staple拼写相近"}]},"in the meantime":{"synonyms":[{"word":"meanwhile","meaning":"与此同时"}],"confusables":[]},"get a foot in the door":{"synonyms":[{"word":"gain an initial opportunity","meaning":"获得初步机会"}],"confusables":[]},"have access to":{"synonyms":[{"word":"be able to use","meaning":"能够使用"}],"confusables":[{"word":"excess","meaning":"过量；过度","note":"access是使用或进入的机会，excess是过量"}]},"level the playing field":{"synonyms":[{"word":"create fair conditions","meaning":"创造公平条件"}],"confusables":[]},"well-off":{"synonyms":[{"word":"wealthy","meaning":"富裕的"}],"confusables":[{"word":"well-known","meaning":"著名的","note":"well-off富裕，well-known出名"}]},"applicant":{"synonyms":[{"word":"candidate","meaning":"申请者；候选人"}],"confusables":[{"word":"application","meaning":"申请；应用","note":"applicant指人，application指申请或应用"}]},"leisure":{"synonyms":[{"word":"free time","meaning":"闲暇时间"}],"confusables":[{"word":"pleasure","meaning":"愉快；乐趣","note":"leisure是空闲时间，pleasure是愉悦感"}]},"librarian":{"synonyms":[{"word":"library worker","meaning":"图书馆工作人员"}],"confusables":[{"word":"library","meaning":"图书馆","note":"librarian是人，library是场所"}]},"municipal":{"synonyms":[{"word":"city-level","meaning":"市政的"}],"confusables":[]},"technological":{"synonyms":[{"word":"related to technology","meaning":"与科技有关的"}],"confusables":[],"note":"与technical意思接近，但technological更强调技术发展或科技本身"},"engage in":{"synonyms":[{"word":"take part in","meaning":"参与；从事"}],"confusables":[{"word":"enrage","meaning":"激怒","note":"engage是参与等义，enrage是激怒"}]},"assault":{"synonyms":[{"word":"attack","meaning":"攻击；袭击"}],"confusables":[{"word":"insult","meaning":"侮辱","note":"assault可指攻击，insult主要指言语或行为上的侮辱"}]},"offering":{"synonyms":[{"word":"product or service provided","meaning":"所提供的产品或服务"}],"confusables":[]},"interact":{"synonyms":[{"word":"communicate with one another","meaning":"相互交流"}],"confusables":[{"word":"interfere","meaning":"干涉；妨碍","note":"interact是互动，interfere是干涉"}]},"incredible":{"synonyms":[{"word":"unbelievable","meaning":"难以置信的"}],"confusables":[{"word":"credible","meaning":"可信的","note":"in-在此表示否定"}]},"branch":{"synonyms":[{"word":"division","meaning":"分部；分支"}],"confusables":[{"word":"bench","meaning":"长凳","note":"branch有分支义，bench是长凳等义"}]},"partnership":{"synonyms":[{"word":"cooperation","meaning":"合作关系"}],"confusables":[]},"responsibility":{"synonyms":[{"word":"duty","meaning":"责任；职责"}],"confusables":[]},"depressed":{"synonyms":[{"word":"downcast","meaning":"沮丧的"}],"confusables":[{"word":"impressed","meaning":"印象深刻的","note":"depressed沮丧，impressed印象深刻"}],"note":"downcast只对应情绪义，不对应经济萧条义"},"surrounding":{"synonyms":[{"word":"nearby","meaning":"周围的；附近的"}],"confusables":[{"word":"surrender","meaning":"投降；交出","note":"surrounding与surrender不可混淆"}]},"hub":{"synonyms":[{"word":"center","meaning":"中心；枢纽"}],"confusables":[{"word":"hut","meaning":"小屋","note":"hub与hut仅末字母不同"}]},"agency":{"synonyms":[{"word":"organization","meaning":"机构"}],"confusables":[{"word":"agenda","meaning":"议程","note":"agency是机构，agenda是议程"}]},"livable":{"synonyms":[{"word":"fit to live in","meaning":"适宜居住的"}],"confusables":[{"word":"lively","meaning":"活泼的；生动的","note":"livable适居，lively活跃"}]},"craftsman":{"synonyms":[{"word":"artisan","meaning":"工匠"}],"confusables":[{"word":"craftsmanship","meaning":"工艺；手艺","note":"craftsman是人，craftsmanship是技艺"}]},"nurture":{"synonyms":[{"word":"foster","meaning":"培养；培育"}],"confusables":[{"word":"nature","meaning":"自然；本性","note":"nurture培养，nature自然或本性"}]},"resilience":{"synonyms":[{"word":"ability to recover","meaning":"恢复力"}],"confusables":[{"word":"resistance","meaning":"抵抗；阻力","note":"resilience强调恢复，resistance强调抵抗"}]},"artifact":{"synonyms":[{"word":"human-made object","meaning":"人工制品"}],"confusables":[{"word":"artistic","meaning":"艺术的","note":"artifact是物品，artistic表示与艺术有关"}]},"relevant to":{"synonyms":[{"word":"connected with","meaning":"与……相关"}],"confusables":[{"word":"irrelevant to","meaning":"与……无关","note":"ir-在此表示否定"}]},"restoration":{"synonyms":[{"word":"repair","meaning":"修复；恢复"}],"confusables":[{"word":"restaurant","meaning":"餐馆","note":"restoration与restaurant不是同一个词"}]},"vital":{"synonyms":[{"word":"essential","meaning":"至关重要的"}],"confusables":[{"word":"viral","meaning":"病毒的；迅速传播的","note":"vital关键，viral与病毒或传播有关"}]},"periodical":{"synonyms":[{"word":"journal","meaning":"期刊"}],"confusables":[{"word":"periodic","meaning":"定期的；周期性的","note":"periodical在本题中作名词，periodic是形容词"}]},"inquiry":{"synonyms":[{"word":"investigation","meaning":"调查；探究"}],"confusables":[{"word":"injury","meaning":"伤害；受伤","note":"inquiry询问调查，injury伤害"}]},"afford":{"synonyms":[{"word":"be able to pay for","meaning":"负担得起"}],"confusables":[{"word":"avoid","meaning":"避免","note":"afford负担得起，avoid避免"}]},"bridge":{"synonyms":[{"word":"connect","meaning":"连接；弥合"}],"confusables":[{"word":"bride","meaning":"新娘","note":"bridge与bride仅相差一个字母"}],"note":"connect对应动词义，不涵盖桥梁名词义"},"annual":{"synonyms":[{"word":"yearly","meaning":"每年的"}],"confusables":[{"word":"manual","meaning":"手工的；手册","note":"annual按年，manual与手或操作手册有关"}]},"boost":{"synonyms":[{"word":"increase","meaning":"提高；促进"}],"confusables":[{"word":"boast","meaning":"自夸","note":"boost提升，boast夸耀"}]},"participate in":{"synonyms":[{"word":"take part in","meaning":"参与"}],"confusables":[{"word":"anticipate","meaning":"预料；期待","note":"participate参与，anticipate预料"}]},"convince":{"synonyms":[{"word":"persuade","meaning":"说服；使相信"}],"confusables":[{"word":"conceive","meaning":"构想；怀孕","note":"convince使相信，conceive构想"}]},"enable":{"synonyms":[{"word":"allow","meaning":"使能够"}],"confusables":[{"word":"unable","meaning":"不能的","note":"enable是动词，unable表示没有能力"}]},"literary":{"synonyms":[{"word":"related to literature","meaning":"文学的"}],"confusables":[{"word":"literal","meaning":"字面的","note":"literary文学，literal字面"}]},"socio-economic":{"synonyms":[{"word":"related to society and the economy","meaning":"社会经济的"}],"confusables":[{"word":"sociological","meaning":"社会学的","note":"社会经济因素同时涉及经济，sociological专指社会学"}]},"consumer":{"synonyms":[{"word":"user of goods or services","meaning":"商品或服务的使用者"}],"confusables":[{"word":"consume","meaning":"消费；消耗","note":"consumer是人，consume是动作"}]},"gain":{"synonyms":[{"word":"obtain","meaning":"获得"}],"confusables":[{"word":"grain","meaning":"谷物；颗粒","note":"gain获得，grain谷物"}]},"set up":{"synonyms":[{"word":"establish","meaning":"建立"}],"confusables":[{"word":"upset","meaning":"使心烦；打乱","note":"set up与upset的字母组合相近但不是同一表达"}]},"creativity":{"synonyms":[{"word":"originality","meaning":"创造力；独创性"}],"confusables":[]},"ideology":{"synonyms":[{"word":"system of ideas","meaning":"思想体系"}],"confusables":[]},"uphold":{"synonyms":[{"word":"support","meaning":"维护；支持"}],"confusables":[{"word":"withhold","meaning":"扣留；不予提供","note":"uphold维护，withhold扣住不发"}]},"preserve":{"synonyms":[{"word":"protect","meaning":"保护；保存"}],"confusables":[{"word":"reserve","meaning":"预留；储备","note":"preserve保存保护，reserve留待使用"}]},"archivist":{"synonyms":[{"word":"archive specialist","meaning":"档案工作者"}],"confusables":[{"word":"activist","meaning":"活动家","note":"archivist管理档案，activist参与社会活动"}]},"preservation":{"synonyms":[{"word":"conservation","meaning":"保护；保存"}],"confusables":[{"word":"presentation","meaning":"展示；演示","note":"preservation保存，presentation展示"}]},"current events":{"synonyms":[{"word":"news","meaning":"时事；新闻"}],"confusables":[{"word":"currency","meaning":"货币","note":"current在此意为当前，currency是货币"}]},"at large":{"synonyms":[{"word":"as a whole","meaning":"总体上"}],"confusables":[],"note":"as a whole不对应在逃义"},"passionate":{"synonyms":[{"word":"enthusiastic","meaning":"充满热情的"}],"confusables":[{"word":"patient","meaning":"有耐心的；病人","note":"passionate热情，patient耐心或病人"}]},"come along":{"synonyms":[{"word":"appear","meaning":"出现；到来"}],"confusables":[{"word":"come across","meaning":"偶然遇到","note":"come along侧重出现或同行，come across侧重偶遇"}]},"soundness":{"synonyms":[{"word":"reliability","meaning":"可靠性；合理性"}],"confusables":[{"word":"sound","meaning":"声音","note":"soundness取可靠等抽象义，sound作名词常指声音"}]},"socioeconomic":{"synonyms":[{"word":"related to society and the economy","meaning":"社会经济的"}],"confusables":[{"word":"sociological","meaning":"社会学的","note":"socioeconomic与socio-economic仅拼写形式不同"}]},"job stability":{"synonyms":[{"word":"security of employment","meaning":"就业稳定性"}],"confusables":[]},"identify":{"synonyms":[{"word":"recognize","meaning":"识别；确认"}],"confusables":[{"word":"identity","meaning":"身份","note":"identify是识别的动作，identity是身份"}]},"needy":{"synonyms":[{"word":"poor","meaning":"贫困的；需要帮助的"}],"confusables":[{"word":"needless","meaning":"不必要的","note":"needy需要帮助，needless没有必要"}]},"formulate":{"synonyms":[{"word":"devise","meaning":"制定；构想"}],"confusables":[{"word":"formula","meaning":"公式；配方","note":"formulate是制定动作，formula是公式或配方"}]},"worrisome":{"synonyms":[{"word":"worrying","meaning":"令人担忧的"}],"confusables":[]},"end up":{"synonyms":[{"word":"eventually become","meaning":"最终成为"}],"confusables":[]},"maintenance":{"synonyms":[{"word":"upkeep","meaning":"维护；保养"}],"confusables":[{"word":"main","meaning":"主要的","note":"maintenance是维护，main只表示主要"}]},"in charge":{"synonyms":[{"word":"responsible","meaning":"负责的"}],"confusables":[{"word":"charge","meaning":"收费；指控","note":"in charge表示负责，不能按charge的收费义理解"}]},"engineer":{"synonyms":[{"word":"technical professional","meaning":"工程技术人员"}],"confusables":[{"word":"engine","meaning":"发动机","note":"engineer是人，engine是机器"}]},"intimidation":{"synonyms":[{"word":"threatening behavior","meaning":"恐吓行为"}],"confusables":[{"word":"imitation","meaning":"模仿；仿制品","note":"intimidation恐吓，imitation模仿"}]},"indignation":{"synonyms":[{"word":"anger at unfairness","meaning":"对不公的愤慨"}],"confusables":[{"word":"indication","meaning":"迹象；表明","note":"indignation愤慨，indication迹象"}]},"back up":{"synonyms":[{"word":"make a copy","meaning":"备份"}],"confusables":[{"word":"back out","meaning":"退出；食言","note":"back up备份或支持，back out退出"}]},"hard drive":{"synonyms":[{"word":"disk storage device","meaning":"硬盘存储设备"}],"confusables":[]},"directory":{"synonyms":[{"word":"folder","meaning":"目录；文件夹"}],"confusables":[{"word":"director","meaning":"导演；主管","note":"directory是目录，director是人"}]},"arbitrate":{"synonyms":[{"word":"settle as a neutral judge","meaning":"仲裁"}],"confusables":[{"word":"arbitrary","meaning":"武断的；任意的","note":"arbitrate是仲裁动作，arbitrary是形容词"}]},"prevent":{"synonyms":[{"word":"stop","meaning":"阻止；预防"}],"confusables":[{"word":"present","meaning":"呈现；礼物","note":"prevent阻止，present有呈现或礼物等义"}]},"escalate":{"synonyms":[{"word":"intensify","meaning":"升级；加剧"}],"confusables":[{"word":"escalator","meaning":"自动扶梯","note":"escalate升级，escalator是设施"}]},"court":{"synonyms":[{"word":"law court","meaning":"法院"}],"confusables":[{"word":"count","meaning":"数数；计数","note":"court法院，count计数"}]},"legal":{"synonyms":[{"word":"lawful","meaning":"合法的"}],"confusables":[{"word":"illegal","meaning":"非法的","note":"il-在此表示否定"}]},"function":{"synonyms":[{"word":"operate","meaning":"运转；起作用"}],"confusables":[{"word":"fraction","meaning":"分数；小部分","note":"function运作或功能，fraction分数"}],"note":"operate只对应动词义"},"arbitrary":{"synonyms":[{"word":"unreasonable","meaning":"武断的；不合理的"}],"confusables":[{"word":"arbitrate","meaning":"仲裁","note":"arbitrary是形容词，arbitrate是动词"}]},"unique":{"synonyms":[{"word":"one of a kind","meaning":"独一无二的"}],"confusables":[{"word":"uniform","meaning":"统一的；制服","note":"unique独特，uniform统一或制服"}]},"foresee":{"synonyms":[{"word":"predict","meaning":"预见"}],"confusables":[{"word":"forgo","meaning":"放弃","note":"foresee表示预见，forgo表示放弃"}]},"express":{"synonyms":[{"word":"state","meaning":"表达；陈述"}],"confusables":[{"word":"experience","meaning":"经历；经验","note":"express表达，experience经历"}]},"prior":{"synonyms":[{"word":"previous","meaning":"先前的"}],"confusables":[{"word":"priority","meaning":"优先权；优先事项","note":"prior是先前的，priority是优先事项"}]},"propose":{"synonyms":[{"word":"suggest","meaning":"提出；建议"}],"confusables":[{"word":"purpose","meaning":"目的","note":"propose是动词，purpose通常是目的"}]},"retrieve":{"synonyms":[{"word":"recover","meaning":"取回；找回"}],"confusables":[{"word":"receive","meaning":"收到","note":"retrieve把已有之物取回，receive收到"}]},"retrieval":{"synonyms":[{"word":"recovery","meaning":"取回；检索"}],"confusables":[]},"reminder":{"synonyms":[{"word":"prompt","meaning":"提醒；提示"}],"confusables":[{"word":"remainder","meaning":"剩余部分","note":"reminder提醒，remainder余下部分"}]},"accumulate":{"synonyms":[{"word":"collect gradually","meaning":"逐渐积累"}],"confusables":[{"word":"accommodate","meaning":"容纳；提供住宿","note":"accumulate积累，accommodate容纳"}]},"enhance":{"synonyms":[{"word":"improve","meaning":"提高；增强"}],"confusables":[{"word":"enchant","meaning":"使着迷","note":"enhance增强，enchant使着迷"}]},"disorderly":{"synonyms":[{"word":"untidy","meaning":"杂乱的"}],"confusables":[{"word":"orderly","meaning":"有秩序的","note":"dis-在此表示否定"}]},"emergency":{"synonyms":[{"word":"urgent situation","meaning":"紧急情况"}],"confusables":[{"word":"emergence","meaning":"出现；显现","note":"emergency紧急情况，emergence出现"}]},"in control":{"synonyms":[{"word":"in command","meaning":"掌控局面"}],"confusables":[{"word":"out of control","meaning":"失去控制","note":"in与out改变控制状态"}]},"steady":{"synonyms":[{"word":"stable","meaning":"稳定的"}],"confusables":[{"word":"study","meaning":"学习；研究","note":"steady稳定，study学习"}]},"adverse":{"synonyms":[{"word":"unfavorable","meaning":"不利的"}],"confusables":[{"word":"averse","meaning":"反对的；不愿意的","note":"adverse修饰不利影响，averse表示不愿或反对"}]},"wage":{"synonyms":[{"word":"pay","meaning":"工资"}],"confusables":[{"word":"wave","meaning":"波浪；挥手","note":"wage工资，wave波浪或挥手"}]},"liberate":{"synonyms":[{"word":"free","meaning":"解放；使自由"}],"confusables":[{"word":"celebrate","meaning":"庆祝","note":"liberate解放，celebrate庆祝"}]},"laborious":{"synonyms":[{"word":"arduous","meaning":"艰苦费力的"}],"confusables":[{"word":"laboratory","meaning":"实验室","note":"laborious是形容词，laboratory是名词"}]},"prioritize":{"synonyms":[{"word":"give priority to","meaning":"优先处理"}],"confusables":[{"word":"priority","meaning":"优先权；优先事项","note":"prioritize是动作，priority是名词"}]},"attitude":{"synonyms":[{"word":"viewpoint","meaning":"态度；看法"}],"confusables":[{"word":"altitude","meaning":"海拔；高度","note":"attitude态度，altitude高度"}]},"outweigh":{"synonyms":[{"word":"be more important than","meaning":"比……更重要"}],"confusables":[{"word":"overweight","meaning":"超重的","note":"outweigh是动词，overweight常表示超重"}]},"inference":{"synonyms":[{"word":"deduction","meaning":"推论"}],"confusables":[{"word":"interference","meaning":"干涉；干扰","note":"inference推断，interference干涉"}]},"adapt":{"synonyms":[{"word":"adjust","meaning":"适应；调整"}],"confusables":[{"word":"adopt","meaning":"采用；收养","note":"adapt适应，adopt采用或收养"}]},"habitual":{"synonyms":[{"word":"customary","meaning":"习惯性的"}],"confusables":[]},"scrutinize":{"synonyms":[{"word":"examine closely","meaning":"仔细审查"}],"confusables":[]},"dawn":{"synonyms":[{"word":"daybreak","meaning":"黎明"}],"confusables":[{"word":"down","meaning":"向下","note":"dawn与down发音和拼写都不同"}]},"custom":{"synonyms":[{"word":"tradition","meaning":"习俗"}],"confusables":[{"word":"costume","meaning":"服装；戏服","note":"custom习俗，costume服装"}]},"violate":{"synonyms":[{"word":"break","meaning":"违反；违背"}],"confusables":[{"word":"violent","meaning":"暴力的","note":"violate是违反，violent是暴力的"}]},"exotic":{"synonyms":[{"word":"foreign","meaning":"异国的"}],"confusables":[],"note":"foreign仅是近义提示，不含所有异国情调色彩"},"courtesy":{"synonyms":[{"word":"politeness","meaning":"礼貌"}],"confusables":[{"word":"court","meaning":"法院；法庭","note":"courtesy是礼貌，不是court的法院义"}]},"poisonous":{"synonyms":[{"word":"toxic","meaning":"有毒的"}],"confusables":[{"word":"poison","meaning":"毒药","note":"poisonous是形容词，poison可作名词"}]},"campus":{"synonyms":[{"word":"university grounds","meaning":"大学校园"}],"confusables":[{"word":"camping","meaning":"露营","note":"campus校园，camping露营"}]},"artificial":{"synonyms":[{"word":"synthetic","meaning":"人造的；合成的"}],"confusables":[{"word":"artistic","meaning":"艺术的","note":"artificial人造，artistic艺术"}]},"anxiety":{"synonyms":[{"word":"worry","meaning":"焦虑；担忧"}],"confusables":[]},"specific":{"synonyms":[{"word":"particular","meaning":"具体的；特定的"}],"confusables":[{"word":"species","meaning":"物种","note":"specific是形容词，species是物种"}]},"toxic":{"synonyms":[{"word":"poisonous","meaning":"有毒的"}],"confusables":[{"word":"tonic","meaning":"滋补品；补药","note":"toxic有毒，tonic可指补药"}]},"lawn":{"synonyms":[{"word":"grass area","meaning":"草坪"}],"confusables":[{"word":"law","meaning":"法律","note":"lawn草坪，law法律"}]},"waterway":{"synonyms":[{"word":"water route","meaning":"水道；航道"}],"confusables":[{"word":"waterproof","meaning":"防水的","note":"way表示通道，proof在此表示防水"}]},"lifeless":{"synonyms":[{"word":"without life","meaning":"无生命的"}],"confusables":[{"word":"lifelong","meaning":"终身的","note":"lifeless无生命，lifelong持续一生"}]},"get rid of":{"synonyms":[{"word":"remove","meaning":"去除；清除"}],"confusables":[]},"ingredient":{"synonyms":[{"word":"component","meaning":"成分；组成部分"}],"confusables":[]},"retain":{"synonyms":[{"word":"keep","meaning":"保留；保持"}],"confusables":[{"word":"retire","meaning":"退休；退出","note":"retain保留，retire退休"}]},"extreme":{"synonyms":[{"word":"very great","meaning":"极度的"}],"confusables":[{"word":"extend","meaning":"延伸；扩大","note":"extreme是形容词，extend是动词"}]},"flood":{"synonyms":[{"word":"inundation","meaning":"洪水"}],"confusables":[{"word":"floor","meaning":"地板；楼层","note":"flood洪水，floor地板"}]},"weed":{"synonyms":[{"word":"unwanted plant","meaning":"杂草"}],"confusables":[{"word":"seed","meaning":"种子","note":"weed杂草，seed种子"}]},"job application":{"synonyms":[{"word":"application for employment","meaning":"求职申请"}],"confusables":[{"word":"job applicant","meaning":"求职申请人","note":"application指申请，applicant指人"}]},"ought to":{"synonyms":[{"word":"should","meaning":"应该"}],"confusables":[]},"cite":{"synonyms":[{"word":"quote","meaning":"引用"}],"confusables":[{"word":"site","meaning":"地点；场所","note":"cite引用，site地点"},{"word":"sight","meaning":"视力；景象","note":"cite与sight同音，意思不同"}]},"develop":{"synonyms":[{"word":"grow","meaning":"发展；成长"}],"confusables":[{"word":"envelop","meaning":"包围；笼罩","note":"develop发展，envelop包围"}]},"laboratory":{"synonyms":[{"word":"lab","meaning":"实验室"}],"confusables":[{"word":"laborious","meaning":"费力的；艰苦的","note":"laboratory是场所，laborious描述工作费力"}]},"usable":{"synonyms":[{"word":"fit for use","meaning":"可用的"}],"confusables":[{"word":"usual","meaning":"通常的","note":"usable可使用，usual通常"}]},"astronaut":{"synonyms":[{"word":"space traveler","meaning":"宇航员"}],"confusables":[{"word":"astronomer","meaning":"天文学家","note":"astronaut进入太空，astronomer研究天体"}]},"surface":{"synonyms":[{"word":"outer layer","meaning":"表面"}],"confusables":[{"word":"surplus","meaning":"剩余；过剩","note":"surface表面，surplus盈余"}]},"carry out":{"synonyms":[{"word":"perform","meaning":"执行；实施"}],"confusables":[{"word":"carry on","meaning":"继续","note":"carry out执行计划，carry on继续活动"}]},"space medicine":{"synonyms":[{"word":"medical science for spaceflight","meaning":"太空医学"}],"confusables":[]},"research finding":{"synonyms":[{"word":"research result","meaning":"研究发现；成果"}],"confusables":[{"word":"research funding","meaning":"科研资助","note":"finding是发现，funding是资金"}]},"economic benefit":{"synonyms":[{"word":"economic gain","meaning":"经济收益"}],"confusables":[{"word":"economical","meaning":"节约的","note":"economic与经济有关，economical强调节省"}]},"billion":{"synonyms":[{"word":"a thousand million","meaning":"十亿"}],"confusables":[{"word":"million","meaning":"百万","note":"一billion等于一千million"}]},"contribution":{"synonyms":[{"word":"input","meaning":"贡献；投入"}],"confusables":[{"word":"distribution","meaning":"分配；分发","note":"contribution贡献，distribution分发"}]}}
+{"provide":{"synonyms":[{"word":"supply","meaning":"提供；供应"}],"confusables":[{"word":"prove","meaning":"证明","note":"provide是提供，prove是证明"}]},"avoid":{"synonyms":[{"word":"keep away from","meaning":"避开"}],"confusables":[{"word":"afford","meaning":"负担得起","note":"avoid与afford拼写相近，含义不同"}]},"likely":{"synonyms":[{"word":"probable","meaning":"可能的"}],"confusables":[{"word":"like","meaning":"喜欢；像","note":"likely表示可能，不能直接当作like"}]},"benefit":{"synonyms":[{"word":"advantage","meaning":"好处；优势"}],"confusables":[{"word":"beneficiary","meaning":"受益人","note":"benefit是益处或使受益，beneficiary是人"}]},"evidence":{"synonyms":[{"word":"proof","meaning":"证据"}],"confusables":[{"word":"evident","meaning":"明显的","note":"evidence是证据，evident表示明显"}]},"affect":{"synonyms":[{"word":"influence","meaning":"影响"}],"confusables":[{"word":"effect","meaning":"效果；作用","note":"affect通常是动词，effect通常是名词"}]},"assume":{"synonyms":[{"word":"suppose","meaning":"假定；认为"}],"confusables":[{"word":"consume","meaning":"消耗","note":"assume是假定，consume是消耗"}]},"contribute":{"synonyms":[{"word":"make a contribution","meaning":"作贡献"}],"confusables":[{"word":"distribute","meaning":"分发；分配","note":"contribute是贡献，distribute是分发"}]},"significant":{"synonyms":[{"word":"important","meaning":"重要的"}],"confusables":[{"word":"signify","meaning":"表示；意味着","note":"significant是形容词，不是动词“标志着”"}]},"decline":{"synonyms":[{"word":"decrease","meaning":"下降；减少"}],"confusables":[{"word":"incline","meaning":"倾向；倾斜","note":"decline可表示下降，incline可表示倾向"}],"note":"decrease只对应下降或减少，不对应拒绝义"},"excused":{"synonyms":[{"word":"approved","meaning":"获准的"}],"confusables":[{"word":"unexcused","meaning":"未经批准的","note":"un-改变词义"}]},"peer":{"synonyms":[{"word":"person of the same age","meaning":"同龄人"}],"confusables":[{"word":"pear","meaning":"梨","note":"peer与pear同音，拼写和意思不同"}]},"achievement":{"synonyms":[{"word":"accomplishment","meaning":"成就"}],"confusables":[{"word":"achieve","meaning":"实现；取得","note":"achievement是成就，achieve是实现某事的动作"}]},"crisis":{"synonyms":[{"word":"critical situation","meaning":"危急局面"}],"confusables":[{"word":"critic","meaning":"评论家","note":"crisis是局面，critic是人"}]},"resource":{"synonyms":[{"word":"available means","meaning":"可利用的资源或手段"}],"confusables":[{"word":"source","meaning":"来源","note":"source强调来源，resource强调可利用的资源"},{"word":"recourse","meaning":"求助；依靠","note":"have recourse to表示求助于"}]},"pursue":{"synonyms":[{"word":"seek","meaning":"追求；寻求"}],"confusables":[{"word":"persuade","meaning":"说服","note":"pursue是追求，persuade是说服"}]},"inequality":{"synonyms":[{"word":"unequal treatment","meaning":"不平等待遇"}],"confusables":[{"word":"equality","meaning":"平等","note":"in-在此表示否定"}]},"wealthy":{"synonyms":[{"word":"rich","meaning":"富有的"}],"confusables":[{"word":"healthy","meaning":"健康的","note":"wealthy与healthy拼写相近"}]},"employer":{"synonyms":[{"word":"person or company that hires","meaning":"雇用他人的人或公司"}],"confusables":[{"word":"employee","meaning":"雇员","note":"employer雇人，employee受雇"}]},"community":{"synonyms":[{"word":"local group","meaning":"本地群体"}],"confusables":[{"word":"committee","meaning":"委员会","note":"community是群体或社区，committee是委员会"}]},"archive":{"synonyms":[{"word":"records collection","meaning":"档案集"}],"confusables":[{"word":"achieve","meaning":"实现；取得","note":"archive与achieve拼写接近"}]},"immigration":{"synonyms":[{"word":"moving into a country","meaning":"移居入境"}],"confusables":[{"word":"emigration","meaning":"移居国外","note":"immigration看入境，emigration看迁出"}]},"synthetic":{"synonyms":[{"word":"artificial","meaning":"合成的；人造的"}],"confusables":[{"word":"sympathetic","meaning":"有同情心的","note":"synthetic与sympathetic不是同一词根"}]},"emission":{"synonyms":[{"word":"release","meaning":"排放；释放"}],"confusables":[{"word":"omission","meaning":"遗漏","note":"emission排出，omission漏掉"}]},"chronic":{"synonyms":[{"word":"long-lasting","meaning":"长期持续的"}],"confusables":[{"word":"chronological","meaning":"按时间顺序的","note":"共同部分与时间相关，但含义不同"}]},"deplore":{"synonyms":[{"word":"strongly condemn","meaning":"强烈谴责"}],"confusables":[{"word":"deploy","meaning":"部署","note":"deplore谴责，deploy部署"}]},"suffer":{"synonyms":[{"word":"experience hardship","meaning":"遭受困苦"}],"confusables":[{"word":"supper","meaning":"晚餐","note":"suffer与supper拼写相近"}]},"attend":{"synonyms":[{"word":"be present at","meaning":"出席"}],"confusables":[{"word":"attention","meaning":"注意；注意力","note":"attend可接活动，attention指注意力"}]},"make sense":{"synonyms":[{"word":"be reasonable","meaning":"有道理"}],"confusables":[]},"attendance":{"synonyms":[{"word":"being present","meaning":"出席；出勤"}],"confusables":[{"word":"attendant","meaning":"服务员","note":"attendance指出勤情况，attendant指人"}]},"eject":{"synonyms":[{"word":"expel","meaning":"驱逐；赶出"}],"confusables":[{"word":"inject","meaning":"注射；注入","note":"eject向外排出，inject注入"}]},"relate to":{"synonyms":[{"word":"be connected with","meaning":"与……有关"}],"confusables":[],"note":"relate to还可表示理解或认同某人的感受"},"equal to":{"synonyms":[{"word":"as much as","meaning":"与……一样多"}],"confusables":[],"note":"as much as只对应数量比较，不涵盖能够胜任义"},"signal":{"synonyms":[{"word":"sign","meaning":"迹象；信号"}],"confusables":[{"word":"single","meaning":"单一的","note":"signal是信号，single表示单个"}]},"hardship":{"synonyms":[{"word":"difficulty","meaning":"艰难；困苦"}],"confusables":[{"word":"hardness","meaning":"硬度","note":"hardship是困苦，hardness是硬度"}]},"problematic":{"synonyms":[{"word":"troublesome","meaning":"有问题的；麻烦的"}],"confusables":[]},"policy":{"synonyms":[{"word":"guideline","meaning":"方针；准则"}],"confusables":[{"word":"police","meaning":"警察","note":"policy是政策，police是警察"}]},"accountable":{"synonyms":[{"word":"responsible","meaning":"负有责任的"}],"confusables":[{"word":"accountant","meaning":"会计师","note":"accountable是负责任的，accountant是职业"}]},"effectively":{"synonyms":[{"word":"successfully","meaning":"有效地"}],"confusables":[{"word":"efficiently","meaning":"高效地","note":"effectively看是否达到效果，efficiently看效率"}]},"punish":{"synonyms":[{"word":"penalize","meaning":"惩罚"}],"confusables":[{"word":"publish","meaning":"出版；发表","note":"punish与publish拼写相近"}]},"channel":{"synonyms":[{"word":"route","meaning":"渠道；途径"}],"confusables":[{"word":"canal","meaning":"运河","note":"channel可指渠道或频道，canal通常指人工运河"}]},"promptly":{"synonyms":[{"word":"without delay","meaning":"及时地"}],"confusables":[{"word":"properly","meaning":"恰当地","note":"promptly强调及时，properly强调方式正确"}]},"determine":{"synonyms":[{"word":"decide","meaning":"决定；确定"}],"confusables":[]},"fascinate":{"synonyms":[{"word":"captivate","meaning":"使着迷"}],"confusables":[{"word":"facilitate","meaning":"促进；使便利","note":"fascinate吸引，facilitate使某事容易"}]},"encounter":{"synonyms":[{"word":"come across","meaning":"遇到"}],"confusables":[{"word":"counter","meaning":"柜台；反驳","note":"encounter表示遭遇，不等于counter"}]},"employment":{"synonyms":[{"word":"paid work","meaning":"有报酬的工作"}],"confusables":[{"word":"unemployment","meaning":"失业","note":"un-改变词义"}]},"sociologist":{"synonyms":[{"word":"expert in sociology","meaning":"社会学家"}],"confusables":[{"word":"psychologist","meaning":"心理学家","note":"socio-关乎社会，psycho-关乎心理"}]},"refer to":{"synonyms":[{"word":"mention","meaning":"提到"}],"confusables":[{"word":"prefer","meaning":"更喜欢","note":"refer是提及，prefer是偏好"}],"note":"mention不涵盖查阅等其他义"},"stun":{"synonyms":[{"word":"shock","meaning":"使震惊"}],"confusables":[{"word":"stunt","meaning":"特技；阻碍生长","note":"stun震惊，stunt有特技等义"}]},"regard":{"synonyms":[{"word":"view","meaning":"看待"}],"confusables":[{"word":"reward","meaning":"奖励；报酬","note":"regard看待，reward奖励"}],"note":"view只对应看待义"},"instability":{"synonyms":[{"word":"lack of stability","meaning":"不稳定"}],"confusables":[{"word":"stability","meaning":"稳定","note":"in-在此表示否定"}]},"compelling":{"synonyms":[{"word":"convincing","meaning":"令人信服的"}],"confusables":[{"word":"compulsory","meaning":"强制的；必修的","note":"compelling令人信服，compulsory必须执行"}]},"overwork":{"synonyms":[{"word":"work too much","meaning":"过度工作"}],"confusables":[{"word":"overlook","meaning":"忽视；俯瞰","note":"overwork与overlook是不同动词"}]},"pursuit":{"synonyms":[{"word":"seeking","meaning":"追寻；追求"}],"confusables":[]},"stable":{"synonyms":[{"word":"steady","meaning":"稳定的"}],"confusables":[{"word":"staple","meaning":"主食；订书钉","note":"stable与staple拼写相近"}]},"in the meantime":{"synonyms":[{"word":"meanwhile","meaning":"与此同时"}],"confusables":[]},"get a foot in the door":{"synonyms":[{"word":"gain an initial opportunity","meaning":"获得初步机会"}],"confusables":[]},"have access to":{"synonyms":[{"word":"be able to use","meaning":"能够使用"}],"confusables":[{"word":"excess","meaning":"过量；过度","note":"access是使用或进入的机会，excess是过量"}]},"level the playing field":{"synonyms":[{"word":"create fair conditions","meaning":"创造公平条件"}],"confusables":[]},"well-off":{"synonyms":[{"word":"wealthy","meaning":"富裕的"}],"confusables":[{"word":"well-known","meaning":"著名的","note":"well-off富裕，well-known出名"}]},"applicant":{"synonyms":[{"word":"candidate","meaning":"申请者；候选人"}],"confusables":[{"word":"application","meaning":"申请；应用","note":"applicant指人，application指申请或应用"}]},"leisure":{"synonyms":[{"word":"free time","meaning":"闲暇时间"}],"confusables":[{"word":"pleasure","meaning":"愉快；乐趣","note":"leisure是空闲时间，pleasure是愉悦感"}]},"librarian":{"synonyms":[{"word":"library worker","meaning":"图书馆工作人员"}],"confusables":[{"word":"library","meaning":"图书馆","note":"librarian是人，library是场所"}]},"municipal":{"synonyms":[{"word":"city-level","meaning":"市政的"}],"confusables":[]},"technological":{"synonyms":[{"word":"related to technology","meaning":"与科技有关的"}],"confusables":[],"note":"与technical意思接近，但technological更强调技术发展或科技本身"},"engage in":{"synonyms":[{"word":"take part in","meaning":"参与；从事"}],"confusables":[{"word":"enrage","meaning":"激怒","note":"engage是参与等义，enrage是激怒"}]},"assault":{"synonyms":[{"word":"attack","meaning":"攻击；袭击"}],"confusables":[{"word":"insult","meaning":"侮辱","note":"assault可指攻击，insult主要指言语或行为上的侮辱"}]},"offering":{"synonyms":[{"word":"product or service provided","meaning":"所提供的产品或服务"}],"confusables":[]},"interact":{"synonyms":[{"word":"communicate with one another","meaning":"相互交流"}],"confusables":[{"word":"interfere","meaning":"干涉；妨碍","note":"interact是互动，interfere是干涉"}]},"incredible":{"synonyms":[{"word":"unbelievable","meaning":"难以置信的"}],"confusables":[{"word":"credible","meaning":"可信的","note":"in-在此表示否定"}]},"branch":{"synonyms":[{"word":"division","meaning":"分部；分支"}],"confusables":[{"word":"bench","meaning":"长凳","note":"branch有分支义，bench是长凳等义"}]},"partnership":{"synonyms":[{"word":"cooperation","meaning":"合作关系"}],"confusables":[]},"responsibility":{"synonyms":[{"word":"duty","meaning":"责任；职责"}],"confusables":[]},"depressed":{"synonyms":[{"word":"downcast","meaning":"沮丧的"}],"confusables":[{"word":"impressed","meaning":"印象深刻的","note":"depressed沮丧，impressed印象深刻"}],"note":"downcast只对应情绪义，不对应经济萧条义"},"surrounding":{"synonyms":[{"word":"nearby","meaning":"周围的；附近的"}],"confusables":[{"word":"surrender","meaning":"投降；交出","note":"surrounding与surrender不可混淆"}]},"hub":{"synonyms":[{"word":"center","meaning":"中心；枢纽"}],"confusables":[{"word":"hut","meaning":"小屋","note":"hub与hut仅末字母不同"}]},"agency":{"synonyms":[{"word":"organization","meaning":"机构"}],"confusables":[{"word":"agenda","meaning":"议程","note":"agency是机构，agenda是议程"}]},"livable":{"synonyms":[{"word":"fit to live in","meaning":"适宜居住的"}],"confusables":[{"word":"lively","meaning":"活泼的；生动的","note":"livable适居，lively活跃"}]},"craftsman":{"synonyms":[{"word":"artisan","meaning":"工匠"}],"confusables":[{"word":"craftsmanship","meaning":"工艺；手艺","note":"craftsman是人，craftsmanship是技艺"}]},"nurture":{"synonyms":[{"word":"foster","meaning":"培养；培育"}],"confusables":[{"word":"nature","meaning":"自然；本性","note":"nurture培养，nature自然或本性"}]},"resilience":{"synonyms":[{"word":"ability to recover","meaning":"恢复力"}],"confusables":[{"word":"resistance","meaning":"抵抗；阻力","note":"resilience强调恢复，resistance强调抵抗"}]},"artifact":{"synonyms":[{"word":"human-made object","meaning":"人工制品"}],"confusables":[{"word":"artistic","meaning":"艺术的","note":"artifact是物品，artistic表示与艺术有关"}]},"relevant to":{"synonyms":[{"word":"connected with","meaning":"与……相关"}],"confusables":[{"word":"irrelevant to","meaning":"与……无关","note":"ir-在此表示否定"}]},"restoration":{"synonyms":[{"word":"repair","meaning":"修复；恢复"}],"confusables":[{"word":"restaurant","meaning":"餐馆","note":"restoration与restaurant不是同一个词"}]},"vital":{"synonyms":[{"word":"essential","meaning":"至关重要的"}],"confusables":[{"word":"viral","meaning":"病毒的；迅速传播的","note":"vital关键，viral与病毒或传播有关"}]},"periodical":{"synonyms":[{"word":"journal","meaning":"期刊"}],"confusables":[{"word":"periodic","meaning":"定期的；周期性的","note":"periodical在本题中作名词，periodic是形容词"}]},"inquiry":{"synonyms":[{"word":"investigation","meaning":"调查；探究"}],"confusables":[{"word":"injury","meaning":"伤害；受伤","note":"inquiry询问调查，injury伤害"}]},"afford":{"synonyms":[{"word":"be able to pay for","meaning":"负担得起"}],"confusables":[{"word":"avoid","meaning":"避免","note":"afford负担得起，avoid避免"}]},"bridge":{"synonyms":[{"word":"connect","meaning":"连接；弥合"}],"confusables":[{"word":"bride","meaning":"新娘","note":"bridge与bride仅相差一个字母"}],"note":"connect对应动词义，不涵盖桥梁名词义"},"annual":{"synonyms":[{"word":"yearly","meaning":"每年的"}],"confusables":[{"word":"manual","meaning":"手工的；手册","note":"annual按年，manual与手或操作手册有关"}]},"boost":{"synonyms":[{"word":"increase","meaning":"提高；促进"}],"confusables":[{"word":"boast","meaning":"自夸","note":"boost提升，boast夸耀"}]},"participate in":{"synonyms":[{"word":"take part in","meaning":"参与"}],"confusables":[{"word":"anticipate","meaning":"预料；期待","note":"participate参与，anticipate预料"}]},"convince":{"synonyms":[{"word":"persuade","meaning":"说服；使相信"}],"confusables":[{"word":"conceive","meaning":"构想；怀孕","note":"convince使相信，conceive构想"}]},"enable":{"synonyms":[{"word":"allow","meaning":"使能够"}],"confusables":[{"word":"unable","meaning":"不能的","note":"enable是动词，unable表示没有能力"}]},"literary":{"synonyms":[{"word":"related to literature","meaning":"文学的"}],"confusables":[{"word":"literal","meaning":"字面的","note":"literary文学，literal字面"}]},"socio-economic":{"synonyms":[{"word":"related to society and the economy","meaning":"社会经济的"}],"confusables":[{"word":"sociological","meaning":"社会学的","note":"社会经济因素同时涉及经济，sociological专指社会学"}]},"consumer":{"synonyms":[{"word":"user of goods or services","meaning":"商品或服务的使用者"}],"confusables":[{"word":"consume","meaning":"消费；消耗","note":"consumer是人，consume是动作"}]},"gain":{"synonyms":[{"word":"obtain","meaning":"获得"}],"confusables":[{"word":"grain","meaning":"谷物；颗粒","note":"gain获得，grain谷物"}]},"set up":{"synonyms":[{"word":"establish","meaning":"建立"}],"confusables":[{"word":"upset","meaning":"使心烦；打乱","note":"set up与upset的字母组合相近但不是同一表达"}]},"creativity":{"synonyms":[{"word":"originality","meaning":"创造力；独创性"}],"confusables":[]},"ideology":{"synonyms":[{"word":"system of ideas","meaning":"思想体系"}],"confusables":[]},"uphold":{"synonyms":[{"word":"support","meaning":"维护；支持"}],"confusables":[{"word":"withhold","meaning":"扣留；不予提供","note":"uphold维护，withhold扣住不发"}]},"preserve":{"synonyms":[{"word":"protect","meaning":"保护；保存"}],"confusables":[{"word":"reserve","meaning":"预留；储备","note":"preserve保存保护，reserve留待使用"}]},"archivist":{"synonyms":[{"word":"archive specialist","meaning":"档案工作者"}],"confusables":[{"word":"activist","meaning":"活动家","note":"archivist管理档案，activist参与社会活动"}]},"preservation":{"synonyms":[{"word":"conservation","meaning":"保护；保存"}],"confusables":[{"word":"presentation","meaning":"展示；演示","note":"preservation保存，presentation展示"}]},"current events":{"synonyms":[{"word":"news","meaning":"时事；新闻"}],"confusables":[{"word":"currency","meaning":"货币","note":"current在此意为当前，currency是货币"}]},"at large":{"synonyms":[{"word":"as a whole","meaning":"总体上"}],"confusables":[],"note":"as a whole不对应在逃义"},"passionate":{"synonyms":[{"word":"enthusiastic","meaning":"充满热情的"}],"confusables":[{"word":"patient","meaning":"有耐心的；病人","note":"passionate热情，patient耐心或病人"}]},"come along":{"synonyms":[{"word":"appear","meaning":"出现；到来"}],"confusables":[{"word":"come across","meaning":"偶然遇到","note":"come along侧重出现或同行，come across侧重偶遇"}]},"soundness":{"synonyms":[{"word":"reliability","meaning":"可靠性；合理性"}],"confusables":[{"word":"sound","meaning":"声音","note":"soundness取可靠等抽象义，sound作名词常指声音"}]},"socioeconomic":{"synonyms":[{"word":"related to society and the economy","meaning":"社会经济的"}],"confusables":[{"word":"sociological","meaning":"社会学的","note":"socioeconomic与socio-economic仅拼写形式不同"}]},"job stability":{"synonyms":[{"word":"security of employment","meaning":"就业稳定性"}],"confusables":[]},"identify":{"synonyms":[{"word":"recognize","meaning":"识别；确认"}],"confusables":[{"word":"identity","meaning":"身份","note":"identify是识别的动作，identity是身份"}]},"needy":{"synonyms":[{"word":"poor","meaning":"贫困的；需要帮助的"}],"confusables":[{"word":"needless","meaning":"不必要的","note":"needy需要帮助，needless没有必要"}]},"formulate":{"synonyms":[{"word":"devise","meaning":"制定；构想"}],"confusables":[{"word":"formula","meaning":"公式；配方","note":"formulate是制定动作，formula是公式或配方"}]},"worrisome":{"synonyms":[{"word":"worrying","meaning":"令人担忧的"}],"confusables":[]},"end up":{"synonyms":[{"word":"eventually become","meaning":"最终成为"}],"confusables":[]},"maintenance":{"synonyms":[{"word":"upkeep","meaning":"维护；保养"}],"confusables":[{"word":"main","meaning":"主要的","note":"maintenance是维护，main只表示主要"}]},"in charge":{"synonyms":[{"word":"responsible","meaning":"负责的"}],"confusables":[{"word":"charge","meaning":"收费；指控","note":"in charge表示负责，不能按charge的收费义理解"}]},"engineer":{"synonyms":[{"word":"technical professional","meaning":"工程技术人员"}],"confusables":[{"word":"engine","meaning":"发动机","note":"engineer是人，engine是机器"}]},"intimidation":{"synonyms":[{"word":"threatening behavior","meaning":"恐吓行为"}],"confusables":[{"word":"imitation","meaning":"模仿；仿制品","note":"intimidation恐吓，imitation模仿"}]},"indignation":{"synonyms":[{"word":"anger at unfairness","meaning":"对不公的愤慨"}],"confusables":[{"word":"indication","meaning":"迹象；表明","note":"indignation愤慨，indication迹象"}]},"back up":{"synonyms":[{"word":"make a copy","meaning":"备份"}],"confusables":[{"word":"back out","meaning":"退出；食言","note":"back up备份或支持，back out退出"}]},"hard drive":{"synonyms":[{"word":"disk storage device","meaning":"硬盘存储设备"}],"confusables":[]},"directory":{"synonyms":[{"word":"folder","meaning":"目录；文件夹"}],"confusables":[{"word":"director","meaning":"导演；主管","note":"directory是目录，director是人"}]},"arbitrate":{"synonyms":[{"word":"settle as a neutral judge","meaning":"仲裁"}],"confusables":[{"word":"arbitrary","meaning":"武断的；任意的","note":"arbitrate是仲裁动作，arbitrary是形容词"}]},"prevent":{"synonyms":[{"word":"stop","meaning":"阻止；预防"}],"confusables":[{"word":"present","meaning":"呈现；礼物","note":"prevent阻止，present有呈现或礼物等义"}]},"escalate":{"synonyms":[{"word":"intensify","meaning":"升级；加剧"}],"confusables":[{"word":"escalator","meaning":"自动扶梯","note":"escalate升级，escalator是设施"}]},"court":{"synonyms":[{"word":"law court","meaning":"法院"}],"confusables":[{"word":"count","meaning":"数数；计数","note":"court法院，count计数"}]},"legal":{"synonyms":[{"word":"lawful","meaning":"合法的"}],"confusables":[{"word":"illegal","meaning":"非法的","note":"il-在此表示否定"}]},"function":{"synonyms":[{"word":"operate","meaning":"运转；起作用"}],"confusables":[{"word":"fraction","meaning":"分数；小部分","note":"function运作或功能，fraction分数"}],"note":"operate只对应动词义"},"arbitrary":{"synonyms":[{"word":"unreasonable","meaning":"武断的；不合理的"}],"confusables":[{"word":"arbitrate","meaning":"仲裁","note":"arbitrary是形容词，arbitrate是动词"}]},"unique":{"synonyms":[{"word":"one of a kind","meaning":"独一无二的"}],"confusables":[{"word":"uniform","meaning":"统一的；制服","note":"unique独特，uniform统一或制服"}]},"foresee":{"synonyms":[{"word":"predict","meaning":"预见"}],"confusables":[{"word":"forgo","meaning":"放弃","note":"foresee表示预见，forgo表示放弃"}]},"express":{"synonyms":[{"word":"state","meaning":"表达；陈述"}],"confusables":[{"word":"experience","meaning":"经历；经验","note":"express表达，experience经历"}]},"prior":{"synonyms":[{"word":"previous","meaning":"先前的"}],"confusables":[{"word":"priority","meaning":"优先权；优先事项","note":"prior是先前的，priority是优先事项"}]},"propose":{"synonyms":[{"word":"suggest","meaning":"提出；建议"}],"confusables":[{"word":"purpose","meaning":"目的","note":"propose是动词，purpose通常是目的"}]},"retrieve":{"synonyms":[{"word":"recover","meaning":"取回；找回"}],"confusables":[{"word":"receive","meaning":"收到","note":"retrieve把已有之物取回，receive收到"}]},"retrieval":{"synonyms":[{"word":"recovery","meaning":"取回；检索"}],"confusables":[]},"reminder":{"synonyms":[{"word":"prompt","meaning":"提醒；提示"}],"confusables":[{"word":"remainder","meaning":"剩余部分","note":"reminder提醒，remainder余下部分"}]},"accumulate":{"synonyms":[{"word":"collect gradually","meaning":"逐渐积累"}],"confusables":[{"word":"accommodate","meaning":"容纳；提供住宿","note":"accumulate积累，accommodate容纳"}]},"enhance":{"synonyms":[{"word":"improve","meaning":"提高；增强"}],"confusables":[{"word":"enchant","meaning":"使着迷","note":"enhance增强，enchant使着迷"}]},"disorderly":{"synonyms":[{"word":"untidy","meaning":"杂乱的"}],"confusables":[{"word":"orderly","meaning":"有秩序的","note":"dis-在此表示否定"}]},"emergency":{"synonyms":[{"word":"urgent situation","meaning":"紧急情况"}],"confusables":[{"word":"emergence","meaning":"出现；显现","note":"emergency紧急情况，emergence出现"}]},"in control":{"synonyms":[{"word":"in command","meaning":"掌控局面"}],"confusables":[{"word":"out of control","meaning":"失去控制","note":"in与out改变控制状态"}]},"steady":{"synonyms":[{"word":"stable","meaning":"稳定的"}],"confusables":[{"word":"study","meaning":"学习；研究","note":"steady稳定，study学习"}]},"adverse":{"synonyms":[{"word":"unfavorable","meaning":"不利的"}],"confusables":[{"word":"averse","meaning":"反对的；不愿意的","note":"adverse修饰不利影响，averse表示不愿或反对"}]},"wage":{"synonyms":[{"word":"pay","meaning":"工资"}],"confusables":[{"word":"wave","meaning":"波浪；挥手","note":"wage工资，wave波浪或挥手"}]},"liberate":{"synonyms":[{"word":"free","meaning":"解放；使自由"}],"confusables":[{"word":"celebrate","meaning":"庆祝","note":"liberate解放，celebrate庆祝"}]},"laborious":{"synonyms":[{"word":"arduous","meaning":"艰苦费力的"}],"confusables":[{"word":"laboratory","meaning":"实验室","note":"laborious是形容词，laboratory是名词"}]},"prioritize":{"synonyms":[{"word":"give priority to","meaning":"优先处理"}],"confusables":[{"word":"priority","meaning":"优先权；优先事项","note":"prioritize是动作，priority是名词"}]},"attitude":{"synonyms":[{"word":"viewpoint","meaning":"态度；看法"}],"confusables":[{"word":"altitude","meaning":"海拔；高度","note":"attitude态度，altitude高度"}]},"outweigh":{"synonyms":[{"word":"be more important than","meaning":"比……更重要"}],"confusables":[{"word":"overweight","meaning":"超重的","note":"outweigh是动词，overweight常表示超重"}]},"inference":{"synonyms":[{"word":"deduction","meaning":"推论"}],"confusables":[{"word":"interference","meaning":"干涉；干扰","note":"inference推断，interference干涉"}]},"adapt":{"synonyms":[{"word":"adjust","meaning":"适应；调整"}],"confusables":[{"word":"adopt","meaning":"采用；收养","note":"adapt适应，adopt采用或收养"}]},"habitual":{"synonyms":[{"word":"customary","meaning":"习惯性的"}],"confusables":[]},"scrutinize":{"synonyms":[{"word":"examine closely","meaning":"仔细审查"}],"confusables":[]},"dawn":{"synonyms":[{"word":"daybreak","meaning":"黎明"}],"confusables":[{"word":"down","meaning":"向下","note":"dawn与down发音和拼写都不同"}]},"custom":{"synonyms":[{"word":"tradition","meaning":"习俗"}],"confusables":[{"word":"costume","meaning":"服装；戏服","note":"custom习俗，costume服装"}]},"violate":{"synonyms":[{"word":"break","meaning":"违反；违背"}],"confusables":[{"word":"violent","meaning":"暴力的","note":"violate是违反，violent是暴力的"}]},"exotic":{"synonyms":[{"word":"foreign","meaning":"异国的"}],"confusables":[],"note":"foreign仅是近义提示，不含所有异国情调色彩"},"courtesy":{"synonyms":[{"word":"politeness","meaning":"礼貌"}],"confusables":[{"word":"court","meaning":"法院；法庭","note":"courtesy是礼貌，不是court的法院义"}]},"poisonous":{"synonyms":[{"word":"toxic","meaning":"有毒的"}],"confusables":[{"word":"poison","meaning":"毒药","note":"poisonous是形容词，poison可作名词"}]},"campus":{"synonyms":[{"word":"university grounds","meaning":"大学校园"}],"confusables":[{"word":"camping","meaning":"露营","note":"campus校园，camping露营"}]},"artificial":{"synonyms":[{"word":"synthetic","meaning":"人造的；合成的"}],"confusables":[{"word":"artistic","meaning":"艺术的","note":"artificial人造，artistic艺术"}]},"anxiety":{"synonyms":[{"word":"worry","meaning":"焦虑；担忧"}],"confusables":[]},"specific":{"synonyms":[{"word":"particular","meaning":"具体的；特定的"}],"confusables":[{"word":"species","meaning":"物种","note":"specific是形容词，species是物种"}]},"toxic":{"synonyms":[{"word":"poisonous","meaning":"有毒的"}],"confusables":[{"word":"tonic","meaning":"滋补品；补药","note":"toxic有毒，tonic可指补药"}]},"lawn":{"synonyms":[{"word":"grass area","meaning":"草坪"}],"confusables":[{"word":"law","meaning":"法律","note":"lawn草坪，law法律"}]},"waterway":{"synonyms":[{"word":"water route","meaning":"水道；航道"}],"confusables":[{"word":"waterproof","meaning":"防水的","note":"way表示通道，proof在此表示防水"}]},"lifeless":{"synonyms":[{"word":"without life","meaning":"无生命的"}],"confusables":[{"word":"lifelong","meaning":"终身的","note":"lifeless无生命，lifelong持续一生"}]},"get rid of":{"synonyms":[{"word":"remove","meaning":"去除；清除"}],"confusables":[]},"ingredient":{"synonyms":[{"word":"component","meaning":"成分；组成部分"}],"confusables":[]},"retain":{"synonyms":[{"word":"keep","meaning":"保留；保持"}],"confusables":[{"word":"retire","meaning":"退休；退出","note":"retain保留，retire退休"}]},"extreme":{"synonyms":[{"word":"very great","meaning":"极度的"}],"confusables":[{"word":"extend","meaning":"延伸；扩大","note":"extreme是形容词，extend是动词"}]},"flood":{"synonyms":[{"word":"inundation","meaning":"洪水"}],"confusables":[{"word":"floor","meaning":"地板；楼层","note":"flood洪水，floor地板"}]},"weed":{"synonyms":[{"word":"unwanted plant","meaning":"杂草"}],"confusables":[{"word":"seed","meaning":"种子","note":"weed杂草，seed种子"}]},"job application":{"synonyms":[{"word":"application for employment","meaning":"求职申请"}],"confusables":[{"word":"job applicant","meaning":"求职申请人","note":"application指申请，applicant指人"}]},"ought to":{"synonyms":[{"word":"should","meaning":"应该"}],"confusables":[]},"cite":{"synonyms":[{"word":"quote","meaning":"引用"}],"confusables":[{"word":"site","meaning":"地点；场所","note":"cite引用，site地点"},{"word":"sight","meaning":"视力；景象","note":"cite与sight同音，意思不同"}]},"develop":{"synonyms":[{"word":"grow","meaning":"发展；成长"}],"confusables":[{"word":"envelop","meaning":"包围；笼罩","note":"develop发展，envelop包围"}]},"laboratory":{"synonyms":[{"word":"lab","meaning":"实验室"}],"confusables":[{"word":"laborious","meaning":"费力的；艰苦的","note":"laboratory是场所，laborious描述工作费力"}]},"usable":{"synonyms":[{"word":"fit for use","meaning":"可用的"}],"confusables":[{"word":"usual","meaning":"通常的","note":"usable可使用，usual通常"}]},"astronaut":{"synonyms":[{"word":"space traveler","meaning":"宇航员"}],"confusables":[{"word":"astronomer","meaning":"天文学家","note":"astronaut进入太空，astronomer研究天体"}]},"surface":{"synonyms":[{"word":"outer layer","meaning":"表面"}],"confusables":[{"word":"surplus","meaning":"剩余；过剩","note":"surface表面，surplus盈余"}]},"carry out":{"synonyms":[{"word":"perform","meaning":"执行；实施"}],"confusables":[{"word":"carry on","meaning":"继续","note":"carry out执行计划，carry on继续活动"}]},"space medicine":{"synonyms":[{"word":"medical science for spaceflight","meaning":"太空医学"}],"confusables":[]},"research finding":{"synonyms":[{"word":"research result","meaning":"研究发现；成果"}],"confusables":[{"word":"research funding","meaning":"科研资助","note":"finding是发现，funding是资金"}]},"economic benefit":{"synonyms":[{"word":"economic gain","meaning":"经济收益"}],"confusables":[{"word":"economical","meaning":"节约的","note":"economic与经济有关，economical强调节省"}]},"billion":{"synonyms":[{"word":"a thousand million","meaning":"十亿"}],"confusables":[{"word":"million","meaning":"百万","note":"一billion等于一千million"}]},"contribution":{"synonyms":[{"word":"input","meaning":"贡献；投入"}],"confusables":[{"word":"distribution","meaning":"分配；分发","note":"contribution贡献，distribution分发"}]},
+  "address": {
+    "synonyms": [
+      {
+        "word": "tackle",
+        "meaning": "着手处理（难题）"
+      }
+    ],
+    "confusables": []
+  },
+  "appreciate": {
+    "synonyms": [
+      {
+        "word": "recognize",
+        "meaning": "意识到；认可"
+      }
+    ],
+    "confusables": []
+  },
+  "commitment": {
+    "synonyms": [
+      {
+        "word": "dedication",
+        "meaning": "投入；奉献"
+      }
+    ],
+    "confusables": []
+  },
+  "equity": {
+    "synonyms": [
+      {
+        "word": "fairness",
+        "meaning": "公平；公正"
+      }
+    ],
+    "confusables": []
+  },
+  "inevitable": {
+    "synonyms": [
+      {
+        "word": "unavoidable",
+        "meaning": "不可避免的"
+      }
+    ],
+    "confusables": []
+  },
+  "status quo": {
+    "synonyms": [
+      {
+        "word": "current state of affairs",
+        "meaning": "当前局面"
+      }
+    ],
+    "confusables": []
+  },
+  "complacent": {
+    "synonyms": [
+      {
+        "word": "self-satisfied",
+        "meaning": "自满的"
+      }
+    ],
+    "confusables": []
+  },
+  "radical": {
+    "synonyms": [
+      {
+        "word": "fundamental",
+        "meaning": "根本的"
+      }
+    ],
+    "confusables": []
+  },
+  "anchor": {
+    "synonyms": [
+      {
+        "word": "mainstay",
+        "meaning": "主要支柱"
+      }
+    ],
+    "confusables": []
+  },
+  "audience": {
+    "synonyms": [
+      {
+        "word": "listeners",
+        "meaning": "听众"
+      }
+    ],
+    "confusables": []
+  },
+  "collective": {
+    "synonyms": [
+      {
+        "word": "joint",
+        "meaning": "共同的"
+      }
+    ],
+    "confusables": []
+  },
+  "concept": {
+    "synonyms": [
+      {
+        "word": "notion",
+        "meaning": "观念"
+      }
+    ],
+    "confusables": []
+  },
+  "constant": {
+    "synonyms": [
+      {
+        "word": "continuous",
+        "meaning": "持续不断的"
+      }
+    ],
+    "confusables": []
+  },
+  "earn": {
+    "synonyms": [
+      {
+        "word": "gain",
+        "meaning": "获得"
+      }
+    ],
+    "confusables": []
+  },
+  "elevate": {
+    "synonyms": [
+      {
+        "word": "raise",
+        "meaning": "提高"
+      }
+    ],
+    "confusables": []
+  },
+  "excuse": {
+    "synonyms": [
+      {
+        "word": "pretext",
+        "meaning": "借口"
+      }
+    ],
+    "confusables": []
+  },
+  "normalize": {
+    "synonyms": [
+      {
+        "word": "make routine",
+        "meaning": "使成为常态"
+      }
+    ],
+    "confusables": []
+  },
+  "position": {
+    "synonyms": [
+      {
+        "word": "post",
+        "meaning": "职位"
+      }
+    ],
+    "confusables": []
+  },
+  "push limits": {
+    "synonyms": [
+      {
+        "word": "test boundaries",
+        "meaning": "挑战现有界限"
+      }
+    ],
+    "confusables": []
+  },
+  "reliable": {
+    "synonyms": [
+      {
+        "word": "dependable",
+        "meaning": "可信赖的"
+      }
+    ],
+    "confusables": []
+  },
+  "seek": {
+    "synonyms": [
+      {
+        "word": "look for",
+        "meaning": "寻找"
+      }
+    ],
+    "confusables": []
+  },
+  "a shoulder to cry on": {
+    "synonyms": [
+      {
+        "word": "a sympathetic listener",
+        "meaning": "愿意倾听的人"
+      }
+    ],
+    "confusables": []
+  },
+  "track": {
+    "synonyms": [
+      {
+        "word": "course",
+        "meaning": "路线"
+      }
+    ],
+    "confusables": []
+  },
+  "universal": {
+    "synonyms": [
+      {
+        "word": "all-inclusive",
+        "meaning": "覆盖所有人的"
+      }
+    ],
+    "confusables": []
+  },
+  "fall victim to": {
+    "synonyms": [
+      {
+        "word": "be harmed by",
+        "meaning": "受到……伤害"
+      }
+    ],
+    "confusables": []
+  },
+  "across": {
+    "synonyms": [
+      {
+        "word": "throughout",
+        "meaning": "遍及"
+      }
+    ],
+    "confusables": []
+  },
+  "idolize": {
+    "synonyms": [
+      {
+        "word": "put on a pedestal",
+        "meaning": "把……捧上神坛"
+      }
+    ],
+    "confusables": []
+  },
+  "issue": {
+    "synonyms": [
+      {
+        "word": "matter",
+        "meaning": "事情；问题"
+      }
+    ],
+    "confusables": []
+  },
+  "adherence": {
+    "synonyms": [
+      {
+        "word": "compliance",
+        "meaning": "遵守"
+      }
+    ],
+    "confusables": []
+  },
+  "appalling": {
+    "synonyms": [
+      {
+        "word": "shocking",
+        "meaning": "令人震惊的"
+      }
+    ],
+    "confusables": []
+  },
+  "bury one's head in the sand": {
+    "synonyms": [
+      {
+        "word": "ignore reality",
+        "meaning": "无视现实"
+      }
+    ],
+    "confusables": []
+  },
+  "commit to": {
+    "synonyms": [
+      {
+        "word": "pledge to",
+        "meaning": "承诺做"
+      }
+    ],
+    "confusables": []
+  },
+  "at a crossroads": {
+    "synonyms": [
+      {
+        "word": "at a turning point",
+        "meaning": "处于转折点"
+      }
+    ],
+    "confusables": []
+  },
+  "delay": {
+    "synonyms": [
+      {
+        "word": "postpone",
+        "meaning": "推迟"
+      }
+    ],
+    "confusables": []
+  },
+  "disrupt": {
+    "synonyms": [
+      {
+        "word": "interrupt",
+        "meaning": "打断"
+      }
+    ],
+    "confusables": []
+  },
+  "division": {
+    "synonyms": [
+      {
+        "word": "split",
+        "meaning": "分裂"
+      }
+    ],
+    "confusables": []
+  },
+  "fiction": {
+    "synonyms": [
+      {
+        "word": "invention",
+        "meaning": "虚构"
+      }
+    ],
+    "confusables": []
+  },
+  "head-on": {
+    "synonyms": [
+      {
+        "word": "directly",
+        "meaning": "直接地"
+      }
+    ],
+    "confusables": []
+  },
+  "impact": {
+    "synonyms": [
+      {
+        "word": "affect",
+        "meaning": "影响"
+      }
+    ],
+    "confusables": []
+  },
+  "indicate": {
+    "synonyms": [
+      {
+        "word": "show",
+        "meaning": "显示"
+      }
+    ],
+    "confusables": []
+  },
+  "intolerance": {
+    "synonyms": [
+      {
+        "word": "bigotry",
+        "meaning": "偏执；偏狭"
+      }
+    ],
+    "confusables": []
+  },
+  "persuade": {
+    "synonyms": [
+      {
+        "word": "convince",
+        "meaning": "说服"
+      }
+    ],
+    "confusables": []
+  },
+  "qualified": {
+    "synonyms": [
+      {
+        "word": "eligible",
+        "meaning": "符合条件的"
+      }
+    ],
+    "confusables": []
+  },
+  "reality": {
+    "synonyms": [
+      {
+        "word": "the real situation",
+        "meaning": "实际情况"
+      }
+    ],
+    "confusables": []
+  },
+  "represent": {
+    "synonyms": [
+      {
+        "word": "reflect",
+        "meaning": "反映"
+      }
+    ],
+    "confusables": []
+  },
+  "be rooted in": {
+    "synonyms": [
+      {
+        "word": "originate in",
+        "meaning": "源自"
+      }
+    ],
+    "confusables": []
+  },
+  "slavery": {
+    "synonyms": [
+      {
+        "word": "enslavement",
+        "meaning": "奴役"
+      }
+    ],
+    "confusables": []
+  },
+  "strategy": {
+    "synonyms": [
+      {
+        "word": "plan",
+        "meaning": "方案"
+      }
+    ],
+    "confusables": []
+  },
+  "toward": {
+    "synonyms": [
+      {
+        "word": "in the direction of",
+        "meaning": "朝着……方向"
+      }
+    ],
+    "confusables": []
+  },
+  "have yet to": {
+    "synonyms": [
+      {
+        "word": "have not yet",
+        "meaning": "尚未"
+      }
+    ],
+    "confusables": []
+  },
+  "fact": {
+    "synonyms": [
+      {
+        "word": "verified information",
+        "meaning": "核实过的信息"
+      }
+    ],
+    "confusables": []
+  },
+  "comfort blanket": {
+    "synonyms": [
+      {
+        "word": "a source of reassurance",
+        "meaning": "让人安心的东西"
+      }
+    ],
+    "confusables": []
+  },
+  "self-proclaimed": {
+    "synonyms": [
+      {
+        "word": "self-styled",
+        "meaning": "自封的"
+      }
+    ],
+    "confusables": []
+  },
+  "treasure": {
+    "synonyms": [
+      {
+        "word": "cherish",
+        "meaning": "珍惜"
+      }
+    ],
+    "confusables": []
+  }
+}

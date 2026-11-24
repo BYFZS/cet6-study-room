@@ -49,7 +49,7 @@ function client(origin) {
   const d={origin,data:new Map(),db:emptyDB(),online:true,events:{},status:null,canApply:true};
   d.call=fn=>storageContext.run(d,fn);
   d.setup=()=>d.call(()=>initProgressSync({
-    getDB:()=>d.db, getWords:()=>deviceWords, canApply:()=>d.canApply,
+    getDB:()=>d.db, canApply:()=>d.canApply,
     apply:progress=>Object.assign(d.db,progress), onStatus:status=>{d.status=status;}
   }));
   d.sync=d.setup();
@@ -100,9 +100,25 @@ assert.equal(phone.status.phase,'synced');
 assert.equal(Boolean(phone.status.pending),false);
 assert.equal(phone.db.memories.require.stage,0);
 assert(selectThreeWords(deviceWords.map(word=>({word})),phone.db,'due',4).includes('require'));
+// The newer deck has a word the older phone cannot train yet.
+assert(!deviceWords.includes('obstacle'));
+pass(desktop,'obstacle');
+await desktop.call(desktop.events.online);
+await phone.call(phone.events.online);
+assert.equal(phone.status.phase,'synced');
+assert.equal(phone.db.memories.obstacle.stage,3);
+assert.equal(phone.db.logs.filter(log=>log.word==='obstacle').length,3);
+// Reopen the client from saved progress and confirm it can upload new local work.
+phone.sync=phone.setup();
+await phone.call(phone.events.online);
+recordSpotCheck(phone.db,'avoid',true,false);
+await phone.call(phone.events.online);
+await desktop.call(desktop.events.online);
+assert.equal(desktop.db.logs.filter(log=>log.word==='obstacle').length,3);
+assert.equal(desktop.db.logs.filter(log=>log.word==='avoid').length,4);
 await phone.call(phone.sync.disconnect);
 assert.equal(phone.status.phase,'off');
-assert.equal(phone.db.logs.length,13);
+assert.equal(phone.db.logs.length,17);
 const cors=await worker.fetch(new Request('https://test/v1/state/'+ 'a'.repeat(32),{method:'OPTIONS',headers:{Origin:phone.origin}}),env);
 assert.equal(cors.headers.get('Access-Control-Allow-Origin'),phone.origin);
 console.log('PASS: encrypted pairing, single use, offline queue, compare-and-swap retry, both learning histories, safe update after active card and local-data retention');

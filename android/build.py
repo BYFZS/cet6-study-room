@@ -35,7 +35,7 @@ def build(args):
         if not path.is_file():
             raise SystemExit(f"Missing required file: {path}")
 
-    signing = HERE / ".signing"
+    signing = args.signing_dir.resolve()
     store = signing / "cet6-room.p12"
     password_file = signing / "password.txt"
     signing.mkdir(exist_ok=True)
@@ -124,5 +124,6 @@ if __name__ == "__main__":
     cli.add_argument("--sdk", type=Path, default=os.environ.get("ANDROID_HOME"), required=not os.environ.get("ANDROID_HOME"))
     cli.add_argument("--java-home", type=Path, default=os.environ.get("JAVA_HOME"), required=not os.environ.get("JAVA_HOME"))
     cli.add_argument("--ecj", type=Path, help="Use an Eclipse Java compiler JAR in place of javac")
+    cli.add_argument("--signing-dir", type=Path, default=HERE / ".signing", help="Directory containing the existing release key and password")
     cli.add_argument("--output", type=Path, default=HERE / "CET6-Study-Room.apk")
     build(cli.parse_args())

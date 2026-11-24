@@ -1147,5 +1147,1477 @@
         "植物育种"
       ]
     ]
+  },
+  "shrug off": {
+    "parts": [
+      {
+        "form": "shrug",
+        "meaning": "耸肩"
+      },
+      {
+        "form": "off",
+        "meaning": "和 shrug 搭配，表示不去理会某事"
+      }
+    ],
+    "examples": [
+      [
+        "shrug off criticism",
+        "不理会批评"
+      ]
+    ]
+  },
+  "status quo": {
+    "parts": [
+      {
+        "form": "status quo",
+        "meaning": "作为整体记忆，指现有的局面或制度"
+      }
+    ],
+    "examples": [
+      [
+        "maintain the status quo",
+        "维持现状"
+      ]
+    ]
+  },
+  "path": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "path",
+        "meaning": "道路；途径"
+      }
+    ],
+    "examples": [
+      [
+        "a path to recovery",
+        "康复之路"
+      ]
+    ]
+  },
+  "complacent": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "complacent",
+        "meaning": "自满的；掉以轻心的"
+      }
+    ],
+    "examples": [
+      [
+        "become complacent about safety",
+        "对安全掉以轻心"
+      ]
+    ]
+  },
+  "invest": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "invest",
+        "meaning": "投入；投资"
+      }
+    ],
+    "examples": [
+      [
+        "invest time in training",
+        "把时间投入培训"
+      ]
+    ]
+  },
+  "radical": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "radical",
+        "meaning": "激进的；根本性的"
+      }
+    ],
+    "examples": [
+      [
+        "a radical change",
+        "根本性变革"
+      ]
+    ]
+  },
+  "aggressive": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "aggressive",
+        "meaning": "咄咄逼人的；强势的；力度大的"
+      }
+    ],
+    "examples": [
+      [
+        "an aggressive sales strategy",
+        "强势的销售策略"
+      ]
+    ]
+  },
+  "anchor": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "anchor",
+        "meaning": "锚；支柱"
+      }
+    ],
+    "examples": [
+      [
+        "an emotional anchor",
+        "情感支柱"
+      ]
+    ]
+  },
+  "argue": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "argue",
+        "meaning": "主张；论证；争论"
+      }
+    ],
+    "examples": [
+      [
+        "argue that",
+        "主张……"
+      ]
+    ]
+  },
+  "audience": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "audience",
+        "meaning": "观众；听众；受众"
+      }
+    ],
+    "examples": [
+      [
+        "a wider audience",
+        "更广泛的受众"
+      ]
+    ]
+  },
+  "chaos": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "chaos",
+        "meaning": "混乱"
+      }
+    ],
+    "examples": [
+      [
+        "cause chaos",
+        "造成混乱"
+      ]
+    ]
+  },
+  "collective": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "collective",
+        "meaning": "集体的；共同的"
+      }
+    ],
+    "examples": [
+      [
+        "a collective effort",
+        "共同努力"
+      ]
+    ]
+  },
+  "commend": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "commend",
+        "meaning": "称赞；表扬"
+      }
+    ],
+    "examples": [
+      [
+        "commend someone for their work",
+        "称赞某人的工作"
+      ]
+    ]
+  },
+  "concept": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "concept",
+        "meaning": "概念；观念"
+      }
+    ],
+    "examples": [
+      [
+        "grasp a concept",
+        "理解一个概念"
+      ]
+    ]
+  },
+  "confide in": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "confide in",
+        "meaning": "向……吐露心事；信任并倾诉"
+      }
+    ],
+    "examples": [
+      [
+        "confide in a friend",
+        "向朋友倾诉"
+      ]
+    ]
+  },
+  "constant": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "constant",
+        "meaning": "持续的；不断的；不变的"
+      }
+    ],
+    "examples": [
+      [
+        "constant pressure",
+        "持续的压力"
+      ]
+    ]
+  },
+  "eagerness": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "eagerness",
+        "meaning": "渴望；热切"
+      }
+    ],
+    "examples": [
+      [
+        "eagerness to learn",
+        "求知的渴望"
+      ]
+    ]
+  },
+  "earn": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "earn",
+        "meaning": "赚得；赢得"
+      }
+    ],
+    "examples": [
+      [
+        "earn respect",
+        "赢得尊重"
+      ]
+    ]
+  },
+  "effort": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "effort",
+        "meaning": "努力；尝试"
+      }
+    ],
+    "examples": [
+      [
+        "make an effort to",
+        "努力做……"
+      ]
+    ]
+  },
+  "elevate": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "elevate",
+        "meaning": "提升；抬高"
+      }
+    ],
+    "examples": [
+      [
+        "elevate the status of",
+        "提升……的地位"
+      ]
+    ]
+  },
+  "embedded": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "embedded",
+        "meaning": "嵌入的；根深蒂固的"
+      }
+    ],
+    "examples": [
+      [
+        "deeply embedded in culture",
+        "深植于文化中"
+      ]
+    ]
+  },
+  "excuse": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "excuse",
+        "meaning": "借口；托词"
+      }
+    ],
+    "examples": [
+      [
+        "use something as an excuse",
+        "以某事为借口"
+      ]
+    ]
+  },
+  "motivational": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "motivational",
+        "meaning": "激励性的；鼓舞人心的"
+      }
+    ],
+    "examples": [
+      [
+        "a motivational speaker",
+        "励志演讲者"
+      ]
+    ]
+  },
+  "normalize": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "normalize",
+        "meaning": "使正常化；让……成为常态"
+      }
+    ],
+    "examples": [
+      [
+        "normalize asking for help",
+        "让求助成为常态"
+      ]
+    ]
+  },
+  "obstacle": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "obstacle",
+        "meaning": "障碍；阻碍"
+      }
+    ],
+    "examples": [
+      [
+        "overcome an obstacle",
+        "克服障碍"
+      ]
+    ]
+  },
+  "position": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "position",
+        "meaning": "职位；位置；立场"
+      }
+    ],
+    "examples": [
+      [
+        "apply for a position",
+        "申请职位"
+      ]
+    ]
+  },
+  "preach": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "preach",
+        "meaning": "宣扬；布道；说教"
+      }
+    ],
+    "examples": [
+      [
+        "preach the value of hard work",
+        "宣扬勤奋的价值"
+      ]
+    ]
+  },
+  "push limits": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "push limits",
+        "meaning": "挑战极限；突破界限"
+      }
+    ],
+    "examples": [
+      [
+        "push limits in design",
+        "突破设计的界限"
+      ]
+    ]
+  },
+  "reevaluate": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "reevaluate",
+        "meaning": "重新评估；重新审视"
+      }
+    ],
+    "examples": [
+      [
+        "reevaluate the evidence",
+        "重新评估证据"
+      ]
+    ]
+  },
+  "reliable": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "reliable",
+        "meaning": "可靠的；可信赖的"
+      }
+    ],
+    "examples": [
+      [
+        "a reliable source",
+        "可靠来源"
+      ]
+    ]
+  },
+  "schedule": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "schedule",
+        "meaning": "日程；时间表"
+      }
+    ],
+    "examples": [
+      [
+        "a tight schedule",
+        "紧凑的日程"
+      ]
+    ]
+  },
+  "seek": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "seek",
+        "meaning": "寻求；寻找"
+      }
+    ],
+    "examples": [
+      [
+        "seek advice",
+        "征求意见"
+      ]
+    ]
+  },
+  "sentiment": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "sentiment",
+        "meaning": "情绪；感情；看法"
+      }
+    ],
+    "examples": [
+      [
+        "public sentiment",
+        "公众情绪"
+      ]
+    ]
+  },
+  "a shoulder to cry on": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "a shoulder to cry on",
+        "meaning": "可以倾诉或依靠的人"
+      }
+    ],
+    "examples": [
+      [
+        "offer a shoulder to cry on",
+        "给人一个倾诉的肩膀"
+      ]
+    ]
+  },
+  "tend to": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "tend to",
+        "meaning": "往往会；倾向于"
+      }
+    ],
+    "examples": [
+      [
+        "tend to overlook details",
+        "往往会忽略细节"
+      ]
+    ]
+  },
+  "track": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "track",
+        "meaning": "跑道；轨迹；路线"
+      }
+    ],
+    "examples": [
+      [
+        "stay on track",
+        "保持正轨"
+      ]
+    ]
+  },
+  "turmoil": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "turmoil",
+        "meaning": "动荡；混乱"
+      }
+    ],
+    "examples": [
+      [
+        "political turmoil",
+        "政治动荡"
+      ]
+    ]
+  },
+  "universal": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "universal",
+        "meaning": "普遍的；全民的；通用的"
+      }
+    ],
+    "examples": [
+      [
+        "universal access",
+        "人人可及"
+      ]
+    ]
+  },
+  "utilize": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "utilize",
+        "meaning": "利用；使用"
+      }
+    ],
+    "examples": [
+      [
+        "utilize local resources",
+        "利用本地资源"
+      ]
+    ]
+  },
+  "fall victim to": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "fall victim to",
+        "meaning": "成为……的受害者；深受……之害"
+      }
+    ],
+    "examples": [
+      [
+        "fall victim to fraud",
+        "遭遇诈骗"
+      ]
+    ]
+  },
+  "achieve": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "achieve",
+        "meaning": "实现；达成；取得"
+      }
+    ],
+    "examples": [
+      [
+        "achieve a goal",
+        "实现目标"
+      ]
+    ]
+  },
+  "across": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "across",
+        "meaning": "遍及；横跨"
+      }
+    ],
+    "examples": [
+      [
+        "across the country",
+        "遍及全国"
+      ]
+    ]
+  },
+  "collectivism": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "collectivism",
+        "meaning": "集体主义"
+      }
+    ],
+    "examples": [
+      [
+        "individualism and collectivism",
+        "个人主义与集体主义"
+      ]
+    ]
+  },
+  "idolize": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "idolize",
+        "meaning": "盲目崇拜；把……当偶像"
+      }
+    ],
+    "examples": [
+      [
+        "idolize successful people",
+        "崇拜成功人士"
+      ]
+    ]
+  },
+  "tangible": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "tangible",
+        "meaning": "切实的；有形的"
+      }
+    ],
+    "examples": [
+      [
+        "tangible benefits",
+        "切实的好处"
+      ]
+    ]
+  },
+  "issue": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "issue",
+        "meaning": "问题；议题"
+      }
+    ],
+    "examples": [
+      [
+        "raise an issue",
+        "提出问题"
+      ]
+    ]
+  },
+  "acceptance": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "acceptance",
+        "meaning": "接受；接纳；获准"
+      }
+    ],
+    "examples": [
+      [
+        "an acceptance speech",
+        "获奖感言"
+      ]
+    ]
+  },
+  "adherence": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "adherence",
+        "meaning": "遵守；坚持"
+      }
+    ],
+    "examples": [
+      [
+        "adherence to safety rules",
+        "遵守安全规定"
+      ]
+    ]
+  },
+  "advancement": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "advancement",
+        "meaning": "进步；发展；晋升"
+      }
+    ],
+    "examples": [
+      [
+        "technological advancement",
+        "技术进步"
+      ]
+    ]
+  },
+  "appalling": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "appalling",
+        "meaning": "骇人的；糟糕透顶的"
+      }
+    ],
+    "examples": [
+      [
+        "appalling conditions",
+        "极其恶劣的条件"
+      ]
+    ]
+  },
+  "beyond": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "beyond",
+        "meaning": "超出；越过；在……以外"
+      }
+    ],
+    "examples": [
+      [
+        "beyond expectations",
+        "超出预期"
+      ]
+    ]
+  },
+  "bury one's head in the sand": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "bury one's head in the sand",
+        "meaning": "逃避现实；对问题视而不见"
+      }
+    ],
+    "examples": [
+      [
+        "bury one's head in the sand",
+        "逃避现实"
+      ]
+    ]
+  },
+  "climate": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "climate",
+        "meaning": "气候；氛围"
+      }
+    ],
+    "examples": [
+      [
+        "a climate of trust",
+        "信任的氛围"
+      ]
+    ]
+  },
+  "commit to": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "commit to",
+        "meaning": "承诺做；致力于"
+      }
+    ],
+    "examples": [
+      [
+        "commit to reducing waste",
+        "承诺减少浪费"
+      ]
+    ]
+  },
+  "conscience": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "conscience",
+        "meaning": "良心；良知"
+      }
+    ],
+    "examples": [
+      [
+        "a guilty conscience",
+        "心中有愧"
+      ]
+    ]
+  },
+  "at a crossroads": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "at a crossroads",
+        "meaning": "处在十字路口；面临关键抉择"
+      }
+    ],
+    "examples": [
+      [
+        "find oneself at a crossroads",
+        "发现自己面临抉择"
+      ]
+    ]
+  },
+  "debate": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "debate",
+        "meaning": "争论；辩论"
+      }
+    ],
+    "examples": [
+      [
+        "a public debate",
+        "公开辩论"
+      ]
+    ]
+  },
+  "delay": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "delay",
+        "meaning": "推迟；耽搁"
+      }
+    ],
+    "examples": [
+      [
+        "delay a decision",
+        "推迟决定"
+      ]
+    ]
+  },
+  "deserve": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "deserve",
+        "meaning": "值得；应得"
+      }
+    ],
+    "examples": [
+      [
+        "deserve a second chance",
+        "值得再给一次机会"
+      ]
+    ]
+  },
+  "disrupt": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "disrupt",
+        "meaning": "扰乱；打断"
+      }
+    ],
+    "examples": [
+      [
+        "disrupt daily life",
+        "扰乱日常生活"
+      ]
+    ]
+  },
+  "diverse": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "diverse",
+        "meaning": "多样的；不同的"
+      }
+    ],
+    "examples": [
+      [
+        "a diverse workforce",
+        "多元化的员工队伍"
+      ]
+    ]
+  },
+  "division": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "division",
+        "meaning": "分歧；分裂；划分"
+      }
+    ],
+    "examples": [
+      [
+        "deep social division",
+        "深刻的社会分裂"
+      ]
+    ]
+  },
+  "fantasy": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "fantasy",
+        "meaning": "幻想；想象"
+      }
+    ],
+    "examples": [
+      [
+        "separate truth from fantasy",
+        "区分事实与幻想"
+      ]
+    ]
+  },
+  "fiction": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "fiction",
+        "meaning": "虚构；小说"
+      }
+    ],
+    "examples": [
+      [
+        "separate fact from fiction",
+        "区分事实与虚构"
+      ]
+    ]
+  },
+  "haunt": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "haunt",
+        "meaning": "长期困扰；萦绕"
+      }
+    ],
+    "examples": [
+      [
+        "haunt someone for years",
+        "困扰某人多年"
+      ]
+    ]
+  },
+  "head-on": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "head-on",
+        "meaning": "正面地；直接地"
+      }
+    ],
+    "examples": [
+      [
+        "tackle a problem head-on",
+        "正面解决问题"
+      ]
+    ]
+  },
+  "highlight": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "highlight",
+        "meaning": "强调；突出显示"
+      }
+    ],
+    "examples": [
+      [
+        "highlight a gap",
+        "凸显差距"
+      ]
+    ]
+  },
+  "impact": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "impact",
+        "meaning": "影响；冲击"
+      }
+    ],
+    "examples": [
+      [
+        "impact public health",
+        "影响公共健康"
+      ]
+    ]
+  },
+  "inclusive": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "inclusive",
+        "meaning": "包容的；兼顾不同群体的"
+      }
+    ],
+    "examples": [
+      [
+        "an inclusive classroom",
+        "包容性课堂"
+      ]
+    ]
+  },
+  "indicate": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "indicate",
+        "meaning": "表明；指出"
+      }
+    ],
+    "examples": [
+      [
+        "indicate a trend",
+        "显示趋势"
+      ]
+    ]
+  },
+  "injustice": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "injustice",
+        "meaning": "不公；不公正"
+      }
+    ],
+    "examples": [
+      [
+        "fight injustice",
+        "反抗不公"
+      ]
+    ]
+  },
+  "intolerance": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "intolerance",
+        "meaning": "不宽容；偏狭"
+      }
+    ],
+    "examples": [
+      [
+        "intolerance of other views",
+        "不容忍不同观点"
+      ]
+    ]
+  },
+  "lifetime": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "lifetime",
+        "meaning": "一生；寿命"
+      }
+    ],
+    "examples": [
+      [
+        "lifetime earnings",
+        "一生的收入"
+      ]
+    ]
+  },
+  "persuade": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "persuade",
+        "meaning": "说服；劝说"
+      }
+    ],
+    "examples": [
+      [
+        "persuade someone to change",
+        "说服某人改变"
+      ]
+    ]
+  },
+  "polarization": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "polarization",
+        "meaning": "两极分化"
+      }
+    ],
+    "examples": [
+      [
+        "political polarization",
+        "政治两极分化"
+      ]
+    ]
+  },
+  "qualified": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "qualified",
+        "meaning": "有资质的；合格的"
+      }
+    ],
+    "examples": [
+      [
+        "a qualified applicant",
+        "符合条件的申请者"
+      ]
+    ]
+  },
+  "racial": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "racial",
+        "meaning": "种族的；与种族有关的"
+      }
+    ],
+    "examples": [
+      [
+        "racial discrimination",
+        "种族歧视"
+      ]
+    ]
+  },
+  "reality": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "reality",
+        "meaning": "现实；实际情况"
+      }
+    ],
+    "examples": [
+      [
+        "face reality",
+        "面对现实"
+      ]
+    ]
+  },
+  "recruit": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "recruit",
+        "meaning": "招募；招聘"
+      }
+    ],
+    "examples": [
+      [
+        "recruit new volunteers",
+        "招募新志愿者"
+      ]
+    ]
+  },
+  "represent": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "represent",
+        "meaning": "代表；体现；象征"
+      }
+    ],
+    "examples": [
+      [
+        "represent a shift",
+        "体现一种转变"
+      ]
+    ]
+  },
+  "retention": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "retention",
+        "meaning": "保留；留用；保持"
+      }
+    ],
+    "examples": [
+      [
+        "staff retention",
+        "员工留任"
+      ]
+    ]
+  },
+  "be rooted in": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "be rooted in",
+        "meaning": "根源在于；根植于"
+      }
+    ],
+    "examples": [
+      [
+        "be rooted in tradition",
+        "根植于传统"
+      ]
+    ]
+  },
+  "separate": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "separate",
+        "meaning": "区分；使与……分开"
+      }
+    ],
+    "examples": [
+      [
+        "separate fact from opinion",
+        "区分事实与观点"
+      ]
+    ]
+  },
+  "slavery": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "slavery",
+        "meaning": "奴隶制；奴役"
+      }
+    ],
+    "examples": [
+      [
+        "abolish slavery",
+        "废除奴隶制"
+      ]
+    ]
+  },
+  "statistic": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "statistic",
+        "meaning": "一项统计数据"
+      }
+    ],
+    "examples": [
+      [
+        "a troubling statistic",
+        "令人担忧的统计数据"
+      ]
+    ]
+  },
+  "strategy": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "strategy",
+        "meaning": "策略；战略"
+      }
+    ],
+    "examples": [
+      [
+        "a long-term strategy",
+        "长期策略"
+      ]
+    ]
+  },
+  "struggle": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "struggle",
+        "meaning": "艰难地做；努力；挣扎"
+      }
+    ],
+    "examples": [
+      [
+        "struggle to find work",
+        "难以找到工作"
+      ]
+    ]
+  },
+  "toward": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "toward",
+        "meaning": "朝向；朝着；对于"
+      }
+    ],
+    "examples": [
+      [
+        "a step toward agreement",
+        "迈向达成协议的一步"
+      ]
+    ]
+  },
+  "unconditional": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "unconditional",
+        "meaning": "无条件的"
+      }
+    ],
+    "examples": [
+      [
+        "unconditional support",
+        "无条件的支持"
+      ]
+    ]
+  },
+  "have yet to": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "have yet to",
+        "meaning": "尚未；还没做"
+      }
+    ],
+    "examples": [
+      [
+        "have yet to decide",
+        "尚未决定"
+      ]
+    ]
+  },
+  "simply": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "simply",
+        "meaning": "简直；根本；仅仅"
+      }
+    ],
+    "examples": [
+      [
+        "simply cannot",
+        "根本无法"
+      ]
+    ]
+  },
+  "fact": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "fact",
+        "meaning": "事实；实情"
+      }
+    ],
+    "examples": [
+      [
+        "check the facts",
+        "核查事实"
+      ]
+    ]
+  },
+  "proclaim": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "proclaim",
+        "meaning": "宣称；宣布"
+      }
+    ],
+    "examples": [
+      [
+        "publicly proclaim an intention",
+        "公开宣称某项意图"
+      ]
+    ]
+  },
+  "comfort blanket": {
+    "heading": "原文词义",
+    "parts": [
+      {
+        "form": "comfort blanket",
+        "meaning": "给人安慰或安全感的事物"
+      }
+    ],
+    "examples": [
+      [
+        "an emotional comfort blanket",
+        "给人安全感的依靠"
+      ]
+    ]
+  },
+  "expert": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "expert",
+        "meaning": "专家；行家"
+      }
+    ],
+    "examples": [
+      [
+        "an expert in public health",
+        "公共卫生专家"
+      ]
+    ]
+  },
+  "self-proclaimed": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "self-proclaimed",
+        "meaning": "自称的；自封的"
+      }
+    ],
+    "examples": [
+      [
+        "a self-proclaimed expert",
+        "自封的专家"
+      ]
+    ]
+  },
+  "teach": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "teach",
+        "meaning": "教；教授；使学会"
+      }
+    ],
+    "examples": [
+      [
+        "teach students about history",
+        "给学生讲历史"
+      ]
+    ]
+  },
+  "treasure": {
+    "heading": "用法提示",
+    "parts": [
+      {
+        "form": "treasure",
+        "meaning": "珍惜；珍视"
+      }
+    ],
+    "examples": [
+      [
+        "treasure a friendship",
+        "珍惜友谊"
+      ]
+    ]
   }
 }

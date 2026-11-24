@@ -3886,5 +3886,111 @@
         "meaning": "名词词尾，拼写去掉 contribute 的词尾 e"
       }
     ]
+  },
+  "accompany": {
+    "parts": [
+      {
+        "form": "accompany",
+        "meaning": "记作“跟某人或某事同行”"
+      }
+    ],
+    "note": "accompany a friend = 陪同朋友。"
+  },
+  "address": {
+    "parts": [
+      {
+        "form": "address",
+        "meaning": "动词可接问题或听众，名词则常指地址"
+      }
+    ],
+    "note": "address a problem = 处理问题。"
+  },
+  "adequately": {
+    "parts": [
+      {
+        "form": "adequate",
+        "meaning": "足够的"
+      },
+      {
+        "form": "-ly",
+        "meaning": "构成副词"
+      }
+    ],
+    "note": "adequately prepared = 准备充分。"
+  },
+  "appreciate": {
+    "parts": [
+      {
+        "form": "appreciate",
+        "meaning": "接 how 或 why 从句时，常表示“认识到；理解”"
+      }
+    ],
+    "note": "appreciate the importance of evidence = 认识到证据的重要性。"
+  },
+  "bias": {
+    "parts": [
+      {
+        "form": "bias",
+        "meaning": "对某一方的偏向；研究中指系统性偏差"
+      }
+    ],
+    "note": "selection bias = 选择偏差。"
+  },
+  "commitment": {
+    "parts": [
+      {
+        "form": "commit",
+        "meaning": "承诺；投入"
+      },
+      {
+        "form": "-ment",
+        "meaning": "构成名词"
+      }
+    ],
+    "note": "a commitment to change = 作出改变的承诺。"
+  },
+  "compel": {
+    "parts": [
+      {
+        "form": "compel",
+        "meaning": "常见结构：compel somebody to do something"
+      }
+    ],
+    "note": "compel someone to act = 迫使某人行动。"
+  },
+  "equity": {
+    "parts": [
+      {
+        "form": "equity",
+        "meaning": "本文指针对不同处境提供公平机会"
+      }
+    ],
+    "note": "educational equity = 教育公平。"
+  },
+  "inequity": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不，表示否定"
+      },
+      {
+        "form": "equity",
+        "meaning": "公平"
+      }
+    ],
+    "note": "social inequity = 社会不公。"
+  },
+  "inevitable": {
+    "parts": [
+      {
+        "form": "in-",
+        "meaning": "不，表示否定"
+      },
+      {
+        "form": "evitable",
+        "meaning": "可避免的，现代英语中不常单独使用"
+      }
+    ],
+    "note": "an inevitable consequence = 不可避免的后果。"
   }
 }

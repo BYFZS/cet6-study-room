@@ -1,12 +1,12 @@
 import {filterMistakes} from './mistake-filters.mjs?v=27';
 import {attachRelations,attachSynonymSenses} from './word-contrasts.mjs?v=10';
-import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=31';
-import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,markWordEasy,reviewDueTime,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=31';
-import {initThreeUI,reconcilePausedCard} from './three-round-ui.mjs?v=47';
-import {setupSyncUI} from './sync-ui.mjs?v=28';
+import {BASE_KEY,LEARN_KEY,DAY,dayKey,gradeBaseline,emptyDB,newMemory,syncBaseline,isWeak,isStable,recordReview,selectWords,validateBackup} from './learning-core.mjs?v=32';
+import {migrateThree,passedToday,weakThree,selectThreeWords,mergeWordDecks,selectPassedWords,previouslyPassed,markWordEasy,reviewDueTime,REVIEW_INTERVALS,EASY_REVIEW_DAYS} from './learning-core.mjs?v=32';
+import {initThreeUI,reconcilePausedCard} from './three-round-ui.mjs?v=48';
+import {setupSyncUI} from './sync-ui.mjs?v=29';
 import {summarizeStudy} from './study-analytics.mjs?v=42';
 import {setupStudyStats} from './study-stats-ui.mjs?v=42';
-import {setupContextQuiz} from './context-quiz-ui.mjs?v=44';
+import {setupContextQuiz} from './context-quiz-ui.mjs?v=45';
 import {STUDY_ACTIVITY, trackStudyActivity} from './study-activity.mjs?v=42';
 import {studyLogWithQuizzes} from './context-quiz.mjs?v=41';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -92,7 +92,7 @@ for(const id of ['training','words','contextQuiz','siteSettings','syncDialog']){
 studyActivityObserver.observe($('quizPanel'),{childList:true});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!$('analytics').hidden)studyStats.render();});
 function renderHome(){
- const now=Date.now(),memories=Object.values(db.memories);
+ const now=Date.now(),memories=deck.map(({word})=>db.memories[word]).filter(Boolean);
  const due=selectThreeWords(deck,db,'due',deck.length,now).length;
  const passed=memories.filter(memory=>passedToday(memory,now)).length;
  const learned=memories.filter(previouslyPassed).length;
@@ -188,11 +188,11 @@ const loadStudyFiles = paths => Promise.all(paths.map(async path => {
 }));
 try {
  const [responses, relations, details] = await Promise.all([
-  loadStudyFiles(['base-words.json','paper-words.json','paper-extra-reading.json','paper-extra-mixed.json','paper-writing-translation.json']),
-  loadStudyFiles(['word-relations-a.json?v=19','word-relations-b.json','synonym-senses-priority.json?v=10','synonym-senses-general.json?v=10','synonym-senses-usage.json?v=11']),
+  loadStudyFiles(['base-words.json?v=2','paper-words.json?v=2','paper-extra-reading.json?v=2','paper-extra-mixed.json?v=2','paper-writing-translation.json?v=2']),
+  loadStudyFiles(['word-relations-a.json?v=20','word-relations-b.json?v=2','synonym-senses-priority.json?v=11','synonym-senses-general.json?v=11','synonym-senses-usage.json?v=12']),
   loadStudyFiles(['context-hints-a.json?v=12','context-hints-b.json?v=12','context-combinations.json?v=12',
-   'word-parts-prefixes.json?v=26','word-parts-roots.json?v=26','word-pos-a.json?v=12','word-pos-b.json?v=12',
-   'word-families.json?v=26','word-phrase-notes.json?v=26','word-pos-glosses.json?v=12','distractor-pos.json?v=12','word-syllables.json?v=12'])
+   'word-parts-prefixes.json?v=27','word-parts-roots.json?v=27','word-pos-a.json?v=13','word-pos-b.json?v=13',
+   'word-families.json?v=27','word-phrase-notes.json?v=27','word-pos-glosses.json?v=13','distractor-pos.json?v=13','word-syllables.json?v=13'])
  ]);
  const [hintA,hintB,combinations,prefixes,roots,posA,posB,families,phrases,glosses,distractorPos,syllables] = details;
  deck=attachSynonymSenses(attachRelations(mergeWordDecks(responses),...relations.slice(0,2)),...relations.slice(2));
@@ -207,7 +207,7 @@ try {
  quiz=setupContextQuiz({$,esc,getDB:()=>db,getDeck:()=>deck,hints:{...hintA,...hintB},combinations,openView:view,save,message});
  renderHome();
  sync=setupSyncUI({
-  getDB:()=>db, getWords:()=>deck.map(word=>word.word),
+  getDB:()=>db,
   canApply:()=>$('training').hidden||!db.session?.current||db.session.current.status==='done',
   apply:progress=>{
    const word = db.session?.current?.word;

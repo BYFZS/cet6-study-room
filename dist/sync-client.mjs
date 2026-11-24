@@ -1,5 +1,5 @@
 import {captureProgress, materializeProgress, mergeProgress, readProgressClocks, verifyProgress}
-  from './sync-progress.mjs?v=9';
+  from './sync-progress.mjs?v=10';
 import {syncRequest as request} from './sync-transport.mjs';
 
 const encoder = new TextEncoder();
@@ -133,7 +133,7 @@ function restoreObservations(db, config) {
   };
 }
 
-export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
+export function initProgressSync({getDB, canApply, apply, onStatus}) {
   let config = loadJSON(STATE_KEY);
   let owner = config?.account || loadJSON(ACCOUNT_KEY);
   let observed = config ? restoreObservations(getDB(), config) : null;
@@ -194,7 +194,7 @@ export function initProgressSync({getDB, getWords, canApply, apply, onStatus}) {
       let remote = null;
       if (!creating) {
         const clear = await unseal(keys.encryption, keys.id, current.data.sealed);
-        remote = verifyProgress(JSON.parse(await decompress(clear)), getWords());
+        remote = verifyProgress(JSON.parse(await decompress(clear)));
       }
       const combined = mergeProgress(mergeProgress(capture(), pending), remote);
       const content = JSON.stringify(combined);

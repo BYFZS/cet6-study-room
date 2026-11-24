@@ -1853,7 +1853,8 @@
     "collocation": "foster cooperation = 促进合作",
     "source": "长篇匹配·公共图书馆",
     "priority": "paper",
-    "evidenceForm": "fosters"
+    "evidenceForm": "fosters",
+    "evidenceForms": ["fostering"]
   },
   {
     "word": "resilience",
@@ -3085,5 +3086,1848 @@
     "source": "仔细阅读·缺勤",
     "priority": "core",
     "evidenceForm": "end up"
+  },
+  {
+    "word": "accompany",
+    "meaning": "伴随；陪同",
+    "aliases": [
+      "伴随",
+      "陪同",
+      "伴随着",
+      "和…一起出现",
+      "陪伴"
+    ],
+    "example": "Stress can accompany major changes in life.",
+    "translation": "生活中的重大变化可能伴随着压力。",
+    "collocation": "accompany a friend = 陪同朋友",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "accompanies"
+  },
+  {
+    "word": "address",
+    "meaning": "处理；向……讲话；地址",
+    "aliases": [
+      "处理",
+      "向……讲话",
+      "地址",
+      "应对",
+      "着手解决",
+      "解决",
+      "对…发表讲话",
+      "致辞",
+      "住址"
+    ],
+    "example": "The city must address the shortage of affordable housing.",
+    "translation": "这座城市必须着手解决可负担住房短缺的问题。",
+    "collocation": "address a problem = 处理问题",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "address"
+  },
+  {
+    "word": "adequately",
+    "meaning": "充分地；足够地；妥善地",
+    "aliases": [
+      "充分地",
+      "足够地",
+      "妥善地",
+      "充分",
+      "足够",
+      "妥善",
+      "适当地"
+    ],
+    "example": "Small clinics are not always adequately staffed.",
+    "translation": "小型诊所并不总是配备了足够的人手。",
+    "collocation": "adequately prepared = 准备充分",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "adequately"
+  },
+  {
+    "word": "appreciate",
+    "meaning": "认识到；欣赏；感激",
+    "aliases": [
+      "认识到",
+      "欣赏",
+      "感激",
+      "意识到",
+      "理解",
+      "体会到",
+      "赏识",
+      "感谢"
+    ],
+    "example": "Few people appreciate how much work goes into a simple product.",
+    "translation": "很少有人意识到，一件看似简单的产品背后有多少工作。",
+    "collocation": "appreciate the importance of evidence = 认识到证据的重要性",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "appreciate"
+  },
+  {
+    "word": "bias",
+    "meaning": "偏见；偏向",
+    "aliases": [
+      "偏见",
+      "偏向",
+      "成见",
+      "偏差",
+      "倾向",
+      "偏袒"
+    ],
+    "example": "The team checked for bias in its hiring process.",
+    "translation": "该团队检查了招聘流程中是否存在偏见。",
+    "collocation": "selection bias = 选择偏差",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "bias"
+  },
+  {
+    "word": "commitment",
+    "meaning": "承诺；投入；奉献",
+    "aliases": [
+      "承诺",
+      "投入",
+      "奉献",
+      "保证",
+      "致力",
+      "决心",
+      "投入程度",
+      "责任"
+    ],
+    "example": "The company made a commitment to reduce waste.",
+    "translation": "这家公司承诺减少浪费。",
+    "collocation": "a commitment to change = 作出改变的承诺",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "commitment"
+  },
+  {
+    "word": "compel",
+    "meaning": "迫使；强迫",
+    "aliases": [
+      "迫使",
+      "强迫",
+      "逼迫",
+      "迫使…做…",
+      "迫使某人做某事"
+    ],
+    "example": "New regulations may compel employers to disclose pay ranges.",
+    "translation": "新规定可能迫使用人单位公开薪资范围。",
+    "collocation": "compel someone to act = 迫使某人行动",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "compel"
+  },
+  {
+    "word": "equity",
+    "meaning": "公平；公正",
+    "aliases": [
+      "公平",
+      "公正",
+      "公平性",
+      "公正性"
+    ],
+    "example": "The new policy aims to improve equity in access to education.",
+    "translation": "这项新政策旨在改善教育机会的公平性。",
+    "collocation": "educational equity = 教育公平",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "reading",
+    "evidenceForm": "equity"
+  },
+  {
+    "word": "inequity",
+    "meaning": "不公平；不公正",
+    "aliases": [
+      "不公平",
+      "不公正",
+      "不公",
+      "不平等",
+      "不公平现象"
+    ],
+    "example": "The study found persistent inequity in access to healthcare.",
+    "translation": "这项研究发现，医疗服务的获取长期存在不公平现象。",
+    "collocation": "social inequity = 社会不公",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "reading",
+    "evidenceForm": "inequity"
+  },
+  {
+    "word": "inevitable",
+    "meaning": "不可避免的；必然发生的",
+    "aliases": [
+      "不可避免的",
+      "必然发生的",
+      "无法避免的",
+      "无可避免的",
+      "必然的"
+    ],
+    "example": "Some delay is inevitable when several teams share one lab.",
+    "translation": "多个团队共用一个实验室时，一些延误是不可避免的。",
+    "collocation": "an inevitable consequence = 不可避免的后果",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "inevitable"
+  },
+  {
+    "word": "shrug off",
+    "meaning": "不把……当回事；对……不予理会",
+    "aliases": [
+      "不把……当回事",
+      "对……不予理会",
+      "不以为意",
+      "不予理会",
+      "不在意",
+      "对…不屑一顾"
+    ],
+    "example": "It is easy to shrug off an early warning when nothing seems wrong.",
+    "translation": "看起来一切正常时，人们很容易对早期警告不以为意。",
+    "collocation": "shrug off criticism = 不理会批评",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "shrug off"
+  },
+  {
+    "word": "status quo",
+    "meaning": "现状；原有状态",
+    "aliases": [
+      "现状",
+      "原有状态",
+      "目前的状况",
+      "当前状态",
+      "既有状态",
+      "现有局面"
+    ],
+    "example": "The proposal challenges the status quo in higher education.",
+    "translation": "这项提议对高等教育的现状提出了挑战。",
+    "collocation": "maintain the status quo = 维持现状",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "reading",
+    "evidenceForm": "status quo"
+  },
+  {
+    "word": "path",
+    "meaning": "道路；途径",
+    "aliases": [
+      "道路",
+      "途径",
+      "路径",
+      "路线"
+    ],
+    "example": "We need a realistic path to recovery.",
+    "translation": "我们需要一条切实可行的康复途径。",
+    "collocation": "a path to recovery = 康复之路",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "path"
+  },
+  {
+    "word": "complacent",
+    "meaning": "自满的；掉以轻心的",
+    "aliases": [
+      "自满的",
+      "掉以轻心的",
+      "自满",
+      "松懈的",
+      "过于自信的"
+    ],
+    "example": "Teams can become complacent after an early win.",
+    "translation": "团队初战获胜后可能会产生自满情绪。",
+    "collocation": "become complacent about safety = 对安全掉以轻心",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "complacent"
+  },
+  {
+    "word": "invest",
+    "meaning": "投入；投资",
+    "aliases": [
+      "投入",
+      "投资",
+      "投放",
+      "投资于"
+    ],
+    "example": "It makes sense to invest time in learning the basics.",
+    "translation": "在基础学习上投入时间是值得的。",
+    "collocation": "invest time in training = 把时间投入培训",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "invest"
+  },
+  {
+    "word": "radical",
+    "meaning": "激进的；根本性的",
+    "aliases": [
+      "激进的",
+      "根本性的",
+      "彻底的",
+      "极端的",
+      "重大的",
+      "激进"
+    ],
+    "example": "The new design calls for a radical change in how people travel.",
+    "translation": "这个新设计要求出行方式发生根本性的改变。",
+    "collocation": "a radical change = 根本性变革",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "radical"
+  },
+  {
+    "word": "aggressive",
+    "meaning": "咄咄逼人的；强势的；力度大的",
+    "aliases": [
+      "咄咄逼人的",
+      "强势的",
+      "力度大的",
+      "有攻击性的",
+      "强硬的"
+    ],
+    "example": "The firm adopted an aggressive strategy to gain market share.",
+    "translation": "公司采用了力度大的策略来争夺市场份额。",
+    "collocation": "an aggressive sales strategy = 强势的销售策略",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "aggressive"
+  },
+  {
+    "word": "anchor",
+    "meaning": "锚；支柱",
+    "aliases": [
+      "锚",
+      "支柱",
+      "依靠",
+      "支撑"
+    ],
+    "example": "A weekly family dinner became an anchor during his first year away.",
+    "translation": "离家第一年，每周一次的家庭聚餐成了他的情感支柱。",
+    "collocation": "an emotional anchor = 情感支柱",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "anchor"
+  },
+  {
+    "word": "argue",
+    "meaning": "主张；论证；争论",
+    "aliases": [
+      "主张",
+      "论证",
+      "争论",
+      "认为",
+      "提出理由",
+      "辩论"
+    ],
+    "example": "Many teachers argue that the test rewards speed over understanding.",
+    "translation": "许多老师主张，这项考试看重速度，忽视理解。",
+    "collocation": "argue that = 主张……",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "argues"
+  },
+  {
+    "word": "audience",
+    "meaning": "观众；听众；受众",
+    "aliases": [
+      "观众",
+      "听众",
+      "受众",
+      "读者",
+      "观众群",
+      "听者"
+    ],
+    "example": "The podcast aims to reach a wider audience.",
+    "translation": "这档播客希望接触更广泛的受众。",
+    "collocation": "a wider audience = 更广泛的受众",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "audience"
+  },
+  {
+    "word": "chaos",
+    "meaning": "混乱",
+    "aliases": [
+      "混乱",
+      "无秩序",
+      "混乱状态"
+    ],
+    "example": "A network failure threw the office into chaos.",
+    "translation": "网络故障让办公室陷入混乱。",
+    "collocation": "cause chaos = 造成混乱",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "chaos"
+  },
+  {
+    "word": "collective",
+    "meaning": "集体的；共同的",
+    "aliases": [
+      "集体的",
+      "共同的",
+      "共同",
+      "集体",
+      "群体的",
+      "整体的"
+    ],
+    "example": "Cleaning up the river will take a collective effort.",
+    "translation": "清理这条河需要大家共同努力。",
+    "collocation": "a collective effort = 共同努力",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "collective"
+  },
+  {
+    "word": "commend",
+    "meaning": "称赞；表扬",
+    "aliases": [
+      "称赞",
+      "表扬",
+      "赞扬",
+      "赞赏"
+    ],
+    "example": "The director took time to commend the staff for their work.",
+    "translation": "负责人特地表扬了员工的工作。",
+    "collocation": "commend someone for their work = 称赞某人的工作",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "commend"
+  },
+  {
+    "word": "concept",
+    "meaning": "概念；观念",
+    "aliases": [
+      "概念",
+      "观念",
+      "理念",
+      "思想"
+    ],
+    "example": "A simple diagram helped us grasp the concept.",
+    "translation": "一幅简单的图帮助我们理解了这个概念。",
+    "collocation": "grasp a concept = 理解一个概念",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "concept"
+  },
+  {
+    "word": "confide in",
+    "meaning": "向……吐露心事；信任并倾诉",
+    "aliases": [
+      "向……吐露心事",
+      "信任并倾诉",
+      "倾诉",
+      "吐露心事",
+      "向…倾诉"
+    ],
+    "example": "Some students find it easier to confide in a friend than in a teacher.",
+    "translation": "有些学生觉得向朋友倾诉更容易。",
+    "collocation": "confide in a friend = 向朋友倾诉",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "confide"
+  },
+  {
+    "word": "constant",
+    "meaning": "持续的；不断的；不变的",
+    "aliases": [
+      "持续的",
+      "不断的",
+      "不变的",
+      "持续",
+      "持续不断的",
+      "恒定的",
+      "恒定"
+    ],
+    "example": "Workers complained about the constant pressure to meet targets.",
+    "translation": "员工抱怨要完成指标带来的持续压力。",
+    "collocation": "constant pressure = 持续的压力",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "constant"
+  },
+  {
+    "word": "eagerness",
+    "meaning": "渴望；热切",
+    "aliases": [
+      "渴望",
+      "热切",
+      "急切",
+      "迫切心情"
+    ],
+    "example": "Her eagerness to learn impressed the instructor.",
+    "translation": "她对学习的渴望给老师留下了深刻印象。",
+    "collocation": "eagerness to learn = 求知的渴望",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "eagerness"
+  },
+  {
+    "word": "earn",
+    "meaning": "赚得；赢得",
+    "aliases": [
+      "赚得",
+      "赢得",
+      "挣得",
+      "挣",
+      "获得",
+      "赚"
+    ],
+    "example": "Good leaders earn respect by listening to their teams.",
+    "translation": "好的领导者通过倾听团队赢得尊重。",
+    "collocation": "earn respect = 赢得尊重",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "earn"
+  },
+  {
+    "word": "effort",
+    "meaning": "努力；尝试",
+    "aliases": [
+      "努力",
+      "尝试",
+      "付出",
+      "费力"
+    ],
+    "example": "Even small changes take effort at first.",
+    "translation": "即使是很小的改变，一开始也需要付出努力。",
+    "collocation": "make an effort to = 努力做……",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "effort"
+  },
+  {
+    "word": "elevate",
+    "meaning": "提升；抬高",
+    "aliases": [
+      "提升",
+      "抬高",
+      "提高",
+      "使升高"
+    ],
+    "example": "The campaign aims to elevate the status of care workers.",
+    "translation": "这项倡议旨在提升护理人员的地位。",
+    "collocation": "elevate the status of = 提升……的地位",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "elevates"
+  },
+  {
+    "word": "embedded",
+    "meaning": "嵌入的；根深蒂固的",
+    "aliases": [
+      "嵌入的",
+      "根深蒂固的",
+      "深植",
+      "嵌入",
+      "深植的",
+      "融入的",
+      "镶嵌的"
+    ],
+    "example": "The belief is deeply embedded in local culture.",
+    "translation": "这一观念深植于当地文化。",
+    "collocation": "deeply embedded in culture = 深植于文化中",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "embedded"
+  },
+  {
+    "word": "excuse",
+    "meaning": "借口；托词",
+    "aliases": [
+      "借口",
+      "托词",
+      "理由",
+      "推辞"
+    ],
+    "example": "A busy schedule is no excuse for ignoring the problem.",
+    "translation": "日程繁忙并不是忽视问题的借口。",
+    "collocation": "use something as an excuse = 以某事为借口",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "excuse"
+  },
+  {
+    "word": "motivational",
+    "meaning": "激励性的；鼓舞人心的",
+    "aliases": [
+      "激励性的",
+      "鼓舞人心的",
+      "励志",
+      "励志的",
+      "有激励作用的",
+      "激励人心的"
+    ],
+    "example": "She invited a motivational speaker to the event.",
+    "translation": "她邀请了一位励志演讲者参加活动。",
+    "collocation": "a motivational speaker = 励志演讲者",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "motivational"
+  },
+  {
+    "word": "normalize",
+    "meaning": "使正常化；让……成为常态",
+    "aliases": [
+      "使正常化",
+      "让……成为常态",
+      "使习以为常",
+      "恢复正常",
+      "成为常态"
+    ],
+    "example": "The school hopes to normalize asking for help.",
+    "translation": "学校希望让求助成为常态。",
+    "collocation": "normalize asking for help = 让求助成为常态",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "normalized"
+  },
+  {
+    "word": "obstacle",
+    "meaning": "障碍；阻碍",
+    "aliases": [
+      "障碍",
+      "阻碍",
+      "阻力",
+      "难关"
+    ],
+    "example": "Cost remains a major obstacle to expanding the program.",
+    "translation": "成本依然是扩大该项目的主要障碍。",
+    "collocation": "overcome an obstacle = 克服障碍",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "obstacle"
+  },
+  {
+    "word": "position",
+    "meaning": "职位；位置；立场",
+    "aliases": [
+      "职位",
+      "位置",
+      "立场",
+      "职务",
+      "岗位",
+      "观点"
+    ],
+    "example": "She applied for a position at a research institute.",
+    "translation": "她申请了研究机构的一个职位。",
+    "collocation": "apply for a position = 申请职位",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "positions"
+  },
+  {
+    "word": "preach",
+    "meaning": "宣扬；布道；说教",
+    "aliases": [
+      "宣扬",
+      "布道",
+      "说教",
+      "鼓吹",
+      "传道"
+    ],
+    "example": "Some influencers preach the value of hard work to young people.",
+    "translation": "一些网红向年轻人宣扬勤奋的价值。",
+    "collocation": "preach the value of hard work = 宣扬勤奋的价值",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "preached"
+  },
+  {
+    "word": "push limits",
+    "meaning": "挑战极限；突破界限",
+    "aliases": [
+      "挑战极限",
+      "突破界限",
+      "突破极限",
+      "打破限制"
+    ],
+    "example": "New materials allow architects to push limits in building design.",
+    "translation": "新材料让建筑师能在建筑设计中突破界限。",
+    "collocation": "push limits in design = 突破设计的界限",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "push"
+  },
+  {
+    "word": "reevaluate",
+    "meaning": "重新评估；重新审视",
+    "aliases": [
+      "重新评估",
+      "重新审视",
+      "重新评价",
+      "重新考虑"
+    ],
+    "example": "The new data forced the panel to reevaluate the evidence.",
+    "translation": "新数据迫使专家组重新评估证据。",
+    "collocation": "reevaluate the evidence = 重新评估证据",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "reevaluate"
+  },
+  {
+    "word": "reliable",
+    "meaning": "可靠的；可信赖的",
+    "aliases": [
+      "可靠的",
+      "可信赖的",
+      "可靠",
+      "可信的",
+      "值得信赖的"
+    ],
+    "example": "Try to find a reliable source for each claim.",
+    "translation": "每条论断都应尽量找到一个可靠来源。",
+    "collocation": "a reliable source = 可靠来源",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "reliable"
+  },
+  {
+    "word": "schedule",
+    "meaning": "日程；时间表",
+    "aliases": [
+      "日程",
+      "时间表",
+      "日程安排",
+      "行程表",
+      "进度表"
+    ],
+    "example": "A tight schedule left little time for discussion.",
+    "translation": "紧凑的日程让讨论时间所剩无几。",
+    "collocation": "a tight schedule = 紧凑的日程",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "schedule"
+  },
+  {
+    "word": "seek",
+    "meaning": "寻求；寻找",
+    "aliases": [
+      "寻求",
+      "寻找",
+      "追求",
+      "谋求",
+      "寻觅"
+    ],
+    "example": "People often seek advice before making a major decision.",
+    "translation": "人们做重大决定前通常会寻求别人的意见。",
+    "collocation": "seek advice = 征求意见",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "seek"
+  },
+  {
+    "word": "sentiment",
+    "meaning": "情绪；感情；看法",
+    "aliases": [
+      "情绪",
+      "感情",
+      "看法",
+      "情感",
+      "态度",
+      "意见"
+    ],
+    "example": "The poll showed a shift in public sentiment.",
+    "translation": "民调显示公众情绪发生了变化。",
+    "collocation": "public sentiment = 公众情绪",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "sentiment"
+  },
+  {
+    "word": "a shoulder to cry on",
+    "meaning": "可以倾诉或依靠的人",
+    "aliases": [
+      "可以倾诉或依靠的人",
+      "情感依靠",
+      "可以倾诉的对象",
+      "倾诉对象",
+      "可以倾诉的人"
+    ],
+    "example": "After the setback, all she needed was a shoulder to cry on.",
+    "translation": "遇到挫折后，她只想找一个可以倾诉的人。",
+    "collocation": "offer a shoulder to cry on = 给人一个倾诉的肩膀",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "shoulder"
+  },
+  {
+    "word": "tend to",
+    "meaning": "往往会；倾向于",
+    "aliases": [
+      "往往会",
+      "倾向于",
+      "通常会",
+      "易于",
+      "常常",
+      "往往"
+    ],
+    "example": "People tend to remember the beginning of a story.",
+    "translation": "人们往往会记得故事的开头。",
+    "collocation": "tend to overlook details = 往往会忽略细节",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "tends"
+  },
+  {
+    "word": "track",
+    "meaning": "跑道；轨迹；路线",
+    "aliases": [
+      "跑道",
+      "轨迹",
+      "路线",
+      "路径",
+      "行进路线",
+      "正轨"
+    ],
+    "example": "Runners must keep to their own lane on the track.",
+    "translation": "运动员在跑道上必须留在自己的道内。",
+    "collocation": "stay on track = 保持正轨",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "track"
+  },
+  {
+    "word": "turmoil",
+    "meaning": "动荡；混乱",
+    "aliases": [
+      "动荡",
+      "混乱",
+      "骚乱",
+      "纷乱"
+    ],
+    "example": "Political turmoil delayed the planned vote.",
+    "translation": "政治动荡推迟了原定的投票。",
+    "collocation": "political turmoil = 政治动荡",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "turmoil"
+  },
+  {
+    "word": "universal",
+    "meaning": "普遍的；全民的；通用的",
+    "aliases": [
+      "普遍的",
+      "全民的",
+      "通用的",
+      "人人可及",
+      "全员覆盖的",
+      "适用于所有人的"
+    ],
+    "example": "The policy aims to provide universal access to basic education.",
+    "translation": "这项政策旨在实现基础教育人人可及。",
+    "collocation": "universal access = 人人可及",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "universal"
+  },
+  {
+    "word": "utilize",
+    "meaning": "利用；使用",
+    "aliases": [
+      "利用",
+      "使用",
+      "运用",
+      "善用"
+    ],
+    "example": "The project will utilize local resources to reduce costs.",
+    "translation": "这个项目会利用本地资源来降低成本。",
+    "collocation": "utilize local resources = 利用本地资源",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "utilized"
+  },
+  {
+    "word": "fall victim to",
+    "meaning": "成为……的受害者；深受……之害",
+    "aliases": [
+      "成为……的受害者",
+      "深受……之害",
+      "受害",
+      "遭受…侵害"
+    ],
+    "example": "Many small firms fall victim to online fraud.",
+    "translation": "许多小企业成为网络诈骗的受害者。",
+    "collocation": "fall victim to fraud = 遭遇诈骗",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "victim"
+  },
+  {
+    "word": "achieve",
+    "meaning": "实现；达成；取得",
+    "aliases": [
+      "实现",
+      "达成",
+      "取得",
+      "完成",
+      "达到"
+    ],
+    "example": "The team worked together to achieve its goal.",
+    "translation": "团队齐心协力实现了目标。",
+    "collocation": "achieve a goal = 实现目标",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "achieved"
+  },
+  {
+    "word": "across",
+    "meaning": "遍及；横跨",
+    "aliases": [
+      "遍及",
+      "横跨",
+      "覆盖",
+      "在…各地"
+    ],
+    "example": "The program will expand across the country next year.",
+    "translation": "项目明年将扩展到全国各地，覆盖更多城市。",
+    "collocation": "across the country = 遍及全国",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "across"
+  },
+  {
+    "word": "collectivism",
+    "meaning": "集体主义",
+    "aliases": [
+      "集体主义",
+      "集体意识优先"
+    ],
+    "example": "The seminar compared individualism with collectivism.",
+    "translation": "研讨课比较了个人主义和集体主义。",
+    "collocation": "individualism and collectivism = 个人主义与集体主义",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "collectivism"
+  },
+  {
+    "word": "idolize",
+    "meaning": "盲目崇拜；把……当偶像",
+    "aliases": [
+      "盲目崇拜",
+      "把……当偶像",
+      "过分崇拜",
+      "崇拜"
+    ],
+    "example": "Young fans sometimes idolize athletes they see online.",
+    "translation": "年轻粉丝有时会崇拜在网上看到的运动员。",
+    "collocation": "idolize successful people = 崇拜成功人士",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "idolize"
+  },
+  {
+    "word": "tangible",
+    "meaning": "切实的；有形的",
+    "aliases": [
+      "切实的",
+      "有形的",
+      "实实在在的",
+      "看得见的",
+      "实际的"
+    ],
+    "example": "The project produced tangible improvements in road safety.",
+    "translation": "这一项目给道路安全带来了切实的改善。",
+    "collocation": "tangible benefits = 切实的好处",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "tangibly"
+  },
+  {
+    "word": "issue",
+    "meaning": "问题；议题",
+    "aliases": [
+      "问题",
+      "议题",
+      "事项",
+      "争议事项"
+    ],
+    "example": "We need to discuss the issue of noise near the station.",
+    "translation": "我们需要讨论车站附近的噪音问题。",
+    "collocation": "raise an issue = 提出问题",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "issues"
+  },
+  {
+    "word": "acceptance",
+    "meaning": "接受；接纳；获准",
+    "aliases": [
+      "接受",
+      "接纳",
+      "获准",
+      "认可",
+      "承认",
+      "被接受",
+      "感言"
+    ],
+    "example": "Acceptance of the award meant a great deal to the whole team.",
+    "translation": "接受这个奖项对整个团队意义重大。",
+    "collocation": "an acceptance speech = 获奖感言",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "acceptance"
+  },
+  {
+    "word": "adherence",
+    "meaning": "遵守；坚持",
+    "aliases": [
+      "遵守",
+      "坚持",
+      "恪守",
+      "依从"
+    ],
+    "example": "The audit checked adherence to safety rules.",
+    "translation": "审计核查了安全规定的遵守情况。",
+    "collocation": "adherence to safety rules = 遵守安全规定",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "adherence"
+  },
+  {
+    "word": "advancement",
+    "meaning": "进步；发展；晋升",
+    "aliases": [
+      "进步",
+      "发展",
+      "晋升",
+      "进展",
+      "提升"
+    ],
+    "example": "Investment in research can support technological advancement.",
+    "translation": "投资科研能促进技术进步。",
+    "collocation": "technological advancement = 技术进步",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "advancements"
+  },
+  {
+    "word": "appalling",
+    "meaning": "骇人的；糟糕透顶的",
+    "aliases": [
+      "骇人的",
+      "糟糕透顶的",
+      "令人震惊的",
+      "恶劣",
+      "恶劣的",
+      "极差的"
+    ],
+    "example": "Inspectors found appalling conditions at the factory.",
+    "translation": "检查人员发现工厂的条件极其恶劣。",
+    "collocation": "appalling conditions = 极其恶劣的条件",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "appalling"
+  },
+  {
+    "word": "beyond",
+    "meaning": "超出；越过；在……以外",
+    "aliases": [
+      "超出",
+      "越过",
+      "在……以外",
+      "超过",
+      "超越"
+    ],
+    "example": "Demand grew beyond expectations in the first month.",
+    "translation": "首月需求增长超出预期。",
+    "collocation": "beyond expectations = 超出预期",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "beyond"
+  },
+  {
+    "word": "bury one's head in the sand",
+    "meaning": "逃避现实；对问题视而不见",
+    "aliases": [
+      "逃避现实",
+      "对问题视而不见",
+      "装作看不见",
+      "回避问题",
+      "不愿面对现实"
+    ],
+    "example": "To bury one's head in the sand is to ignore a problem that needs attention.",
+    "translation": "所谓逃避现实，就是对需要处理的问题置之不理。",
+    "collocation": "bury one's head in the sand = 逃避现实",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "buried"
+  },
+  {
+    "word": "climate",
+    "meaning": "气候；氛围",
+    "aliases": [
+      "气候",
+      "氛围",
+      "环境",
+      "风气"
+    ],
+    "example": "Regular feedback can create a climate of trust in the workplace.",
+    "translation": "定期反馈可以在工作中营造信任的氛围。",
+    "collocation": "a climate of trust = 信任的氛围",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "climate"
+  },
+  {
+    "word": "commit to",
+    "meaning": "承诺做；致力于",
+    "aliases": [
+      "承诺做",
+      "致力于",
+      "保证做",
+      "投入于",
+      "决心做",
+      "承诺"
+    ],
+    "example": "Several companies agreed to commit to reducing waste.",
+    "translation": "几家公司同意作出承诺，减少浪费。",
+    "collocation": "commit to reducing waste = 承诺减少浪费",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "commit"
+  },
+  {
+    "word": "conscience",
+    "meaning": "良心；良知",
+    "aliases": [
+      "良心",
+      "良知",
+      "道德感",
+      "是非感"
+    ],
+    "example": "He returned the extra change because his conscience bothered him.",
+    "translation": "他良心不安，便把多找的零钱还了回去。",
+    "collocation": "a guilty conscience = 心中有愧",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "conscience"
+  },
+  {
+    "word": "at a crossroads",
+    "meaning": "处在十字路口；面临关键抉择",
+    "aliases": [
+      "处在十字路口",
+      "面临关键抉择",
+      "处于关键关头",
+      "处于转折点"
+    ],
+    "example": "The company is at a crossroads after losing its biggest client.",
+    "translation": "失去最大客户后，公司面临关键抉择。",
+    "collocation": "find oneself at a crossroads = 发现自己面临抉择",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "crossroads"
+  },
+  {
+    "word": "debate",
+    "meaning": "争论；辩论",
+    "aliases": [
+      "争论",
+      "辩论",
+      "讨论",
+      "争议"
+    ],
+    "example": "The ruling sparked a public debate about privacy.",
+    "translation": "这项裁决引发了一场关于隐私的公开辩论。",
+    "collocation": "a public debate = 公开辩论",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "debates"
+  },
+  {
+    "word": "delay",
+    "meaning": "推迟；耽搁",
+    "aliases": [
+      "推迟",
+      "耽搁",
+      "延迟",
+      "拖延",
+      "延误"
+    ],
+    "example": "The committee chose to delay the vote until Monday.",
+    "translation": "委员会决定把投票推迟到周一。",
+    "collocation": "delay a decision = 推迟决定",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "delaying"
+  },
+  {
+    "word": "deserve",
+    "meaning": "值得；应得",
+    "aliases": [
+      "值得",
+      "应得",
+      "理应得到",
+      "配得上",
+      "应该得到"
+    ],
+    "example": "Those students deserve a fair chance to succeed.",
+    "translation": "那些学生理应得到一次公平的机会来争取成功。",
+    "collocation": "deserve a second chance = 值得再给一次机会",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "deserve"
+  },
+  {
+    "word": "disrupt",
+    "meaning": "扰乱；打断",
+    "aliases": [
+      "扰乱",
+      "打断",
+      "干扰",
+      "打乱",
+      "使中断"
+    ],
+    "example": "Unexpected strikes can disrupt train services.",
+    "translation": "突发罢工可能会扰乱铁路服务。",
+    "collocation": "disrupt daily life = 扰乱日常生活",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "disrupt"
+  },
+  {
+    "word": "diverse",
+    "meaning": "多样的；不同的",
+    "aliases": [
+      "多样的",
+      "不同的",
+      "多元",
+      "多元的",
+      "各种各样的",
+      "多种多样的",
+      "不同"
+    ],
+    "example": "The city is home to a diverse population.",
+    "translation": "这座城市拥有多元的人口构成。",
+    "collocation": "a diverse workforce = 多元化的员工队伍",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "diverse"
+  },
+  {
+    "word": "division",
+    "meaning": "分歧；分裂；划分",
+    "aliases": [
+      "分歧",
+      "分裂",
+      "划分",
+      "隔阂",
+      "分化",
+      "分开"
+    ],
+    "example": "The vote revealed a deep division in the community.",
+    "translation": "投票揭示了社区内部的深刻分歧。",
+    "collocation": "deep social division = 深刻的社会分裂",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "divisions"
+  },
+  {
+    "word": "fantasy",
+    "meaning": "幻想；想象",
+    "aliases": [
+      "幻想",
+      "想象",
+      "不切实际的想法",
+      "空想"
+    ],
+    "example": "The plan was based on fantasy rather than evidence.",
+    "translation": "这项计划基于幻想，缺乏证据。",
+    "collocation": "separate truth from fantasy = 区分事实与幻想",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "fantasy"
+  },
+  {
+    "word": "fiction",
+    "meaning": "虚构；小说",
+    "aliases": [
+      "虚构",
+      "小说",
+      "虚构作品",
+      "编造"
+    ],
+    "example": "The article helps readers separate fact from fiction.",
+    "translation": "这篇文章帮助读者区分事实和虚构。",
+    "collocation": "separate fact from fiction = 区分事实与虚构",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "fiction"
+  },
+  {
+    "word": "haunt",
+    "meaning": "长期困扰；萦绕",
+    "aliases": [
+      "长期困扰",
+      "萦绕",
+      "纠缠",
+      "挥之不去",
+      "困扰"
+    ],
+    "example": "The memory continued to haunt her long after she moved away.",
+    "translation": "她搬走很久之后，那段记忆仍然困扰着她。",
+    "collocation": "haunt someone for years = 困扰某人多年",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "haunt"
+  },
+  {
+    "word": "head-on",
+    "meaning": "正面地；直接地",
+    "aliases": [
+      "正面地",
+      "直接地",
+      "正面",
+      "直截了当地",
+      "迎面地",
+      "直接"
+    ],
+    "example": "The team decided to tackle the problem head-on.",
+    "translation": "团队决定正面解决这个问题。",
+    "collocation": "tackle a problem head-on = 正面解决问题",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "head-on"
+  },
+  {
+    "word": "highlight",
+    "meaning": "强调；突出显示",
+    "aliases": [
+      "强调",
+      "突出显示",
+      "着重指出",
+      "凸显",
+      "突出"
+    ],
+    "example": "The figures highlight a gap between urban and rural schools.",
+    "translation": "数据凸显了城乡学校之间的差距。",
+    "collocation": "highlight a gap = 凸显差距",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "highlights"
+  },
+  {
+    "word": "impact",
+    "meaning": "影响；冲击",
+    "aliases": [
+      "影响",
+      "冲击",
+      "对…产生影响",
+      "对…产生作用"
+    ],
+    "example": "Air quality can impact public health in several ways.",
+    "translation": "空气质量会从多个方面影响公共健康。",
+    "collocation": "impact public health = 影响公共健康",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "impact"
+  },
+  {
+    "word": "inclusive",
+    "meaning": "包容的；兼顾不同群体的",
+    "aliases": [
+      "包容的",
+      "兼顾不同群体的",
+      "包容性",
+      "包容性的",
+      "让各方参与的"
+    ],
+    "example": "She designed activities for a more inclusive classroom.",
+    "translation": "她设计了活动，希望课堂更有包容性。",
+    "collocation": "an inclusive classroom = 包容性课堂",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "inclusive"
+  },
+  {
+    "word": "indicate",
+    "meaning": "表明；指出",
+    "aliases": [
+      "表明",
+      "指出",
+      "显示",
+      "暗示",
+      "标明",
+      "说明"
+    ],
+    "example": "The latest figures indicate a decline in demand.",
+    "translation": "最新数据表明需求有所下降。",
+    "collocation": "indicate a trend = 显示趋势",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "indicated"
+  },
+  {
+    "word": "injustice",
+    "meaning": "不公；不公正",
+    "aliases": [
+      "不公",
+      "不公正",
+      "不公平",
+      "不义"
+    ],
+    "example": "The campaign drew attention to injustice in the workplace.",
+    "translation": "这项活动让职场中的不公受到关注。",
+    "collocation": "fight injustice = 反抗不公",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "injustice"
+  },
+  {
+    "word": "intolerance",
+    "meaning": "不宽容；偏狭",
+    "aliases": [
+      "不宽容",
+      "偏狭",
+      "不容忍",
+      "排斥",
+      "狭隘"
+    ],
+    "example": "The program addresses intolerance of people with different beliefs.",
+    "translation": "这个项目旨在减少对不同信仰者的不宽容。",
+    "collocation": "intolerance of other views = 不容忍不同观点",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "intolerance"
+  },
+  {
+    "word": "lifetime",
+    "meaning": "一生；寿命",
+    "aliases": [
+      "一生",
+      "寿命",
+      "终生",
+      "一辈子",
+      "使用寿命"
+    ],
+    "example": "A college degree can raise lifetime earnings.",
+    "translation": "大学文凭可以提高一个人一生的收入。",
+    "collocation": "lifetime earnings = 一生的收入",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "lifetime"
+  },
+  {
+    "word": "persuade",
+    "meaning": "说服；劝说",
+    "aliases": [
+      "说服",
+      "劝说",
+      "劝服",
+      "使…信服"
+    ],
+    "example": "Good evidence can persuade people to change their minds.",
+    "translation": "充分的证据能说服人们改变看法。",
+    "collocation": "persuade someone to change = 说服某人改变",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "persuade"
+  },
+  {
+    "word": "polarization",
+    "meaning": "两极分化",
+    "aliases": [
+      "两极分化",
+      "极化",
+      "阵营对立",
+      "分化"
+    ],
+    "example": "The researchers studied political polarization across several countries.",
+    "translation": "研究人员考察了多个国家的政治两极分化。",
+    "collocation": "political polarization = 政治两极分化",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "polarization"
+  },
+  {
+    "word": "qualified",
+    "meaning": "有资质的；合格的",
+    "aliases": [
+      "有资质的",
+      "合格的",
+      "符合要求的",
+      "有资格的",
+      "具备资质的"
+    ],
+    "example": "The school is looking for a qualified teacher.",
+    "translation": "学校正在寻找一位有资质的教师。",
+    "collocation": "a qualified applicant = 符合条件的申请者",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "qualified"
+  },
+  {
+    "word": "racial",
+    "meaning": "种族的；与种族有关的",
+    "aliases": [
+      "种族的",
+      "与种族有关的",
+      "种族",
+      "涉及种族的",
+      "按种族划分的"
+    ],
+    "example": "The report found differences in pay between racial groups.",
+    "translation": "报告发现，不同种族群体的薪酬存在差异。",
+    "collocation": "racial discrimination = 种族歧视",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "racial"
+  },
+  {
+    "word": "reality",
+    "meaning": "现实；实际情况",
+    "aliases": [
+      "现实",
+      "实际情况",
+      "实际",
+      "事实",
+      "真实"
+    ],
+    "example": "The manager had to face the reality of rising costs.",
+    "translation": "经理不得不面对成本上涨的现实。",
+    "collocation": "face reality = 面对现实",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "reality"
+  },
+  {
+    "word": "recruit",
+    "meaning": "招募；招聘",
+    "aliases": [
+      "招募",
+      "招聘",
+      "招收",
+      "征募"
+    ],
+    "example": "The charity plans to recruit more volunteers before winter.",
+    "translation": "这家慈善机构打算入冬前招募更多志愿者。",
+    "collocation": "recruit new volunteers = 招募新志愿者",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "recruiting"
+  },
+  {
+    "word": "represent",
+    "meaning": "代表；体现；象征",
+    "aliases": [
+      "代表",
+      "体现",
+      "象征",
+      "反映",
+      "表示",
+      "表征"
+    ],
+    "example": "The results may represent a shift in public opinion.",
+    "translation": "结果可能体现了舆论的一种转变。",
+    "collocation": "represent a shift = 体现一种转变",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "represents"
+  },
+  {
+    "word": "retention",
+    "meaning": "保留；留用；保持",
+    "aliases": [
+      "保留",
+      "留用",
+      "保持",
+      "留任",
+      "留存",
+      "维持",
+      "记住"
+    ],
+    "example": "Better training can improve staff retention.",
+    "translation": "更好的培训能提高员工留任率。",
+    "collocation": "staff retention = 员工留任",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "retention"
+  },
+  {
+    "word": "be rooted in",
+    "meaning": "根源在于；根植于",
+    "aliases": [
+      "根源在于",
+      "根植于",
+      "根源",
+      "植根于",
+      "源自",
+      "以…为基础"
+    ],
+    "example": "The disagreement seems to be rooted in past misunderstandings.",
+    "translation": "这场分歧的根源似乎在于以往的误会。",
+    "collocation": "be rooted in tradition = 根植于传统",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "rooted"
+  },
+  {
+    "word": "separate",
+    "meaning": "区分；使与……分开",
+    "aliases": [
+      "区分",
+      "使与……分开",
+      "分辨",
+      "辨别",
+      "区分开",
+      "分离"
+    ],
+    "example": "Online rumors can be hard to separate from confirmed facts.",
+    "translation": "网上的传言和已证实的事实有时很难区分。",
+    "collocation": "separate fact from opinion = 区分事实与观点",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "separate"
+  },
+  {
+    "word": "slavery",
+    "meaning": "奴隶制；奴役",
+    "aliases": [
+      "奴隶制",
+      "奴役",
+      "奴隶制度",
+      "受奴役"
+    ],
+    "example": "The museum traces efforts to abolish slavery.",
+    "translation": "博物馆回顾了废除奴隶制的历程。",
+    "collocation": "abolish slavery = 废除奴隶制",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "slavery"
+  },
+  {
+    "word": "statistic",
+    "meaning": "一项统计数据",
+    "aliases": [
+      "一项统计数据",
+      "统计数字",
+      "数据",
+      "统计值",
+      "统计数据"
+    ],
+    "example": "The report drew attention to one troubling statistic.",
+    "translation": "报告提请人们关注一项令人担忧的统计数据。",
+    "collocation": "a troubling statistic = 令人担忧的统计数据",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "statistic"
+  },
+  {
+    "word": "strategy",
+    "meaning": "策略；战略",
+    "aliases": [
+      "策略",
+      "战略",
+      "对策",
+      "战略方案",
+      "计划",
+      "方法"
+    ],
+    "example": "The group set out a long-term strategy for reducing costs.",
+    "translation": "团队制定了降低成本的长期策略。",
+    "collocation": "a long-term strategy = 长期策略",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "strategies"
+  },
+  {
+    "word": "struggle",
+    "meaning": "艰难地做；努力；挣扎",
+    "aliases": [
+      "艰难地做",
+      "努力",
+      "挣扎",
+      "费力",
+      "苦苦努力",
+      "奋力",
+      "很难",
+      "难以"
+    ],
+    "example": "New graduates often struggle to find work in their field.",
+    "translation": "刚毕业的人往往很难找到本专业的工作。",
+    "collocation": "struggle to find work = 难以找到工作",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "struggling"
+  },
+  {
+    "word": "toward",
+    "meaning": "朝向；朝着；对于",
+    "aliases": [
+      "朝向",
+      "朝着",
+      "对于",
+      "向着",
+      "对",
+      "向"
+    ],
+    "example": "They took a step toward a lasting agreement.",
+    "translation": "他们朝着达成持久协议迈出了一步。",
+    "collocation": "a step toward agreement = 迈向达成协议的一步",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "toward"
+  },
+  {
+    "word": "unconditional",
+    "meaning": "无条件的",
+    "aliases": [
+      "无条件的",
+      "不附带条件的",
+      "没有限制的"
+    ],
+    "example": "She was grateful for her family's unconditional support.",
+    "translation": "她很感激家人无条件的支持。",
+    "collocation": "unconditional support = 无条件的支持",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "unconditional"
+  },
+  {
+    "word": "have yet to",
+    "meaning": "尚未；还没做",
+    "aliases": [
+      "尚未",
+      "还没做",
+      "仍未",
+      "还没有"
+    ],
+    "example": "The researchers have yet to publish their findings.",
+    "translation": "研究人员尚未公布研究结果。",
+    "collocation": "have yet to decide = 尚未决定",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "core",
+    "evidenceForm": "yet"
+  },
+  {
+    "word": "simply",
+    "meaning": "简直；根本；仅仅",
+    "aliases": [
+      "简直",
+      "根本",
+      "仅仅",
+      "不过是",
+      "完全",
+      "只是"
+    ],
+    "example": "Volunteers simply cannot meet the growing demand on their own.",
+    "translation": "单靠志愿者根本无法满足不断增长的需求。",
+    "collocation": "simply cannot = 根本无法",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "simply"
+  },
+  {
+    "word": "fact",
+    "meaning": "事实；实情",
+    "aliases": [
+      "事实",
+      "实情",
+      "实际情况",
+      "真相"
+    ],
+    "example": "The reporter wanted to check each fact before publication.",
+    "translation": "记者希望在发表前核查每一项事实。",
+    "collocation": "check the facts = 核查事实",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "fact"
+  },
+  {
+    "word": "proclaim",
+    "meaning": "宣称；宣布",
+    "aliases": [
+      "宣称",
+      "宣布",
+      "声明",
+      "宣告"
+    ],
+    "example": "Some commentators proclaim the end of office work every few years.",
+    "translation": "有些评论员每隔几年就宣称办公室工作将成为历史。",
+    "collocation": "publicly proclaim an intention = 公开宣称某项意图",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "proclaimed"
+  },
+  {
+    "word": "comfort blanket",
+    "meaning": "给人安慰或安全感的事物",
+    "aliases": [
+      "给人安慰或安全感的事物",
+      "精神慰藉",
+      "给人安全感",
+      "给人安全感的东西"
+    ],
+    "example": "For many new students, a familiar routine is a comfort blanket.",
+    "translation": "对许多新生来说，熟悉的作息能给人安全感。",
+    "collocation": "an emotional comfort blanket = 给人安全感的依靠",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "blanket"
+  },
+  {
+    "word": "expert",
+    "meaning": "专家；行家",
+    "aliases": [
+      "专家",
+      "行家",
+      "权威人士",
+      "内行"
+    ],
+    "example": "We asked an expert to review the results.",
+    "translation": "我们请专家审阅了结果。",
+    "collocation": "an expert in public health = 公共卫生专家",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "experts"
+  },
+  {
+    "word": "self-proclaimed",
+    "meaning": "自称的；自封的",
+    "aliases": [
+      "自称的",
+      "自封的",
+      "自诩的",
+      "自封",
+      "自称"
+    ],
+    "example": "The self-proclaimed expert offered advice without checking the facts.",
+    "translation": "那位自封的专家没核查事实就给出了建议。",
+    "collocation": "a self-proclaimed expert = 自封的专家",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "self"
+  },
+  {
+    "word": "teach",
+    "meaning": "教；教授；使学会",
+    "aliases": [
+      "教",
+      "教授",
+      "使学会",
+      "教会",
+      "教导",
+      "传授",
+      "讲授"
+    ],
+    "example": "The program uses stories to teach children about local history.",
+    "translation": "项目用故事给儿童讲授当地历史。",
+    "collocation": "teach students about history = 给学生讲历史",
+    "source": "2025年12月第1套·仔细阅读2（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "taught"
+  },
+  {
+    "word": "treasure",
+    "meaning": "珍惜；珍视",
+    "aliases": [
+      "珍惜",
+      "珍视",
+      "重视",
+      "珍爱"
+    ],
+    "example": "Many families treasure their old photographs.",
+    "translation": "许多家庭都珍爱家里的旧照片。",
+    "collocation": "treasure a friendship = 珍惜友谊",
+    "source": "2025年12月第1套·仔细阅读1（标注词汇）",
+    "priority": "paper",
+    "evidenceForm": "treasures"
   }
 ]

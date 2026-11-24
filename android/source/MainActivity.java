@@ -14,7 +14,10 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.speech.tts.TextToSpeech;
+import android.view.View;
 import android.view.WindowInsets;
+import android.view.WindowInsetsController;
+import android.webkit.JsResult;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -76,6 +79,34 @@ public final class MainActivity extends Activity {
         int background = pageDark ? Color.rgb(20, 30, 27) : Color.rgb(244, 245, 239);
         root.setBackgroundColor(background);
         web.setBackgroundColor(background);
+        getWindow().setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(background));
+        getWindow().setStatusBarColor(Build.VERSION.SDK_INT >= 30 ? Color.TRANSPARENT : background);
+        getWindow().setNavigationBarColor(Build.VERSION.SDK_INT >= 30 ? Color.TRANSPARENT : background);
+        if (Build.VERSION.SDK_INT >= 30) {
+            WindowInsetsController controller = getWindow().getInsetsController();
+            int mask = WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
+                | WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
+            if (controller != null) controller.setSystemBarsAppearance(pageDark ? 0 : mask, mask);
+        } else {
+            View decor = getWindow().getDecorView();
+            int mask = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
+            decor.setSystemUiVisibility((decor.getSystemUiVisibility() & ~mask) | (pageDark ? 0 : mask));
+        }
+    }
+
+    private AlertDialog.Builder pageDialog() {
+        return new AlertDialog.Builder(this, pageDark
+            ? android.R.style.Theme_Material_Dialog_Alert
+            : android.R.style.Theme_Material_Light_Dialog_Alert);
+    }
+
+    private boolean showPageMessage(String message, JsResult result, boolean confirm) {
+        AlertDialog.Builder dialog = pageDialog().setTitle("CET6 复习室").setMessage(message)
+            .setPositiveButton("确定", (view, button) -> result.confirm())
+            .setOnCancelListener(view -> result.cancel());
+        if (confirm) dialog.setNegativeButton("取消", (view, button) -> result.cancel());
+        dialog.show();
+        return true;
     }
     private final ExecutorService syncRequests = Executors.newFixedThreadPool(2);
     private TextToSpeech voice;
@@ -126,6 +157,16 @@ public final class MainActivity extends Activity {
         web.setWebViewClient(new LocalPages());
         web.setWebChromeClient(new WebChromeClient() {
             @Override
+            public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
+                return showPageMessage(message, result, false);
+            }
+
+            @Override
+            public boolean onJsConfirm(WebView view, String url, String message, JsResult result) {
+                return showPageMessage(message, result, true);
+            }
+
+            @Override
             public boolean onShowFileChooser(WebView view, ValueCallback<Uri[]> reply, FileChooserParams params) {
                 if (chooser != null) chooser.onReceiveValue(null);
                 chooser = reply;
@@ -147,6 +188,7 @@ public final class MainActivity extends Activity {
             }
         }));
         if (state == null || web.restoreState(state) == null) web.loadUrl(HOME);
+        applyPageBackground();
     }
 
     @Override
@@ -293,7 +335,7 @@ public final class MainActivity extends Activity {
                 if (notes.length() > 1800) notes = notes.substring(0, 1800) + "…";
                 String explanation = "当前 v" + version + "，最新 " + tag
                     + (notes.isEmpty() ? "" : "\n\n" + notes) + "\n\n下载后请在安卓安装器中确认。";
-                updateDialog = new AlertDialog.Builder(this)
+                updateDialog = pageDialog()
                     .setTitle("CET6 有新版本")
                     .setMessage(explanation)
                     .setNegativeButton("稍后", (dialog, button) -> defer.run())

@@ -48,11 +48,13 @@ export function selectWords(deck,db,filter='due',size=10,now=Date.now()){
  if(filter==='due')candidates=candidates.filter(w=>db.memories[w.word]&&db.memories[w.word].due<=now);
  return candidates.sort((a,b)=>{const am=db.memories[a.word],bm=db.memories[b.word];const priority=m=>!m?2:m.due<=now?(isWeak(m)?0:1):3;return priority(am)-priority(bm)||(am?.due||0)-(bm?.due||0);}).slice(0,size).map(w=>w.word);
 }
+export const isProgressWord = word => typeof word === 'string' && word.length <= 120 &&
+ /^[a-z0-9]+(?:[ '-][a-z0-9]+)*$/.test(word) && !Object.hasOwn(Object.prototype, word);
 export function validateBackup(raw,validWords){
  if(raw?.type!=='cet6-learning-backup'||![2,3].includes(raw.version)||raw.learning?.type!=='cet6-learning'||![2,3].includes(raw.learning?.version)||!Array.isArray(raw.learning.logs)||!raw.learning.memories||typeof raw.learning.memories!=='object')throw Error('不是有效的训练备份文件');
  if(raw.learning.logs.length>100000)throw Error('备份记录过多');
- for(const [word,m] of Object.entries(raw.learning.memories)){if(!m||!validWords.includes(word)||!Array.isArray(m.correctDays)||m.correctDays.some(d=>typeof d!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(d))||!Number.isFinite(m.due)||m.due<0||m.due>8640000000000000||!Number.isFinite(m.attempts)||!Number.isFinite(m.box)||m.box<0||m.box>4||m.protocol===3&&(!Number.isInteger(m.stage)||m.stage<0||m.stage>3||!Array.isArray(m.passDays)))throw Error('备份中的词汇或记录格式不正确');}
- if(raw.learning.logs.some(l=>!l||!validWords.includes(l.word)||!Number.isFinite(l.at)||typeof l.correct!=='boolean'))throw Error('备份中的练习记录不正确');
+ for(const [word,m] of Object.entries(raw.learning.memories)){if(!m||!isProgressWord(word)||!Array.isArray(m.correctDays)||m.correctDays.some(d=>typeof d!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(d))||!Number.isFinite(m.due)||m.due<0||m.due>8640000000000000||!Number.isFinite(m.attempts)||!Number.isFinite(m.box)||m.box<0||m.box>4||m.protocol===3&&(!Number.isInteger(m.stage)||m.stage<0||m.stage>3||!Array.isArray(m.passDays)))throw Error('备份中的词汇或记录格式不正确');}
+ if(raw.learning.logs.some(l=>!l||!isProgressWord(l.word)||!Number.isFinite(l.at)||typeof l.correct!=='boolean'))throw Error('备份中的练习记录不正确');
  if(Object.values(raw.learning.memories).some(m=>m.reviewLevel!==undefined&&(!Number.isInteger(m.reviewLevel)||m.reviewLevel<0||m.reviewLevel>5)))throw Error('备份中的复习阶段不正确');
  if(raw.baseline&&(raw.baseline.test!=='cet6-vocabulary-01'||raw.baseline.status!=='submitted'||raw.baseline.responses?.length!==20||raw.baseline.responses.some(r=>!r||!validWords.slice(0,20).includes(r.word)||typeof r.meaning!=='string'||!['known','familiar','unknown'].includes(r.confidence))))throw Error('备份中的摸底答卷不正确');
  return raw;

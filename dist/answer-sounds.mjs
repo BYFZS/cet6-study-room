@@ -28,13 +28,18 @@ export function initAnswerSoundSettings(panel) {
     try { localStorage.setItem(key, JSON.stringify(settings)); } catch {}
     window.dispatchEvent(new CustomEvent('cet6-sound-change'));
   }
+  function showVolume(slider) {
+    const percent = slider.value + '%';
+    slider.parentElement.querySelector('output').value = percent;
+    slider.style.setProperty('--volume-level', percent);
+  }
   function follow() {
     const current = readSoundSettings();
     for (const control of controls) control.checked = current[control.dataset.answerSound];
     for (const radio of accents) radio.checked = radio.value===current.accent;
     for (const slider of sliders) {
       slider.value = Math.round(current[slider.dataset.soundVolume] * 100);
-      slider.parentElement.querySelector('output').value = slider.value + '%';
+      showVolume(slider);
     }
   }
   for (const control of controls) {
@@ -42,7 +47,7 @@ export function initAnswerSoundSettings(panel) {
   }
   for (const slider of sliders) {
     slider.oninput = () => {
-      slider.parentElement.querySelector('output').value = slider.value + '%';
+      showVolume(slider);
       update({[slider.dataset.soundVolume]:Number(slider.value) / 100});
     };
   }

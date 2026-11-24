@@ -58,7 +58,8 @@ export function setupContextQuiz({$, esc, getDB, getDeck, hints, combinations, o
 
   function progress() {
     const db = getDB();
-    return reviewQuizPlan(db.logs, db.rounds);
+    const knownWords = new Set(getDeck().map(({word}) => word));
+    return reviewQuizPlan(db.logs.filter(log => knownWords.has(log.word)), db.rounds);
   }
 
   function refreshHome() {

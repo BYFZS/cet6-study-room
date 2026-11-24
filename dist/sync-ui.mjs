@@ -1,4 +1,4 @@
-import {initProgressSync} from './sync-client.mjs?v=25';
+import {initProgressSync} from './sync-client.mjs?v=26';
 
 export function setupSyncUI(options) {
   const byId = id => document.getElementById(id);

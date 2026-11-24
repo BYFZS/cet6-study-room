@@ -1,3 +1,5 @@
+import {isProgressWord} from './learning-core.mjs?v=32';
+
 const compareText = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 const sorted = entries => Object.fromEntries(entries.sort(([a], [b]) => compareText(a, b)));
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
@@ -29,7 +31,7 @@ export function captureProgress(db, previous, device, now = Date.now()) {
   for (const log of db.logs || []) logTimes.set(log.word, Math.max(logTimes.get(log.word) || 0, log.at));
   const memories = sorted(Object.entries(db.memories).map(([word, memory]) => [
     word, stamp(structuredClone(memory), previous?.memories[word], device,
-      Math.max(memory.lastReviewed || 0, logTimes.get(word) || 0), now)
+      Math.max(memory.lastReviewed || 0, memory.confusedAt || 0, logTimes.get(word) || 0), now)
   ]));
   const overrides = sorted([...new Set([...Object.keys(previous?.overrides || {}),
     ...Object.keys(db.overrides || {})])].map(word => [
@@ -68,10 +70,9 @@ export function materializeProgress(progress) {
   };
 }
 
-export function verifyProgress(progress, words) {
-  const allowed = new Set(words);
+export function verifyProgress(progress) {
   const validMap = (map, check) => map && typeof map === 'object' && !Array.isArray(map) &&
-    Object.entries(map).every(([word, value]) => allowed.has(word) && check(value));
+    Object.entries(map).every(([word, value]) => isProgressWord(word) && check(value));
   const memory = item => isClock(item) && item.value && Number.isFinite(item.value.due) &&
     Number.isInteger(item.value.attempts) && item.value.attempts >= 0 &&
     (item.value.protocol !== 3 || Number.isInteger(item.value.stage) && item.value.stage >= 0 && item.value.stage <= 3);
@@ -79,7 +80,7 @@ export function verifyProgress(progress, words) {
       !validMap(progress.overrides, item => isClock(item) && [null, 'correct', 'wrong'].includes(item.value)) ||
       !validMap(progress.aliases, items => Array.isArray(items) && items.every(item => typeof item === 'string')) ||
       !Array.isArray(progress.logs) || !progress.logs.every(x =>
-        x && allowed.has(x.word) && typeof x.correct === 'boolean' && Number.isFinite(x.at)) ||
+        x && isProgressWord(x.word) && typeof x.correct === 'boolean' && Number.isFinite(x.at)) ||
       !Array.isArray(progress.rounds) || !progress.rounds.every(x => x && Number.isFinite(x.at))) {
     throw new Error('同步记录格式无效');
   }
